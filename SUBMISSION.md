@@ -51,6 +51,9 @@ set. Three NTRS records are rights-restricted and are not ingested.
 
 Full attribution, URLs and rights determinations:
 [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md).
+The submission-ready reference list for NASA and Space Apps resources, software,
+services, licences and use is in
+[docs/PROJECT_REFERENCES.md](docs/PROJECT_REFERENCES.md).
 
 ## Technology
 

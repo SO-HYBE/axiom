@@ -22,6 +22,7 @@ as it stood on their own date and are not rewritten to match later state.
 | Document | Read it for |
 |---|---|
 | [DATA_SOURCES.md](DATA_SOURCES.md) | Each ingested and inventory-only NASA source, rights, URL, extraction limits |
+| [PROJECT_REFERENCES.md](PROJECT_REFERENCES.md) | Submission-ready references for NASA/partner resources, software, services, attribution and licences |
 | [DATA_PROVENANCE.md](DATA_PROVENANCE.md) | Capture dates, hashes and acquisition records for the shipped bytes |
 | [OFFICIAL_RESOURCES.md](OFFICIAL_RESOURCES.md) | Official challenge resource inventory and processing status |
 | [RESOURCE_COVERAGE.md](RESOURCE_COVERAGE.md) | Which official resources are acquired, indexed or catalog-only |
