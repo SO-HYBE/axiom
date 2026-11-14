@@ -248,6 +248,10 @@ index.
 |---|---|
 | ![Next Experiment Planner](screenshots/planner.png) | ![Research workspace](screenshots/research.png) |
 
+| Assurance Inspector and Trace Lab |
+|---|
+| ![Assurance Inspector and Trace Lab](screenshots/assurance-inspector.png) |
+
 ## Scientific limitations
 
 - Condition metadata is **machine-extracted** from text and tables and is **not

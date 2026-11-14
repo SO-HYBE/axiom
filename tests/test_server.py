@@ -293,7 +293,18 @@ class ServerTests(unittest.TestCase):
         with patch('axiom.benchmark_impact.summarize_impact',return_value=summary) as calculate, \
              patch('axiom.providers.make_model',side_effect=AssertionError('No inference')):
             self.assertEqual(self.get_json('/api/benchmark/synthetic/impact'),summary)
-            calculate.assert_called_once_with(self.root,'synthetic')
+            calculate.assert_called_once_with(self.root,'synthetic',allow_integrity_warnings=True)
+
+    def test_impact_route_serves_unverified_charts_independent_of_client_flags(self):
+        # A hosted rewrite may drop query flags; the chart route must still
+        # return the saved observations plus their explicit integrity warnings.
+        unverified={'schema_version':'benchmark-impact-v1','run_id':'synthetic','integrity_verified':False,
+                    'integrity_warnings':[{'code':'input_fingerprint_mismatch'}]}
+        with patch('axiom.benchmark_impact.summarize_impact',return_value=unverified) as calculate:
+            self.assertEqual(self.get_json('/api/benchmark/synthetic/impact'),unverified)
+            self.assertEqual(self.get_json('/api/benchmark/synthetic/impact?observed_only=1'),unverified)
+            for call in calculate.call_args_list:
+                self.assertEqual(call.kwargs,{'allow_integrity_warnings':True})
 
     def test_impact_endpoint_preserves_host_path_and_integrity_boundaries(self):
         with patch('axiom.benchmark_impact.summarize_impact') as calculate:

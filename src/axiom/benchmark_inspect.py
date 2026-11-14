@@ -2,8 +2,10 @@
 
 Saved job digests and frozen snapshots are authoritative. Current source files,
 current model configuration, model verdicts and draft benchmark labels never
-become annotations. Inspection holds the existing advisory lock but does not
-rewrite answers, manifests or reports. Hashes detect corruption, not authorship.
+become annotations. Inspection takes the shared read lock, so a read-only
+deployment snapshot (a serverless bundle) can be inspected without a writable
+lock file, and it never rewrites answers, manifests or reports. Hashes detect
+corruption, not authorship.
 """
 from collections import Counter
 import hashlib
@@ -13,7 +15,7 @@ import re
 from .benchmark_report import summarize_benchmark
 from .benchmark_run import MAX_BYTES, _directory, _hash, _read, _records
 from .critic import normalized
-from .review import review_write_lock
+from .review import review_read_lock
 
 
 def _latency(prediction):
@@ -51,7 +53,7 @@ def inspect_benchmark(root, run_id):
     runner's bounded reader. Snapshot/protocol mismatches return audit_passed=False.
     """
     directory = _directory(root, run_id)
-    with review_write_lock(directory):
+    with review_read_lock(directory):
         manifest = _read(directory / 'manifest.json')
         report = _read(directory / 'report.json')
         if not isinstance(manifest, dict) or manifest.get('run_id') != run_id:

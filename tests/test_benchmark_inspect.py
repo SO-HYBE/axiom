@@ -3,7 +3,9 @@ from copy import deepcopy
 import hashlib
 import json
 from pathlib import Path
+import sys
 import tempfile
+import types
 import unittest
 from unittest.mock import patch
 
@@ -255,6 +257,25 @@ class BenchmarkInspectTests(unittest.TestCase):
         self.assertIsNone(result['by_system']['baseline']['policy_withholding'])
         self.assertIsNone(result['by_system']['rag_only']['policy_withholding'])
         self.assertEqual(result['by_system']['ignis']['policy_withholding'], 1)
+
+    def test_inspection_needs_no_write_access_to_a_deployment_snapshot(self):
+        """A read-only bundle (serverless deployment) must still be inspectable."""
+        (self.directory / '.write.lock').write_bytes(b'0')
+        original = Path.open
+        attempts = []
+        def guarded(path, mode='r', *args, **kwargs):
+            if Path(path).is_relative_to(self.directory) and set(mode) & set('wax+'):
+                attempts.append((Path(path).name, mode))
+                raise PermissionError(30, 'Read-only file system')
+            return original(path, mode, *args, **kwargs)
+        # Emulate the POSIX read-lock branch, which is what a container uses.
+        fake_fcntl = types.SimpleNamespace(flock=lambda *args: None, LOCK_EX=2, LOCK_NB=4, LOCK_UN=8)
+        with patch('pathlib.Path.open', guarded), \
+                patch('axiom.review.os', types.SimpleNamespace(name='posix', SEEK_END=2)), \
+                patch.dict(sys.modules, {'fcntl': fake_fcntl}):
+            result = self.inspect()
+        self.assertEqual(attempts, [])
+        self.assertTrue(result['audit_passed'], result['issues'])
 
     def test_error_stub_does_not_require_healthy_run_model_or_system_metadata(self):
         record = self.records['baseline']

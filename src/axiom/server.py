@@ -190,9 +190,14 @@ def make_handler(root, allowed_hosts=None, allowed_origins=None, record_root=Non
                     if path.endswith('/impact'):
                         from .benchmark_impact import summarize_impact
                         identifier = path.removeprefix('/api/benchmark/').removesuffix('/impact')
-                        query = parse_qs(urlparse(self.path).query, keep_blank_values=True)
-                        observed_only = query == {'observed_only': ['1']}
-                        result = summarize_impact(root, identifier, allow_integrity_warnings=observed_only)
+                        # This is the dashboard chart route, so saved observations are
+                        # returned with their own integrity status and warnings instead
+                        # of being withheld. A hosted rewrite can drop the browser's
+                        # query flags, and an unverified snapshot must stay inspectable
+                        # rather than turn the whole panel into an error. summarize_impact
+                        # keeps its fail-closed default for programmatic callers, and the
+                        # payload still reports integrity_verified=false with every issue.
+                        result = summarize_impact(root, identifier, allow_integrity_warnings=True)
                         return self.send(200, json.dumps(result, ensure_ascii=False))
                     if path.endswith('/answers'):
                         identifier = path.removeprefix('/api/benchmark/').removesuffix('/answers')

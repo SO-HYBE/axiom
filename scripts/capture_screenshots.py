@@ -20,7 +20,7 @@ from pathlib import Path
 from websocket import create_connection
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "docs" / "screenshots"
+OUT = ROOT / "screenshots"
 CANDIDATES = (
     r"C:\Program Files\Google\Chrome\Application\chrome.exe",
     r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
@@ -141,8 +141,19 @@ def main():
         client.shot("planner.png")
 
         client.evaluate("document.getElementById('nav-research').click()")
-        time.sleep(1.0)
+        client.wait_for("!!document.getElementById('question') && !!document.getElementById('submit')")
+        client.evaluate("document.getElementById('provider').value='extractive'; document.getElementById('provider').dispatchEvent(new Event('change',{bubbles:true}))")
+        client.evaluate("document.getElementById('answer-example').click()")
+        client.evaluate("document.getElementById('submit').click()")
+        client.wait_for("document.querySelector('#research-view').textContent.includes('custom-made for a previous project')")
+        time.sleep(0.5)
         client.shot("research.png")
+
+        client.evaluate("document.getElementById('nav-evaluation').click()")
+        client.wait_for("!!document.getElementById('axiom-title')")
+        client.wait_for("document.getElementById('axiom-record-select').options.length > 1", timeout=15)
+        client.scroll_to_text("Assurance Inspector and Trace Lab")
+        client.shot("assurance-inspector.png")
 
         client.evaluate("document.getElementById('nav-scenario').click()")
         time.sleep(0.6)
