@@ -180,7 +180,7 @@ def main() -> None:
         report = validate_records(_read_jsonl(args.root / "data/conditions.jsonl"),
                                   _read_jsonl(args.root / "data/processed/chunks.jsonl"))
     except (OSError, ValueError) as exc:
-        parser.exit(2, f"IGNIS condition validation: {exc}\n")
+        parser.exit(2, f"AXIOM condition validation: {exc}\n")
     print(json.dumps(report, indent=2, ensure_ascii=False, allow_nan=False))
     if report["invalid_count"] or report["corpus_errors"]:
         raise SystemExit(1)

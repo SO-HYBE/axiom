@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "2 claims drafted. The provided evidence consists solely of catalog metadata (DOI, license, and objectives). It contains no experimental measurements, numerical results, or observed data. Therefore, IGNIS cannot infer any specific scientific support or validation from this excerpt; it can only confirm the existence of the catalog entry and its stated goals."
+        "detail": "2 claims drafted. The provided evidence consists solely of catalog metadata (DOI, license, and objectives). It contains no experimental measurements, numerical results, or observed data. Therefore, AXIOM cannot infer any specific scientific support or validation from this excerpt; it can only confirm the existence of the catalog entry and its stated goals."
       },
       {
         "label": "Check claims",
@@ -44,7 +44,7 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 1
     },
-    "question": "A PSI catalog has an explicit license but no measurements in the excerpt. What can IGNIS infer about scientific support?",
+    "question": "A PSI catalog has an explicit license but no measurements in the excerpt. What can AXIOM infer about scientific support?",
     "system": "ignis",
     "mode": "model",
     "answer": "The catalog describes the BASS-II objectives as studying ignition, flame growth, and extinction limits for solid fuels in microgravity to contribute to combustion computational models.",
@@ -252,7 +252,7 @@
           "text": "The catalog describes the BASS-II objectives as studying ignition, flame growth, and extinction limits for solid fuels in microgravity to contribute to combustion computational models."
         }
       ],
-      "reason": "The provided evidence consists solely of catalog metadata (DOI, license, and objectives). It contains no experimental measurements, numerical results, or observed data. Therefore, IGNIS cannot infer any specific scientific support or validation from this excerpt; it can only confirm the existence of the catalog entry and its stated goals."
+      "reason": "The provided evidence consists solely of catalog metadata (DOI, license, and objectives). It contains no experimental measurements, numerical results, or observed data. Therefore, AXIOM cannot infer any specific scientific support or validation from this excerpt; it can only confirm the existence of the catalog entry and its stated goals."
     },
     "evidence": [
       {
@@ -620,5 +620,5 @@
     "measurement_scope": "incremental_critic_with_shared_rag_draft"
   },
   "shared_draft_from_run_id": "933c1254ccf44105ad90191ea5d009bb",
-  "record_sha256": "2398e87864270d974eae8b921ae0339d8ac49f2ee91e4ba430e52c5d5dfe48ac"
+  "record_sha256": "41feba6d27cd30fade7dd825ab5c4a6f15a50bfe34adf8601c4498dc8a84741a"
 }

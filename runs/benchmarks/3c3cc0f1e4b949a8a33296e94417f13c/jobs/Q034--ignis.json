@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "2 claims drafted. The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+        "detail": "2 claims drafted. The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
       },
       {
         "label": "Check claims",
@@ -44,7 +44,7 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 1
     },
-    "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+    "question": "If two actual measurements disagree under apparently matched conditions, how should AXIOM summarize them?",
     "system": "ignis",
     "mode": "model",
     "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
@@ -225,7 +225,7 @@
           "text": "The PSI-98 dataset catalog includes files for raw data, engineering documents, and science documents related to the Saffire-I experiment."
         }
       ],
-      "reason": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+      "reason": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
     },
     "evidence": [
       {
@@ -794,5 +794,5 @@
     "measurement_scope": "incremental_critic_with_shared_rag_draft"
   },
   "shared_draft_from_run_id": "db5fc2acca444f9996348303c5d4d28e",
-  "record_sha256": "f7f5f858bbefc9a716e4c46dd6ce95098a9eb0296a71fb1246f4dc57e95c80bc"
+  "record_sha256": "8bc35535f5c542e7434f5ca87baeee49df06a7017a659bf0fae44b29ae46f3e0"
 }

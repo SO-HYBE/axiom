@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "IGNIS extracted passage v0.1",
+  "title": "AXIOM extracted passage v0.1",
   "type": "object",
   "required": ["chunk_id", "source_id", "title", "url", "locator", "text", "sha256", "source_kind", "experiment", "conditions", "evidence_tier"],
   "properties": {

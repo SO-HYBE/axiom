@@ -22,6 +22,11 @@ class VercelAdapterTests(unittest.TestCase):
         request._restore_path()
         self.assertEqual("/healthz", request.path)
 
+    def test_rewrite_metadata_is_removed_from_saved_work_pagination(self):
+        request = object.__new__(vercel.handler)
+        request.path = "/api/runs?__axiom_path=%2Fapi%2Fruns&limit=10&offset=0&q=flame"
+        self.assertEqual({"limit": 10, "offset": 0, "query": "flame"}, request.page_options())
+
     def test_only_configured_hosts_are_accepted(self):
         request = object.__new__(vercel.handler)
         request.headers = {"Host": "axiomcombustion.us"}

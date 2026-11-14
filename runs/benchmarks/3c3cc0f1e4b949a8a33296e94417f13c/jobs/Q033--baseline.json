@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "0 claims drafted. The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
+        "detail": "0 claims drafted. The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'AXIOM' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
       },
       {
         "label": "Check claims",
@@ -44,17 +44,17 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "Two records give different extinction results under different oxygen levels. Must IGNIS label them a contradiction?",
+    "question": "Two records give different extinction results under different oxygen levels. Must AXIOM label them a contradiction?",
     "system": "baseline",
     "mode": "model",
-    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
+    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'AXIOM' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
     "abstained": true,
     "claims": [],
     "draft_checks": [],
     "raw_draft": {
       "abstained": true,
       "claims": [],
-      "reason": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
+      "reason": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'AXIOM' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
     },
     "evidence": [],
     "source_cautions": [],
@@ -98,7 +98,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
+    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'AXIOM' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
     "abstained": true,
     "claims": [],
     "latency_ms": 0.59,
@@ -135,5 +135,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "faced63099678c7ef371a4fe7c46d2f177cc3666c9e9b87c08427af1ebf58513"
+  "record_sha256": "da525af38aef4fea2032f1aafdbd546d24116999e60d690e1675cba94b3ae2f4"
 }

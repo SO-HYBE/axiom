@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "2 claims drafted. The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+        "detail": "2 claims drafted. The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
       },
       {
         "label": "Check claims",
@@ -44,10 +44,10 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+    "question": "If two actual measurements disagree under apparently matched conditions, how should AXIOM summarize them?",
     "system": "rag_only",
     "mode": "model",
-    "answer": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question.",
+    "answer": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question.",
     "abstained": true,
     "claims": [],
     "draft_checks": [
@@ -106,7 +106,7 @@
           "text": "The PSI-98 dataset catalog includes files for raw data, engineering documents, and science documents related to the Saffire-I experiment."
         }
       ],
-      "reason": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+      "reason": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
     },
     "evidence": [
       {
@@ -523,7 +523,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question.",
+    "answer": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how AXIOM should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question.",
     "abstained": true,
     "claims": [],
     "latency_ms": 1.28,
@@ -560,5 +560,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "28c45b8245ada499ce9050a37db444c6b2afd254f48f3dfed20ae872848b877a"
+  "record_sha256": "2378788e4563b48fb1dc23987d0f24abb39defeeea8788b621bcd2c085c6c23f"
 }

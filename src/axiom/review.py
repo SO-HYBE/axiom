@@ -69,6 +69,39 @@ def review_write_lock(directory):
                 fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
 
 
+@contextmanager
+def review_read_lock(directory):
+    """Lock frozen artifact reads without requiring a writable deployment."""
+    lock_path = Path(directory) / '.write.lock'
+    try:
+        lock = lock_path.open('rb')
+    except FileNotFoundError:
+        # A deployment snapshot without a lock file cannot have a concurrent
+        # local writer, so the read is stable for the lifetime of the request.
+        yield
+        return
+    if os.name == 'nt':
+        lock.close()
+        with review_write_lock(Path(directory)):
+            yield
+        return
+    import fcntl
+    with lock:
+        deadline = time.monotonic() + 3
+        while True:
+            try:
+                fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                break
+            except OSError:
+                if time.monotonic() >= deadline:
+                    raise ValueError('Another review write is in progress. Retry shortly.')
+                time.sleep(0.02)
+        try:
+            yield
+        finally:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+
+
 def review_order(event):
     sequence = event.get('sequence', 0)
     if type(sequence) is not int or sequence < 0:

@@ -42,7 +42,7 @@ class HealthAndHostTests(unittest.TestCase):
             self.assertEqual(200, response.status)
             body = json.load(response)
         self.assertEqual("ok", body["status"])
-        self.assertEqual("ignis", body["service"])
+        self.assertEqual("axiom", body["service"])
         self.assertEqual(1, body["chunks"])
         self.assertNotIn(str(self.root), json.dumps(body))
 

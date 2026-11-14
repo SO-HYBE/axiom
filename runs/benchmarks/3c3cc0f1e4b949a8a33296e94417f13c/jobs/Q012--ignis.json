@@ -44,7 +44,7 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 1
     },
-    "question": "If the available record omits pressure, should IGNIS silently assume standard pressure when judging applicability?",
+    "question": "If the available record omits pressure, should AXIOM silently assume standard pressure when judging applicability?",
     "system": "ignis",
     "mode": "model",
     "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
@@ -434,5 +434,5 @@
     "measurement_scope": "incremental_critic_with_shared_rag_draft"
   },
   "shared_draft_from_run_id": "e2f78606443f4e29a104d8bc5ea3119b",
-  "record_sha256": "78c015be526fe9188452b209427fee112008e77d10335069dbe53c560449cb39"
+  "record_sha256": "54ce3b6eccf87ddda245d8a2d4b7d38929a51b59c24b262ab50fe55c31a30185"
 }

@@ -2860,8 +2860,8 @@
     "No independent annotation file is loaded by this inspection.",
     "Literal quotation presence checks provenance/text matching, not whether the claim follows scientifically.",
     "Baseline receives no corpus; its citations are not checked against unavailable retrieval evidence.",
-    "Policy-withholding counts apply to IGNIS only; other systems may abstain without the critic policy.",
-    "Whole IGNIS workflow latency adds the matched RAG draft and incremental critic; cache/retry effects confound comparisons.",
+    "Policy-withholding counts apply to AXIOM only; other systems may abstain without the critic policy.",
+    "Whole AXIOM workflow latency adds the matched RAG draft and incremental critic; cache/retry effects confound comparisons.",
     "Missing-source jobs and incomplete or failed pairs remain explicit and are not corrupt records by themselves."
   ]
 }

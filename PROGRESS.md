@@ -1,6 +1,6 @@
 # AXIOM progress
 
-Living record for the AXIOM evolution of IGNIS. Scope, decisions and blockers are
+Living record for the AXIOM evolution of axiom. Scope, decisions and blockers are
 kept here; measurements live in `runs/axiom/` only after a real run exists.
 
 ## Phase plan (stated before coding)
@@ -30,7 +30,7 @@ heatmap.
 
 ### Phase 1 — deterministic applicability engine
 
-- `src/ignis/applicability.py`: nine logical fields mapped onto documented
+- `src/axiom/applicability.py`: nine logical fields mapped onto documented
   attributes (material→fuel, configuration→apparatus), per-field
   MATCH/MISMATCH/CONFLICTING/UNKNOWN, overall outcome with a fixed precedence,
   field evidence with quote/locator/validation status, limitations.
@@ -56,7 +56,7 @@ heatmap.
 
 ### Phase 2 — versioned traces and a three-valued monitor
 
-- `src/ignis/trace.py`: `axiom-trace-v1` events with ten types, authoritative
+- `src/axiom/trace.py`: `axiom-trace-v1` events with ten types, authoritative
   sequence numbers, an optional timestamp carried as data only, and a SHA-256
   content hash over canonical event fields. `build_trace` projects a recorded run
   into a trace without inventing events; the baseline and RAG-only arms have no
@@ -65,7 +65,7 @@ heatmap.
   manifest count and last sequence, delivery order, hash mismatch, malformed
   events, identical duplicates (idempotent, discarded, noted) and conflicting
   duplicates (event untrusted). Nothing is repaired or reconstructed.
-- `src/ignis/monitor.py`: properties P1–P8 in a versioned registry, each with its
+- `src/axiom/monitor.py`: properties P1–P8 in a versioned registry, each with its
   definition, pass/fail/unknown condition and required event types. PASS requires
   present, trusted observations and a complete run; absence is FAIL only in a
   complete run and UNKNOWN otherwise; aggregate is FAIL > UNKNOWN > PASS.
@@ -84,16 +84,16 @@ heatmap.
 
 ### Phase 3 — trace-mutation lab and seeded faults
 
-- `src/ignis/mutations.py`: eight channel operators (loss, reorder,
+- `src/axiom/mutations.py`: eight channel operators (loss, reorder,
   duplicate_identical, corrupt_payload, corrupt_evidence_ref, corrupt_seq,
   corrupt_timestamp, delay) that never recompute a hash, plus three labelled
   adversarial operators (duplicate_conflicting, corrupt_evidence_ref_rehash,
   corrupt_seq_rehash). The input trace is never modified and the same seed
   reproduces the same mutation.
-- `src/ignis/faults.py`: ten seeded pipeline faults whose labels are fixed by
+- `src/axiom/faults.py`: ten seeded pipeline faults whose labels are fixed by
   construction (declared expected property and verdict), including two P2 faults
   and three P5 faults so that every property except P6 has an injected fault.
-- `src/ignis/mutation_lab.py` writes `runs/axiom/trace_lab/results.json` with
+- `src/axiom/mutation_lab.py` writes `runs/axiom/trace_lab/results.json` with
   commit, timestamp, dataset size, definitions, an integrity-layer ablation and a
   property × operator matrix. Undefined rates are `null`, never zero.
 - Measured at commit `9c0f933`, 2026-11-13T18:31:15Z, 108 traces (36 questions ×
@@ -115,7 +115,7 @@ heatmap.
 
 ### Phase 4 — extraction validation
 
-- `src/ignis/extraction_validation.py`: a deterministic sample chosen by unit
+- `src/axiom/extraction_validation.py`: a deterministic sample chosen by unit
   tokens only (`temperature` all, `pressure` every 2nd, `flow` every 5th,
   `oxygen` every 8th, plus exclusion controls), a scoring harness whose
   tolerances and matching rules are fixed in the module before any label is
@@ -154,12 +154,12 @@ heatmap.
 
 ### Phase 5 — recorded three-arm evaluation
 
-- `src/ignis/axiom_evaluation.py` analyzes the frozen 36-question benchmark run
+- `src/axiom/axiom_evaluation.py` analyzes the frozen 36-question benchmark run
   (`3c3cc0f1e4b949a8a33296e94417f13c`) offline. It reports scheduled/completed/
   failed jobs, answer and abstention behavior, retained claims, mechanical
   citation resolution, monitor verdicts and paired outcomes.
 - 108 jobs were scheduled, 106 completed and two failed. The baseline arm
-  completed 36, RAG completed 36 and IGNIS completed 34. RAG and IGNIS share the
+  completed 36, RAG completed 36 and axiom completed 34. RAG and axiom share the
   same saved draft, so the comparison isolates checking/withholding.
 - Added seeded 2,000-resample 95% question bootstrap intervals for answer
   coverage, abstention rate and agreement with draft labels. These are
@@ -256,7 +256,7 @@ heatmap.
 
 ## Decisions
 
-1. Keep the Python package name `ignis`; brand the product AXIOM in UI and docs.
+1. Keep the Python package name `axiom`; brand the product AXIOM in UI and docs.
 2. Reuse documented attributes instead of duplicating fields: material→`fuel`,
    configuration→`apparatus`, temperature→new `temperature_k`.
 3. Conflicting documentation outranks a scope claim: a scope claim requires both

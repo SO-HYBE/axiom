@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://ignis.local/schemas/condition-1.0.json",
-  "title": "IGNIS scoped condition evidence record",
+  "title": "AXIOM scoped condition evidence record",
   "description": "Structural validation does not verify extraction meaning or applicability. Null is unknown; proposed/background conditions are not reported test results. The Python validator also checks quote provenance, duplicate IDs, finite numbers and range ordering.",
   "type": "object",
   "additionalProperties": false,

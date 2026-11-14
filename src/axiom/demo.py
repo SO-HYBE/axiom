@@ -11,7 +11,7 @@ import re
 
 from .benchmark_run import _directory, _hash, _read, _records, _write
 from .critic import normalized
-from .review import review_write_lock
+from .review import review_read_lock, review_write_lock
 
 
 RUN_ID = '3c3cc0f1e4b949a8a33296e94417f13c'
@@ -144,7 +144,7 @@ def _bundle(root):
     root = Path(root).resolve()
     value = _read(_manifest_path(root))
     entries = _validate_manifest(value)
-    with review_write_lock(_directory(root, RUN_ID)):
+    with review_read_lock(_directory(root, RUN_ID)):
         manifest, records, by_chunk = _load_records(root, entries)
         if (value['input_fingerprint'] != manifest['input_fingerprint']
                 or value['corpus_sha256'] != manifest['inputs']['corpus_sha256']):

@@ -138,6 +138,10 @@ def make_handler(root, allowed_hosts=None, allowed_origins=None, record_root=Non
 
         def page_options(self):
             values = parse_qs(urlparse(self.path).query, keep_blank_values=True)
+            rewrite_path = values.pop('__axiom_path', None)
+            if (rewrite_path is not None
+                    and (len(rewrite_path) != 1 or rewrite_path[0] != urlparse(self.path).path)):
+                raise ValueError('Invalid saved-work query')
             if set(values) - {'limit', 'offset', 'q'} or any(len(v) != 1 for v in values.values()):
                 raise ValueError('Invalid saved-work query')
             return {'limit':int(values.get('limit',['20'])[0]), 'offset':int(values.get('offset',['0'])[0]), 'query':values.get('q',[''])[0]}

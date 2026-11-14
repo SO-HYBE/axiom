@@ -44,7 +44,7 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "If the available record omits pressure, should IGNIS silently assume standard pressure when judging applicability?",
+    "question": "If the available record omits pressure, should AXIOM silently assume standard pressure when judging applicability?",
     "system": "rag_only",
     "mode": "model",
     "answer": "The provided evidence is a source description of the FLEX experiment's objectives and approach. It does not contain information regarding software logic, data validation rules, or whether a system should silently assume standard pressure when data is omitted. Therefore, the question cannot be answered using only the supplied evidence.",
@@ -263,5 +263,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "00af213d9704e69c3878fdf302aec381a422c28ae58bb72af7188ee7fdd174b5"
+  "record_sha256": "a9f28eb7005260c2d7852da51ece55bf54ad1319e8d182b53f7e059f32b976e8"
 }

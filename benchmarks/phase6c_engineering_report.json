@@ -5289,7 +5289,7 @@
   "inspection_code_sha256": "ffde37c5df5e851d1ef147eda6627fe567232452fabbd39f2a19c664f06f90a8",
   "limitations": [
     "Recovery reused cached valid replies; timings are not a fresh-inference comparison.",
-    "IGNIS uses the same saved RAG draft; whole-workflow latency adds RAG and incremental critic.",
+    "AXIOM uses the same saved RAG draft; whole-workflow latency adds RAG and incremental critic.",
     "Two model reviews failed output validation and were not retried until accepted.",
     "All 36 question labels remain AI drafts; public test cases were visible during development.",
     "Source documents overlap across splits.",

@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "3 claims drafted. The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if IGNIS must label them a contradiction based solely on the supplied evidence."
+        "detail": "3 claims drafted. The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if AXIOM must label them a contradiction based solely on the supplied evidence."
       },
       {
         "label": "Check claims",
@@ -44,10 +44,10 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 1
     },
-    "question": "Two records give different extinction results under different oxygen levels. Must IGNIS label them a contradiction?",
+    "question": "Two records give different extinction results under different oxygen levels. Must AXIOM label them a contradiction?",
     "system": "ignis",
     "mode": "model",
-    "answer": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if IGNIS must label them a contradiction based solely on the supplied evidence.",
+    "answer": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if AXIOM must label them a contradiction based solely on the supplied evidence.",
     "abstained": true,
     "claims": [],
     "draft_checks": [
@@ -257,7 +257,7 @@
           "text": "The FLEX investigation aims to develop reliable predictive models for combustion limits under reduced gravity conditions."
         }
       ],
-      "reason": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if IGNIS must label them a contradiction based solely on the supplied evidence."
+      "reason": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if AXIOM must label them a contradiction based solely on the supplied evidence."
     },
     "evidence": [
       {
@@ -371,7 +371,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if IGNIS must label them a contradiction based solely on the supplied evidence.",
+    "answer": "The provided evidence is a source description of the FLEX investigation's objectives and approach. It does not contain the specific records, data, or context regarding 'different extinction results under different oxygen levels' mentioned in the question. Therefore, it is impossible to determine if AXIOM must label them a contradiction based solely on the supplied evidence.",
     "abstained": true,
     "claims": [],
     "latency_ms": 6.62,
@@ -409,5 +409,5 @@
     "measurement_scope": "incremental_critic_with_shared_rag_draft"
   },
   "shared_draft_from_run_id": "5a76714428ef4026bbfb851748d7b865",
-  "record_sha256": "78555e71d3c671e70f7bc47aa74f242d3dfdb88a0517d9c17f64b4ca9605316d"
+  "record_sha256": "ce0b9d2d375e95de83681f24605e09d828b382f82747643cca5b65865cad42f3"
 }

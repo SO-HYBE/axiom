@@ -44,7 +44,7 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "A PSI catalog has an explicit license but no measurements in the excerpt. What can IGNIS infer about scientific support?",
+    "question": "A PSI catalog has an explicit license but no measurements in the excerpt. What can AXIOM infer about scientific support?",
     "system": "baseline",
     "mode": "model",
     "answer": "Insufficient evidence provided to infer scientific support from the PSI catalog entry, as the evidence field is empty and no specific data regarding objectives, DOI, or license details were supplied in the prompt.",
@@ -135,5 +135,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "7db39a375e499c465e4fb6249daedc3bd188894937f4bded11370509b214a785"
+  "record_sha256": "d38c5fea9d810378048e2705eaa19c6ab8c12a0777c7fbbb1bf1eb57fb167304"
 }

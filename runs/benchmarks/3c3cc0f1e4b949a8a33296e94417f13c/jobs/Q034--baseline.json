@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "0 claims drafted. Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify."
+        "detail": "0 claims drafted. Insufficient evidence provided to determine how AXIOM should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for AXIOM were available to verify."
       },
       {
         "label": "Check claims",
@@ -44,17 +44,17 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+    "question": "If two actual measurements disagree under apparently matched conditions, how should AXIOM summarize them?",
     "system": "baseline",
     "mode": "model",
-    "answer": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify.",
+    "answer": "Insufficient evidence provided to determine how AXIOM should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for AXIOM were available to verify.",
     "abstained": true,
     "claims": [],
     "draft_checks": [],
     "raw_draft": {
       "abstained": true,
       "claims": [],
-      "reason": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify."
+      "reason": "Insufficient evidence provided to determine how AXIOM should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for AXIOM were available to verify."
     },
     "evidence": [],
     "source_cautions": [],
@@ -98,7 +98,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify.",
+    "answer": "Insufficient evidence provided to determine how AXIOM should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for AXIOM were available to verify.",
     "abstained": true,
     "claims": [],
     "latency_ms": 0.55,
@@ -135,5 +135,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "8b3269353e9f7e883f1a71ed2c52102ba5cd54c2314e2c8e818f2b19f38dc69e"
+  "record_sha256": "1730e6f71b683be2d61ba06d12f34834a13869f0712fe5b3a2236d0cf3d25cf2"
 }

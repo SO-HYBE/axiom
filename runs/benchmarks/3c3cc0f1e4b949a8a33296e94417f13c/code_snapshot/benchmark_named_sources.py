@@ -118,7 +118,7 @@ def _write(root, relative, blob):
 def _fetch(url, body=None):
     validate_url(url)
     data = None if body is None else _encoded(body)
-    headers = {'User-Agent': 'IGNIS-research/0.1', 'Accept-Encoding': 'identity'}
+    headers = {'User-Agent': 'AXIOM-research/0.1', 'Accept-Encoding': 'identity'}
     if data is not None:
         headers['Content-Type'] = 'application/json'
     request = Request(url, data=data, headers=headers)

@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "0 claims drafted. The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if IGNIS should assume standard pressure when pressure data is omitted."
+        "detail": "0 claims drafted. The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if AXIOM should assume standard pressure when pressure data is omitted."
       },
       {
         "label": "Check claims",
@@ -44,17 +44,17 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "If the available record omits pressure, should IGNIS silently assume standard pressure when judging applicability?",
+    "question": "If the available record omits pressure, should AXIOM silently assume standard pressure when judging applicability?",
     "system": "baseline",
     "mode": "model",
-    "answer": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if IGNIS should assume standard pressure when pressure data is omitted.",
+    "answer": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if AXIOM should assume standard pressure when pressure data is omitted.",
     "abstained": true,
     "claims": [],
     "draft_checks": [],
     "raw_draft": {
       "abstained": true,
       "claims": [],
-      "reason": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if IGNIS should assume standard pressure when pressure data is omitted."
+      "reason": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if AXIOM should assume standard pressure when pressure data is omitted."
     },
     "evidence": [],
     "source_cautions": [],
@@ -98,7 +98,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if IGNIS should assume standard pressure when pressure data is omitted.",
+    "answer": "The provided evidence field is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Therefore, there is insufficient information to determine if AXIOM should assume standard pressure when pressure data is omitted.",
     "abstained": true,
     "claims": [],
     "latency_ms": 0.77,
@@ -135,5 +135,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "cbb40b84f3d248049afe1acaef16f32ee63c825649322608c0dfadc83e3bf84a"
+  "record_sha256": "bff9aa78283396d653b368a5fdce983983c9d9659e4b3d6e3989b5e1a6037447"
 }

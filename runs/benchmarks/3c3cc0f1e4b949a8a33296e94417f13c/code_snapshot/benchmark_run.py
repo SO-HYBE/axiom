@@ -211,7 +211,7 @@ def run_benchmark(root, *, provider, model=None, systems=('baseline', 'ignis'), 
         raise ValueError('Invalid or repeated benchmark systems')
     systems = tuple(system for system in ('baseline', 'rag_only', 'ignis') if system in systems)
     if provider == 'extractive' and tuple(systems) != ('ignis',):
-        raise ValueError('Offline extractive preview supports IGNIS only, never a fake model baseline')
+        raise ValueError('Offline extractive preview supports AXIOM only, never a fake model baseline')
     if type(fresh) is not bool or type(diagnostics) is not bool or (max_jobs is not None and (type(max_jobs) is not int or max_jobs < 1)):
         raise ValueError('Invalid fresh flag or job budget')
     questions = _questions(root, split, question_ids, limit)
@@ -270,7 +270,7 @@ def run_benchmark(root, *, provider, model=None, systems=('baseline', 'ignis'), 
                         'annotation_status': 'unreviewed_no_scientific_scores', 'is_scientific_validation': False,
                         'input_fingerprint': fingerprint, 'inputs': inputs, 'git': _git(root),
                         'source_readiness': audit['counts'], 'jobs': jobs,
-                        'ablation': 'RAG and IGNIS share the saved RAG draft when both systems are selected.',
+                        'ablation': 'RAG and AXIOM share the saved RAG draft when both systems are selected.',
                         'limitations': ['All benchmark labels remain provisional.', 'The public test split was visible during development.',
                                         'Requested model ID is not an immutable provider snapshot.',
                                         'Unavailable named sources stay pending; no substitute paper is used.']}

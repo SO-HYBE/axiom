@@ -300,7 +300,7 @@ def _http_worker(envelope):
     """One HTTPS exchange. HTTP error bodies never leave the worker."""
     provider = envelope['provider']
     request = urllib.request.Request(ENDPOINTS[provider], json.dumps(envelope['body']).encode(),
-                {'User-Agent': 'IGNIS/0.3', 'Content-Type': 'application/json',
+                {'User-Agent': 'AXIOM/0.3', 'Content-Type': 'application/json',
                  'Authorization': 'Bearer ' + envelope['key']})
     opener = urllib.request.build_opener(NoRedirect())
     try:

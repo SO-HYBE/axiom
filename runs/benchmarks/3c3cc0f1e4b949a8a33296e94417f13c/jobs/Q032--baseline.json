@@ -22,7 +22,7 @@
       },
       {
         "label": "Draft an answer",
-        "detail": "0 claims drafted. The question asks about the behavior of a specific system (IGNIS) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding IGNIS's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about IGNIS's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information."
+        "detail": "0 claims drafted. The question asks about the behavior of a specific system (AXIOM) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding AXIOM's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about AXIOM's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information."
       },
       {
         "label": "Check claims",
@@ -44,17 +44,17 @@
       "max_reviewed_claims": 3,
       "review_calls_used": 0
     },
-    "question": "A correct article URL is paired with a fabricated quote. Should IGNIS display the quote as verified?",
+    "question": "A correct article URL is paired with a fabricated quote. Should AXIOM display the quote as verified?",
     "system": "baseline",
     "mode": "model",
-    "answer": "The question asks about the behavior of a specific system (IGNIS) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding IGNIS's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about IGNIS's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information.",
+    "answer": "The question asks about the behavior of a specific system (AXIOM) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding AXIOM's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about AXIOM's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information.",
     "abstained": true,
     "claims": [],
     "draft_checks": [],
     "raw_draft": {
       "abstained": true,
       "claims": [],
-      "reason": "The question asks about the behavior of a specific system (IGNIS) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding IGNIS's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about IGNIS's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information."
+      "reason": "The question asks about the behavior of a specific system (AXIOM) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding AXIOM's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about AXIOM's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information."
     },
     "evidence": [],
     "source_cautions": [],
@@ -98,7 +98,7 @@
     "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
   },
   "prediction": {
-    "answer": "The question asks about the behavior of a specific system (IGNIS) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding IGNIS's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about IGNIS's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information.",
+    "answer": "The question asks about the behavior of a specific system (AXIOM) in a hypothetical scenario involving a fabricated quote. No evidence is provided regarding AXIOM's verification logic, and the provided URL is a NASA article about a fire experiment, which does not contain information about AXIOM's operational protocols for handling fabricated quotes. Therefore, the question cannot be answered with the available information.",
     "abstained": true,
     "claims": [],
     "latency_ms": 0.68,
@@ -135,5 +135,5 @@
     "measurement_scope": "whole_workflow"
   },
   "shared_draft_from_run_id": null,
-  "record_sha256": "bbeef6e227987c69e1c0e92ba07b3e6ef644b9c355a742b8d2f83213265e4985"
+  "record_sha256": "8b9562cafce0b212837ef2e3c91e776ab8d4babc99aeb4339bf55e0d1b46cc28"
 }

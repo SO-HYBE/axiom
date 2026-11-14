@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from axiom.review import fingerprint, record_decision, review_state
+from axiom.review import fingerprint, record_decision, review_read_lock, review_state
 from axiom.review_queue import build_queue
 
 
@@ -24,6 +24,13 @@ def write_rows(path, records):
 
 
 class ReviewDecisionTests(unittest.TestCase):
+    def test_read_lock_does_not_create_a_lock_file_for_immutable_snapshot(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            with review_read_lock(directory):
+                self.assertTrue(directory.is_dir())
+            self.assertFalse((directory / '.write.lock').exists())
+
     def setUp(self):
         temporary = tempfile.TemporaryDirectory(dir=os.environ.get("AXIOM_TEST_TMPDIR"))
         self.addCleanup(temporary.cleanup)

@@ -142,7 +142,7 @@ def fetch_archived_blog(url=ARCHIVE_URL):
     """Fetch only the pinned public replay URL, without following redirects."""
     if url != ARCHIVE_URL:
         raise ValueError('Only the fixed archived NASA capture may be fetched')
-    request = Request(url, headers={'User-Agent': 'IGNIS-source-verification/0.1', 'Accept-Encoding': 'identity'})
+    request = Request(url, headers={'User-Agent': 'AXIOM-source-verification/0.1', 'Accept-Encoding': 'identity'})
     with build_opener(NoArchiveRedirect()).open(request, timeout=30) as response:
         if response.status != 200 or response.url != ARCHIVE_URL:
             raise ValueError('Archived source response or final URL mismatch')

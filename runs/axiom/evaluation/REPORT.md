@@ -45,10 +45,10 @@ Semantic evidence support, source correctness, unsupported quantitative claims, 
 | rag_only | 18 | 18/18/0 | 0/38/0 | 0/38 | 0 |
 | ignis | 22 | 34/0/0 | 21/0/0 | 0/21 | 0 |
 
-A vacuous trace has no claim in scope, so its PASS is not evidence that anything was verified. The two failed IGNIS executions are excluded from the completed denominators and are listed in the results JSON. A run-level property failure (P1, P7) applies to every claim in that run, which is why one dangling citation can fail more than one claim.
+A vacuous trace has no claim in scope, so its PASS is not evidence that anything was verified. The two failed AXIOM executions are excluded from the completed denominators and are listed in the results JSON. A run-level property failure (P1, P7) applies to every claim in that run, which is why one dangling citation can fail more than one claim.
 
-- IGNIS: 21 claims pass every process property, 0 carry a verified label and 21 passing claims stay explicitly unverified. A verified label additionally requires a `WITHIN_DOCUMENTED_SCOPE` assessment, which this run never made, so the monitor does not upgrade the label on its own.
-- IGNIS requested an applicability assessment on 9 completed runs and answered 0 of them.
+- AXIOM: 21 claims pass every process property, 0 carry a verified label and 21 passing claims stay explicitly unverified. A verified label additionally requires a `WITHIN_DOCUMENTED_SCOPE` assessment, which this run never made, so the monitor does not upgrade the label on its own.
+- AXIOM requested an applicability assessment on 9 completed runs and answered 0 of them.
 - RAG-only: 38 claims are UNKNOWN because there is no verification stage; the monitor cannot certify them, so they stay unverified rather than being called correct.
 - Baseline: 2 claim verdicts FAIL and 1 citation(s) are dangling.
 
@@ -67,7 +67,7 @@ Counts only. No significance test is reported.
 ## What the monitor did not verify
 
 - The run is recorded, not fresh. A fresh three-arm run needs provider API keys that are not present in this environment.
-- RAG-only and IGNIS share one saved draft; the comparison isolates verification and withholding, not the drafting model.
+- RAG-only and AXIOM share one saved draft; the comparison isolates verification and withholding, not the drafting model.
 - Answer correctness and faithfulness are not measured: the rubrics are unreviewed agent drafts and no human reviewer scored the answers.
 - Expected-action agreement uses unreviewed agent-drafted labels, so it is a behavioural check, not ground truth.
 - Traces are post-hoc projections and do not record model-call failures. A failed execution with no claim is a vacuous PASS, so such runs are excluded from behavioural denominators and counted separately.

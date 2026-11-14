@@ -9,7 +9,7 @@ from collections import Counter
 from .benchmark_inspect import inspect_benchmark
 from .benchmark_report import summarize_benchmark
 from .benchmark_run import _directory, _hash, _read, _records
-from .review import review_write_lock
+from .review import review_read_lock
 
 
 SYSTEM_ORDER = ('baseline', 'rag_only', 'ignis')
@@ -139,7 +139,7 @@ def summarize_impact(root, run_id):
     if not audit['audit_passed']:
         raise ValueError('Evaluation visualization requires a verified benchmark')
     directory = _directory(root, run_id)
-    with review_write_lock(directory):
+    with review_read_lock(directory):
         manifest = _read(directory / 'manifest.json')
         if (manifest.get('input_fingerprint') != audit['input_fingerprint']
                 or _hash(manifest.get('inputs')) != manifest.get('input_fingerprint')):

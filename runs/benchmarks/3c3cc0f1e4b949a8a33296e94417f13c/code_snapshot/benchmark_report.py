@@ -186,5 +186,5 @@ def summarize_benchmark(manifest, predictions, annotations=None):
                             "Quality is null without eligible grades; failed executions are excluded from quality and shown separately.",
                             "Overall quality pools splits; consult quality_by_split before interpreting development or test results.",
                             "Latency includes cache effects; unknown usage and cost are null, not zero.",
-                            "IGNIS shared-draft ablation measurements cover the incremental critic; add the referenced RAG job for whole-workflow compute.",
+                            "AXIOM shared-draft ablation measurements cover the incremental critic; add the referenced RAG job for whole-workflow compute.",
                             "No model winner, statistical significance, or safety certification is asserted."]}
