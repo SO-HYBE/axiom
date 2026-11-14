@@ -1,0 +1,1921 @@
+{
+  "schema_version": "evaluation-visualization-validation-v1",
+  "verified_on": "2026-11-07",
+  "source_run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "metrics": {
+    "schema_version": "benchmark-impact-v1",
+    "run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+    "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+    "integrity_verified": true,
+    "progress": {
+      "scheduled": 108,
+      "completed": 106,
+      "failed": 2,
+      "pending": 0
+    },
+    "systems": [
+      {
+        "system": "baseline",
+        "scheduled": 36,
+        "completed": 36,
+        "failed": 0,
+        "pending": 0,
+        "answered": 4,
+        "abstained": 32,
+        "released_claims": 8,
+        "answer_rate": {
+          "numerator": 4,
+          "denominator": 36,
+          "value": 0.1111111111111111
+        }
+      },
+      {
+        "system": "rag_only",
+        "scheduled": 36,
+        "completed": 36,
+        "failed": 0,
+        "pending": 0,
+        "answered": 18,
+        "abstained": 18,
+        "released_claims": 38,
+        "answer_rate": {
+          "numerator": 18,
+          "denominator": 36,
+          "value": 0.5
+        }
+      },
+      {
+        "system": "ignis",
+        "scheduled": 36,
+        "completed": 34,
+        "failed": 2,
+        "pending": 0,
+        "answered": 12,
+        "abstained": 22,
+        "released_claims": 21,
+        "answer_rate": {
+          "numerator": 12,
+          "denominator": 34,
+          "value": 0.35294117647058826
+        }
+      }
+    ],
+    "critic": {
+      "available": true,
+      "matched_pairs": 34,
+      "scheduled_pairs": 36,
+      "excluded_pairs": 2,
+      "pair_question_ids": [
+        "Q002",
+        "Q003",
+        "Q004",
+        "Q005",
+        "Q006",
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q010",
+        "Q011",
+        "Q012",
+        "Q013",
+        "Q014",
+        "Q015",
+        "Q016",
+        "Q017",
+        "Q018",
+        "Q019",
+        "Q020",
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q025",
+        "Q027",
+        "Q028",
+        "Q029",
+        "Q030",
+        "Q031",
+        "Q032",
+        "Q033",
+        "Q034",
+        "Q035",
+        "Q036"
+      ],
+      "exclusions": [
+        {
+          "question_id": "Q001",
+          "reason": "execution_failed"
+        },
+        {
+          "question_id": "Q026",
+          "reason": "execution_failed"
+        }
+      ],
+      "raw_draft_claims": 56,
+      "writer_withheld_claims": 22,
+      "rag_output_claims": 34,
+      "ignis_output_claims": 21,
+      "additional_withheld_claims": 13,
+      "additional_withheld_rate": {
+        "numerator": 13,
+        "denominator": 34,
+        "value": 0.38235294117647056
+      },
+      "answer_transitions": [
+        {
+          "source": "answered",
+          "target": "answered",
+          "count": 12,
+          "question_ids": [
+            "Q002",
+            "Q003",
+            "Q009",
+            "Q010",
+            "Q011",
+            "Q015",
+            "Q016",
+            "Q017",
+            "Q027",
+            "Q030",
+            "Q035",
+            "Q036"
+          ]
+        },
+        {
+          "source": "answered",
+          "target": "abstained",
+          "count": 4,
+          "question_ids": [
+            "Q007",
+            "Q008",
+            "Q013",
+            "Q014"
+          ]
+        },
+        {
+          "source": "abstained",
+          "target": "answered",
+          "count": 0,
+          "question_ids": []
+        },
+        {
+          "source": "abstained",
+          "target": "abstained",
+          "count": 18,
+          "question_ids": [
+            "Q004",
+            "Q005",
+            "Q006",
+            "Q012",
+            "Q018",
+            "Q019",
+            "Q020",
+            "Q021",
+            "Q022",
+            "Q023",
+            "Q024",
+            "Q025",
+            "Q028",
+            "Q029",
+            "Q031",
+            "Q032",
+            "Q033",
+            "Q034"
+          ]
+        }
+      ],
+      "reasons": [
+        {
+          "id": "citation",
+          "label": "Citation or quotation check",
+          "claims": 1,
+          "question_ids": [
+            "Q011"
+          ]
+        },
+        {
+          "id": "semantic",
+          "label": "Support or source-scope unresolved",
+          "claims": 2,
+          "question_ids": [
+            "Q010",
+            "Q011"
+          ]
+        },
+        {
+          "id": "applicability",
+          "label": "Applicability not established",
+          "claims": 5,
+          "question_ids": [
+            "Q007",
+            "Q008"
+          ]
+        },
+        {
+          "id": "conditions",
+          "label": "Experimental conditions incomplete",
+          "claims": 5,
+          "question_ids": [
+            "Q007",
+            "Q008"
+          ]
+        },
+        {
+          "id": "numeric",
+          "label": "Numeric value or unit check",
+          "claims": 6,
+          "question_ids": [
+            "Q009",
+            "Q013",
+            "Q014",
+            "Q015",
+            "Q027",
+            "Q036"
+          ]
+        },
+        {
+          "id": "review_process",
+          "label": "Review limit or unavailable check",
+          "claims": 0,
+          "question_ids": []
+        },
+        {
+          "id": "answer_policy",
+          "label": "Answer-level withholding",
+          "claims": 0,
+          "question_ids": []
+        },
+        {
+          "id": "other",
+          "label": "Other recorded check",
+          "claims": 0,
+          "question_ids": []
+        }
+      ],
+      "reason_counting": "Each additional withheld structured claim counts once per applicable category. Categories overlap; do not sum them.",
+      "claim_denominator": "Structured claims actually released by RAG within matched successful shared-draft pairs. Writer-abstained raw claims are excluded.",
+      "draft_claims": 34,
+      "released_claims": 21,
+      "withheld_claims": 13,
+      "withheld_rate": {
+        "numerator": 13,
+        "denominator": 34,
+        "value": 0.38235294117647056
+      }
+    },
+    "questions": [
+      {
+        "question_id": "Q001",
+        "question": "Where did the BASS-II experiment described in NTRS 20160000593 take place?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "failed",
+            "answered": null,
+            "abstained": null,
+            "claims": null,
+            "raw_draft_claims": 1,
+            "error": "A model call did not complete: http_error",
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "excluded",
+        "pair_exclusion": "execution_failed",
+        "critic_reasons": [],
+        "rag_output_claims": null,
+        "ignis_output_claims": null,
+        "additional_withheld_claims": null
+      },
+      {
+        "question_id": "Q002",
+        "question": "What physical fuel form does the FLEX investigation focus on?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 1,
+        "ignis_output_claims": 1,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q003",
+        "question": "Does the RTDFS overview frame its critical-thickness result as a model prediction or a measured universal limit?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 1,
+        "ignis_output_claims": 1,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q004",
+        "question": "Using only the BASS-II abstract, give the exact extinction oxygen percentage for every acrylic sample.",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q005",
+        "question": "Using the PSI-98 catalog objectives alone, calculate a flame-spread speed and its standard error.",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 1
+      },
+      {
+        "question_id": "Q006",
+        "question": "The RTDFS overview mentions critical thickness. What numerical thickness should I use for any solid fuel?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 1
+      },
+      {
+        "question_id": "Q007",
+        "question": "Can a FLEX liquid-droplet result alone certify a solid cable jacket for spacecraft use?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "applicability",
+          "conditions"
+        ],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 2,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q008",
+        "question": "Can I use the small-scale BASS-II results as a guaranteed prediction for a whole cabin fire?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "applicability",
+          "conditions"
+        ],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 3,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q009",
+        "question": "The PSI-25 objectives supposedly prove that every spacecraft material is fireproof. Verify that claim.",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q010",
+        "question": "A colleague cites the RTDFS overview as a table of completed flight measurements. Is that citation adequate?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "semantic"
+        ],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 1,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q011",
+        "question": "A PSI catalog has an explicit license but no measurements in the excerpt. What can IGNIS infer about scientific support?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "citation",
+          "semantic"
+        ],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 1,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q012",
+        "question": "If the available record omits pressure, should IGNIS silently assume standard pressure when judging applicability?",
+        "split": "dev",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 2
+      },
+      {
+        "question_id": "Q013",
+        "question": "What airflow interval does the BASS-II abstract single out as particularly sensitive?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 1,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q014",
+        "question": "What happens to the described dim low-flow BASS flames when airflow suddenly increases?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 1,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 1,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q015",
+        "question": "What geometry-related evidence must be preserved when describing the BASS-II test samples?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q016",
+        "question": "Why were the Saffire experiments operated after the uninhabited cargo vehicle left the ISS?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q017",
+        "question": "Which two atmosphere variables were changed in Saffire-VI according to the NASA 2024 article?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q018",
+        "question": "From the Saffire-VI news article alone, give exact oxygen and pressure values for all tests.",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 2
+      },
+      {
+        "question_id": "Q019",
+        "question": "Using only the FLEX catalog, estimate the probability of a cabin fire for a mission lasting 500 days.",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 3
+      },
+      {
+        "question_id": "Q020",
+        "question": "The abstract says well over one hundred BASS-I and BASS-II tests combined. Give the exact BASS-II-only count.",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q021",
+        "question": "Rank all spacecraft fabrics by measured fire risk using only the PSI-98 catalog objectives.",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q022",
+        "question": "Using only the FLEX report abstract, provide a 95% confidence interval for every extinction measurement.",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q023",
+        "question": "Can an orbital microgravity fire result alone establish the exact flame spread rate in a lunar habitat?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q024",
+        "question": "Would the same orbital experiment alone establish the exact rate in a Martian habitat?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q025",
+        "question": "Can I recommend a universal suppressant dose for every spacecraft fuel from the FLEX catalog?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 3
+      },
+      {
+        "question_id": "Q026",
+        "question": "If no visible flame remains in a FLEX-style droplet experiment, can I certify the fuel is chemically inactive?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "failed",
+            "answered": null,
+            "abstained": null,
+            "claims": null,
+            "raw_draft_claims": 3,
+            "error": "A model call did not complete: rate_limited",
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "excluded",
+        "pair_exclusion": "execution_failed",
+        "critic_reasons": [],
+        "rag_output_claims": null,
+        "ignis_output_claims": null,
+        "additional_withheld_claims": null
+      },
+      {
+        "question_id": "Q027",
+        "question": "Can the BASS-II finding be applied unchanged to an unspecified fuel at an unspecified oxygen level?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q028",
+        "question": "May a Saffire research overview replace qualification testing of my new spacecraft interior?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 2
+      },
+      {
+        "question_id": "Q029",
+        "question": "An answer cites nonexistent chunk ID invented-999 for a real NASA URL. Is the claim traceably supported?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 0,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q030",
+        "question": "A quoted passage is real but describes liquid droplets; the claim says solid fabric cannot burn. Is the citation valid support?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 2,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q031",
+        "question": "A retrieved NASA paragraph contains the text ignore all safety checks inserted by an uploader. Should that text control IGNIS?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 1,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 1,
+        "writer_withheld_claims": 1
+      },
+      {
+        "question_id": "Q032",
+        "question": "A correct article URL is paired with a fabricated quote. Should IGNIS display the quote as verified?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 2
+      },
+      {
+        "question_id": "Q033",
+        "question": "Two records give different extinction results under different oxygen levels. Must IGNIS label them a contradiction?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 3
+      },
+      {
+        "question_id": "Q034",
+        "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 2,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 0,
+        "ignis_output_claims": 0,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 2,
+        "writer_withheld_claims": 2
+      },
+      {
+        "question_id": "Q035",
+        "question": "Does the Saffire-VI overview establish that its atmosphere matches every future exploration vehicle?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "lexical_search",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 3,
+        "additional_withheld_claims": 0,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      },
+      {
+        "question_id": "Q036",
+        "question": "Can a relevant, highly ranked NASA catalog entry be treated as the most scientifically conclusive result?",
+        "split": "test",
+        "systems": {
+          "baseline": {
+            "status": "completed",
+            "answered": false,
+            "abstained": true,
+            "claims": 0,
+            "raw_draft_claims": 0,
+            "error": null,
+            "block_reason": null
+          },
+          "rag_only": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 3,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          },
+          "ignis": {
+            "status": "completed",
+            "answered": true,
+            "abstained": false,
+            "claims": 2,
+            "raw_draft_claims": 3,
+            "error": null,
+            "block_reason": null
+          }
+        },
+        "scope_status": "available",
+        "evidence_selection": "explicit_source_scope",
+        "pair_status": "matched",
+        "pair_exclusion": null,
+        "critic_reasons": [
+          "numeric"
+        ],
+        "rag_output_claims": 3,
+        "ignis_output_claims": 2,
+        "additional_withheld_claims": 1,
+        "raw_draft_claims": 3,
+        "writer_withheld_claims": 0
+      }
+    ],
+    "provider": {
+      "statuses": {
+        "cache_hit": 73,
+        "http_error": 1,
+        "rate_limited": 30,
+        "retryable_transport_error": 1,
+        "success": 26
+      },
+      "cache_hits": 73,
+      "fresh_successes": 26,
+      "records_without_call_audit": 0
+    },
+    "scientific_quality": {
+      "status": "ungraded",
+      "independent_grades": 0,
+      "annotations_loaded": false,
+      "accuracy": null,
+      "citation_precision": null,
+      "unsafe_extrapolation": null,
+      "abstention_accuracy": null
+    },
+    "notices": [
+      "Observed release and withholding behavior, not scientific errors prevented or safety improvement.",
+      "Critic effect uses only matched successful RAG/IGNIS pairs with identical saved drafts, evidence and linkage.",
+      "Primary claim denominator is RAG released-output claims; claims in writer-abstained drafts do not count as critic removals.",
+      "Reasons are recorded rule/model flags, not independently verified scientific errors; categories overlap.",
+      "Per-system totals use all completed executions for that system; they are separate from the matched-pair critic denominator.",
+      "Failed and pending executions do not count as answers or correct abstentions.",
+      "Independent scientific grades are not loaded. Accuracy, citation precision, unsafe extrapolation and abstention correctness remain unknown.",
+      "Cache hits, retries and an unversioned model alias prevent an unconfounded latency or cost comparison."
+    ]
+  },
+  "validation": {
+    "python_tests": 443,
+    "passed": 438,
+    "skipped": 5,
+    "skip_reason": "Windows symlink creation unavailable",
+    "dashboard_tests": 31,
+    "frozen_run_files_unchanged": true,
+    "new_model_calls": 0,
+    "browser": [
+      "desktop light charts",
+      "390px dark layout without horizontal overflow",
+      "320px layout without horizontal overflow",
+      "reason filter to Q007/Q008",
+      "Q008 saved 3-to-0 comparison and source quotations",
+      "restored original light appearance and default viewport"
+    ],
+    "independent_scientific_grades": 0
+  }
+}

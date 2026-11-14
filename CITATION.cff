@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, cite the repository and the NASA publications it retrieval-grounds, which remain under their own terms."
+title: "AXIOM: evidence-grounded intelligence for spacecraft fire safety"
+abstract: "A deterministic research workspace over NASA microgravity combustion literature. It retrieves located passages, checks claim support, compares hypothetical spacecraft fire scenarios with documented experimental conditions, and proposes explicitly unexecuted follow-up experiments."
+type: software
+version: 1.0.0
+date-released: "2026-11-13"
+license: MIT
+authors:
+  - name: "AXIOM project contributors"
+keywords:
+  - microgravity combustion
+  - spacecraft fire safety
+  - NASA
+  - evidence retrieval
+  - scientific claim checking
+  - experiment planning

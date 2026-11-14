@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q014",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "0c7ec9128d9d4c1793cad7943b9537bd",
+    "created_at": "2026-11-06T19:29:58.758874+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. Insufficient evidence provided. The evidence field is empty, and no source corpus is supplied to verify the specific behavior of BASS flames under sudden airflow increases."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "What happens to the described dim low-flow BASS flames when airflow suddenly increases?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "Insufficient evidence provided. The evidence field is empty, and no source corpus is supplied to verify the specific behavior of BASS flames under sudden airflow increases.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "Insufficient evidence provided. The evidence field is empty, and no source corpus is supplied to verify the specific behavior of BASS flames under sudden airflow increases."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.47,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "0dd5c1f5582c7dbfa5e6005a75c6450eeac792880bb2bc75cb494469b394c311",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "77eb4a768a58d5faba6cc6b64b30d2947d7b1f932cad98b7afff3ff7a6a68ad2",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 382,
+          "completion_tokens": 56,
+          "total_tokens": 438
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "Insufficient evidence provided. The evidence field is empty, and no source corpus is supplied to verify the specific behavior of BASS flames under sudden airflow increases.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.47,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "0dd5c1f5582c7dbfa5e6005a75c6450eeac792880bb2bc75cb494469b394c311",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "77eb4a768a58d5faba6cc6b64b30d2947d7b1f932cad98b7afff3ff7a6a68ad2",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 382,
+          "completion_tokens": 56,
+          "total_tokens": 438
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q014",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "0c7ec9128d9d4c1793cad7943b9537bd",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "d3c71525f1d39628a81aed0d609f645c1aa96c77dd0892429bdaf9ae953e5235"
+}

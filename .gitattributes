@@ -1,0 +1,8 @@
+# Keep text files LF so hashes and diffs are stable across platforms.
+* text=auto eol=lf
+
+# Captured source bytes and binary assets must not be line-ending translated.
+*.bin -text
+*.whl -text
+*.png -text
+*.zip -text

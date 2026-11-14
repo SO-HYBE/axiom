@@ -1,0 +1,59 @@
+{
+  "BASS_PRESENTATION": {
+    "url": "https://ntrs.nasa.gov/citations/20160000593",
+    "locator": "Abstract",
+    "kind": "presentation abstract",
+    "checked_on": "2026-10-31"
+  },
+  "BASS_CATALOG": {
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25",
+    "locator": "Objectives; DOI; License",
+    "kind": "dataset catalog",
+    "checked_on": "2026-10-31",
+    "verification": "NASA-indexed search extract; client-rendered page not extractable"
+  },
+  "SAFFIRE_CATALOG": {
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+    "locator": "Objectives; Files; DOI",
+    "kind": "dataset catalog",
+    "checked_on": "2026-10-31",
+    "verification": "NASA-indexed search extract; client-rendered page not extractable"
+  },
+  "FLEX_CATALOG": {
+    "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+    "locator": "Objectives; Approach",
+    "kind": "dataset catalog",
+    "checked_on": "2026-10-31",
+    "verification": "NASA-indexed search extract"
+  },
+  "RTDFS": {
+    "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/",
+    "locator": "Science Objectives",
+    "kind": "investigation overview",
+    "checked_on": "2026-10-31"
+  },
+  "SAFFIRE_VI_NEWS": {
+    "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+    "locator": "Article, 2024-02-14",
+    "kind": "NASA news overview",
+    "checked_on": "2026-10-31"
+  },
+  "FLEX_BLOG": {
+    "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+    "locator": "Article, 2013-11-25",
+    "kind": "NASA scientist explanation",
+    "checked_on": "2026-10-31"
+  },
+  "FLEX_REPORT": {
+    "url": "https://ntrs.nasa.gov/citations/20150023456",
+    "locator": "Abstract; report section 4.2",
+    "kind": "technical report",
+    "checked_on": "2026-10-31"
+  },
+  "SAFFIRE_FACTSHEET": {
+    "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+    "locator": "Spacecraft Fire Safety",
+    "kind": "NASA factsheet",
+    "checked_on": "2026-10-31"
+  }
+}

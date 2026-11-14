@@ -1,0 +1,10 @@
+{
+  "bytes": 680348,
+  "content_type": "application/json",
+  "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-25/4",
+  "method": "GET",
+  "request_body_sha256": null,
+  "retrieved_at": "2026-11-05T20:51:37.478845+00:00",
+  "sha256": "b9234754db5da651ad27d888af082b889d07210b018e543369662f065b4ec2da",
+  "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-25/4"
+}

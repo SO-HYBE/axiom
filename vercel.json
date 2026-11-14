@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node scripts/render_static_config.mjs",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/healthz", "destination": "/api/index?__axiom_path=/healthz" },
+    { "source": "/api", "destination": "/api/index?__axiom_path=/api" },
+    { "source": "/api/:path*", "destination": "/api/index?__axiom_path=/api/:path*" }
+  ],
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 60
+    }
+  }
+}

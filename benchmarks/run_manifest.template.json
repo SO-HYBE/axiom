@@ -1,0 +1,29 @@
+{
+  "run_id": null,
+  "status": "template_not_executed",
+  "benchmark_version": "0.1-ai-draft",
+  "benchmark_sha256": null,
+  "corpus_manifest_sha256": null,
+  "git_commit": null,
+  "started_at_utc": null,
+  "completed_at_utc": null,
+  "systems": [
+    "baseline",
+    "rag_only",
+    "ignis"
+  ],
+  "model_provider": null,
+  "model_id": null,
+  "model_snapshot": null,
+  "temperature": 0,
+  "seed_if_supported": null,
+  "max_output_tokens": null,
+  "context_budget_tokens": null,
+  "retrieval_top_k": null,
+  "prompt_hashes": {},
+  "human_review_complete": false,
+  "human_reviewer": null,
+  "token_usage": null,
+  "cost_usd": null,
+  "failures": []
+}

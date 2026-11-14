@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IGNIS extracted passage v0.1",
+  "type": "object",
+  "required": ["chunk_id", "source_id", "title", "url", "locator", "text", "sha256", "source_kind", "experiment", "conditions", "evidence_tier"],
+  "properties": {
+    "chunk_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "title": {"type": "string"},
+    "url": {"type": "string", "pattern": "^https://"},
+    "locator": {"type": "string", "minLength": 1},
+    "text": {"type": "string", "minLength": 1},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "source_kind": {"type": "string"},
+    "evidence_role": {"type": "string", "enum": ["source_description", "scoped_document_text"]},
+    "named_scope_verified": {"type": "boolean"},
+    "section": {"type": "string"},
+    "source_asset_key": {"type": "string"},
+    "source_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "experiment": {"type": "string"},
+    "evidence_tier": {"type": "integer", "minimum": 1},
+    "conditions": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gravity", "fuel", "oxygen_percent", "pressure_kpa", "flow_cm_s"],
+      "properties": {
+        "gravity": {"type": ["string", "null"]},
+        "fuel": {"type": ["string", "null"]},
+        "oxygen_percent": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+        "pressure_kpa": {"type": ["number", "null"], "exclusiveMinimum": 0},
+        "flow_cm_s": {"type": ["number", "null"], "minimum": 0}
+      }
+    }
+  }
+}

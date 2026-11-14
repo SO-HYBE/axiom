@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q030",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "a4aea341a7b0416082a165111f08c538",
+    "created_at": "2026-11-06T19:34:18.644210+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence is empty, and the specific source scope (PSI-69) is not accessible or provided in the context to verify the content of the quoted passage or its relevance to the claim about solid fabric."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "A quoted passage is real but describes liquid droplets; the claim says solid fabric cannot burn. Is the citation valid support?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The provided evidence is empty, and the specific source scope (PSI-69) is not accessible or provided in the context to verify the content of the quoted passage or its relevance to the claim about solid fabric.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence is empty, and the specific source scope (PSI-69) is not accessible or provided in the context to verify the content of the quoted passage or its relevance to the claim about solid fabric."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.53,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "6678c425db88243d08bf1dd3e7539278d36c72b2bd85ed76f9150e68ea6c38e0",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "6c479ee9ffda269208e627e1d8f79990fb16b819b609f51f7e5e545ba0b0c38e",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 393,
+          "completion_tokens": 69,
+          "total_tokens": 462
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence is empty, and the specific source scope (PSI-69) is not accessible or provided in the context to verify the content of the quoted passage or its relevance to the claim about solid fabric.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.53,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "6678c425db88243d08bf1dd3e7539278d36c72b2bd85ed76f9150e68ea6c38e0",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "6c479ee9ffda269208e627e1d8f79990fb16b819b609f51f7e5e545ba0b0c38e",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 393,
+          "completion_tokens": 69,
+          "total_tokens": 462
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q030",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "a4aea341a7b0416082a165111f08c538",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "f0d494ecf1f6aa920ac5f1be57b395ee710c9bbc66c25a1870339a263770abe7"
+}

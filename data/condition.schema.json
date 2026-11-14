@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignis.local/schemas/condition-1.0.json",
+  "title": "IGNIS scoped condition evidence record",
+  "description": "Structural validation does not verify extraction meaning or applicability. Null is unknown; proposed/background conditions are not reported test results. The Python validator also checks quote provenance, duplicate IDs, finite numbers and range ordering.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "source_id", "chunk_id", "quote", "field", "value", "unit", "scope", "evidence_status", "review_status", "reviewer"],
+  "properties": {
+    "record_id": {"type": "string", "pattern": "\\S"},
+    "source_id": {"type": "string", "pattern": "\\S"},
+    "chunk_id": {"type": "string", "pattern": "\\S"},
+    "quote": {"type": "string", "pattern": "\\S", "description": "Exact case-preserving substring after whitespace normalization; mW must not match MW."},
+    "field": {"enum": ["gravity", "fuel", "geometry", "oxygen_percent", "pressure_kpa", "flow_cm_s", "apparatus"]},
+    "value": {"type": ["string", "number", "object", "null"], "description": "Null represents unknown. Numeric ranges use min/max in the record's unit; no conversion is inferred."},
+    "unit": {"enum": [null, "%", "kPa", "cm/s"]},
+    "scope": {"enum": ["experiment_range", "setup", "individual_test"]},
+    "evidence_status": {"enum": ["proposed", "reported", "background"]},
+    "review_status": {"enum": ["ai_draft", "human_reviewed"]},
+    "reviewer": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  },
+  "$defs": {
+    "nonnegative": {"type": "number", "minimum": 0},
+    "oxygen": {"type": "number", "minimum": 0, "maximum": 100},
+    "pressure": {"type": "number", "exclusiveMinimum": 0},
+    "flowRange": {"type": "object", "required": ["min", "max"], "additionalProperties": false, "properties": {"min": {"$ref": "#/$defs/nonnegative"}, "max": {"$ref": "#/$defs/nonnegative"}}},
+    "oxygenRange": {"type": "object", "required": ["min", "max"], "additionalProperties": false, "properties": {"min": {"$ref": "#/$defs/oxygen"}, "max": {"$ref": "#/$defs/oxygen"}}},
+    "pressureRange": {"type": "object", "required": ["min", "max"], "additionalProperties": false, "properties": {"min": {"$ref": "#/$defs/pressure"}, "max": {"$ref": "#/$defs/pressure"}}}
+  },
+  "allOf": [
+    {"if": {"properties": {"field": {"enum": ["gravity", "fuel", "geometry", "apparatus"]}}}, "then": {"properties": {"value": {"anyOf": [{"type": "null"}, {"type": "string", "pattern": "\\S"}]}, "unit": {"type": "null"}}}},
+    {"if": {"properties": {"field": {"const": "oxygen_percent"}}}, "then": {"properties": {"value": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/oxygen"}, {"$ref": "#/$defs/oxygenRange"}]}, "unit": {"const": "%"}}}},
+    {"if": {"properties": {"field": {"const": "pressure_kpa"}}}, "then": {"properties": {"value": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/pressure"}, {"$ref": "#/$defs/pressureRange"}]}, "unit": {"const": "kPa"}}}},
+    {"if": {"properties": {"field": {"const": "flow_cm_s"}}}, "then": {"properties": {"value": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/nonnegative"}, {"$ref": "#/$defs/flowRange"}]}, "unit": {"const": "cm/s"}}}},
+    {"if": {"properties": {"review_status": {"const": "ai_draft"}}}, "then": {"properties": {"reviewer": {"type": "null"}}}},
+    {"if": {"properties": {"review_status": {"const": "human_reviewed"}}}, "then": {"properties": {"reviewer": {"type": "string", "pattern": "\\S"}}}}
+  ]
+}

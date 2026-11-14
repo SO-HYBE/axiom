@@ -1,0 +1,36 @@
+{
+  "schema_version": "ignis-demos-v1",
+  "benchmark_run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "corpus_sha256": "fa14ddf69f424993519bc9283e58f4375d9314a328fbea79c914b049cc14c0a8",
+  "demos": [
+    {
+      "id": "source-description",
+      "question_id": "Q002",
+      "system": "ignis",
+      "title": "An answer with its source",
+      "behavior": "source_description",
+      "description": "Open the FLEX source description and its exact cited words. The model-checked claim remains provisional.",
+      "record_sha256": "d4071cf95b604bf72b93908ebfe96d87411f5d14849912a7f96033cbedbbc03e"
+    },
+    {
+      "id": "scope-check",
+      "question_id": "Q008",
+      "system": "ignis",
+      "title": "A conclusion held back",
+      "behavior": "scope_withheld",
+      "description": "A whole-cabin guarantee is withheld because the recorded conditions and applicability evidence are incomplete.",
+      "record_sha256": "a1679eb758bfe10a99412323b26c3fd8e90e30695012c87392674dfc2dea56e8"
+    },
+    {
+      "id": "insufficient-measurements",
+      "question_id": "Q022",
+      "system": "ignis",
+      "title": "A source without the requested measurements",
+      "behavior": "scope_insufficient",
+      "description": "The requested abstract is supplied as context. The saved answer withholds confidence intervals that the abstract does not provide.",
+      "record_sha256": "b5449ddf65a221f382847f9acdb36af07ec7a9da5c3aebcbe47060b5e7bf5b35"
+    }
+  ],
+  "notice": "Saved recorded behaviors, not independent scientific grades. No new model calls are made."
+}

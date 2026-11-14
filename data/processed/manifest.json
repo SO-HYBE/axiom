@@ -1,0 +1,399 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-01T18:25:33.079570+00:00",
+  "sources_inventory_sha256": "665dc636ca93aeb0837645885811c9885a32439b8c835f03c5eff4e1664f6070",
+  "corpus_sha256": "b47916f2bd8cd6a35f0253cc8473c3cfd5042b59c9e922e6b49d481de0e27c9a",
+  "chunk_count": 294,
+  "ingested_sources": 12,
+  "failed_sources": 0,
+  "raw_experimental_datasets_downloaded": 0,
+  "sources": [
+    {
+      "source_id": "ntrs-20160000593",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20160000593/downloads/20160000593.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20160000593/downloads/20160000593.pdf",
+        "retrieved_at": "2026-10-31T13:44:50.209571+00:00",
+        "sha256": "9f2c89db9e1954c3c44409364ed6764f7e7466250264c28ff2d425350287546c",
+        "bytes": 2690087,
+        "content_type": "application/pdf",
+        "cache_hit": true
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+        "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "bytes": 6114,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 21,
+      "empty_text_pages": [
+        11
+      ],
+      "chunks": 20,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20150023456",
+      "status": "inventory_only",
+      "reason": "large_file_deferred"
+    },
+    {
+      "source_id": "ntrs-20090014812",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20090014812/downloads/20090014812.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20090014812/downloads/20090014812.pdf",
+        "retrieved_at": "2026-10-31T13:45:28.026260+00:00",
+        "sha256": "02fc4fc65a851cd8a1de270579855e610e33c1fa8608ab500e7e26ec821e652b",
+        "bytes": 56444,
+        "content_type": "application/pdf",
+        "cache_hit": true
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20090014812",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20090014812",
+        "retrieved_at": "2026-10-31T13:45:26.653840+00:00",
+        "sha256": "83cc7fb38343a7511bf7d82768350359e4bfb19b0db211460487b2116f6a661b",
+        "bytes": 3570,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 4,
+      "empty_text_pages": [],
+      "chunks": 9,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20170008805",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20170008805/downloads/20170008805.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20170008805/downloads/20170008805.pdf",
+        "retrieved_at": "2026-10-31T13:44:57.792355+00:00",
+        "sha256": "e38ec36f54817aa97e0c01a05f12b212521d6320ce3f4cb7a38bb7c837cfea8d",
+        "bytes": 5091642,
+        "content_type": "application/pdf",
+        "cache_hit": true
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20170008805",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20170008805",
+        "retrieved_at": "2026-10-31T13:44:53.692370+00:00",
+        "sha256": "f109f93a3dbd1ad18330c8dc90b2017e8f36a852b9fb57e8913632f614e6e5ec",
+        "bytes": 8587,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 36,
+      "empty_text_pages": [],
+      "chunks": 37,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "psi-25",
+      "status": "inventory_only",
+      "reason": "catalog_only_not_downloaded"
+    },
+    {
+      "source_id": "psi-69",
+      "status": "inventory_only",
+      "reason": "catalog_only_not_downloaded"
+    },
+    {
+      "source_id": "psi-98",
+      "status": "inventory_only",
+      "reason": "catalog_only_not_downloaded"
+    },
+    {
+      "source_id": "ntrs-20210011385",
+      "status": "inventory_only",
+      "reason": "rights_hold_not_downloaded"
+    },
+    {
+      "source_id": "ntrs-20150008961",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20150008961/downloads/20150008961.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20150008961/downloads/20150008961.pdf",
+        "retrieved_at": "2026-11-01T18:24:51.310063+00:00",
+        "sha256": "8cee8a023d9f0aab214996ebaeefb842080b0c935ba9e01db0096a47379519f7",
+        "bytes": 449964,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20150008961",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20150008961",
+        "retrieved_at": "2026-11-01T18:22:57.867157+00:00",
+        "sha256": "d259a3df3c0e6c9a411cfcff21b07a2433a813be217340221fe73bd9216a898a",
+        "bytes": 5613,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 10,
+      "empty_text_pages": [],
+      "chunks": 23,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20150008962",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20150008962/downloads/20150008962.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20150008962/downloads/20150008962.pdf",
+        "retrieved_at": "2026-11-01T18:24:53.620822+00:00",
+        "sha256": "50590fd7e6619203eb75a46f49e83556e6798a53e67869cd52ea89961c692c30",
+        "bytes": 939683,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20150008962",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20150008962",
+        "retrieved_at": "2026-11-01T18:22:58.653058+00:00",
+        "sha256": "1173885667164a8f10dd92b14523a51dbf88fdab1963be06b05e5cb538c647a6",
+        "bytes": 5778,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 9,
+      "empty_text_pages": [],
+      "chunks": 15,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20160012691",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20160012691/downloads/20160012691.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20160012691/downloads/20160012691.pdf",
+        "retrieved_at": "2026-11-01T18:24:55.693865+00:00",
+        "sha256": "4de8ca03b60fd3ad9aaff928c847da2728b1bf31fde539ec59dead5af85d9b4a",
+        "bytes": 670023,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20160012691",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20160012691",
+        "retrieved_at": "2026-11-01T18:22:59.409340+00:00",
+        "sha256": "33814ca0f5d0aaf719d49a138c287b459f4e47f323d46a50bdf3a8a7021f0f95",
+        "bytes": 5071,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 9,
+      "empty_text_pages": [],
+      "chunks": 15,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20210022617",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20210022617/downloads/JASMAC-33%20FLEX%20w%20video.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20210022617/downloads/JASMAC-33%20FLEX%20w%20video.pdf",
+        "retrieved_at": "2026-11-01T18:25:10.834137+00:00",
+        "sha256": "90537f149e0e503cb534738e8365404181d5fe94d972a12b1cbbcb5da26e7054",
+        "bytes": 10773809,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20210022617",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20210022617",
+        "retrieved_at": "2026-11-01T18:23:00.165930+00:00",
+        "sha256": "d3413214b8d7c8c64f27818c3804932c0de2613c1fc69409ebd15e65819b2852",
+        "bytes": 3811,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 17,
+      "empty_text_pages": [],
+      "chunks": 17,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20120015928",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20120015928/downloads/20120015928.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20120015928/downloads/20120015928.pdf",
+        "retrieved_at": "2026-11-01T18:25:15.718326+00:00",
+        "sha256": "635a5f17c2f0d45cc53ffc57bd6bea76c93072b455eb1afd8e1f889310944a26",
+        "bytes": 3693275,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20120015928",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20120015928",
+        "retrieved_at": "2026-11-01T18:23:01.131293+00:00",
+        "sha256": "48addf55021b0946920b976b5636022903ea17384b37d7c015ff4e1e9df89296",
+        "bytes": 5002,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 44,
+      "empty_text_pages": [
+        24,
+        25,
+        26,
+        27,
+        44
+      ],
+      "chunks": 72,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20130010979",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20130010979/downloads/20130010979.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20130010979/downloads/20130010979.pdf",
+        "retrieved_at": "2026-11-01T18:25:19.465305+00:00",
+        "sha256": "56e69491fe8af3a31e2f2e1732b0133d769b4de356815419d41c85651d0479d1",
+        "bytes": 1116919,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20130010979",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20130010979",
+        "retrieved_at": "2026-11-01T18:23:02.228315+00:00",
+        "sha256": "d62449614cbc84d5b1ec6e1f072785a8177a77c605fa2d9b24e9b1d66a7639b6",
+        "bytes": 5396,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 15,
+      "empty_text_pages": [],
+      "chunks": 15,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20240008602",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20240008602/downloads/ICES-2024-310.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20240008602/downloads/ICES-2024-310.pdf",
+        "retrieved_at": "2026-11-01T18:25:22.717660+00:00",
+        "sha256": "07ea967bf3b9e45f9cae5cbc07075ad465e9eba6ee0298f933319e400fde9016",
+        "bytes": 1383572,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20240008602",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20240008602",
+        "retrieved_at": "2026-11-01T18:23:04.962659+00:00",
+        "sha256": "c4f369e1596f13ceb388c17d915f83bddaa1909be4f37bca535f0466d24bcbdc",
+        "bytes": 5146,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "GOV_PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 12,
+      "empty_text_pages": [],
+      "chunks": 22,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20170001636",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20170001636/downloads/20170001636.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20170001636/downloads/20170001636.pdf",
+        "retrieved_at": "2026-11-01T18:25:24.502858+00:00",
+        "sha256": "f0403bce265bc133faaa55b3235047c21b5b5cf73c7d50d22ac2eeabff802835",
+        "bytes": 160936,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20170001636",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20170001636",
+        "retrieved_at": "2026-11-01T18:23:28.550831+00:00",
+        "sha256": "5a7246cc75beda95f42e5f522429505990132d63768585ee806cab7538d1c9a5",
+        "bytes": 5536,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "GOV_PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 6,
+      "empty_text_pages": [],
+      "chunks": 17,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20180005168",
+      "status": "ingested",
+      "provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20180005168/downloads/20180005168.pdf",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20180005168/downloads/20180005168.pdf",
+        "retrieved_at": "2026-11-01T18:25:32.936839+00:00",
+        "sha256": "9ae2e365c850cbd0e136ea4e17cc5ecf68e5ac89d248b3c0a7b7b4bde9e2f402",
+        "bytes": 9049169,
+        "content_type": "application/pdf",
+        "cache_hit": false
+      },
+      "metadata_provenance": {
+        "url": "https://ntrs.nasa.gov/api/citations/20180005168",
+        "final_url": "https://ntrs.nasa.gov/api/citations/20180005168",
+        "retrieved_at": "2026-11-01T18:23:29.762923+00:00",
+        "sha256": "580989c3fc278043e1655aa4a763fe58e6a97c869db4a888de5e3c0801e71aad",
+        "bytes": 5625,
+        "content_type": "application/json; charset=utf-8",
+        "cache_hit": true
+      },
+      "rights_determination": "PUBLIC_USE_PERMITTED",
+      "raw_data_downloaded": false,
+      "physical_pages": 32,
+      "empty_text_pages": [],
+      "chunks": 32,
+      "extraction": "pypdf text only; tables/figures not validated"
+    },
+    {
+      "source_id": "ntrs-20240002981",
+      "status": "inventory_only",
+      "reason": "rights_hold_not_downloaded"
+    },
+    {
+      "source_id": "ntrs-20210017780",
+      "status": "inventory_only",
+      "reason": "rights_hold_not_downloaded"
+    }
+  ],
+  "editorial_metadata_updates": [
+    {
+      "updated_at": "2026-11-06T14:32:28.950787+00:00",
+      "previous_inventory_sha256": "578ad45cd00d403c5733145f3597fda163c3d4bb4b5d37feaed029fca13e811e",
+      "inventory_sha256": "665dc636ca93aeb0837645885811c9885a32439b8c835f03c5eff4e1664f6070",
+      "change": "Inventory display scope wording only; source entries and corpus unchanged"
+    }
+  ]
+}

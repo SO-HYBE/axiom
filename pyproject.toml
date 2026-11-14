@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axiom-research"
+version = "1.0.0"
+description = "Evidence-grounded research, spacecraft fire scenario comparison and experiment planning over NASA microgravity combustion literature"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = ["pypdf==6.13.0"]
+
+[project.scripts]
+axiom = "axiom.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+axiom = ["web/*.html", "web/*.js"]

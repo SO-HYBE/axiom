@@ -1,0 +1,43 @@
+{
+  "schema_version": "evaluation-release-validation-v1",
+  "python": "3.12.10",
+  "candidate_archive_sha256": "772cea02c65cf08a176ffa540f58ecfa29dace85f445eb209d7118d530c5387c",
+  "fresh_venv": true,
+  "pip_no_index": true,
+  "bundled_wheels": [
+    "pypdf==6.13.0",
+    "setuptools==80.9.0"
+  ],
+  "api_keys_removed": true,
+  "core_passages": 294,
+  "abstracts": 2,
+  "named_passages": 42,
+  "named_source_scopes": 36,
+  "saved_demos": 3,
+  "model_constructions": 0,
+  "http_endpoints": [
+    "/",
+    "/api/status",
+    "/api/demos",
+    "/api/demos/source-description",
+    "/api/demos/scope-check",
+    "/api/demos/insufficient-measurements",
+    "/api/benchmark",
+    "/api/benchmark/3c3cc0f1e4b949a8a33296e94417f13c/answers",
+    "/api/benchmark/3c3cc0f1e4b949a8a33296e94417f13c/impact"
+  ],
+  "benchmark_integrity_passed": true,
+  "benchmark_run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "benchmark_progress": {
+    "scheduled": 108,
+    "completed": 106,
+    "failed": 2,
+    "pending": 0,
+    "graded": 0
+  },
+  "review_packet_items": 106,
+  "independent_grades": 0,
+  "private_mapping_and_raw_diagnostics_excluded": true,
+  "browser_verified": "Desktop light, 390px dark and 320px layout; reason filter and Q008 before/after source comparison",
+  "notice": "Offline engineering reproduction; no new model generation or scientific grades"
+}

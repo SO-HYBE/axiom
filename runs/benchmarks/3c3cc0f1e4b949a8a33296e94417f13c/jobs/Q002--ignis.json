@@ -1,0 +1,401 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q002",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "162a19d03bf9433ea3b86e11b742acbf",
+    "created_at": "2026-11-06T19:27:28.994505+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "model_checked_summary",
+    "provisional": true,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "1 claims drafted. The provided evidence is a source description of the FLEX investigation's objectives. It explicitly states the focus on 'liquid fuels'. No experimental data or model predictions are included in the evidence, so only the stated objective can be reported."
+      },
+      {
+        "label": "Check claims",
+        "detail": "1 claims included; 0 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "model checked summary"
+      }
+    ],
+    "corpus_fingerprint": "150ce43fcc06da5ae5a2dbaf7ca3894ce1e78b81098cd3cc559e21591b801e74",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "What physical fuel form does the FLEX investigation focus on?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+              "relation": "supports",
+              "source_id": "psi-69"
+            }
+          ],
+          "reason": "The source description explicitly states that the FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments, directly supporting the claim.",
+          "uncertainty": "The evidence is a catalog description of objectives, not experimental results; the claim accurately reflects the stated aim.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "relation": "supports",
+            "source_id": "psi-69",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a description of the investigation's objectives from the catalog, not a report of experimental results."
+      }
+    ],
+    "draft_checks": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+              "relation": "supports",
+              "source_id": "psi-69"
+            }
+          ],
+          "reason": "The source description explicitly states that the FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments, directly supporting the claim.",
+          "uncertainty": "The evidence is a catalog description of objectives, not experimental results; the claim accurately reflects the stated aim.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "relation": "supports",
+            "source_id": "psi-69",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a description of the investigation's objectives from the catalog, not a report of experimental results."
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a description of the investigation's objectives from the catalog, not a report of experimental results.",
+          "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments."
+        }
+      ],
+      "reason": "The provided evidence is a source description of the FLEX investigation's objectives. It explicitly states the focus on 'liquid fuels'. No experimental data or model predictions are included in the evidence, so only the stated objective can be reported."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions. The mission seeks to validate and improve simplified models by incorporating detailed chemical reactions, heat transfer, and material movement, using both space-based data and extensive ground-based tests. Key flight experiment goals include obtaining high-resolution measurements of droplet burning rates, flame extinction behavior, heat radiation, soot levels, and temperature profiles, while systematically analyzing the effects of different ambient conditions and suppressant concentrations. These investigations are essential for advancing the fundamental understanding of combustion processes in microgravity and enhancing fire safety protocols for future space missions.",
+        "sha256": "0693c364c63bf14b5c08c18da3eef92c05c95f1cbdd0f180fdf224318310391c",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 5; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": 1.24615,
+        "ranking": {
+          "lexical_score": 1.24615,
+          "matched_terms": [
+            "flex",
+            "investigation"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.3333333333333333,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "flex",
+            "investigation"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 865.33,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "1755034c1aaffe4393e4e708644e4d6725ff2102d7c2497ef1eecc1d5972cfcb",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "4c72cfac838fbd37bee5b034b46b81657574b56cad3382badaaceb4eec1d86d0",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 731,
+          "completion_tokens": 170,
+          "total_tokens": 901
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 945,
+          "reset_requests_s": 4752.0,
+          "remaining_tokens": 6575,
+          "reset_tokens_s": 10.687
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "45770b3e24c91213b66e61817ec1dc042773c9046c9e11e0cdd80bf00dfb43ed",
+        "cache_write": "written",
+        "latency_ms": 859
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+              "relation": "supports",
+              "source_id": "psi-69"
+            }
+          ],
+          "reason": "The source description explicitly states that the FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments, directly supporting the claim.",
+          "uncertainty": "The evidence is a catalog description of objectives, not experimental results; the claim accurately reflects the stated aim.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "relation": "supports",
+            "source_id": "psi-69",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Objectives; PSI version 5; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a description of the investigation's objectives from the catalog, not a report of experimental results."
+      }
+    ],
+    "latency_ms": 865.33,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "1755034c1aaffe4393e4e708644e4d6725ff2102d7c2497ef1eecc1d5972cfcb",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "4c72cfac838fbd37bee5b034b46b81657574b56cad3382badaaceb4eec1d86d0",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 731,
+          "completion_tokens": 170,
+          "total_tokens": 901
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 945,
+          "reset_requests_s": 4752.0,
+          "remaining_tokens": 6575,
+          "reset_tokens_s": 10.687
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "45770b3e24c91213b66e61817ec1dc042773c9046c9e11e0cdd80bf00dfb43ed",
+        "cache_write": "written",
+        "latency_ms": 859
+      }
+    ],
+    "question_id": "Q002",
+    "system": "ignis",
+    "split": "dev",
+    "run_id": "162a19d03bf9433ea3b86e11b742acbf",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "shared_draft_from_run_id": "83f690690b48489ab9c93bec703dfea7",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "83f690690b48489ab9c93bec703dfea7",
+  "record_sha256": "d4071cf95b604bf72b93908ebfe96d87411f5d14849912a7f96033cbedbbc03e"
+}

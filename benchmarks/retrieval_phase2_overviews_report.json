@@ -1,0 +1,615 @@
+{
+  "kind": "retrieval_development_evaluation",
+  "cutoff": 5,
+  "dataset_sha256": "c31836affa4d0e69913f4f29d3717dad9929b9b5964418085d11943b4b37cf1c",
+  "matches_frozen_dev_cases": true,
+  "corpus_chunks": 294,
+  "query_count": 12,
+  "answerable_queries": 10,
+  "out_of_corpus_queries": 2,
+  "hit_at_5": {
+    "numerator": 10,
+    "denominator": 10,
+    "value": 1.0
+  },
+  "known_span_recall_at_5": {
+    "numerator": 10,
+    "denominator": 12,
+    "value": 0.8333333333333334
+  },
+  "negative_abstention_accuracy": {
+    "numerator": 1,
+    "denominator": 2,
+    "value": 0.5
+  },
+  "queries": [
+    {
+      "query_id": "RD01",
+      "query": "According to the FLEX droplet procedure, why did the experiment wait after retracting the dispensing needles?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p004-c01-73590504f5",
+          "score": 17.998763
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p003-c02-4fad68e5e6",
+          "score": 13.784852
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p004-c02-3c8b6e7151",
+          "score": 7.123658
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p001-c02-5303721486",
+          "score": 7.036742
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p006-c01-e3d2329cec",
+          "score": 6.760873
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p004-c01-73590504f5",
+          "quote": "a dwell period of at least 10 seconds will be allowed for the droplet internal fluid motion induced by deployment to subside.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD02",
+      "query": "Find the account of water returning to a burning methanol droplet and the accompanying FLEX extinction observation.",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p007-c01-7491c9d1a8",
+          "score": 18.360814
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p010-c01-fd0467f8fa",
+          "score": 18.334252
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p009-c01-c768899a5b",
+          "score": 17.482083
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p004-c01-6455c84556",
+          "score": 17.056973
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p011-c01-200898a564",
+          "score": 16.761074
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p004-c01-6455c84556",
+          "quote": "Initially, water produced in the flame diffuses back to the droplet surface and condenses",
+          "rank": 4
+        },
+        {
+          "source_id": "ntrs-20210022617",
+          "chunk_id": "ntrs-20210022617-p004-c01-c1c1ac1638",
+          "quote": "Diffusive extinction due to water absorption, and radiative extinction were observed.",
+          "rank": null
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD03",
+      "query": "For concurrent-flow PMMA rod tests, what observed event determined when the blowoff fan reading was taken?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+          "score": 21.073916
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p006-c01-432578f36a",
+          "score": 18.032854
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p001-c01-0faf783e2b",
+          "score": 17.290771
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p001-c01-01772af657",
+          "score": 16.039438
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p004-c02-5a4dfc6677",
+          "score": 15.863666
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+          "quote": "The flow at blowoff was defined by the fan voltage reading at the moment the stagnation region opened up and the flame moved downstream.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD04",
+      "query": "In the composite fabric study, which variable stayed fixed within a test while the forced flow could change?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20150008962",
+          "chunk_id": "ntrs-20150008962-p003-c01-cb421be309",
+          "score": 19.877124
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20150008962",
+          "chunk_id": "ntrs-20150008962-p002-c01-d4ff3738df",
+          "score": 17.752041
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20150008962",
+          "chunk_id": "ntrs-20150008962-p001-c01-d6bd1e91ae",
+          "score": 13.185091
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20170001636",
+          "chunk_id": "ntrs-20170001636-p002-c02-e94c0e846a",
+          "score": 11.857255
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20150008962",
+          "chunk_id": "ntrs-20150008962-p003-c03-c760dd1d05",
+          "score": 10.649232
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20150008962",
+          "chunk_id": "ntrs-20150008962-p003-c01-cb421be309",
+          "quote": "It should be noted that for a given test the oxygen concentration was fixed while the flow speed could be varied.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD05",
+      "query": "Find the figure that compares a quartz tube with a larger wind tunnel at the same oxygen percentage during blowoff testing.",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+          "score": 36.083909
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p003-c02-e2f60c6a71",
+          "score": 33.996387
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p006-c01-df78e7ecec",
+          "score": 20.53031
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p002-c01-62eb936bee",
+          "score": 19.202325
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p005-c02-ca910b0e64",
+          "score": 14.274028
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20160012691",
+          "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+          "quote": "Figure 4: Non-symmetric flame in quartz tube at 14% oxygen, left, does not blowoff due to ambient flow entrainment back into the tube.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD06",
+      "query": "Which Saffire objective repeated the initial large-scale spread experiment with faster ventilation?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20170008805",
+          "chunk_id": "ntrs-20170008805-p021-c01-aecb5fac44",
+          "score": 14.077211
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p002-c01-fbf98c946b",
+          "score": 11.617792
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20170008805",
+          "chunk_id": "ntrs-20170008805-p004-c01-79f20b5d0f",
+          "score": 11.287581
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20180005168",
+          "chunk_id": "ntrs-20180005168-p012-c01-7d9df58845",
+          "score": 11.156133
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20170001636",
+          "chunk_id": "ntrs-20170001636-p002-c01-3bc403faa0",
+          "score": 11.019308
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20170008805",
+          "chunk_id": "ntrs-20170008805-p004-c01-79f20b5d0f",
+          "quote": "Saffire 3: Same as Saffire 1 but at higher flow speed.",
+          "rank": 3
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD07",
+      "query": "In the Saffire V vehicle model, how did the channels formed by the stowed cargo carry smoke and heat?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p003-c01-f607744223",
+          "score": 22.092652
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p003-c02-e6252a4e92",
+          "score": 16.312502
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p011-c01-5a5a23fd9b",
+          "score": 15.48328
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p002-c02-7a9690808f",
+          "score": 14.983923
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p001-c01-50c3fd0faa",
+          "score": 13.716863
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p003-c01-f607744223",
+          "quote": "These channels, referred to as standoffs, transported species, smoke, and heat from the outlet of the Saffire payload during a gas release or burn event.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD08",
+      "query": "Locate the color camera in the FLEX hardware description and the reason for downloading its video during the experiment.",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p008-c01-9afa185b7f",
+          "score": 14.44327
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20160000593",
+          "chunk_id": "ntrs-20160000593-p007-c01-cdb35d2de3",
+          "score": 14.268137
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p003-c01-52150e4c8c",
+          "score": 14.038386
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20210022617",
+          "chunk_id": "ntrs-20210022617-p003-c01-a7464f3c5f",
+          "score": 12.935153
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20130010979",
+          "chunk_id": "ntrs-20130010979-p014-c01-d6cd2bd4b8",
+          "score": 12.540274
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20210022617",
+          "chunk_id": "ntrs-20210022617-p003-c01-a7464f3c5f",
+          "quote": "Color camera (downlinked, operations)",
+          "rank": 4
+        },
+        {
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p004-c01-73590504f5",
+          "quote": "A near real-time download of the color camera video will be required in order to verify successful droplet deployment, ignition, and overall progress of the experiment.",
+          "rank": null
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD09",
+      "query": "Find the carbon monoxide sensor's recalibration interval and measurement resolution in the BASS-II rod experiment.",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p004-c01-0fe3092555",
+          "score": 14.785224
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20160000593",
+          "chunk_id": "ntrs-20160000593-p018-c01-52b41fcdbb",
+          "score": 13.230566
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p004-c01-73590504f5",
+          "score": 12.682752
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20170001636",
+          "chunk_id": "ntrs-20170001636-p003-c03-56fea4e377",
+          "score": 11.06022
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p008-c01-e854928cba",
+          "score": 10.741842
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p004-c01-0fe3092555",
+          "quote": "The CO sensor is zero calibrated every 60 days, with a range of 0-1000 ppm and a resolution of 1 ppm.",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD10",
+      "query": "Which remote sensor reading supplied the cabin's initial temperature in the Saffire V simulation?",
+      "expected_match": true,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p004-c01-032dc0b68b",
+          "score": 28.364993
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p009-c01-a81e89899d",
+          "score": 20.115793
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p008-c01-5b3612cdfb",
+          "score": 15.301397
+        },
+        {
+          "rank": 4,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p005-c01-f1c5024054",
+          "score": 13.642498
+        },
+        {
+          "rank": 5,
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p006-c01-e140e0e4ed",
+          "score": 12.548709
+        }
+      ],
+      "reference_spans": [
+        {
+          "source_id": "ntrs-20240008602",
+          "chunk_id": "ntrs-20240008602-p004-c01-032dc0b68b",
+          "quote": "the initial reading of RS3 was used as the initial temperature of the cabin",
+          "rank": 1
+        }
+      ],
+      "hit_at_5": true,
+      "known_span_recall_at_5": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "negative_abstention_correct": null
+    },
+    {
+      "query_id": "RD11",
+      "query": "Find a Perseid meteor catalog indexed by asteroid radiant coordinates.",
+      "expected_match": false,
+      "rankings": [],
+      "reference_spans": [],
+      "hit_at_5": null,
+      "known_span_recall_at_5": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "negative_abstention_correct": true
+    },
+    {
+      "query_id": "RD12",
+      "query": "Where are the MOXIE Mars oxygen production endurance measurements?",
+      "expected_match": false,
+      "rankings": [
+        {
+          "rank": 1,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p002-c01-58a94b815d",
+          "score": 5.995027
+        },
+        {
+          "rank": 2,
+          "source_id": "ntrs-20090014812",
+          "chunk_id": "ntrs-20090014812-p002-c03-597afa31ef",
+          "score": 5.644244
+        },
+        {
+          "rank": 3,
+          "source_id": "ntrs-20150008961",
+          "chunk_id": "ntrs-20150008961-p003-c02-82fec3dd80",
+          "score": 5.384609
+        }
+      ],
+      "reference_spans": [],
+      "hit_at_5": null,
+      "known_span_recall_at_5": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "negative_abstention_correct": false
+    }
+  ],
+  "scope": "Engineering check of passage retrieval on nonexhaustive AI draft development labels. Other passages may also be relevant. These scores do not measure scientific answer accuracy or safety.",
+  "configuration": {
+    "version": "lexical-v2",
+    "include_overviews": true,
+    "min_query_coverage": 0.25
+  },
+  "corpus_sha256": "b47916f2bd8cd6a35f0253cc8473c3cfd5042b59c9e922e6b49d481de0e27c9a",
+  "retrieval_source_sha256": "2055b3bc17991370f6394f9f64e91ad535d545c74bdfd1c7127e14a45a051f16",
+  "development_tuning_note": "The 25% query-term coverage guard was selected using these development queries. Generalization is unverified."
+}

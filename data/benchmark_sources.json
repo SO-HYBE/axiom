@@ -1,0 +1,332 @@
+{
+  "active_sources": 8,
+  "failed_sources": 0,
+  "generated_at": "2026-11-06T18:25:40.679755+00:00",
+  "notice": "Source snapshots, no independently reviewed scientific labels or raw experimental measurements.",
+  "schema_version": "named-benchmark-sources-v1",
+  "sources": [
+    {
+      "assets": [
+        {
+          "bytes": 31770,
+          "content_type": "application/json",
+          "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+          "key": "record",
+          "method": "GET",
+          "path": "data/raw/named/psi-69-record.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+          "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+          "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+        }
+      ],
+      "chunk_count": 3,
+      "derived_path": "data/processed/named_sources/psi-69.json",
+      "derived_sha256": "6f638353e0319654d840554b610382b1e8a38c4a0da58f7beca953b12979e914",
+      "evidence_tier": 3,
+      "experiment": "FLEX",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "Publisher licenseIdentifier in version-pinned PSI JSON",
+        "statement": "CC0-1.0",
+        "url": "https://spdx.org/licenses/CC0-1.0.html"
+      },
+      "sections": [
+        "Objectives",
+        "Approach"
+      ],
+      "source_id": "psi-69",
+      "source_kind": "dataset_catalog",
+      "status": "active",
+      "title": "Flame Extinguishment Experiment (FLEX)",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 680348,
+          "content_type": "application/json",
+          "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-25/4",
+          "key": "record",
+          "method": "GET",
+          "path": "data/raw/named/psi-25-record.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:37.478845+00:00",
+          "sha256": "b9234754db5da651ad27d888af082b889d07210b018e543369662f065b4ec2da",
+          "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-25/4"
+        }
+      ],
+      "chunk_count": 3,
+      "derived_path": "data/processed/named_sources/psi-25.json",
+      "derived_sha256": "0a0287d97908f9d8b839e38c46231cc5dc7e7ecc06d3be147f4a921e9a7e0f00",
+      "evidence_tier": 3,
+      "experiment": "BASS-II",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "Publisher licenseIdentifier in version-pinned PSI JSON",
+        "statement": "CC0-1.0",
+        "url": "https://spdx.org/licenses/CC0-1.0.html"
+      },
+      "sections": [
+        "Objectives",
+        "DOI",
+        "License"
+      ],
+      "source_id": "psi-25",
+      "source_kind": "dataset_catalog",
+      "status": "active",
+      "title": "Burning and Suppression of Solids - II (BASS-II)",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 134230,
+          "content_type": "application/json",
+          "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+          "key": "record",
+          "method": "GET",
+          "path": "data/raw/named/psi-98-record.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+          "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+          "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+        },
+        {
+          "bytes": 39166,
+          "content_type": "application/json",
+          "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+          "key": "files",
+          "method": "POST",
+          "path": "data/raw/named/psi-98-files.bin",
+          "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+          "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+          "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+          "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+        }
+      ],
+      "chunk_count": 6,
+      "derived_path": "data/processed/named_sources/psi-98.json",
+      "derived_sha256": "f088f82fa7a166f188d99c7f35e75e23961b0a855257246f93d2f732f255f37e",
+      "evidence_tier": 3,
+      "experiment": "Saffire-I",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "Publisher licenseIdentifier in version-pinned PSI JSON",
+        "statement": "CC0-1.0",
+        "url": "https://spdx.org/licenses/CC0-1.0.html"
+      },
+      "sections": [
+        "Objectives",
+        "Files",
+        "DOI"
+      ],
+      "source_id": "psi-98",
+      "source_kind": "dataset_catalog",
+      "status": "active",
+      "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 234467,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/",
+          "key": "article",
+          "method": "GET",
+          "path": "data/raw/named/named-rtdfs-article.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:40.520361+00:00",
+          "sha256": "66115ced8a180dd19dfbd30cd602846c2c64631c66f1447f5a59750febac1803",
+          "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/"
+        }
+      ],
+      "chunk_count": 1,
+      "derived_path": "data/processed/named_sources/named-rtdfs.json",
+      "derived_sha256": "21d4fc8892297df76379505c0be139f020be2ff40c19ec687a8f7fa86c00988f",
+      "evidence_tier": 3,
+      "experiment": "RTDFS",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "NASA media-use guidance, checked 2026-11-05; selected prose only, excluding third-party media; no endorsement",
+        "statement": "NASA factual/informational text use with attribution; no document-specific CC license identified",
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      },
+      "sections": [
+        "Science Objectives"
+      ],
+      "source_id": "named-rtdfs",
+      "source_kind": "experiment_overview",
+      "status": "active",
+      "title": "Residence Time Driven Flame Spread (RTDFS)",
+      "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 295521,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+          "key": "article",
+          "method": "GET",
+          "path": "data/raw/named/named-saffire-vi-news-article.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+          "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+          "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+        }
+      ],
+      "chunk_count": 2,
+      "derived_path": "data/processed/named_sources/named-saffire-vi-news.json",
+      "derived_sha256": "395c12316e7df974222660575fe2e929f17b03586f13c660eedc916921294d32",
+      "evidence_tier": 3,
+      "experiment": "Saffire-VI",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "NASA media-use guidance, checked 2026-11-05; selected prose only, excluding third-party media; no endorsement",
+        "statement": "NASA factual/informational text use with attribution; no document-specific CC license identified",
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      },
+      "sections": [
+        "Article, 2024-02-14"
+      ],
+      "source_id": "named-saffire-vi-news",
+      "source_kind": "news_overview",
+      "status": "active",
+      "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+      "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 99155,
+          "content_type": "application/pdf",
+          "final_url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+          "key": "pdf",
+          "method": "GET",
+          "path": "data/raw/named/named-saffire-factsheet-pdf.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:41.951492+00:00",
+          "sha256": "4eed8a4d5bce284e8d9ec24b637b21fdbf4b1fbbaadb663da3b66ee89faecd5f",
+          "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf"
+        }
+      ],
+      "chunk_count": 1,
+      "derived_path": "data/processed/named_sources/named-saffire-factsheet.json",
+      "derived_sha256": "fa15202488a7f2cc9698e960bf06320a4099c0e43af449ece7276c08012fc300",
+      "evidence_tier": 3,
+      "experiment": "Saffire",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "NASA media-use guidance, checked 2026-11-05; selected prose only, excluding third-party media; no endorsement",
+        "statement": "NASA factual/informational text use with attribution; no document-specific CC license identified",
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      },
+      "sections": [
+        "Spacecraft Fire Safety"
+      ],
+      "source_id": "named-saffire-factsheet",
+      "source_kind": "factsheet",
+      "status": "active",
+      "title": "Spacecraft Fire Safety Demonstration (Saffire)",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf"
+    },
+    {
+      "assets": [
+        {
+          "bytes": 272725,
+          "content_type": "text/plain; charset=utf-8",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.txt",
+          "key": "text",
+          "method": "GET",
+          "path": "data/raw/named/ntrs-20150023456-text.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:44.249552+00:00",
+          "sha256": "60b5c4bbfbd48464cd07f17ec3e619c329aa7e098206899c270a9b1a7335b16c",
+          "url": "https://ntrs.nasa.gov/api/citations/20150023456/downloads/20150023456.txt"
+        },
+        {
+          "bytes": 5520,
+          "content_type": "application/json; charset=utf-8",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150023456",
+          "key": "rights",
+          "method": "GET",
+          "path": "data/raw/named/ntrs-20150023456-rights.bin",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-05T20:51:45.146872+00:00",
+          "sha256": "ab3dbdf4818e20de3d567ab9581db77582b777786e52983cd993f64883a3d7ff",
+          "url": "https://ntrs.nasa.gov/api/citations/20150023456"
+        }
+      ],
+      "chunk_count": 2,
+      "derived_path": "data/processed/named_sources/ntrs-20150023456.json",
+      "derived_sha256": "b417b2e2672a66df27c3a2b227d2fed736046a7ae4e997a75811d2332ee0d388",
+      "evidence_tier": 1,
+      "experiment": "FLEX",
+      "permission_status": "allowed",
+      "rights": {
+        "basis": "Document-specific NTRS public-use determination",
+        "statement": "PUBLIC_USE_PERMITTED",
+        "url": "https://ntrs.nasa.gov/citations/20150023456"
+      },
+      "sections": [
+        "report section 4.2"
+      ],
+      "source_id": "ntrs-20150023456",
+      "source_kind": "technical_report",
+      "status": "active",
+      "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+      "url": "https://ntrs.nasa.gov/citations/20150023456"
+    },
+    {
+      "archive_as_of": "2025-07-12T20:27:04+00:00",
+      "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+      "assets": [
+        {
+          "archive_as_of": "2025-07-12T20:27:04+00:00",
+          "archive_headers": {
+            "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+            "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+          },
+          "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+          "bytes": 79538,
+          "content_type": "text/html; charset=UTF-8",
+          "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+          "key": "article",
+          "method": "GET",
+          "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+          "path": "data/raw/named/named-flex-blog-article.bin",
+          "publication_date": "2013-11-25",
+          "published_at": "2013-11-25T16:33:20+00:00",
+          "request_body_sha256": null,
+          "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+          "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+          "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+        }
+      ],
+      "chunk_count": 24,
+      "derived_path": "data/processed/named_sources/named-flex-blog.json",
+      "derived_sha256": "bcc871d64f2ca712d0bc3b18dfefc0c4be94482a569d434b1c6911e87e4952e6",
+      "evidence_tier": 3,
+      "experiment": "FLEX",
+      "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+      "permission_status": "allowed",
+      "publication_date": "2013-11-25",
+      "rights": {
+        "basis": "NASA factual/informational prose-use guidance, checked 2026-11-06; original NASA article in an identified Internet Archive capture; no media, comments or endorsement",
+        "statement": "NASA factual/informational text use with attribution; no document-specific CC license identified",
+        "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+      },
+      "sections": [
+        "Article, 2013-11-25"
+      ],
+      "source_availability": "archived_original",
+      "source_id": "named-flex-blog",
+      "source_kind": "scientist_explanation",
+      "status": "active",
+      "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+      "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+    }
+  ]
+}

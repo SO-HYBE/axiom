@@ -1,0 +1,163 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q020",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "63074e8fec6d41e29b06897a6760ad0c",
+    "created_at": "2026-11-06T19:32:03.654254+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 0 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "The abstract says well over one hundred BASS-I and BASS-II tests combined. Give the exact BASS-II-only count.",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 2.627865,
+        "ranking": {
+          "lexical_score": 2.627865,
+          "matched_terms": [
+            "bass",
+            "hundred",
+            "ii",
+            "one",
+            "over",
+            "tests",
+            "well"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.5,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "bass",
+            "hundred",
+            "ii",
+            "one",
+            "over",
+            "tests",
+            "well"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.42,
+    "error": null,
+    "model_calls": [],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.42,
+    "model_calls": [],
+    "question_id": "Q020",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "63074e8fec6d41e29b06897a6760ad0c",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "shared_draft_from_run_id": "30e30e42e8064c35907b549f2dbc090a",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "30e30e42e8064c35907b549f2dbc090a",
+  "record_sha256": "9400d6a3f661c216100ffca9d960e6b258be117166a1cd88cf8a4cb7d463cae5"
+}

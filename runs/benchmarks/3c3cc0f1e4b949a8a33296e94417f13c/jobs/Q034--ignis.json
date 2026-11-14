@@ -1,0 +1,798 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q034",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives; files; doi",
+  "run": {
+    "run_id": "5156702523334bef9e7e649a30958e1b",
+    "created_at": "2026-11-06T19:35:45.212155+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives; files; doi",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "6 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 2 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "fad3f24d8abf7ddb2809e37f1eefbe17d2bf67e86fd7c0fa4765792ab8694ce2",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The objectives of the PSI-98 investigation were to determine how rapidly a large scale fire grows in low-gravity and to investigate low-g flammability limits compared to normal gravity screening tests.",
+        "citations": [
+          {
+            "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+            "quote": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+            "source_id": "psi-98",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "Objectives; PSI version 4; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+              "quote": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+              "relation": "supports",
+              "source_id": "psi-98"
+            }
+          ],
+          "reason": "The claim accurately reflects the objectives listed in the dataset catalog source description, which explicitly states the goals to determine fire growth rates in low-gravity and investigate low-g flammability limits compared to normal gravity screening tests.",
+          "uncertainty": "The evidence is a source description from a dataset catalog; it confirms the stated objectives but does not provide experimental results or verify the execution of these objectives.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+            "quote": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+            "relation": "supports",
+            "source_id": "psi-98",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "Objectives; PSI version 4; JSON field objective",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This describes the stated goals of the investigation, not the results or methods for handling data discrepancies."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The PSI-98 dataset catalog includes files for raw data, engineering documents, and science documents related to the Saffire-I experiment.",
+        "citations": [
+          {
+            "chunk_id": "psi-98-named-002-88224744d6f7ad6a",
+            "quote": "Investigation Metadata Files psi-data/PSI-98/metadata/PSI-98_metadata_PSI-166_SAFFIRE-I.zip Engineering Documents psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+            "source_id": "psi-98",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-98-named-002-88224744d6f7ad6a",
+              "quote": "Engineering Documents psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+              "relation": "supports",
+              "source_id": "psi-98"
+            },
+            {
+              "chunk_id": "psi-98-named-004-9af1c9246ab9eb4e",
+              "quote": "Science Documents psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I",
+              "relation": "supports",
+              "source_id": "psi-98"
+            }
+          ],
+          "reason": "The dataset catalog explicitly lists files under 'Raw Data', 'Engineering Documents', and 'Science Documents' folders associated with the Saffire-I experiment, supporting the claim that the catalog includes these file types.",
+          "uncertainty": "The evidence is a file listing from a dataset catalog; it confirms the presence of these file categories in the catalog structure but does not verify the content or completeness of the files.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 2,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-98-named-002-88224744d6f7ad6a",
+            "quote": "Engineering Documents psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+            "relation": "supports",
+            "source_id": "psi-98",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+            "document_url": null
+          },
+          {
+            "chunk_id": "psi-98-named-004-9af1c9246ab9eb4e",
+            "quote": "Science Documents psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I",
+            "relation": "supports",
+            "source_id": "psi-98",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+            "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This lists available files but does not provide instructions on how to summarize or resolve disagreements between measurements."
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+              "quote": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+              "source_id": "psi-98"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This describes the stated goals of the investigation, not the results or methods for handling data discrepancies.",
+          "text": "The objectives of the PSI-98 investigation were to determine how rapidly a large scale fire grows in low-gravity and to investigate low-g flammability limits compared to normal gravity screening tests."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-98-named-002-88224744d6f7ad6a",
+              "quote": "Investigation Metadata Files psi-data/PSI-98/metadata/PSI-98_metadata_PSI-166_SAFFIRE-I.zip Engineering Documents psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf",
+              "source_id": "psi-98"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This lists available files but does not provide instructions on how to summarize or resolve disagreements between measurements.",
+          "text": "The PSI-98 dataset catalog includes files for raw data, engineering documents, and science documents related to the Saffire-I experiment."
+        }
+      ],
+      "reason": "The provided evidence consists of dataset catalog entries (objectives and file listings) for the PSI-98 investigation. It does not contain any text describing how IGNIS should summarize two actual measurements that disagree under matched conditions. The evidence is insufficient to answer the specific procedural question."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-98-named-006-a1b8042d177516ca",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "10.60555/0t15-1z43",
+        "sha256": "a1b8042d177516cacbebf5116f748141371e60e116c3b5658af6836c4090176f",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "DOI",
+        "locator": "DOI; PSI version 4; JSON field doi",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-98-named-002-88224744d6f7ad6a",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "Investigation Metadata Files psi-data/PSI-98/metadata/PSI-98_metadata_PSI-166_SAFFIRE-I.zip Engineering Documents psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE Offgassing Testing Strategy.pdf psi-data/PSI-98/Engineering Documents/PSI-98_Engineering Documents_SAFFIRE-I Operations.pdf Raw Data Reduced Gravity SAFFIRE_I F1C2 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-1_F1C1_DistortionGrids_1280x920_originals.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_jpeg.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_JPEG_Mapped.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2-Raw_DistroMaster.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C2_Raw2TIFF.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_Mapped_F1C2_Raw2TIFF.zip SAFFIRE_I F1C1 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_jpegs.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_JPEG_Mapped.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_F1C1-Raw_DistroMaster_originals.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F1C1_Raw2TIFF.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-I_Mapped_F1C1_Raw2TIFF.zip SAFFIRE_I F2C1 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C1_jpeg.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE-I_F2C1_Mapped_jpeg.zip SAFFIRE_I F2C2 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C2_jpeg.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_F2C2_Mapped_jpeg.zip S1 Data Package Sensor Telemetry psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SFSDP-VIS-0295_Saffire 1 and 3_Thermocouple Placement.pdf psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Telemetry Data Good Process Version.xlsx psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 1 Sensor Data Complete TM",
+        "sha256": "88224744d6f7ad6a5788505f35e8249a500d379ad158f6aa78eea1458a7efa85",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Files",
+        "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "files",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-98-named-003-3f392c089a99f555",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "graphs.xlsx psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire I Sample 1 TM graphs.docx S2 Data Package Sensor Telemetry psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 2 TM graphs.docx psi-data/PSI-98/Raw Data/PSI-98_Raw Data_Saffire-I Sample 2 Sensor Data Complete TM graphs.xlsx SAFFIRE_I S1C1 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw_DistroMaster.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Complete.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1Raw2TIFF_Complete_icmad.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_Raw2TIFF_Mapped_JPEGS.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part2.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg_part1.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part1.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part2.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_JPEG_Mapped_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part2.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C1_jpeg2png_icmad_part1.zip SAFFIRE-I S1C2 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_IS1C2_Raw_DistroMaster.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_Raw2TIFF_Complete.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_RAW2TIFF_Complete_icmad.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_S1C2_RAW2TIFF_Mapped_JPEGS.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part1.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part2.zip",
+        "sha256": "3f392c089a99f5552d2ebb88ec57749856a990a9b008547f1e2aaff47b03fb10",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Files",
+        "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "files",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-98-named-004-9af1c9246ab9eb4e",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part4.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_Part1.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_JPEG_Mapped_part2.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part1.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part3.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S1C2_jpeg2png_icmad_part2.zip SAFFIRE_I S2C1 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw_DistroMaster.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_S2C1-1465938171811_icmad.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Complete_JPEGS.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_Raw2TIFF_Mapped_JPEGS.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_JPEG_Mapped.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C1_jpeg2png_icmad.zip SAFFIRE-I S2C2 psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw_DistroMaster.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete_icmad.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Complete.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_Raw2TIFF_Mapped.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_JPEG_Mapped.zip psi-data/PSI-98/Raw Data/PSI-98_Raw Data_SAFFIRE_I_S2C2_jpeg2png_icmad.zip Science Documents psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I",
+        "sha256": "9af1c9246ab9eb4ef1d609e4ff5540c5cd24f129c5a610941e7cbb5da9b732a4",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Files",
+        "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "files",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-98-named-005-0ecce17b4f5d2ba4",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "Image Directory Nomenclature.pdf psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-1_MergeResult-jpeg_Update_Final_v2.xlsx psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE Objectives, Development and Status.pdf psi-data/PSI-98/Science Documents/PSI-98_Science Documents_SAFFIRE-I and SAFFIRE-III Readme.docx Experimental table psi-data/PSI-98/Experimental table/PSI-98_Experimental table_SAFFIRE-1.csv",
+        "sha256": "0ecce17b4f5d2ba4d7b029d87e3c668cf1fcc0a9890142991b765e5dcf7b4c9b",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Files",
+        "locator": "Files; PSI Files tab; recursive JSON files[].displayName (folders) and key (file paths); listing only",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "files",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+        "sha256": "a9ae56261a9b5dfbac174260e88df9c7edbd5fa1495a9b7a156149f16010bcea",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 4; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 22823.18,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 6073,
+          "reset_tokens_s": 40.68
+        },
+        "http_status": 429,
+        "retry_after_s": 18.0,
+        "retry_delay_s": 18.04302256899513,
+        "retry_scheduled": true,
+        "latency_ms": 391
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 18047,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 7630,
+          "reset_tokens_s": 22.2
+        },
+        "http_status": 429,
+        "retry_after_s": 2.0,
+        "retry_delay_s": 2.193896361955455,
+        "retry_scheduled": true,
+        "latency_ms": 18453
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 3993,
+          "completion_tokens": 480,
+          "total_tokens": 4473
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 2203,
+        "rate_limits": {
+          "remaining_requests": 921,
+          "reset_requests_s": 6825.6,
+          "remaining_tokens": 3027,
+          "reset_tokens_s": 58.8
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "17ef7d4c01f0266a18c0ad858abec680d52829bb9c46a0118ce764cbd6daa22d",
+        "cache_write": "written",
+        "latency_ms": 3969
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 22823.18,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 6073,
+          "reset_tokens_s": 40.68
+        },
+        "http_status": 429,
+        "retry_after_s": 18.0,
+        "retry_delay_s": 18.04302256899513,
+        "retry_scheduled": true,
+        "latency_ms": 391
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 18047,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 7630,
+          "reset_tokens_s": 22.2
+        },
+        "http_status": 429,
+        "retry_after_s": 2.0,
+        "retry_delay_s": 2.193896361955455,
+        "retry_scheduled": true,
+        "latency_ms": 18453
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "277fab08f1517ce025fa0bdbb39a7afe4a8a3b002f88d73c389dfc7d52ed82f6",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "adc0b7c52a6372151e1b60abfa32796c72cb2efa25744c87e354a654bd7e327e",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 3993,
+          "completion_tokens": 480,
+          "total_tokens": 4473
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 2203,
+        "rate_limits": {
+          "remaining_requests": 921,
+          "reset_requests_s": 6825.6,
+          "remaining_tokens": 3027,
+          "reset_tokens_s": 58.8
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "17ef7d4c01f0266a18c0ad858abec680d52829bb9c46a0118ce764cbd6daa22d",
+        "cache_write": "written",
+        "latency_ms": 3969
+      }
+    ],
+    "question_id": "Q034",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "5156702523334bef9e7e649a30958e1b",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "shared_draft_from_run_id": "db5fc2acca444f9996348303c5d4d28e",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "db5fc2acca444f9996348303c5d4d28e",
+  "record_sha256": "f7f5f858bbefc9a716e4c46dd6ce95098a9eb0296a71fb1246f4dc57e95c80bc"
+}

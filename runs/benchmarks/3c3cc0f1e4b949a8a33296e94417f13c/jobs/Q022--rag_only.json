@@ -1,0 +1,183 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q022",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20150023456 | abstract",
+  "run": {
+    "run_id": "fee0ac11c105417594cc23f1aa0cc77e",
+    "created_at": "2026-11-06T19:32:04.472741+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20150023456 | abstract",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided abstract describes the FLEX program, hardware, and the availability of results for 284 tests, but it does not contain any specific numerical extinction measurements or confidence intervals. Therefore, it is impossible to provide the requested 95% confidence intervals using only this evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "a7eeee7e377410e09d87267ff2ed5b4f4f3b044d288a72c54f9276d0a265c338",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Using only the FLEX report abstract, provide a 95% confidence interval for every extinction measurement.",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided abstract describes the FLEX program, hardware, and the availability of results for 284 tests, but it does not contain any specific numerical extinction measurements or confidence intervals. Therefore, it is impossible to provide the requested 95% confidence intervals using only this evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided abstract describes the FLEX program, hardware, and the availability of results for 284 tests, but it does not contain any specific numerical extinction measurements or confidence intervals. Therefore, it is impossible to provide the requested 95% confidence intervals using only this evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20150023456-abstract-f095c59f44d059b1",
+        "source_id": "ntrs-20150023456",
+        "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+        "url": "https://ntrs.nasa.gov/citations/20150023456",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20150023456",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Flame Extinguishment Experiment (FLEX) program is a continuing set of experiments on droplet combustion, performed employing the Multi-User Droplet Combustion Apparatus (MDCA), inside the chamber of the Combustion Integrated Rack (CIR), which is located in the Destiny module of the International Space Station (ISS). This report describes the experimental hardware, the diagnostic equipment, the experimental procedures, and the methods of data analysis for FLEX. It also presents the results of the first 284 tests performed. The intent is not to interpret the experimental results but rather to make them available to the entire scientific community for possible future interpretations.",
+        "sha256": "f095c59f44d059b1082372a1495dd307656fa807ba34dc2d3a033ae6c982b09c",
+        "source_sha256": "fcbab368142d6ebbc5b177b0ccf52fd592d200a860092f4442e7fc6a8070ed32",
+        "source_kind": "technical_report_abstract",
+        "experiment": "FLEX",
+        "evidence_tier": 1,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "large_file_deferred",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20150023456",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20150023456",
+          "retrieved_at": "2026-10-31T13:44:52.067307+00:00",
+          "sha256": "fcbab368142d6ebbc5b177b0ccf52fd592d200a860092f4442e7fc6a8070ed32",
+          "bytes": 5520,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 1,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.91,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "ee9bb6e3b6fbd9edfdf4188eab12cec8792b6700416af19e835a33b5afe654a2",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "3599a42a2fe4341852cee1a92a8b11044d50c8856741cc273d2f32c9cdddd651",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 787,
+          "completion_tokens": 87,
+          "total_tokens": 874
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided abstract describes the FLEX program, hardware, and the availability of results for 284 tests, but it does not contain any specific numerical extinction measurements or confidence intervals. Therefore, it is impossible to provide the requested 95% confidence intervals using only this evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.91,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "ee9bb6e3b6fbd9edfdf4188eab12cec8792b6700416af19e835a33b5afe654a2",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "3599a42a2fe4341852cee1a92a8b11044d50c8856741cc273d2f32c9cdddd651",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 787,
+          "completion_tokens": 87,
+          "total_tokens": 874
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q022",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "fee0ac11c105417594cc23f1aa0cc77e",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "274b0981153ca8023d21720657080a1e1c3f35aa5f77ee11d959015441b2a6d2"
+}

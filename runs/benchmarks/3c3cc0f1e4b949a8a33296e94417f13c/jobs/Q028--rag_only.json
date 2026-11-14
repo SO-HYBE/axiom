@@ -1,0 +1,326 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q028",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "364557f27e2d4f949ab2e91dd3d7243e",
+    "created_at": "2026-11-06T19:34:06.370393+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 2,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "2 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence is a news overview describing the purpose and outcomes of the Saffire experiments. It does not contain information regarding regulatory requirements, qualification testing standards, or whether a research overview can replace specific qualification testing for a new spacecraft. Therefore, the question cannot be answered using only the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "364984a736ad0af777a3af924f98f06797b8235a4941ff8920413b6626ebdcf0",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "May a Saffire research overview replace qualification testing of my new spacecraft interior?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence is a news overview describing the purpose and outcomes of the Saffire experiments. It does not contain information regarding regulatory requirements, qualification testing standards, or whether a research overview can replace specific qualification testing for a new spacecraft. Therefore, the question cannot be answered using only the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space.",
+            "source_id": "named-saffire-vi-news"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The source is a news overview and does not provide specific regulatory or qualification testing criteria for new spacecraft.",
+        "text": "The Saffire series of experiments provided insights into fire behavior in space, which NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+            "quote": "This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars.",
+            "source_id": "named-saffire-vi-news"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The source describes the general purpose of the data but does not state whether it replaces specific qualification testing for a user's new spacecraft.",
+        "text": "Data gathered from the Saffire experiments will be used to inform future spacecraft designs bound for the Moon and Mars.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The source is a news overview and does not provide specific regulatory or qualification testing criteria for new spacecraft.",
+          "text": "The Saffire series of experiments provided insights into fire behavior in space, which NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+              "quote": "This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The source describes the general purpose of the data but does not state whether it replaces specific qualification testing for a user's new spacecraft.",
+          "text": "Data gathered from the Saffire experiments will be used to inform future spacecraft designs bound for the Moon and Mars."
+        }
+      ],
+      "reason": "The provided evidence is a news overview describing the purpose and outcomes of the Saffire experiments. It does not contain information regarding regulatory requirements, qualification testing standards, or whether a research overview can replace specific qualification testing for a new spacecraft. Therefore, the question cannot be answered using only the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space. The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere. Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016. Throughout the experiment series, researchers gathered data NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs. “How big a fire does it take for things to get bad for a crew?” Urban said. “This kind of work is done for every other inhabited structure here on Earth – buildings, planes, trains, automobiles, mines, submarines, ships – but we hadn’t done this research for spacecraft until Saffire.” Like previous Saffire experiments, Saffire-VI took place inside a unit on an uninhabited Cygnus spacecraft that had already departed from the space station, ensuring the safety of the orbiting laboratory and a more representative flight environment. However, this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft. NASA ignited the final set of space fire experiments for Saffire-VI inside Northrop Grumman’s Cygnus cargo spacecraft at the end of the NG-19 resupply mission to the International Space Station.",
+        "sha256": "6abf3fcf41eb2e659a5910982b1432d360606127dec04d24b138d52f491021a3",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": 0.948303,
+        "ranking": {
+          "lexical_score": 0.948303,
+          "matched_terms": [
+            "research",
+            "saffire",
+            "spacecraft"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.2727272727272727,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "research",
+            "saffire",
+            "spacecraft"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "Saffire, or Spacecraft Fire Safety Experiment, was a series of six investigations that provided insights into how fires grow and spread in space. This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars. Video credit: NASA During the 19 Saffire-VI experiment runs, the NASA team and counterparts at Northrop Grumman made various adjustments to air conditions. They then ignited a flame on materials such as plexiglass, cotton, Nomex, and Solid Inflammability Boundary at Low-Speed fabrics. A bead-lined wire inside the unit ignited the materials. “The Saffire flow unit is a wind tunnel. We’re pushing air through it,” Ruff said. “Once test conditions are set, we run electrical current through a thin wire, and the materials ignite.” Cameras inside allowed the team to observe the flame while remote sensors outside the Saffire flow unit collected data about what was happening in the Cygnus vehicle. The images and information were gathered in real-time before being sent to Earth for scientists to analyze. “You’ve got a heat release rate and a rate of release of combustion products,” Ruff said. “You can take those as model input and predict what will happen in a vehicle.” The next decade of exploration and science missions will see astronauts flying deeper into space and to locations that have yet to be explored. Though the Saffire experiments have been extinguished, NASA has learned valuable lessons and gathered mountains of data on fire behavior that will help the agency design safer spacecraft and accomplish its ambitious future missions.",
+        "sha256": "5b2442945f8c049fd3cfb5b3663f055ee5ce99f3fbbfd57646e9a1e6ba3d465f",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": 0.839594,
+        "ranking": {
+          "lexical_score": 0.839594,
+          "matched_terms": [
+            "research",
+            "saffire",
+            "spacecraft"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.2727272727272727,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "research",
+            "saffire",
+            "spacecraft"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 1.11,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "43ec6316f7519fc43a840a382a43225c70f9f6a8ed1ba744b81467b26dff7619",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "b10d7fd64984ddf038fa157b00d32c87d73256542e82a9288ee83877e6efda59",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1467,
+          "completion_tokens": 456,
+          "total_tokens": 1923
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence is a news overview describing the purpose and outcomes of the Saffire experiments. It does not contain information regarding regulatory requirements, qualification testing standards, or whether a research overview can replace specific qualification testing for a new spacecraft. Therefore, the question cannot be answered using only the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 1.11,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "43ec6316f7519fc43a840a382a43225c70f9f6a8ed1ba744b81467b26dff7619",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "b10d7fd64984ddf038fa157b00d32c87d73256542e82a9288ee83877e6efda59",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1467,
+          "completion_tokens": 456,
+          "total_tokens": 1923
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q028",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "364557f27e2d4f949ab2e91dd3d7243e",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "9d57fa443db2c528cca9c7ba8bf11a98d7118836e7bc3e35863a3d6dc44435f2"
+}

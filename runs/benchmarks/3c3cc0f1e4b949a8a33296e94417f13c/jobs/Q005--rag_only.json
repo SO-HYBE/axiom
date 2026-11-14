@@ -1,0 +1,244 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q005",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives",
+  "run": {
+    "run_id": "6d1b01f1a0c840589b52cb3e545005ff",
+    "created_at": "2026-11-06T19:27:31.130282+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "1 claims drafted. The provided evidence contains only the investigation objectives and does not include experimental data, measured flame-spread speeds, or statistical results required to calculate a value and its standard error."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "9e0e029d0b43f2661566856201c9e2ac469374b20734bc1a8aa5a2b565e4c4a7",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Using the PSI-98 catalog objectives alone, calculate a flame-spread speed and its standard error.",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence contains only the investigation objectives and does not include experimental data, measured flame-spread speeds, or statistical results required to calculate a value and its standard error.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+            "quote": "determine how rapidly a large scale fire grows in low-gravity",
+            "source_id": "psi-98"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a stated objective, not a measured result or calculated value.",
+        "text": "The PSI-98 investigation objective was to determine how rapidly a large scale fire grows in low-gravity.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+              "quote": "determine how rapidly a large scale fire grows in low-gravity",
+              "source_id": "psi-98"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a stated objective, not a measured result or calculated value.",
+          "text": "The PSI-98 investigation objective was to determine how rapidly a large scale fire grows in low-gravity."
+        }
+      ],
+      "reason": "The provided evidence contains only the investigation objectives and does not include experimental data, measured flame-spread speeds, or statistical results required to calculate a value and its standard error."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+        "sha256": "a9ae56261a9b5dfbac174260e88df9c7edbd5fa1495a9b7a156149f16010bcea",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 4; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": 0.863046,
+        "ranking": {
+          "lexical_score": 0.863046,
+          "matched_terms": [
+            "98",
+            "objectives",
+            "psi"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.25,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "objectives"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.81,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "d3af76092bbc8b3a559a720238f3b243fa63ebe88d2c554c259d6d149228465d",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "9a06da163b1e381a527d2196bf941856286085f8bea64951c8fb97a4bc7bae6e",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 698,
+          "completion_tokens": 206,
+          "total_tokens": 904
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence contains only the investigation objectives and does not include experimental data, measured flame-spread speeds, or statistical results required to calculate a value and its standard error.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.81,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "d3af76092bbc8b3a559a720238f3b243fa63ebe88d2c554c259d6d149228465d",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "9a06da163b1e381a527d2196bf941856286085f8bea64951c8fb97a4bc7bae6e",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 698,
+          "completion_tokens": 206,
+          "total_tokens": 904
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q005",
+    "system": "rag_only",
+    "split": "dev",
+    "run_id": "6d1b01f1a0c840589b52cb3e545005ff",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "91cafefdc0004bd3569f0c3f0b673231824ced6dfbd11b06c15ee39fc4e8b570"
+}

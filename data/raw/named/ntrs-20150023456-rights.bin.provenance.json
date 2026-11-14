@@ -1,0 +1,10 @@
+{
+  "bytes": 5520,
+  "content_type": "application/json; charset=utf-8",
+  "final_url": "https://ntrs.nasa.gov/api/citations/20150023456",
+  "method": "GET",
+  "request_body_sha256": null,
+  "retrieved_at": "2026-11-05T20:51:45.146872+00:00",
+  "sha256": "ab3dbdf4818e20de3d567ab9581db77582b777786e52983cd993f64883a3d7ff",
+  "url": "https://ntrs.nasa.gov/api/citations/20150023456"
+}

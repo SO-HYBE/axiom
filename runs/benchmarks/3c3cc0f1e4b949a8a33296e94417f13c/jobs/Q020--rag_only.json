@@ -1,0 +1,208 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q020",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "30e30e42e8064c35907b549f2dbc090a",
+    "created_at": "2026-11-06T19:32:03.585804+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "The abstract says well over one hundred BASS-I and BASS-II tests combined. Give the exact BASS-II-only count.",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 2.627865,
+        "ranking": {
+          "lexical_score": 2.627865,
+          "matched_terms": [
+            "bass",
+            "hundred",
+            "ii",
+            "one",
+            "over",
+            "tests",
+            "well"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.5,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "bass",
+            "hundred",
+            "ii",
+            "one",
+            "over",
+            "tests",
+            "well"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.93,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "4de9488dfda4a893f305a52dfdbd10802e4dfad6c8872f77b5632450939077a0",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "7efcd461747e853cfe83959fab3d86bd62c9673b19d1a070839abb04d0e986f6",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 875,
+          "completion_tokens": 81,
+          "total_tokens": 956
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence states that 'well over one hundred tests have been conducted' when 'including earlier BASS-I results,' but it does not provide the specific count for BASS-II tests alone. Therefore, the exact BASS-II-only count cannot be determined from the supplied text.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.93,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "4de9488dfda4a893f305a52dfdbd10802e4dfad6c8872f77b5632450939077a0",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "7efcd461747e853cfe83959fab3d86bd62c9673b19d1a070839abb04d0e986f6",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 875,
+          "completion_tokens": 81,
+          "total_tokens": 956
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q020",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "30e30e42e8064c35907b549f2dbc090a",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "acdb88c0d02972ac483e93e46fea46274e474088ff1a2221eeb4b1fd60c73e67"
+}

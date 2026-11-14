@@ -1,0 +1,246 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q006",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://science.nasa.gov/biological-physical/investigations/rtdfs/ | science objectives",
+  "run": {
+    "run_id": "8cc3b3a327684cf6a5860f0e1edea650",
+    "created_at": "2026-11-06T19:27:33.669259+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://science.nasa.gov/biological-physical/investigations/rtdfs/ | science objectives",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "1 claims drafted. The provided evidence mentions the concept of a 'critical thickness' in the context of theoretical modeling but does not specify a numerical value or range for this thickness. Therefore, it is not possible to answer the question with a specific number using only the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "38cc310d10e7474285210ed5f31a1b18edcbcc037e4a7ca55e474bf5bcae547e",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "The RTDFS overview mentions critical thickness. What numerical thickness should I use for any solid fuel?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence mentions the concept of a 'critical thickness' in the context of theoretical modeling but does not specify a numerical value or range for this thickness. Therefore, it is not possible to answer the question with a specific number using only the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "named-rtdfs-named-001-24f2270aef577500",
+            "quote": "Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained, even in a high oxygen environment if the fuel exceeds a critical thickness.",
+            "source_id": "named-rtdfs"
+          }
+        ],
+        "claim_type": "model_prediction",
+        "limitations": "The source describes a theoretical prediction and does not provide a specific numerical value for the critical thickness.",
+        "text": "Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained if the fuel exceeds a critical thickness.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-rtdfs-named-001-24f2270aef577500",
+              "quote": "Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained, even in a high oxygen environment if the fuel exceeds a critical thickness.",
+              "source_id": "named-rtdfs"
+            }
+          ],
+          "claim_type": "model_prediction",
+          "limitations": "The source describes a theoretical prediction and does not provide a specific numerical value for the critical thickness.",
+          "text": "Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained if the fuel exceeds a critical thickness."
+        }
+      ],
+      "reason": "The provided evidence mentions the concept of a 'critical thickness' in the context of theoretical modeling but does not specify a numerical value or range for this thickness. Therefore, it is not possible to answer the question with a specific number using only the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-rtdfs-named-001-24f2270aef577500",
+        "source_id": "named-rtdfs",
+        "title": "Residence Time Driven Flame Spread (RTDFS)",
+        "experiment": "RTDFS",
+        "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/",
+        "document_url": null,
+        "text": "The Residence Time Driven Flame Spread (RTDFS) experiment will investigate steady and unsteady flame propagation over solid fuels in a microgravity environment. Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained, even in a high oxygen environment if the fuel exceeds a critical thickness. Flame spread rate over thin fuels in a quiescent microgravity environment decreases with fuel thickness not only because of increased thermal mass but also because the relative importance of radiative losses, as quantified by a non-dimensional radiation number, increases in direct proportion of fuel thickness.",
+        "sha256": "24f2270aef577500ea45991ae0a4471120286fcdc8ee5c89533b4be2d90d9ad3",
+        "source_kind": "experiment_overview",
+        "evidence_tier": 3,
+        "section": "Science Objectives",
+        "locator": "Science Objectives; Article body; heading: Residence Time Driven Flame Spread (RTDFS) / Science Objectives; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "66115ced8a180dd19dfbd30cd602846c2c64631c66f1447f5a59750febac1803",
+        "provenance": [
+          {
+            "bytes": 234467,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-rtdfs-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:40.520361+00:00",
+            "sha256": "66115ced8a180dd19dfbd30cd602846c2c64631c66f1447f5a59750febac1803",
+            "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/"
+          }
+        ],
+        "score": 2.074235,
+        "ranking": {
+          "lexical_score": 2.074235,
+          "matched_terms": [
+            "critical",
+            "fuel",
+            "rtdfs",
+            "solid",
+            "thickness"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.5,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "critical",
+            "fuel",
+            "rtdfs",
+            "solid",
+            "thickness"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.86,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "6bac7341c6eeaab83b34ff71d4453f5a0067751511abff2647e6340a5f882944",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "f84669e12aa63ee28cf5c0d092b417d5eaadac836859962911414899fbf12fbe",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 722,
+          "completion_tokens": 245,
+          "total_tokens": 967
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence mentions the concept of a 'critical thickness' in the context of theoretical modeling but does not specify a numerical value or range for this thickness. Therefore, it is not possible to answer the question with a specific number using only the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.86,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "6bac7341c6eeaab83b34ff71d4453f5a0067751511abff2647e6340a5f882944",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "f84669e12aa63ee28cf5c0d092b417d5eaadac836859962911414899fbf12fbe",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 722,
+          "completion_tokens": 245,
+          "total_tokens": 967
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q006",
+    "system": "rag_only",
+    "split": "dev",
+    "run_id": "8cc3b3a327684cf6a5860f0e1edea650",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "34ede143dc0adcd94018e94d82ab1e84ba67ff0a59d789138a53f710fa929efc"
+}

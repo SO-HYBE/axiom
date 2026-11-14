@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="fb:pages" content="54971236771" />
+	<meta property="og:type" content="website" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="https://blogs.nasa.gov/ISS_Science_Blog/xmlrpc.php">
+		<link rel="shortcut icon" href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/2016nasablogs/images/favicon.ico" />
+	<script language="javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NASA&yt=true"></script>
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Cool Flames on the International Space Station &#8211; An Anatomy of Discovery &#8211; A Lab Aloft (International Space Station Research)</title>
+<meta name='robots' content='max-image-preview:large' />
+<!-- Broadcast could not find a linked parent for the canonical. --> 
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="A Lab Aloft (International Space Station Research) &raquo; Feed" href="https://blogs.nasa.gov/ISS_Science_Blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="A Lab Aloft (International Space Station Research) &raquo; Comments Feed" href="https://blogs.nasa.gov/ISS_Science_Blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="A Lab Aloft (International Space Station Research) &raquo; Cool Flames on the International Space Station &#8211; An Anatomy of Discovery Comments Feed" href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blogs.nasa.gov\/ISS_Science_Blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='all-css-2' href='https://blogs.nasa.gov/ISS_Science_Blog/wp-includes/css/dist/block-library/style.min.css?m=1746040271g' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:#ffffffa6}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:#ffffffa6}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-gray: #1a1a1a;--wp--preset--color--medium-gray: #686868;--wp--preset--color--light-gray: #e5e5e5;--wp--preset--color--blue-gray: #4d545c;--wp--preset--color--bright-blue: #007acc;--wp--preset--color--light-blue: #9adffd;--wp--preset--color--dark-brown: #402b30;--wp--preset--color--medium-brown: #774e24;--wp--preset--color--dark-red: #640c1f;--wp--preset--color--bright-red: #ff675f;--wp--preset--color--yellow: #ffef8e;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='all-css-8' href='https://blogs.nasa.gov/ISS_Science_Blog/_static/??-eJx1i0sKgDAMRC9kjfW7Es9SJdRCGwuJn97ebkQ3LgZmHm/gjGrZSJAEot+tI4aMorFI5nDwFLUwlzkFfA6yYkAGOfNI7C5BJGBJHv/UutI9GTaz3yy/6hRGPbTNoHXdtTckwzXJ' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-fonts-css' href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='all-css-10' href='https://blogs.nasa.gov/ISS_Science_Blog/_static/??-eJx1jVEOQDAQRC+EVYovcRaaTTVqK3YTenuNLyL+ZpL3ZuDYchNIkARkxhUZ5EglsjsFkcAi4e4Swo9YGOYMvmpVqpZGHicfLANL9PiHvl8SBEkyyz09rL3qdN0pVTX6AsjoPCY=' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css' href='https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/twentysixteen/css/ie.css?ver=20170530' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css' href='https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/twentysixteen/css/ie8.css?ver=20170530' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css' href='https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/twentysixteen/css/ie7.css?ver=20170530' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-16' href='https://blogs.nasa.gov/ISS_Science_Blog/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?m=1743711254g' type='text/css' media='all' />
+<style id='__EPYT__style-inline-css'>
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<script id="__ytprefs__-js-extra">
+var _EPYT_ = {"ajaxurl":"https:\/\/blogs.nasa.gov\/ISS_Science_Blog\/wp-admin\/admin-ajax.php","security":"9bfccde810","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/blogs.nasa.gov\/ISS_Science_Blog\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/blogs.nasa.gov\/ISS_Science_Blog\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"14.2.1.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","maxres_facade":"eager","ytapi_load":"light","pause_others":"","stopMobileBuffer":"1","facade_mode":"","not_live_on_channel":"","vi_active":"","vi_js_posttypes":[]};
+</script>
+<script type="text/javascript" src="https://blogs.nasa.gov/ISS_Science_Blog/_static/??-eJyFjcEOwjAMQ3+ILmMa7IT4FtaFLdXSlSbV6N+Tw5C4cbJsP8uwJ+e3qBgVdEFGAd3NVKG3IkYIAovyemmCnMBgin4tk2FWhFfBXA9pmOJfyDHN+aH4C3/v01pmigJ1K1pGdMgjTs5SAfGZklqlKeNTjvWdb+ehv7Z92w1d+ABxX0sk" ></script><link rel="https://api.w.org/" href="https://blogs.nasa.gov/ISS_Science_Blog/wp-json/" /><link rel="alternate" type="application/json" href="https://blogs.nasa.gov/ISS_Science_Blog/wp-json/wp/v2/posts/678" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogs.nasa.gov/ISS_Science_Blog/xmlrpc.php?rsd" />
+<meta name="generator" content="NASA Blogs" />
+
+<link rel="canonical" href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/" />
+<link rel='shortlink' href='https://blogs.nasa.gov/ISS_Science_Blog/?p=678' />
+<style type="text/css">
+.avatar {vertical-align:middle; margin-right:5px;}
+.credit {font-size: 50%;}
+</style>
+		</head>
+
+<body class="post-template-default single single-post postid-678 single-format-standard wp-embed-responsive group-blog">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+										
+					<a href="https://www.nasa.gov"
+						class="custom-logo-link" rel="home" itemprop="url">
+
+				<img width="240" height="240"
+										src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/2016nasablogs/images/nasa-logo.svg"
+										class="custom-logo"
+										alt="NASA"
+										itemprop="logo"
+										srcset="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/2016nasablogs/images/nasa-logo.svg 110w, https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/2016nasablogs/images/nasa-logo.svg 110w" sizes="(max-width: 240px) 85vw, 92px">
+
+					</a>
+
+
+											<p class="site-title"><a href="https://blogs.nasa.gov/ISS_Science_Blog/" rel="home">A Lab Aloft (International Space Station Research)</a></p>
+					
+					
+				</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+						
+				
+
+								
+				
+					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+						<div class="menu-topmenu-container">
+							<ul id="menu-topmenu" class="primary-menu">
+								<li><a href="https://blogs.nasa.gov">NASA Blogs Home</a></li>
+								
+								</ul>
+							</div>
+					</nav>
+				
+
+					</nav><!-- .main-navigation -->
+						
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		
+<article id="post-678" class="post-678 post type-post status-publish format-standard hentry category-uncategorized tag-experiment-highlights tag-general tag-guest-bloggers tag-iss-as-a-laboratory tag-physical-science tag-results tag-science tag-technology tag-us-research">
+	<header class="entry-header">
+		<h1 class="entry-title">Cool Flames on the International Space Station &#8211; An Anatomy of Discovery</h1>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><i><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">In today’s A Lab Aloft, Mike Hicks, project scientist at NASA’s Glenn Research Center in Cleveland, blogs about discovering the “cool” world of combustion aboard the International Space Station.</span></span></span></i></p>
+<p><span style="font-family: Arial;color: #000000;font-size: medium">In a </span><a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/04/15/post_1355341550937/"><span style="font-family: Arial;color: #0000ff;font-size: medium">recent posting</span></a><span style="font-family: Arial;color: #000000;font-size: medium"> on this blog one of our </span><a href="https://www.nasa.gov/mission_pages/station/main/index.html"><span style="font-family: Arial;color: #0000ff;font-size: medium">International Space Station</span></a><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial"> combustion researchers, Sandra Olson, noted that when it comes to combustion experiments in microgravity one should expect surprises. This has certainly proven to be true with one of our liquid fuel combustion investigations currently operating aboard the space station. </span></span></span></p>
+<p><span style="font-family: Arial;color: #000000;font-size: medium">The Flammability and Extinction (</span><a href="https://www.nasa.gov/mission_pages/station/research/experiments/480.html"><span style="font-family: Arial;color: #0000ff;font-size: medium">FLEX</span></a><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">) study burns liquid fuels dispensed in the form of small, single droplets. The goal is to answer two key questions: the first is how difficult it is to keep a flame burning in microgravity? We call this flammability mapping. The second is how effective is gaseous carbon dioxide (CO<sub>2</sub>) (or other diluents) in extinguishing spacecraft fires? Gaseous CO<sub>2</sub> is particularly important because this is the current fire suppressant used in the U.S. module of the space station. </span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">To answer these and other “burning questions” the FLEX team of scientists studies small droplets of fuel. This approach allows a large number of tests to take place under a wide range of conditions. The flame that results from igniting these fuel droplets (ranging in size from 1.0 mm to 6.0 mm in diameter) achieves a shape that can only happen in a reduced gravity environment—that is, they become little glowing balls of fire. </span></span></span></p>
+<figure id="attachment_312" aria-describedby="caption-attachment-312" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/06/1037654main_FLEX.jpg"><img fetchpriority="high" decoding="async" class="size-medium wp-image-312" alt="Image of a burning droplet in microgravity during a Flammability and Extinction (FLEX) test aboard the International Space Station. (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/06/1037654main_FLEX-300x248.jpg" width="300" height="248" /></a><figcaption id="caption-attachment-312" class="wp-caption-text">Image of a burning droplet in microgravity during a Flammability and Extinction (FLEX) test aboard the International Space Station. (NASA)</figcaption></figure>
+<p><span style="font-family: Arial;color: #000000;font-size: medium">Within fractions of a second following ignition, the reaction front—visualized as a flame—quickly wraps around the fuel droplet and assumes a spherical shape. This remains mostly motionless until the droplet of fuel is consumed or until the conditions are such that the flame can no longer exist. You can watch the </span><a href="https://www.youtube.com/watch?v=BxxqCLxxY3M"><span style="font-family: Arial;color: #0000ff;font-size: medium">Strange Flames on the International Space Station</span></a><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial"> video to see these microgravity flames in action. </span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">The overarching goal of FLEX is to better understand the complicated physical processes behind determining whether or not a flame can exist in a given environment for a given fuel type. The environment varies based on the amount of oxygen in the combustion chamber along with other gases that balance out the test atmosphere.</span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">Since combustion processes are rich in physics and chemistry, there are many parameters that play a role in flame survival. The FLEX experiments allow scientists a way to study these competing physical processes—such as the rate of fuel consumption, fuel characteristics, the controlling energy and mass transfer processes, and the physical properties of the gases that make up the test environment. By understanding and modeling these processes, we hope to better predict fire behavior in space. This also leads to Earth technology advances, such as more fuel efficient engine designs.</span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">FLEX recently led us to a “cool” discovery, igniting the imaginations of many combustion researchers. During one of their many late night test sessions, the FLEX operations team noticed a very peculiar orange afterglow about 20 seconds after the flame had extinguished. It was so intense that the team first thought something else other than the fuel droplet was burning.</span></span></span></p>
+<figure id="attachment_679" aria-describedby="caption-attachment-679" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-Afterglow.jpg"><img decoding="async" class="size-medium wp-image-679" alt="A cloud of condensed fuel, like a fog, forms around the heptane fuel droplet following its dual-stage extinguishment in the FLEX investigation. (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-Afterglow-300x248.jpg" width="300" height="248" /></a><figcaption id="caption-attachment-679" class="wp-caption-text">A cloud of condensed fuel, like a fog, forms around the heptane fuel droplet following its dual-stage extinguishment in the FLEX investigation. (NASA)</figcaption></figure>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">After a few repeated tests, the team concluded that this bright afterglow resulted from tiny droplets of re-condensed fuel vapor. The idea was that these tiny droplets formed a fog, scattering the yellow-orange backlight that is used to project the droplet’s shadow onto one of the diagnostic cameras. The afterglow was initially dismissed as an artifact of the test configuration—or so we thought.</span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">A few days later we recovered the data from the space station and processed the images for accurate measurements. As we looked closely at the droplet shadow images we realized this glow was actually a clue to something new.</span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">Typically when a flame extinguishes, the evaporation of the fuel droplet will nearly stop, and the droplet stops shrinking, which makes entirely good sense—no flame, well then, no fuel consumption. We discovered with FLEX that under certain conditions when the flame disappeared, the droplet of fuel continued to evaporate at almost the same rate as when the flame was visible. In many cases this “apparent” fuel consumption without a flame lasted longer than with the flame.</span></span></span></p>
+<figure id="attachment_680" aria-describedby="caption-attachment-680" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-test-setup.jpg"><img decoding="async" class="size-medium wp-image-680" alt="Video screen shot of a FLEX ignition test for a ~2.5 mm methanol fuel droplet formed on tip of needle. (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-test-setup-300x212.jpg" width="300" height="212" /></a><figcaption id="caption-attachment-680" class="wp-caption-text">Video screen shot of a FLEX ignition test for a ~2.5 mm methanol fuel droplet formed on tip of needle. (NASA)</figcaption></figure>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">Even more startling, we saw that when the pressure of the chamber was slightly increased, the flame momentarily reappeared in a brief flash before quickly going out again. In some cases this phenomena repeated until the fuel was consumed. This finding has a number of interesting ramifications, both from a purely scientific perspective as well as from a fire safety perspective. It provides the first direct observation of a long held concern—the possibility that microgravity conditions were conducive to re-ignition of flammable mixtures.</span></span></span></p>
+<figure id="attachment_681" aria-describedby="caption-attachment-681" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-test-run.jpg"><img loading="lazy" decoding="async" class="size-medium wp-image-681" alt="Ignition of 4.5 mm droplet on tethering fibers (crossed fibers shown as glowing lines) developing into a large weak flame which quickly extinguishes (t = 10.8 seconds), followed by period of low-temperature burning (~ 2 seconds) with no visible flame, a brief return to high-temperature burning (for ~ 1.5 seconds at t = 12.9 seconds). This cycle repeated once, until the fuel droplet was completely consumed. (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/FLEX-test-run-300x264.jpg" width="300" height="264" /></a><figcaption id="caption-attachment-681" class="wp-caption-text">Ignition of 4.5 mm droplet on tethering fibers (crossed fibers shown as glowing lines) developing into a large weak flame which quickly extinguishes (t = 10.8 seconds), followed by period of low-temperature burning (~ 2 seconds) with no visible flame, a brief return to high-temperature burning (for ~ 1.5 seconds at t = 12.9 seconds). This cycle repeated once, until the fuel droplet was completely consumed. (NASA)</figcaption></figure>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">At first glance, it seemed irrational that the fuel droplet continued to evaporate with no visible flame. Some of the science team argued, myself included, that this could be explained by characteristics of the test chamber environment. It was suggested that once the visible flame extinguished, that there was still a sufficient amount of energy remaining in the surrounding gases to continue the rate of the droplet’s evaporation.</span></span></span></p>
+<p><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">Since buoyant forces are absent in microgravity flames, the hot gases simply remain stationary around the droplet—so we theorized that as these gases cooled, heat transferred back into the droplet. We quickly realized, however, that this would have resulted in a gradual slowing of the droplet’s evaporation rate, which was not the case. During the “dark burning periods” when no flame was visible, the evaporation rates were essentially constant, similar to what is seen with a visible flame. Interestingly, these evaporation rates suddenly stopped when the afterglow of the scattered light began to appear.</span></span></span></p>
+<p><span style="font-family: Arial;color: #000000;font-size: medium">In 65 years of previous droplet experiments, and employing a staggering breadth of microgravity test configurations—from converted mine shafts in Japan to experiments performed on the recently retired </span><a href="https://www.nasa.gov/mission_pages/shuttle/main/index.html"><span style="font-family: Arial;color: #0000ff;font-size: medium">space shuttles</span></a><span style="color: #000000"><span style="font-size: medium"><span style="font-family: Arial">—this phenomena had never been observed. The prior universal observation was that when the flame went out, the rapid evaporation of the droplet stopped. However, with these tests we now had a fuel droplet that continued to be consumed at a rapid rate without an apparent flame.</span></span></span></p>
+<figure id="attachment_682" aria-describedby="caption-attachment-682" style="width: 198px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Karen-Nyberg_CIR-facility.jpg"><img loading="lazy" decoding="async" class="size-medium wp-image-682" alt="NASA astronaut Karen Nyberg, Expedition 36 flight engineer, services the Combustion Integrated Rack (CIR) Multi-user Droplet Combustion Apparatus (MDCA) in the International Space Station's Destiny laboratory. This is the facility in which the FLEX investigation tests take place in orbit. (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Karen-Nyberg_CIR-facility-198x300.jpg" width="198" height="300" /></a><figcaption id="caption-attachment-682" class="wp-caption-text">NASA astronaut Karen Nyberg, Expedition 36 flight engineer, services the Combustion Integrated Rack (CIR) Multi-user Droplet Combustion Apparatus (MDCA) in the International Space Station&#8217;s Destiny laboratory. This is the facility in which the FLEX investigation tests take place in orbit. (NASA)</figcaption></figure>
+<p><span style="font-family: Arial;color: #000000;font-size: medium">After a great deal of deliberation, the collective wisdom of the FLEX team came up with a theoretical explanation: “cool flames!” The technical explanation for this phenomena first appeared in Combustion and Flame in an article entitled “</span><a href="http://www.sciencedirect.com/science/article/pii/S0010218012002131"><span style="font-size: medium"><span style="font-family: Arial"><span style="color: #0000ff">Can Cool Flames Support Quasi-Steady Alkane Droplet Burning?</span>”</span></span></a></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">So what exactly is a cool flame and why is it important? The discovery of cool flames is often attributed to Sir Humphry Davy in 1812. While investigating flames for the purpose of designing safety lamps for coal miners, Davy observed that he could generate flames in the lab that were so weak that they could would not even ignite a match. This finding was followed by W.H. Perkins, who published in 1882 the first investigation of cool flames. Perkins observed that vapors of organic fuels produced what he characterized as “blue lambent flames.” Generally speaking, cool flames are the visible light of oxidation reactions occurring at low temperatures, sometimes nearly 10 times less than normal flame temperatures.</span></span></span></p>
+<figure id="attachment_683" aria-describedby="caption-attachment-683" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Flames.jpg"><img loading="lazy" decoding="async" class="size-medium wp-image-683" alt="This side-by-side image shows a comparison of a flame burning on Earth (left) and a flame in microgravity (right). (NASA)" src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Flames-300x183.jpg" width="300" height="183" /></a><figcaption id="caption-attachment-683" class="wp-caption-text">This side-by-side image shows a comparison of a flame burning on Earth (left) and a flame in microgravity (right). (NASA)</figcaption></figure>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">Cool flame temperatures depend on fuel type and atmosphere. For n-heptane—the alkane fuel used in the FLEX experiments—cool flames appear at temperatures just above 600 degrees Fahrenheit. This is about 176 degrees Fahrenheit warmer than the temperature for baking bread and considerably less, by about 1,300 degrees Fahrenheit, than the flame one might roast a marshmallow over. Hence the name “cool flame.”</span></span></span></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">Despite the name, these flames’ temperatures are still sufficiently high to sustain chemical reactions. Understanding exactly what kind of chemical reactions are taking place, as well as the conditions necessary to propel the chemistry into the high temperature realm of hot flames, are key research areas in the study of cool flames.</span></span></span></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">Prior to the FLEX discovery, it was thought cool flames were primarily pre-ignition phenomena generally limited to pre-mixed gases. If you’ve ever taken your car in for engine knocking, you’ve experienced an example of this. Pockets of gas in the cylinder undergo low temperature reactions (i.e., cool flames) that result in poorly timed pressure peaks. These deviations from the optimal peak pressure timing that should occur shortly after spark ignition result in the noise often associated with engine knock. </span></span></span></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">The FLEX study, however, showed a post-ignition cool flame. This occurred in a controlled system where reactants are initially separated, requiring time to travel to the reaction zone, which we see as the flame. This appears as a relatively steady phenomenon, suggesting a delicate balance between heat generated by the reaction and heat losses to the surrounding—to date, only achievable in space.</span></span></span></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">The microgravity cool flame discovery is significant for a number of reasons. Low temperature combustion in internal combustion engines, for instance, offers a number of advantages: reduced emissions, less wear on engine parts and increased fuel efficiencies. A better understanding of these low temperature burning regimes may help address challenges facing new internal combustion technologies, such as the Homogenous Charge Compression Ignition (HCCI) and Reactivity Charge Compression Ignition (RCCI) engines. Since these technologies lack a spark for localized ignition, knowledge of cool flames may help with precise timing of the combustion event—based, in this case, on a reactant mixture that may only be partially pre-mixed. </span></span></span></p>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial">Microgravity cool flames are exciting in their own right, because of the potential for refining our understanding of a very complicated combustion phenomena. This is true of all serendipitous discoveries, giving one more example of how the space station provides an opportunity for discoveries that would otherwise never get made.</span></span></span></p>
+<figure id="attachment_684" aria-describedby="caption-attachment-684" style="width: 300px" class="wp-caption alignnone"><a href="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Mike-Hicks.jpg"><img loading="lazy" decoding="async" class="size-medium wp-image-684" alt="Mike Hicks is pictured with his granddaughter, Emma, while roasting marshmallows over “cool” flames of another kind." src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/uploads/sites/207/2013/11/Mike-Hicks-300x234.jpg" width="300" height="234" /></a><figcaption id="caption-attachment-684" class="wp-caption-text">Mike Hicks is pictured with his granddaughter, Emma, while roasting marshmallows over “cool” flames of another kind. (Image Courtesy of Mike Hicks)</figcaption></figure>
+<p><span style="font-size: medium"><span style="color: #000000"><span style="font-family: Arial"><i>Mike Hicks<i>, project scientist at NASA’s Glenn Research Center in Cleveland, </i>has been with NASA for 22 years and is currently probing the mysteries of droplet combustion as a co-investigator on the Flammability and Extinction</i> (<i>FLEX) study. He is also the principal investigator on the Supercritical Water Mixture (SCWM) International Space Station flight investigation, which is designed to study precipitation phenomena in near-critical water. Hicks spends much of his free time as a doctoral candidate at Case Western Reserve University putting the finishing touches on a dissertation he plans to complete in the fall of 2013.</i></span></span></span></p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='https://secure.gravatar.com/avatar/f7b9569b2545f29aff9d5ccbcd73e4ec?s=49&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/f7b9569b2545f29aff9d5ccbcd73e4ec?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' loading='lazy' decoding='async'/><span class="screen-reader-text">Author </span> <a class="url fn n" href="https://blogs.nasa.gov/ISS_Science_Blog/author/jnimon/">jnimon</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/" rel="bookmark"><time class="entry-date published" datetime="2013-11-25T16:33:20+00:00">November 25, 2013</time><time class="updated" datetime="2013-11-26T14:53:39+00:00">November 26, 2013</time></a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/experiment-highlights/" rel="tag">Experiment Highlights</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/general/" rel="tag">General</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/guest-bloggers/" rel="tag">Guest Bloggers</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/iss-as-a-laboratory/" rel="tag">ISS as a Laboratory</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/physical-science/" rel="tag">physical science</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/results/" rel="tag">Results</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/science/" rel="tag">Science</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/technology/" rel="tag">Technology</a>, <a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/us-research/" rel="tag">US Research</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-678 -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			2 thoughts on &ldquo;Cool Flames on the International Space Station &#8211; An Anatomy of Discovery&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-416" class="comment even thread-even depth-1">
+			<article id="div-comment-416" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/48ba23b1d4aac2d90866d4c113eeaaea?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/48ba23b1d4aac2d90866d4c113eeaaea?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async'/>						<b class="fn">evab</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/#comment-416"><time datetime="2013-12-02T19:21:07+00:00">December 2, 2013 at 7:21 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>combustion     =    particles</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/?replytocom=416#respond' data-commentid="416" data-postid="678" data-belowelement="div-comment-416" data-respondelement="respond" data-replyto="Reply to evab" aria-label='Reply to evab'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		<li id="comment-448" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-448" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='https://secure.gravatar.com/avatar/22fb35d671cf09282d76b774fcff58c6?s=42&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/22fb35d671cf09282d76b774fcff58c6?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' loading='lazy' decoding='async'/>						<b class="fn"><a href="http://www.bingohaliyikama.net" class="url" rel="ugc external nofollow">anıl</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/#comment-448"><time datetime="2013-12-31T17:13:10+00:00">December 31, 2013 at 5:13 pm</time></a>					</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>nice share..</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply"><a rel='nofollow' class='comment-reply-link' href='https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/?replytocom=448#respond' data-commentid="448" data-postid="678" data-belowelement="div-comment-448" data-respondelement="respond" data-replyto="Reply to anıl" aria-label='Reply to anıl'>Reply</a></div>			</article><!-- .comment-body -->
+		</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond">
+		<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/#respond" style="display:none;">Cancel reply</a></small></h2><form action="https://blogs.nasa.gov/ISS_Science_Blog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='678' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="97cc0e2507" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="94"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/11/18/from-fluids-to-flames-the-research-range-of-space-station-physical-science/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">From Fluids to Flames: The Research Range of Space Station Physical Science</span></a></div><div class="nav-next"><a href="https://blogs.nasa.gov/ISS_Science_Blog/2013/12/06/the-sense-in-earth-remote-sensing-from-the-international-space-station/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">The Sense in Earth Remote Sensing from the International Space Station</span></a></div></div>
+	</nav>
+	</main><!-- .site-main -->
+
+	<aside id="content-bottom-widgets" class="content-bottom-widgets">
+			<div class="widget-area">
+			<section id="search-5" class="widget widget_search"><h2 class="widget-title">Search this blog</h2>
+<form role="search" method="get" class="search-form" action="https://blogs.nasa.gov/ISS_Science_Blog/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+</form>
+</section><section id="archives-3" class="widget widget_archive"><h2 class="widget-title">Archives</h2><nav aria-label="Archives">
+			<ul>
+					<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2018/03/'>March 2018</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/05/'>May 2017</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/04/'>April 2017</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/01/'>January 2017</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/11/'>November 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/10/'>October 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/09/'>September 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/08/'>August 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/06/'>June 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/05/'>May 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/04/'>April 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/03/'>March 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/02/'>February 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/01/'>January 2016</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/09/'>September 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/06/'>June 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/05/'>May 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/04/'>April 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/03/'>March 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/02/'>February 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/01/'>January 2015</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/12/'>December 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/09/'>September 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/08/'>August 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/07/'>July 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/06/'>June 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/04/'>April 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/03/'>March 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/02/'>February 2014</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/12/'>December 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/11/'>November 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/10/'>October 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/09/'>September 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/08/'>August 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/06/'>June 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/05/'>May 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/04/'>April 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/03/'>March 2013</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/09/'>September 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/08/'>August 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/07/'>July 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/06/'>June 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/05/'>May 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/04/'>April 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/03/'>March 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/02/'>February 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/01/'>January 2011</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2010/12/'>December 2010</a></li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2010/11/'>November 2010</a></li>
+			</ul>
+
+			</nav></section><section id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2><nav aria-label="Tags"><div class="tagcloud"><ul class='wp-tag-cloud' role='list'>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/arte/" class="tag-cloud-link tag-link-67 tag-link-position-1" style="font-size: 1em;">ARTE</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/benefits/" class="tag-cloud-link tag-link-8 tag-link-position-2" style="font-size: 1em;">Benefits</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bone-density/" class="tag-cloud-link tag-link-65 tag-link-position-3" style="font-size: 1em;">bone density</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bp-reg/" class="tag-cloud-link tag-link-78 tag-link-position-4" style="font-size: 1em;">BP Reg</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/canadian-research/" class="tag-cloud-link tag-link-20 tag-link-position-5" style="font-size: 1em;">Canadian Research</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cardioox/" class="tag-cloud-link tag-link-75 tag-link-position-6" style="font-size: 1em;">CardioOX</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cardiovascular/" class="tag-cloud-link tag-link-74 tag-link-position-7" style="font-size: 1em;">cardiovascular</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/casis/" class="tag-cloud-link tag-link-50 tag-link-position-8" style="font-size: 1em;">CASIS</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cciss/" class="tag-cloud-link tag-link-76 tag-link-position-9" style="font-size: 1em;">CCISS</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/conference-highlights/" class="tag-cloud-link tag-link-11 tag-link-position-10" style="font-size: 1em;">Conference Highlights</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/crew-earth-observations/" class="tag-cloud-link tag-link-87 tag-link-position-11" style="font-size: 1em;">Crew Earth Observations</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/csa/" class="tag-cloud-link tag-link-34 tag-link-position-12" style="font-size: 1em;">CSA</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/dna/" class="tag-cloud-link tag-link-68 tag-link-position-13" style="font-size: 1em;">DNA</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/dna-day/" class="tag-cloud-link tag-link-69 tag-link-position-14" style="font-size: 1em;">DNA Day</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/education/" class="tag-cloud-link tag-link-5 tag-link-position-15" style="font-size: 1em;">Education</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/european-research/" class="tag-cloud-link tag-link-19 tag-link-position-16" style="font-size: 1em;">European Research</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/experiment-highlights/" class="tag-cloud-link tag-link-12 tag-link-position-17" style="font-size: 1em;">Experiment Highlights</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/general/" class="tag-cloud-link tag-link-6 tag-link-position-18" style="font-size: 1em;">General</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/genes-in-space/" class="tag-cloud-link tag-link-71 tag-link-position-19" style="font-size: 1em;">Genes in Space</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/genetics/" class="tag-cloud-link tag-link-39 tag-link-position-20" style="font-size: 1em;">genetics</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/guest-bloggers/" class="tag-cloud-link tag-link-7 tag-link-position-21" style="font-size: 1em;">Guest Bloggers</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/international-partners/" class="tag-cloud-link tag-link-17 tag-link-position-22" style="font-size: 1em;">International Partners</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/iss-as-a-laboratory/" class="tag-cloud-link tag-link-9 tag-link-position-23" style="font-size: 1em;">ISS as a Laboratory</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/japanese-research/" class="tag-cloud-link tag-link-18 tag-link-position-24" style="font-size: 1em;">Japanese Research</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/life-science/" class="tag-cloud-link tag-link-23 tag-link-position-25" style="font-size: 1em;">Life Science</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/minipcr/" class="tag-cloud-link tag-link-70 tag-link-position-26" style="font-size: 1em;">miniPCR</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/mission-highlights/" class="tag-cloud-link tag-link-15 tag-link-position-27" style="font-size: 1em;">Mission Highlights</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/one-year-mission/" class="tag-cloud-link tag-link-30 tag-link-position-28" style="font-size: 1em;">one year mission</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/outreach/" class="tag-cloud-link tag-link-95 tag-link-position-29" style="font-size: 1em;">outreach</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/physical-science/" class="tag-cloud-link tag-link-24 tag-link-position-30" style="font-size: 1em;">physical science</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/plants/" class="tag-cloud-link tag-link-22 tag-link-position-31" style="font-size: 1em;">Plants</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/publications/" class="tag-cloud-link tag-link-66 tag-link-position-32" style="font-size: 1em;">publications</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/qpcr/" class="tag-cloud-link tag-link-73 tag-link-position-33" style="font-size: 1em;">qPCR</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/research-results/" class="tag-cloud-link tag-link-64 tag-link-position-34" style="font-size: 1em;">research results</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/results/" class="tag-cloud-link tag-link-13 tag-link-position-35" style="font-size: 1em;">Results</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/rna/" class="tag-cloud-link tag-link-72 tag-link-position-36" style="font-size: 1em;">RNA</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/russian-research/" class="tag-cloud-link tag-link-21 tag-link-position-37" style="font-size: 1em;">Russian Research</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/science/" class="tag-cloud-link tag-link-14 tag-link-position-38" style="font-size: 1em;">Science</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/science-in-short/" class="tag-cloud-link tag-link-48 tag-link-position-39" style="font-size: 1em;">Science in Short</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/stem/" class="tag-cloud-link tag-link-94 tag-link-position-40" style="font-size: 1em;">STEM</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/technology/" class="tag-cloud-link tag-link-10 tag-link-position-41" style="font-size: 1em;">Technology</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/us-research/" class="tag-cloud-link tag-link-16 tag-link-position-42" style="font-size: 1em;">US Research</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/vascular/" class="tag-cloud-link tag-link-77 tag-link-position-43" style="font-size: 1em;">Vascular</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/vascular-echo/" class="tag-cloud-link tag-link-31 tag-link-position-44" style="font-size: 1em;">vascular echo</a></li>
+	<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/wetlab/" class="tag-cloud-link tag-link-80 tag-link-position-45" style="font-size: 1em;">wetlab</a></li>
+</ul>
+</div>
+</nav></section>		<section id="authors-3" class="widget widget_authors">			<h2 class="widget-title">Authors</h2>			<ul><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/bdunbar/" title="Posts by Brian Dunbar">BRIAN DUNBAR</a> </li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/jarobin1/" title="Posts by Julie Robinson">Julie Robinson</a> </li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/lewarren/" title="Posts by lewarren">Lara Warren</a> </li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/rabarry/" title="Posts by Rachel Barry">Rachel Barry</a> </li>
+</ul>					</section>			</div><!-- .widget-area -->
+	
+	</aside><!-- .content-bottom-widgets -->
+
+</div><!-- .content-area -->
+
+
+	<aside id="secondary" class="sidebar widget-area">
+		<section id="custom_html-2" class="widget_text widget widget_custom_html"><h2 class="widget-title">Editor&#8217;s Note</h2><div class="textwidget custom-html-widget">Thank you for your interest in <a href="https://www.nasa.gov/mission_pages/station/research/overview.html">International Space Station Research</a>. This blog has been retired, but archives are being kept online for historical purposes. For the latest ISS Research news, follow us on <a href="https://twitter.com/ISS_Research/">Twitter</a>, check out our <a href="https://www.nasa.gov/mission_pages/station/research/index.html">news page</a>, or sign up to receive our <a href="https://lists.nasa.gov/mailman/listinfo/iss-program-science-group">updates</a> via email. Are you interested in sending your science to space? Visit our <a href="https://www.nasa.gov/mission_pages/station/research/research_information.html">Opportunities</a> page to learn more.  </div></section><section id="search-4" class="widget widget_search"><h2 class="widget-title">Search Blogs</h2>
+<form role="search" method="get" class="search-form" action="https://blogs.nasa.gov/ISS_Science_Blog/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+</form>
+</section><section id="taxonomy_list_widget-2" class="widget widget_taxonomy_list_widget"><h2 class="widget-title">Browse by Topics</h2><ul class="tlw-list" id="taxonomy_list_widget_list_2"><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/1c/" rel="nofollow">1C (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/ace-h-2/" rel="nofollow">ace-h-2 (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/amateur-radio/" rel="nofollow">amateur radio (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/ariss/" rel="nofollow">ARISS (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/arte/" rel="nofollow">ARTE (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/astronauts/" rel="nofollow">Astronauts (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bass-m/" rel="nofollow">BASS-M (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/benefits/" rel="nofollow">Benefits (37)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/biological/" rel="nofollow">biological (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bioserve/" rel="nofollow">Bioserve (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bone-density/" rel="nofollow">bone density (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bone-research/" rel="nofollow">bone research (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bone-strength/" rel="nofollow">bone strength (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/bp-reg/" rel="nofollow">BP Reg (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/canadian-research/" rel="nofollow">Canadian Research (3)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/canadian-space-agency/" rel="nofollow">Canadian Space Agency (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cardioox/" rel="nofollow">CardioOX (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cardiovascular/" rel="nofollow">cardiovascular (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/cardiovascular-disease/" rel="nofollow">cardiovascular disease (1)</a></li><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/tag/casis/" rel="nofollow">CASIS (3)</a></li></ul><!-- .tlw-list --></section><section id="archives-2" class="widget widget_archive"><h2 class="widget-title">Browse by Month</h2><nav aria-label="Browse by Month">
+			<ul>
+					<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2018/03/'>March 2018</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/05/'>May 2017</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/04/'>April 2017</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2017/01/'>January 2017</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/11/'>November 2016</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/10/'>October 2016</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/09/'>September 2016</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/08/'>August 2016</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/06/'>June 2016</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/05/'>May 2016</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/04/'>April 2016</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/03/'>March 2016</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/02/'>February 2016</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2016/01/'>January 2016</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/09/'>September 2015</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/06/'>June 2015</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/05/'>May 2015</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/04/'>April 2015</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/03/'>March 2015</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/02/'>February 2015</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2015/01/'>January 2015</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/12/'>December 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/09/'>September 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/08/'>August 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/07/'>July 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/06/'>June 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/04/'>April 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/03/'>March 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2014/02/'>February 2014</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/12/'>December 2013</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/11/'>November 2013</a>&nbsp;(5)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/10/'>October 2013</a>&nbsp;(10)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/09/'>September 2013</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/08/'>August 2013</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/06/'>June 2013</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/05/'>May 2013</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/04/'>April 2013</a>&nbsp;(24)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2013/03/'>March 2013</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/09/'>September 2011</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/08/'>August 2011</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/07/'>July 2011</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/06/'>June 2011</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/05/'>May 2011</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/04/'>April 2011</a>&nbsp;(3)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/03/'>March 2011</a>&nbsp;(1)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/02/'>February 2011</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2011/01/'>January 2011</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2010/12/'>December 2010</a>&nbsp;(2)</li>
+	<li><a href='https://blogs.nasa.gov/ISS_Science_Blog/2010/11/'>November 2010</a>&nbsp;(4)</li>
+			</ul>
+
+			</nav></section>		<section id="authors-2" class="widget widget_authors">			<h2 class="widget-title">Browse by Author</h2>			<ul><li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/bdunbar/" title="Posts by Brian Dunbar">BRIAN DUNBAR</a> (1)</li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/jarobin1/" title="Posts by Julie Robinson">Julie Robinson</a> (29)</li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/lewarren/" title="Posts by lewarren">Lara Warren</a> (1)</li>
+<li><a href="https://blogs.nasa.gov/ISS_Science_Blog/author/rabarry/" title="Posts by Rachel Barry">Rachel Barry</a> (25)</li>
+</ul>					</section>		</aside><!-- .sidebar .widget-area -->
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			
+			<div class="site-info">
+					
+				<div id="nasa-footer-info">
+		
+				<a class="nasafooterlogo" href="https://www.nasa.gov">
+				  <img src="https://blogs.nasa.gov/ISS_Science_Blog/wp-content/themes/2016nasablogs/images/nasa-logo.svg" alt="NASA logo">
+				</a>
+
+				
+				<div id="status">
+					<span class="site-title"><a href="https://blogs.nasa.gov/ISS_Science_Blog/" rel="home">A Lab Aloft (International Space Station Research)</a></span>	
+				  	<span>National&nbsp;Aeronautics and Space&nbsp;Administration</span>
+				  	<span>NASA Official: Brian Dunbar</span>
+				</div>
+			  </div>
+			  
+			  	<ul id="nasa-footer-links" class="">
+					<li><a href="https://odeo.hq.nasa.gov/nofear.html">No Fear Act</a></li>
+					<li><a href="https://www.nasa.gov/FOIA">FOIA</a></li>
+					<li><a href="https://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+					<li><a href="https://oig.nasa.gov/">Office of Inspector General</a></li>
+					<li><a href="https://www.nasa.gov/news/budget/index.html">Agency Financial Reports</a></li>
+					<li><a href="https://www.nasa.gov/about/contact/index.html">Contact NASA</a></li>
+					<li><a href="https://www.nasa.gov/accessibility">Accessibility</a></li> 
+				</ul>
+			  
+				
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<script id="twentysixteen-script-js-extra">
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+</script>
+<script type="text/javascript" src="https://blogs.nasa.gov/ISS_Science_Blog/_static/??-eJyFztEKwjAMBdAfsnaO4Z7ETxHXppqtTcuSuu3vDcJeRPAx4Z7k2qUYl0mAxMoTErCVRYeNcRUAsiNbnrCYiDSZkF1lE3A9jnywSpFcrF6RxlxOSaWZocTtmJD20L/7oZITzMTfoMT6QGK75Sp1AANpAG90q53cjEXUorzQ8693u75PyAnE3rTsPpgwf1Je0TVdTn13brqm7dvxDeImZqA=" ></script></body>
+</html>

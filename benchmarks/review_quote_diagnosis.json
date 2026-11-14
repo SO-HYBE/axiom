@@ -1,0 +1,30 @@
+{
+  "schema_version": "review-quote-diagnosis-v1",
+  "source_run_id": "233c7b8afd134eac937062d6b4144893",
+  "observed_causes": {
+    "Q030": "Reviewer removed the space before source punctuation in LOI .",
+    "Q035": "Reviewer inserted an ellipsis joining separated source fragments."
+  },
+  "intervention": "General verbatim contiguous-source-span instructions; local schema/source/quote validators unchanged",
+  "cases": [
+    {
+      "question_id": "Q030",
+      "before": "review_quote_mismatch",
+      "after": "strict_local_validation_passed",
+      "before_output_sha256": "3eb6dace6eb264e7e08ae101e1056183db6d35b72151b90acaf96b7f082c443d",
+      "after_output_sha256": "5de663ba17bff202ade00c7216cd1258d5112cc54d2ba946380afc684ad27753",
+      "raw_model_content_included": false
+    },
+    {
+      "question_id": "Q035",
+      "before": "review_quote_mismatch",
+      "after": "strict_local_validation_passed",
+      "before_output_sha256": "712da6f0cb903e5734785864420c4092cf09ec77d86174d46bed9ff449111959",
+      "after_output_sha256": "5bc9fef5f54a1d4bdfadeb085b8e3fe4423736ac6e93311954b074bbb61ab047",
+      "raw_model_content_included": false
+    }
+  ],
+  "historical_records_changed": false,
+  "scientific_grades_created": 0,
+  "note": "Successful review execution is not independent scientific grounding validation."
+}

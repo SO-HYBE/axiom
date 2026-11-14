@@ -1,0 +1,220 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q021",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives",
+  "run": {
+    "run_id": "2a78f012996747edafcbd22ea1b8e25d",
+    "created_at": "2026-11-06T19:32:03.790030+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence is a source description of the PSI-98 investigation objectives, which state the intent to determine fire growth rates and flammability limits. It does not contain measured data, specific fabric names, or numerical results required to rank spacecraft fabrics by measured fire risk. Therefore, no claims can be supported by the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "9e0e029d0b43f2661566856201c9e2ac469374b20734bc1a8aa5a2b565e4c4a7",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Rank all spacecraft fabrics by measured fire risk using only the PSI-98 catalog objectives.",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence is a source description of the PSI-98 investigation objectives, which state the intent to determine fire growth rates and flammability limits. It does not contain measured data, specific fabric names, or numerical results required to rank spacecraft fabrics by measured fire risk. Therefore, no claims can be supported by the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence is a source description of the PSI-98 investigation objectives, which state the intent to determine fire growth rates and flammability limits. It does not contain measured data, specific fabric names, or numerical results required to rank spacecraft fabrics by measured fire risk. Therefore, no claims can be supported by the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-98-named-001-a9ae56261a9b5dfb",
+        "source_id": "psi-98",
+        "title": "Spacecraft Fire Safety Experiment - I (Saffire-I)",
+        "experiment": "Saffire-I",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+        "document_url": null,
+        "text": "The objectives of this investigation were to: (1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal gravity material flammability screening test.",
+        "sha256": "a9ae56261a9b5dfbac174260e88df9c7edbd5fa1495a9b7a156149f16010bcea",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 4; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+        "provenance": [
+          {
+            "bytes": 134230,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-98-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:39.002812+00:00",
+            "sha256": "501b5f625733e29c0c6ff0c12b3de1a3e960a159a8c8f8a21ba5c5803afe0570",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-98/4"
+          },
+          {
+            "bytes": 39166,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+            "key": "files",
+            "method": "POST",
+            "path": "data/raw/named/psi-98-files.bin",
+            "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+            "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+            "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+            "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+          }
+        ],
+        "score": 1.546291,
+        "ranking": {
+          "lexical_score": 1.546291,
+          "matched_terms": [
+            "98",
+            "fire",
+            "objectives",
+            "psi",
+            "spacecraft"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.38461538461538464,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "fire",
+            "objectives"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.69,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "2913f6fea10247f872c6fa0272e85466902f37f29ddcfcf3b2f22eedabd35ada",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "31587f3af97031a84ccd696a0b63577bf4e2b0468b2925eb583b9e22678f701f",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 695,
+          "completion_tokens": 92,
+          "total_tokens": 787
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence is a source description of the PSI-98 investigation objectives, which state the intent to determine fire growth rates and flammability limits. It does not contain measured data, specific fabric names, or numerical results required to rank spacecraft fabrics by measured fire risk. Therefore, no claims can be supported by the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.69,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "2913f6fea10247f872c6fa0272e85466902f37f29ddcfcf3b2f22eedabd35ada",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "31587f3af97031a84ccd696a0b63577bf4e2b0468b2925eb583b9e22678f701f",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 695,
+          "completion_tokens": 92,
+          "total_tokens": 787
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q021",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "2a78f012996747edafcbd22ea1b8e25d",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "1b99aa9702e779d14f288c990e07633bec536d19f63f8c2e84370198825d15bc"
+}

@@ -1,0 +1,460 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q008",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "42d3836edc2a404291cf4646fd85e420",
+    "created_at": "2026-11-06T19:27:48.387222+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "3 claims drafted. The provided abstract describes the BASS-II experiment's scope (small wind tunnel, specific samples) and its implications for fire safety, but it does not contain evidence that the results serve as a 'guaranteed prediction' for a whole cabin fire. The question asks for a guarantee which is not supported by the text; the text only mentions 'implications'."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 3 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "Can I use the small-scale BASS-II results as a guaranteed prediction for a whole cabin fire?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The BASS-II experiment involved burning thin and thick flat samples, acrylic slabs, spheres, and cylinders inside a small wind tunnel.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The abstract explicitly states that the BASS-II experiment involved burning the specified sample types inside a small wind tunnel.",
+          "uncertainty": "The claim accurately reflects the abstract's description of the experimental setup and samples.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the experimental setup and sample types, not the results of a full cabin fire."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The experiment examined the effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The abstract directly lists the specific variables and outcomes examined in the experiment, matching the claim.",
+          "uncertainty": "The claim is fully supported by the text without additional scope limitations.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Lists the variables studied in the small-scale tests; does not confirm applicability to a whole cabin environment."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The abstract states the work has implications for fundamental combustion research and spacecraft fire safety, but does not claim the results are a guaranteed prediction for a whole cabin fire.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "There are several important implications related to fundamental combustion research as well as spacecraft fire safety.",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "There are several important implications related to fundamental combustion research as well as spacecraft fire safety.",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The abstract mentions implications for fundamental combustion research and spacecraft fire safety. It does not contain language claiming guaranteed predictions for whole cabin fires, supporting the negative portion of the claim.",
+          "uncertainty": "The claim relies on the absence of specific text in the abstract; the provided evidence supports the positive assertion of implications but does not explicitly define the limits of prediction, though the lack of such a claim in the text supports the statement.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "There are several important implications related to fundamental combustion research as well as spacecraft fire safety.",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The source describes implications, not a guarantee of predictive validity for full-scale cabin fires."
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "Describes the experimental setup and sample types, not the results of a full cabin fire.",
+          "text": "The BASS-II experiment involved burning thin and thick flat samples, acrylic slabs, spheres, and cylinders inside a small wind tunnel."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "Lists the variables studied in the small-scale tests; does not confirm applicability to a whole cabin environment.",
+          "text": "The experiment examined the effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "There are several important implications related to fundamental combustion research as well as spacecraft fire safety.",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The source describes implications, not a guarantee of predictive validity for full-scale cabin fires.",
+          "text": "The abstract states the work has implications for fundamental combustion research and spacecraft fire safety, but does not claim the results are a guaranteed prediction for a whole cabin fire."
+        }
+      ],
+      "reason": "The provided abstract describes the BASS-II experiment's scope (small wind tunnel, specific samples) and its implications for fire safety, but it does not contain evidence that the results serve as a 'guaranteed prediction' for a whole cabin fire. The question asks for a guarantee which is not supported by the text; the text only mentions 'implications'."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 2.052501,
+        "ranking": {
+          "lexical_score": 2.052501,
+          "matched_terms": [
+            "bass",
+            "fire",
+            "ii",
+            "results",
+            "small"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.45454545454545453,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "bass",
+            "fire",
+            "ii",
+            "results",
+            "small"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 2457.4,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "c66ebfb014adcf412be96e2b07833d117cc75d96d07a7f3c131de26a79866500",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "a8909960b26a5ec61a1e9e0a5f891d4b072cb45e0db482981fcabb2dc97e77f6",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 898,
+          "completion_tokens": 527,
+          "total_tokens": 1425
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 734,
+        "rate_limits": {
+          "remaining_requests": 940,
+          "reset_requests_s": 5184.0,
+          "remaining_tokens": 4991,
+          "reset_tokens_s": 51.6
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "c3e46f5ea939f939355ff7afe10c8485ceaf988252251999fdfa38688fffd59b",
+        "cache_write": "written",
+        "latency_ms": 2453
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 2457.4,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "c66ebfb014adcf412be96e2b07833d117cc75d96d07a7f3c131de26a79866500",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "a8909960b26a5ec61a1e9e0a5f891d4b072cb45e0db482981fcabb2dc97e77f6",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 898,
+          "completion_tokens": 527,
+          "total_tokens": 1425
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 734,
+        "rate_limits": {
+          "remaining_requests": 940,
+          "reset_requests_s": 5184.0,
+          "remaining_tokens": 4991,
+          "reset_tokens_s": 51.6
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "c3e46f5ea939f939355ff7afe10c8485ceaf988252251999fdfa38688fffd59b",
+        "cache_write": "written",
+        "latency_ms": 2453
+      }
+    ],
+    "question_id": "Q008",
+    "system": "ignis",
+    "split": "dev",
+    "run_id": "42d3836edc2a404291cf4646fd85e420",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": true,
+    "shared_draft_from_run_id": "453ee4f25dbe44e58b5d7ec93cb1e5ec",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "453ee4f25dbe44e58b5d7ec93cb1e5ec",
+  "record_sha256": "a1679eb758bfe10a99412323b26c3fd8e90e30695012c87392674dfc2dea56e8"
+}

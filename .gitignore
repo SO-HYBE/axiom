@@ -1,0 +1,40 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local secrets and machine configuration
+.env
+.env.*
+!.env.example
+
+# Acquired publication bytes (re-download with `python -m axiom ingest`)
+data/raw/*.pdf
+data/raw/*.pdf.provenance.json
+
+# Local runtime records that are not part of the shipped evidence set
+runs/audits/
+runs/comparisons/
+runs/history/
+runs/model_cache/
+runs/model_diagnostics/
+runs/safety_diagnostics/
+runs/scenarios/*
+!runs/scenarios/.gitkeep
+*.lock.tmp
+
+# Editors and operating system files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and screenshots in progress
+*.log
+screenshots/*.tmp

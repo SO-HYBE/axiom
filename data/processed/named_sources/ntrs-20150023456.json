@@ -1,0 +1,56 @@
+[
+  {
+    "chunk_id": "ntrs-20150023456-named-001-7e14ec15bdd9d40a",
+    "conditions": {
+      "flow_cm_s": null,
+      "fuel": null,
+      "gravity": null,
+      "oxygen_percent": null,
+      "pressure_kpa": null
+    },
+    "document_url": null,
+    "evidence_role": "scoped_document_text",
+    "evidence_tier": 1,
+    "experiment": "FLEX",
+    "locator": "report section 4.2; NASA report section 4.2 Analyzed Data; printed page 16; official NTRS text extraction",
+    "named_scope_verified": true,
+    "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+    "permission_status": "allowed",
+    "section": "report section 4.2",
+    "sha256": "7e14ec15bdd9d40a89c56a5e36bd1db5c23a934bc6ed9219bc8e3fae73c00620",
+    "source_asset_key": "text",
+    "source_id": "ntrs-20150023456",
+    "source_kind": "technical_report",
+    "status": "active",
+    "text": "The great majority of the tests were of free-floating droplets (no support tether). For these tests, the droplets were rarely completely motionless; they had some residual velocity from deployment and ignition and then drifted more as a result of the residual acceleration of the spacecraft (g-jitter). As a result of this, the droplets did drift out of the FOV of one (typically the HiBMs) or more of the CIR cameras. For tests where the droplet drifted out of the FOV of the camera, the data end abruptly (e.g., the droplet regression during the FLEX–011 test). This does not correspond to the end of the test, just to the end of the data from that particular view (note that the flame histories continue during the FLEX–011 test). For a minority of tests, the droplet drifted out of the HiBMs FOV as a result of the deployment, ignition, and/or g-jitter. However, it then actually drifted back into the FOV. In this case, there is a gap in the history of that view (e.g., the droplet history for the FLEX–013 test). The sharp decline in the droplet size on either side of that gap corresponds to the time when the droplet (usually) or flame (rarely) was partially in and partially out of the FOV. For some tests, some of the CIR cameras failed to record data for a portion of the test, and for other tests, none of the test was recorded. These show up in the plots in Appendix A as either missing traces or gaps in the data (e.g., the FLEX–024 test, for which the HiBMs failed to record any data). The detailed data plots in Appendix B show two different measurements of flame diameter, one from the LLUV camera and the other from the color camera. For almost all of the tests, the diameter measured by the LLUV is larger than that measured by the color camera.",
+    "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+    "url": "https://ntrs.nasa.gov/citations/20150023456"
+  },
+  {
+    "chunk_id": "ntrs-20150023456-named-002-25866720ed2c308d",
+    "conditions": {
+      "flow_cm_s": null,
+      "fuel": null,
+      "gravity": null,
+      "oxygen_percent": null,
+      "pressure_kpa": null
+    },
+    "document_url": null,
+    "evidence_role": "scoped_document_text",
+    "evidence_tier": 1,
+    "experiment": "FLEX",
+    "locator": "report section 4.2; NASA report section 4.2 Analyzed Data; printed page 16; official NTRS text extraction",
+    "named_scope_verified": true,
+    "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+    "permission_status": "allowed",
+    "section": "report section 4.2",
+    "sha256": "25866720ed2c308d003027b40662c292b69a9f9fc666952026294e326da22e68",
+    "source_asset_key": "text",
+    "source_id": "ntrs-20150023456",
+    "source_kind": "technical_report",
+    "status": "active",
+    "text": "The flame diameters from the color camera are typically about three-fourths of those from the LLUV camera. This discrepancy is not unusual and is a result of the LLUV being sensitive to the OH• chemiluminescence, which typically peaks outside of the visible flame. For heptane tests, where there is significant soot luminosity (which is not visible in the LLUV, but dominates the color camera), the discrepancy is even larger because the peak of the soot luminosity is typically inside the blue flame envelope. The digital image data from the FLEX experiments yielded a wealth of information regarding the combustion of liquid fuel droplets in quiescent and subbuoyant flow (achieved by translating the fiber) microgravity environments. The data archived in this report include the following: (1) Droplet size as a function of time (2) LLUV flame size as a function of time (3) Color camera flame size as a function of time The video records also provide qualitative information of the combustion process including, but not limited to, (1) (2) (3) (4) (5) (6) Droplet shape as a function of time Qualitative sooting propensity as a function of time Flame shape and flame dynamics as a function of time Disruptive burning Droplet/fiber interactions Postcombustion vaporization and vapor cloud formation In an effort to document and archive the results from the FLEX experiments, all data for (1) to (6) are archived in this report. Appendix A gives the detailed results of the experiments. The data are also available electronically as text files and compressed video recordings of the HiBMs and color camera views.",
+    "title": "Detailed Results from the Flame Extinguishment Experiment (FLEX) March 2009 to December 2011",
+    "url": "https://ntrs.nasa.gov/citations/20150023456"
+  }
+]

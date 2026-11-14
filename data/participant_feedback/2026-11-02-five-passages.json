@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-02",
+  "type": "participant_textual_support_pilot",
+  "reviewer": "participant",
+  "scientific_expertise_verified": false,
+  "sampling": {
+    "seed": 4125523940,
+    "pool_size": 40,
+    "method": "uniform without replacement from pending passage queue"
+  },
+  "annotation_status": "participant_feedback_with_separate_ai_commentary",
+  "use": "Qualitative prototype feedback; separate from scientific approval and held-out benchmark grading.",
+  "cases": [
+    {
+      "case_id": "P001",
+      "chunk_id": "ntrs-20240008602-p002-c02-7a9690808f",
+      "source_id": "ntrs-20240008602",
+      "text_sha256": "7a9690808fc4b6114ed200f0b4d2c7b43fdbc8949232935202a3e2139950a43b",
+      "locator": "PDF page 2, text part 2",
+      "source_url": "https://ntrs.nasa.gov/citations/20240008602",
+      "source_text": "Both Saffire IV and V experiments utilized six remote sensors (RS) spread throughout Cygnus that measure temperature and product concentration, such as CO 2, as well as a Far Field Device (FFD) that is representative of average t emperature and species concentration in the cabin. Both Saffire experiments had cotton based and Polymethyl (Methacrylate) (PMMA) samples as fuel for the burn events. The focus of this paper is on the two PMMA burn events in Saffire V. Similar to previous work12,13, the effect of burning the PMMA samples on the vehicle temperature and combustion product spread are predicted. The geometry and cargo configuration for Saffire V is the same that was used in previous work that explored the cotton sample in Saffire V13. The effective convective heat transfer between the cargo and the cabin air that was calibrated in that same work is also used in this work, which was calibrated to fit the closest RS to the Saffire outlet. The development of this model will aid in the prediction of heat and mass transfer throughout a spacecraft after a fire. II. Saffire Experiment Saffire I – V have all take n place on the NG Cygnus vehicle . The experimental data collection and downlink ing happened after the cargo from the resupply mission was unloaded onto the ISS and the trash was packed into Cygnus. A schematic of a nearly empty Cygnus vehicle is provided in Figure 1 before the cargo is loaded , highlighting the Saffire payload and instruments used to collect data. The pressure vessel is approximately 4 meters in length and 3 meters in diameter. The Environmental Control and Life Support System (ECLSS) recirculated flow throughout the vehicle by taking air from the zenith side, near the (FFD), and expelling it on the nadir side where Saffire is located.",
+      "proposed_summary": "This paper focuses on two burns involving PMMA, a type of plastic, during Saffire V.",
+      "participant_label": "supported",
+      "participant_note": "",
+      "assistant_observation": "Text supports two PMMA burn events. Expansion of PMMA as plastic needs surrounding context."
+    },
+    {
+      "case_id": "P002",
+      "chunk_id": "ntrs-20170008805-p015-c01-0bc1a28ab1",
+      "source_id": "ntrs-20170008805",
+      "text_sha256": "0bc1a28ab14afbdbfb1c8b4c0bd9324e18d4d942f945c317fcfc9a1bc743c3f8",
+      "locator": "PDF page 15, text part 1",
+      "source_url": "https://ntrs.nasa.gov/citations/20170008805",
+      "source_text": "Fuel characteristics (“SIBAL” fabric) 75% cotton, 25% fiberglass blend Simple weave pattern (60 x 40 threads per inch) Cotton and fiberglass fibers intermingled Overall area density: 18 mg/cm2 Fuel sizes (W x L): 40.6 x 94 cm and 5 x 29 cm",
+      "proposed_summary": "The SIBAL fabric consisted of 75% fiberglass and 25% cotton.",
+      "participant_label": "supported",
+      "participant_note": "",
+      "assistant_observation": "Summary reverses cotton/fiberglass percentages. Participant response is preserved."
+    },
+    {
+      "case_id": "P003",
+      "chunk_id": "ntrs-20150008961-p001-c01-0faf783e2b",
+      "source_id": "ntrs-20150008961",
+      "text_sha256": "0faf783e2b37ef092a74f7247aaa99e0a04951339edad7c3ebd571d1e5da3d2e",
+      "locator": "PDF page 1, text part 1",
+      "source_url": "https://ntrs.nasa.gov/citations/20150008961",
+      "source_text": "Sub Topic: Fire Research 1 9th U. S. National Combustion Meeting Organized by the Central States Section of the Combustion Institute May 17-20, 2015 Cincinnati, Ohio Microgravity Flammability of PMMA Rods in Concurrent Flow Sandra L. Olson1, Paul V. Ferkul2 1Combustion Physics and Reacting Systems Branch, NASA Glenn Research Center at Lewis Field, m. s. 77-5, Cleveland OH, 44135-3127 USA 2 Universities Space Research Association, Advanced Research Associates Office at NASA Glenn Research Center at Lewis Field, m. s. 110-3, Cleveland OH, 44135-3127 USA *Corresponding Author Email: Sandra.Olson@NASA.gov Abstract: Microgravity experiments burning cast PMMA cylindrical rods in axial flow have been conducted aboard the International Space Station in the Microgravity Science Glovebox (MSG) facility using the Burning and Suppression of Solids (BASS) fl ow duct, as part of the BASS-II experiment. Twenty-four concurrent-flow tests were performed, focusing on finding flammability limits as a function of oxygen and flow speed. The oxygen was varied by using gaseous nitrogen to vitiate the working volume of the MSG. The speed of the flow parallel to the rod was varied using a fan at the entrance to the duct. Both blowoff and quenching limits were obtained at several oxygen concentrations. Each experiment ignited the rod at the initially hemispher ical stagnation tip of the rod, and allowed the flame to develop and heat the rod at a sufficient flow to sust ain burning. For blowoff limit tests, the astronaut quickly turned up the flow to obtain extinction. Complementary 5.18-second Zero Gravity Facility drop tests were conducted to compare blowoff limits in short and long duration microgravity.",
+      "proposed_summary": "Researchers performed 24 concurrent-flow tests involving PMMA rods aboard the ISS, investigating how oxygen and airflow relate to flammability.",
+      "participant_label": "Unsure",
+      "participant_note": "the paper never mentioned anywhere the word \"airflow\" it mentioned only \"flow\", but the summary concluded that it meant \"airflow\", now this could be the actual experiment, but i am not sure of the technicalities.",
+      "assistant_observation": "Participant flagged terminology inference. Retain uncertainty. Use source wording or cite explicit gas-flow context."
+    },
+    {
+      "case_id": "P004",
+      "chunk_id": "ntrs-20090014812-p002-c01-58a94b815d",
+      "source_id": "ntrs-20090014812",
+      "text_sha256": "58a94b815dc6693e06f3b585b8ae67e1ee33171a6238b7c966b7c876d3083ad8",
+      "locator": "PDF page 2, text part 1",
+      "source_url": "https://ntrs.nasa.gov/citations/20090014812",
+      "source_text": "atmospheric pressures and oxygen concentrations. This investigation will develop predictive theoretical and numerical codes and chemical kinetic schemes to model flammability boundaries as a function effective gravitational acceleration on the unique ambient conditions encountered in space exploration applications.The development and validation of these models will require detailed spatially and temporally resolved measurements of droplet burning rate, flame extinction, flame radiation, soot concentration, soot temperature, etc. This investigation will also develop improved and validated reduced (simplified) theoretical and numerical sub-models of important physical processes (chemical kinetics, radiation, soot formation/destruction) that can be used in simulations of large scale, realistic fires. The independent experiment variables analyzed by MDCA-FLEX are: Oxygen Mole Fraction: The ambient oxygen mole fraction in a typical space environment can vary from high concentrations in EVA pre-breathing environments down to that typically found in air. At high oxygen concentrations, however, the chemical times are small enough (relative to the characteristic flow times) such that the droplets will burn to completion rather than exhibiting flame extinction. Therefore, it is also necessary to study low oxygen concentrations, down to the Limiting Oxygen Index (LOI). It is also important to determine the LOI in order to verify the chemical mechanisms. The oxygen mole fractions in the present study will vary from 0.10 to 0.50. The chamber must also be large enough such that there is no significant decrease in ambient oxygen mole fraction during an experiment (i.e. the droplet burns in an essentially constant ambient).",
+      "proposed_summary": "The document reports completed experiments conducted at one fixed oxygen concentration.",
+      "participant_label": "Unsupported",
+      "participant_note": "the summary is totally different from the given excerpt, it most probably hallucinated on this one.",
+      "assistant_observation": "Future varying oxygen fraction does not support completed constant-concentration tests."
+    },
+    {
+      "case_id": "P005",
+      "chunk_id": "ntrs-20160000593-p014-c01-9ddb364404",
+      "source_id": "ntrs-20160000593",
+      "text_sha256": "9ddb364404efb00533f0ed05bb55c0447850fc9ff1767946dee3302a93bb4fdc",
+      "locator": "PDF page 14, text part 1",
+      "source_url": "https://ntrs.nasa.gov/citations/20160000593",
+      "source_text": "Material Ignition and Suppression Test Carlos Fernandez-Pello, University of California, Berkeley Objective Understand the effect of space exploration atmospheres (SEA) on the piloted ignition under an external radiant flux of a representative combustible material, as well as on its fire suppression characteristics. Status ― Three different diameters (0.25”, 0.375”, 0.5”) of black and clear PMMA rods were tested. ― Oxygen concentrations between 16% to 21% and flow velocity between 0.4 cm/sec to 4 cm/sec were tested. The total set of experiments yielded 54 unique flame spread rates.",
+      "proposed_summary": "The reported tests included three rod diameters, oxygen concentrations between 16% and 21%, and flow speeds between 0.4 and 4 cm/s.",
+      "participant_label": "supported",
+      "participant_note": "",
+      "assistant_observation": "Listed ranges and rod count match excerpt."
+    }
+  ]
+}

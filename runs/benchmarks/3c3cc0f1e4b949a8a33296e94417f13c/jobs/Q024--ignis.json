@@ -1,0 +1,145 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q024",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf | spacecraft fire safety",
+  "run": {
+    "run_id": "8079514d711c496eb925b29d9ebdcb59",
+    "created_at": "2026-11-06T19:32:05.032027+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf | spacecraft fire safety",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence describes the purpose of the Saffire experiment (understanding fire in microgravity for spacecraft) but does not contain data, rates, or comparisons regarding Martian habitats. Therefore, it is insufficient to determine if the experiment would establish exact rates in that specific environment."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 0 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "af9edd39d29ca5e3e4129fae27ffdcdc89b53e076792e90c7809c44735f2989f",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Would the same orbital experiment alone establish the exact rate in a Martian habitat?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The provided evidence describes the purpose of the Saffire experiment (understanding fire in microgravity for spacecraft) but does not contain data, rates, or comparisons regarding Martian habitats. Therefore, it is insufficient to determine if the experiment would establish exact rates in that specific environment.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence describes the purpose of the Saffire experiment (understanding fire in microgravity for spacecraft) but does not contain data, rates, or comparisons regarding Martian habitats. Therefore, it is insufficient to determine if the experiment would establish exact rates in that specific environment."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-saffire-factsheet-named-001-34b3f71ed10cd91d",
+        "source_id": "named-saffire-factsheet",
+        "title": "Spacecraft Fire Safety Demonstration (Saffire)",
+        "experiment": "Saffire",
+        "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "document_url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+        "text": "Understanding how ﬁre behaves in microgravity, and how different materials propagate ﬂames in space is immensely important for the development of future crew spacecraft. It also will help inform operational protocols for dealing with ﬁre emergencies, particularly when astronauts do not have the ability to exit a spacecraft or quickly return to Earth. Saffire is managed by NASA’s Advanced Exploration Systems Division, which pioneers innovative approaches and public-private partnerships to rapidly develop prototype systems, advance key capabilities, and validate operational concepts for future human missions beyond Earth orbit.",
+        "sha256": "34b3f71ed10cd91ddb7e1be68ce511f6e96512ea4ef914a337324a7d95345a14",
+        "source_kind": "factsheet",
+        "evidence_tier": 3,
+        "section": "Spacecraft Fire Safety",
+        "locator": "Spacecraft Fire Safety; PDF physical page 1; heading Spacecraft Fire Safety; before Saffire-I",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "pdf",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "4eed8a4d5bce284e8d9ec24b637b21fdbf4b1fbbaadb663da3b66ee89faecd5f",
+        "provenance": [
+          {
+            "bytes": 99155,
+            "content_type": "application/pdf",
+            "final_url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+            "key": "pdf",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-factsheet-pdf.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.951492+00:00",
+            "sha256": "4eed8a4d5bce284e8d9ec24b637b21fdbf4b1fbbaadb663da3b66ee89faecd5f",
+            "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.23,
+    "error": null,
+    "model_calls": [],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence describes the purpose of the Saffire experiment (understanding fire in microgravity for spacecraft) but does not contain data, rates, or comparisons regarding Martian habitats. Therefore, it is insufficient to determine if the experiment would establish exact rates in that specific environment.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.23,
+    "model_calls": [],
+    "question_id": "Q024",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "8079514d711c496eb925b29d9ebdcb59",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": false,
+    "shared_draft_from_run_id": "33b3d092bf0043979c77c7ad745f2275",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "33b3d092bf0043979c77c7ad745f2275",
+  "record_sha256": "fc95352d08e59b7f30fc0a5c6bfdddccba1b306849e17c380a487c2b1cc4074a"
+}

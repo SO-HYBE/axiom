@@ -1,0 +1,367 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q025",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "b2d9f2496fe043f19de820f2f7c87ed6",
+    "created_at": "2026-11-06T19:32:05.184653+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "3 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "3 claims drafted. The provided evidence consists of source descriptions of the FLEX investigation's objectives and approach. It does not contain experimental results, specific suppressant dose data, or a recommendation for a universal dose applicable to every spacecraft fuel. Therefore, the question cannot be answered with the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "150ce43fcc06da5ae5a2dbaf7ca3894ce1e78b81098cd3cc559e21591b801e74",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Can I recommend a universal suppressant dose for every spacecraft fuel from the FLEX catalog?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence consists of source descriptions of the FLEX investigation's objectives and approach. It does not contain experimental results, specific suppressant dose data, or a recommendation for a universal dose applicable to every spacecraft fuel. Therefore, the question cannot be answered with the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a stated objective of the investigation, not a measured result or a recommendation for a universal dose.",
+        "text": "The FLEX investigation aims to measure the effectiveness of various gaseous fire suppressants, including CO2, He, and SF6, in microgravity environments.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This describes the experimental approach and objective, not a specific dose recommendation or universal applicability.",
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and suppressant presence.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a goal for model development, not a validated universal suppressant dose for all spacecraft fuels.",
+        "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions using space-based and ground-based data.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a stated objective of the investigation, not a measured result or a recommendation for a universal dose.",
+          "text": "The FLEX investigation aims to measure the effectiveness of various gaseous fire suppressants, including CO2, He, and SF6, in microgravity environments."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This describes the experimental approach and objective, not a specific dose recommendation or universal applicability.",
+          "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and suppressant presence."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a goal for model development, not a validated universal suppressant dose for all spacecraft fuels.",
+          "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions using space-based and ground-based data."
+        }
+      ],
+      "reason": "The provided evidence consists of source descriptions of the FLEX investigation's objectives and approach. It does not contain experimental results, specific suppressant dose data, or a recommendation for a universal dose applicable to every spacecraft fuel. Therefore, the question cannot be answered with the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets. A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI . The basic outline of the procedure to construct this diagram is as follows: 1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests. 2. Select a smaller droplet size (≈ 3 mm) 3. Select an ambient oxygen mole fraction that, based on ground-based testing, will support droplets burning to completion (as opposed to extinguishing at a finite droplet size). 4. Perform a droplet combustion test. 5. Increase the droplet size or repeat the test (if finite extinction diameter at flame extinction observed). 6. Continue steps 4 and 5 until flame exists for only a short time after ignition (radiative extinction). 7. Continue steps 4 thru 6 at a decreased ambient oxygen mole fraction. 8. Continue step 7 to an ambient oxygen mole fraction where the droplet does not ignite. There were ambient conditions where the extinction droplet sizes at all ambient oxygen mole fractions were too small to either be observed or measured with the available diagnostics. In this case, the determination of the LOI is similar, but more iterative. Instead of observing flame extinction, however, the procedure involved an iterative sequence of tests (burn to completion followed by a no ignition test) with progressively smaller increments in ambient oxygen mole fraction to determine the LOI . For the slow flow tests (in the flight experiment), the configuration of the flight hardware did not allow for adequate diagnostics over the entire test for a droplet in a uniform, steady convective flow.",
+        "sha256": "13962d92ffe0d118651d871ba8e008195573ebb154fb79ef1f39fcfbc0d01a50",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Approach",
+        "locator": "Approach; PSI version 5; JSON field approach",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-69-named-003-455f574b661555b7",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "In these tests, the procedure will be to duplicate tests above which yield finite-sized extinction droplet diameters. Near the end of the tests, prior to flame extinction, the droplet will be subjected to a small, sub-buoyant, convective flow (imparted by translating the droplet at a slow, uniform speed). The goal of the experiment is then to see how the presence of this flow influences the extinction process. Note, a large number of the tests involve free droplets (as opposed to fiber-supported droplets) and a number of these tests will have droplets with a slow drift velocity. Data gathered from these tests to examine the influences of a small, sub-buoyant flow on both the burning and extinction process.",
+        "sha256": "455f574b661555b74931c7a38999c9a4ed05db4fded51ad1277385133ff72925",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Approach",
+        "locator": "Approach; PSI version 5; JSON field approach",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions. The mission seeks to validate and improve simplified models by incorporating detailed chemical reactions, heat transfer, and material movement, using both space-based data and extensive ground-based tests. Key flight experiment goals include obtaining high-resolution measurements of droplet burning rates, flame extinction behavior, heat radiation, soot levels, and temperature profiles, while systematically analyzing the effects of different ambient conditions and suppressant concentrations. These investigations are essential for advancing the fundamental understanding of combustion processes in microgravity and enhancing fire safety protocols for future space missions.",
+        "sha256": "0693c364c63bf14b5c08c18da3eef92c05c95f1cbdd0f180fdf224318310391c",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 5; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 1.0,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7344d7523b8394d4ad892a8a80eeefeab03da7ca13237bd9714519ad2ac27aa7",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "4e61023610bc1e94ecf84fdbef36928b1aa3276cd21568f28fe5ae59284bf0cf",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1667,
+          "completion_tokens": 603,
+          "total_tokens": 2270
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence consists of source descriptions of the FLEX investigation's objectives and approach. It does not contain experimental results, specific suppressant dose data, or a recommendation for a universal dose applicable to every spacecraft fuel. Therefore, the question cannot be answered with the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 1.0,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7344d7523b8394d4ad892a8a80eeefeab03da7ca13237bd9714519ad2ac27aa7",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "4e61023610bc1e94ecf84fdbef36928b1aa3276cd21568f28fe5ae59284bf0cf",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1667,
+          "completion_tokens": 603,
+          "total_tokens": 2270
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q025",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "b2d9f2496fe043f19de820f2f7c87ed6",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "0bb55391398445deb7f8a00d21892714ff9516475ef2e48f4e5cc87c5663af8e"
+}

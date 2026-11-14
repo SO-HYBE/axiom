@@ -1,0 +1,292 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q032",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "ee36174ffb3842bbbd6532ec755a6d7b",
+    "created_at": "2026-11-06T19:35:02.547792+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "2 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "364984a736ad0af777a3af924f98f06797b8235a4941ff8920413b6626ebdcf0",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "A correct article URL is paired with a fabricated quote. Should IGNIS display the quote as verified?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+            "source_id": "named-saffire-vi-news"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The provided evidence does not contain the specific fabricated quote mentioned in the question, nor does it describe the operational logic of the IGNIS system.",
+        "text": "The provided source describes the Saffire-VI experiment, which concluded on Jan. 9, 2024, after launching in August 2023.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+            "source_id": "named-saffire-vi-news"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The source does not address the verification status of quotes or the behavior of the IGNIS system.",
+        "text": "The source identifies Dr. David Urban as the principal investigator and Dr. Gary Ruff as the project manager for the Saffire project at NASA’s Glenn Research Center.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The provided evidence does not contain the specific fabricated quote mentioned in the question, nor does it describe the operational logic of the IGNIS system.",
+          "text": "The provided source describes the Saffire-VI experiment, which concluded on Jan. 9, 2024, after launching in August 2023."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The source does not address the verification status of quotes or the behavior of the IGNIS system.",
+          "text": "The source identifies Dr. David Urban as the principal investigator and Dr. Gary Ruff as the project manager for the Saffire project at NASA’s Glenn Research Center."
+        }
+      ],
+      "reason": "The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space. The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere. Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016. Throughout the experiment series, researchers gathered data NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs. “How big a fire does it take for things to get bad for a crew?” Urban said. “This kind of work is done for every other inhabited structure here on Earth – buildings, planes, trains, automobiles, mines, submarines, ships – but we hadn’t done this research for spacecraft until Saffire.” Like previous Saffire experiments, Saffire-VI took place inside a unit on an uninhabited Cygnus spacecraft that had already departed from the space station, ensuring the safety of the orbiting laboratory and a more representative flight environment. However, this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft. NASA ignited the final set of space fire experiments for Saffire-VI inside Northrop Grumman’s Cygnus cargo spacecraft at the end of the NG-19 resupply mission to the International Space Station.",
+        "sha256": "6abf3fcf41eb2e659a5910982b1432d360606127dec04d24b138d52f491021a3",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "Saffire, or Spacecraft Fire Safety Experiment, was a series of six investigations that provided insights into how fires grow and spread in space. This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars. Video credit: NASA During the 19 Saffire-VI experiment runs, the NASA team and counterparts at Northrop Grumman made various adjustments to air conditions. They then ignited a flame on materials such as plexiglass, cotton, Nomex, and Solid Inflammability Boundary at Low-Speed fabrics. A bead-lined wire inside the unit ignited the materials. “The Saffire flow unit is a wind tunnel. We’re pushing air through it,” Ruff said. “Once test conditions are set, we run electrical current through a thin wire, and the materials ignite.” Cameras inside allowed the team to observe the flame while remote sensors outside the Saffire flow unit collected data about what was happening in the Cygnus vehicle. The images and information were gathered in real-time before being sent to Earth for scientists to analyze. “You’ve got a heat release rate and a rate of release of combustion products,” Ruff said. “You can take those as model input and predict what will happen in a vehicle.” The next decade of exploration and science missions will see astronauts flying deeper into space and to locations that have yet to be explored. Though the Saffire experiments have been extinguished, NASA has learned valuable lessons and gathered mountains of data on fire behavior that will help the agency design safer spacecraft and accomplish its ambitious future missions.",
+        "sha256": "5b2442945f8c049fd3cfb5b3663f055ee5ce99f3fbbfd57646e9a1e6ba3d465f",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.93,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "175604a541c907a5a547588b51e679b63df44945c49e72f2340f332998a5b4fe",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "7bed9565f27044b40c4a3988ebe5b85e7a8de7c65b462bb4eafca82405c336b1",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1535,
+          "completion_tokens": 522,
+          "total_tokens": 2057
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.93,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "175604a541c907a5a547588b51e679b63df44945c49e72f2340f332998a5b4fe",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "7bed9565f27044b40c4a3988ebe5b85e7a8de7c65b462bb4eafca82405c336b1",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1535,
+          "completion_tokens": 522,
+          "total_tokens": 2057
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q032",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "ee36174ffb3842bbbd6532ec755a6d7b",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "0cfef3c359c8cdbf344869f52c5af262a336ed19d557a6633b20ad862ca79f12"
+}

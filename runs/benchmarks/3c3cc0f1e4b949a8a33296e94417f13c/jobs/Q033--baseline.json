@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q033",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "f3a4c983c70b4711bc12d0997243a533",
+    "created_at": "2026-11-06T19:35:21.930690+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Two records give different extinction results under different oxygen levels. Must IGNIS label them a contradiction?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.59,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "077ffa42b9e75adc183f53f91860f81cc71945d542b6387856ba01528b312acd",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "6fd48d23adc031c980d1c9da44be1c4307240ba68d649e71dc8a2692c4b9a116",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 116,
+          "total_tokens": 503
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence is empty, and the requested source scope (PSI-69) is not accessible or provided in the context. Without specific data from the named source regarding the 'IGNIS' system or the specific records mentioned, it is impossible to determine if the system labels the results as a contradiction. Additionally, the prompt notes that hypothetical test scenarios are not NASA findings, further limiting the ability to make a definitive claim without the specific source text.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.59,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "077ffa42b9e75adc183f53f91860f81cc71945d542b6387856ba01528b312acd",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "6fd48d23adc031c980d1c9da44be1c4307240ba68d649e71dc8a2692c4b9a116",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 116,
+          "total_tokens": 503
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q033",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "f3a4c983c70b4711bc12d0997243a533",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "faced63099678c7ef371a4fe7c46d2f177cc3666c9e9b87c08427af1ebf58513"
+}

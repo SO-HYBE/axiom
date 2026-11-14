@@ -1,0 +1,197 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q016",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "0b8ee56a98364fe3a1565ee9cab2d054",
+    "created_at": "2026-11-06T19:30:17.649838+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "unfiltered_answer",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The question asks for the rationale behind operating Saffire experiments after cargo vehicle departure. While no specific evidence text was provided in the prompt, general knowledge of NASA's Saffire program indicates that these experiments are conducted on departing cargo vehicles (like Cygnus or Dragon) to safely test fire behavior in microgravity without endangering the ISS crew or infrastructure. The 'burn out' aspect mentioned in the URL title supports the inference that the goal is to observe the full fire lifecycle safely."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "unfiltered answer"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Why were the Saffire experiments operated after the uninhabited cargo vehicle left the ISS?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station.\n\nThe Saffire experiments are long-running spacecraft fire experiments conducted by NASA.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "No specific source text provided to verify the exact operational rationale beyond general safety principles.",
+        "text": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "source_description",
+        "limitations": "Based on the URL title and general knowledge; no specific evidence text provided.",
+        "text": "The Saffire experiments are long-running spacecraft fire experiments conducted by NASA.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "draft_checks": [
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "No specific source text provided to verify the exact operational rationale beyond general safety principles.",
+        "text": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "source_description",
+        "limitations": "Based on the URL title and general knowledge; no specific evidence text provided.",
+        "text": "The Saffire experiments are long-running spacecraft fire experiments conducted by NASA.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [],
+          "claim_type": "inference",
+          "limitations": "No specific source text provided to verify the exact operational rationale beyond general safety principles.",
+          "text": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station."
+        },
+        {
+          "citations": [],
+          "claim_type": "source_description",
+          "limitations": "Based on the URL title and general knowledge; no specific evidence text provided.",
+          "text": "The Saffire experiments are long-running spacecraft fire experiments conducted by NASA."
+        }
+      ],
+      "reason": "The question asks for the rationale behind operating Saffire experiments after cargo vehicle departure. While no specific evidence text was provided in the prompt, general knowledge of NASA's Saffire program indicates that these experiments are conducted on departing cargo vehicles (like Cygnus or Dragon) to safely test fire behavior in microgravity without endangering the ISS crew or infrastructure. The 'burn out' aspect mentioned in the URL title supports the inference that the goal is to observe the full fire lifecycle safely."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.58,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "076422135a83a67140e994f7cddd811ba48c42293a28e7fe09da06cd19a68011",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "d90e65296dc09516421a79a7372a5d3d054adf6cf7327e68f499c935fa798394",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 408,
+          "completion_tokens": 276,
+          "total_tokens": 684
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station.\n\nThe Saffire experiments are long-running spacecraft fire experiments conducted by NASA.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "No specific source text provided to verify the exact operational rationale beyond general safety principles.",
+        "text": "The Saffire experiments were operated after the cargo vehicle left the ISS to allow the fire to burn out in a controlled environment without risk to the crew or the station.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "source_description",
+        "limitations": "Based on the URL title and general knowledge; no specific evidence text provided.",
+        "text": "The Saffire experiments are long-running spacecraft fire experiments conducted by NASA.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "latency_ms": 0.58,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "076422135a83a67140e994f7cddd811ba48c42293a28e7fe09da06cd19a68011",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "d90e65296dc09516421a79a7372a5d3d054adf6cf7327e68f499c935fa798394",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 408,
+          "completion_tokens": 276,
+          "total_tokens": 684
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q016",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "0b8ee56a98364fe3a1565ee9cab2d054",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "65e9897d15a5572b514ce543932c2982178d844b05737fcdc6452183bba19c18"
+}

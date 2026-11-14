@@ -1,0 +1,50 @@
+{
+  "schema_version": "phase7-validation-v1",
+  "validated_on": "2026-11-06",
+  "python": "3.12.10",
+  "tests": {
+    "run": 345,
+    "passed": 342,
+    "skipped": 3,
+    "skip_reason": "Windows symlink creation unavailable"
+  },
+  "dashboard_tests": 24,
+  "clean_install": {
+    "fresh_venv": true,
+    "api_keys_removed": true,
+    "pip_no_index": true,
+    "bundled_wheels": [
+      "pypdf==6.13.0",
+      "setuptools==80.9.0"
+    ],
+    "candidate_archive_sha256": "ced1b510c159e73f59a6efb21cea7f6321b549f5df55e708483e62ab352ad069"
+  },
+  "offline_checks": {
+    "core_passages": 294,
+    "saved_demos": 3,
+    "named_source_scopes": 35,
+    "model_constructions": 0,
+    "http_endpoints_passed": true,
+    "benchmark_integrity_passed": true,
+    "windows_launcher_passed": true,
+    "browser_three_case_walkthrough_passed": true
+  },
+  "benchmark_status": {
+    "scheduled": 108,
+    "completed": 103,
+    "failed": 2,
+    "pending": 3,
+    "graded": 0
+  },
+  "presentation_cleanup": "Neutral wording in current docs, agent instructions and inventory display labels; dates, safeguards, source entries and frozen records preserved",
+  "blocked_cleanup": [],
+  "notice": "Engineering reproduction checks; no scientific quality score or new model generation.",
+  "wording_cleanup": {
+    "files_preserved": true,
+    "source_entries_unchanged": true,
+    "core_corpus_sha256": "b47916f2bd8cd6a35f0253cc8473c3cfd5042b59c9e922e6b49d481de0e27c9a",
+    "inventory_display_metadata_updated": true,
+    "frozen_benchmark_records_unchanged": true,
+    "work_record_filename": "PROJECT_WORK.md"
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q032",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "af12ce2180b34951b69de10a1c3bdb24",
+    "created_at": "2026-11-06T19:35:21.839482+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "explicit_source_scope",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": true
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "2 explicitly requested source passages supplied; lexical relevance is not established."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 2 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "364984a736ad0af777a3af924f98f06797b8235a4941ff8920413b6626ebdcf0",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "A correct article URL is paired with a fabricated quote. Should IGNIS display the quote as verified?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions.",
+          "Check the original numeric values, units and their assignment to materials or test conditions."
+        ],
+        "text": "The provided source describes the Saffire-VI experiment, which concluded on Jan. 9, 2024, after launching in August 2023.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "numeric_unit_unresolved",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The source explicitly states that Saffire-VI launched in August 2023 and concluded on Jan. 9, matching the claim's dates and experiment name.",
+          "uncertainty": "The source does not explicitly state the year for the conclusion date, though the article date and context imply 2024.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The provided evidence does not contain the specific fabricated quote mentioned in the question, nor does it describe the operational logic of the IGNIS system."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The source identifies Dr. David Urban as the principal investigator and Dr. Gary Ruff as the project manager for the Saffire project at NASA’s Glenn Research Center.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The source identifies Dr. David Urban as the principal investigator and Dr. Gary Ruff as the project manager at NASA’s Glenn Research Center for the Saffire project.",
+          "uncertainty": "None; the roles and affiliations are explicitly stated in the text.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The source does not address the verification status of quotes or the behavior of the IGNIS system."
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The provided evidence does not contain the specific fabricated quote mentioned in the question, nor does it describe the operational logic of the IGNIS system.",
+          "text": "The provided source describes the Saffire-VI experiment, which concluded on Jan. 9, 2024, after launching in August 2023."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016.",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The source does not address the verification status of quotes or the behavior of the IGNIS system.",
+          "text": "The source identifies Dr. David Urban as the principal investigator and Dr. Gary Ruff as the project manager for the Saffire project at NASA’s Glenn Research Center."
+        }
+      ],
+      "reason": "The provided evidence consists of a news article about the Saffire-VI experiment. It does not contain information regarding the IGNIS system, its verification protocols, or the specific fabricated quote mentioned in the question. Therefore, it is impossible to determine if IGNIS should display the quote as verified based solely on the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space. The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere. Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016. Throughout the experiment series, researchers gathered data NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs. “How big a fire does it take for things to get bad for a crew?” Urban said. “This kind of work is done for every other inhabited structure here on Earth – buildings, planes, trains, automobiles, mines, submarines, ships – but we hadn’t done this research for spacecraft until Saffire.” Like previous Saffire experiments, Saffire-VI took place inside a unit on an uninhabited Cygnus spacecraft that had already departed from the space station, ensuring the safety of the orbiting laboratory and a more representative flight environment. However, this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft. NASA ignited the final set of space fire experiments for Saffire-VI inside Northrop Grumman’s Cygnus cargo spacecraft at the end of the NG-19 resupply mission to the International Space Station.",
+        "sha256": "6abf3fcf41eb2e659a5910982b1432d360606127dec04d24b138d52f491021a3",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      },
+      {
+        "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "Saffire, or Spacecraft Fire Safety Experiment, was a series of six investigations that provided insights into how fires grow and spread in space. This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars. Video credit: NASA During the 19 Saffire-VI experiment runs, the NASA team and counterparts at Northrop Grumman made various adjustments to air conditions. They then ignited a flame on materials such as plexiglass, cotton, Nomex, and Solid Inflammability Boundary at Low-Speed fabrics. A bead-lined wire inside the unit ignited the materials. “The Saffire flow unit is a wind tunnel. We’re pushing air through it,” Ruff said. “Once test conditions are set, we run electrical current through a thin wire, and the materials ignite.” Cameras inside allowed the team to observe the flame while remote sensors outside the Saffire flow unit collected data about what was happening in the Cygnus vehicle. The images and information were gathered in real-time before being sent to Earth for scientists to analyze. “You’ve got a heat release rate and a rate of release of combustion products,” Ruff said. “You can take those as model input and predict what will happen in a vehicle.” The next decade of exploration and science missions will see astronauts flying deeper into space and to locations that have yet to be explored. Though the Saffire experiments have been extinguished, NASA has learned valuable lessons and gathered mountains of data on fire behavior that will help the agency design safer spacecraft and accomplish its ambitious future missions.",
+        "sha256": "5b2442945f8c049fd3cfb5b3663f055ee5ce99f3fbbfd57646e9a1e6ba3d465f",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": null,
+        "selection_role": "explicit_source_scope",
+        "ranking": {
+          "selection": "explicit_source_scope",
+          "lexical_relevance": "not_established",
+          "evidence_tier": 3,
+          "notice": "Provided because the exact source scope was requested; no relevance or scientific support is implied."
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 19200.58,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 485,
+        "rate_limits": {
+          "remaining_requests": 923,
+          "reset_requests_s": 6652.8,
+          "remaining_tokens": 5786,
+          "reset_tokens_s": 36.18
+        },
+        "http_status": 429,
+        "retry_after_s": 8.0,
+        "retry_delay_s": 8.14851599608406,
+        "retry_scheduled": true,
+        "latency_ms": 844
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 8156,
+        "rate_limits": {
+          "remaining_requests": 923,
+          "reset_requests_s": 6652.8,
+          "remaining_tokens": 6928,
+          "reset_tokens_s": 27.6
+        },
+        "http_status": 429,
+        "retry_after_s": 8.0,
+        "retry_delay_s": 8.18045177335953,
+        "retry_scheduled": true,
+        "latency_ms": 8563
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 1500,
+          "completion_tokens": 396,
+          "total_tokens": 1896
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 8187,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 5524,
+          "reset_tokens_s": 58.56
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "ee35fe7ca70ec2e653b2042250554ed46605b8e7f73589392e2960e1722b5129",
+        "cache_write": "written",
+        "latency_ms": 9781
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 19200.58,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 485,
+        "rate_limits": {
+          "remaining_requests": 923,
+          "reset_requests_s": 6652.8,
+          "remaining_tokens": 5786,
+          "reset_tokens_s": 36.18
+        },
+        "http_status": 429,
+        "retry_after_s": 8.0,
+        "retry_delay_s": 8.14851599608406,
+        "retry_scheduled": true,
+        "latency_ms": 844
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 8156,
+        "rate_limits": {
+          "remaining_requests": 923,
+          "reset_requests_s": 6652.8,
+          "remaining_tokens": 6928,
+          "reset_tokens_s": 27.6
+        },
+        "http_status": 429,
+        "retry_after_s": 8.0,
+        "retry_delay_s": 8.18045177335953,
+        "retry_scheduled": true,
+        "latency_ms": 8563
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21685e69ea0e9f667df5da9866da5785968bef1c2f2725cc5d2302b2b31c90c4",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "be989b3ba94267c46932c2f2257657f9018720fdc6d92d9399d8c2fad1491b2c",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 1500,
+          "completion_tokens": 396,
+          "total_tokens": 1896
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 8187,
+        "rate_limits": {
+          "remaining_requests": 922,
+          "reset_requests_s": 6739.2,
+          "remaining_tokens": 5524,
+          "reset_tokens_s": 58.56
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "ee35fe7ca70ec2e653b2042250554ed46605b8e7f73589392e2960e1722b5129",
+        "cache_write": "written",
+        "latency_ms": 9781
+      }
+    ],
+    "question_id": "Q032",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "af12ce2180b34951b69de10a1c3bdb24",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "shared_draft_from_run_id": "ee36174ffb3842bbbd6532ec755a6d7b",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "ee36174ffb3842bbbd6532ec755a6d7b",
+  "record_sha256": "a9ff61f224c6b86232251f8fdecc910e2a1dd54167358dadb36c8d57d56886ab"
+}

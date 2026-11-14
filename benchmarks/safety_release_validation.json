@@ -1,0 +1,42 @@
+{
+  "schema_version": "safety-release-validation-v1",
+  "python": "3.12.10",
+  "candidate_archive_sha256": "1f7d17e394436257aa0f3c0c9b7102a81bab0d36e76213c0deca371877724b4c",
+  "fresh_venv": true,
+  "pip_no_index": true,
+  "bundled_wheels": [
+    "pypdf==6.13.0",
+    "setuptools==80.9.0"
+  ],
+  "api_keys_removed": true,
+  "core_passages": 294,
+  "abstracts": 2,
+  "named_passages": 42,
+  "named_source_scopes": 36,
+  "saved_demos": 3,
+  "model_constructions": 0,
+  "http_endpoints": [
+    "/",
+    "/api/status",
+    "/api/demos",
+    "/api/demos/source-description",
+    "/api/demos/scope-check",
+    "/api/demos/insufficient-measurements",
+    "/api/benchmark",
+    "/api/benchmark/3c3cc0f1e4b949a8a33296e94417f13c/answers"
+  ],
+  "benchmark_integrity_passed": true,
+  "benchmark_run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "benchmark_progress": {
+    "scheduled": 108,
+    "completed": 106,
+    "failed": 2,
+    "pending": 0,
+    "graded": 0
+  },
+  "review_packet_items": 106,
+  "independent_grades": 0,
+  "private_mapping_and_raw_diagnostics_excluded": true,
+  "browser_verified": "Requested source context label, confidence-interval withholding and relevance boundary in current working app",
+  "notice": "Offline engineering reproduction; no new model generation or scientific grades"
+}

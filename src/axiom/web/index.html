@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="description" content="Explore NASA microgravity combustion research with traceable sources and claim checks."><title>AXIOM · Research workspace</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-synthesis:none;color:#252725;background:#fff}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button,a,input,textarea,select,summary{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{opacity:.45;cursor:wait}button,a,summary{touch-action:manipulation}[hidden]{display:none!important}.app-shell{--canvas:#fff;--sidebar:#f7f7f5;--surface:#f4f4f2;--hover:#eeefec;--text:#252725;--muted:#73766f;--line:#e7e8e3;--ink:#252725;--inverse:#fff;--link:#3b635a;--warning:#80622f;--notice:#faf8f1;color:var(--text);background:var(--canvas);min-height:100dvh}.app-shell.dark{--canvas:#202220;--sidebar:#191b19;--surface:#2b2e2b;--hover:#343734;--text:#eeefeb;--muted:#a3a79d;--line:#393c37;--ink:#e9ece5;--inverse:#202220;--link:#acd4c3;--warning:#d4ba83;--notice:#302d25;color-scheme:dark}a{color:var(--link);text-underline-offset:3px}button{border:0;background:transparent;color:inherit}svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:4px}.skip-link{position:fixed;top:-80px;left:270px;z-index:100;background:var(--canvas);padding:12px}.skip-link:focus{top:8px}.sidebar{width:248px;position:fixed;inset:0 auto 0 0;z-index:40;background:var(--sidebar);display:flex;flex-direction:column;padding:25px 14px 14px;border-right:1px solid var(--line)}.brand{display:flex;align-items:center;gap:10px;padding:0 12px 24px;text-decoration:none;color:var(--text);font-size:18px;font-weight:650;letter-spacing:1px}.brand-mark{height:27px;width:27px;display:grid;place-items:center;background:var(--text);color:var(--sidebar);border-radius:8px}.brand-mark svg{width:17px;height:17px}.new-question{display:flex;gap:10px;align-items:center;text-align:left;width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--canvas);font-size:13px;font-weight:550}.primary-nav{display:grid;gap:3px;margin:19px 0 28px}.nav-button{display:flex;gap:11px;align-items:center;padding:11px 12px;border-radius:8px;text-align:left;font-size:13px;color:var(--muted)}.nav-button:hover,.nav-button[aria-current="page"]{background:var(--hover);color:var(--text)}.nav-button[aria-current="page"]{font-weight:550}.sidebar-label{margin:0 9px 12px;font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:var(--muted);font-weight:600}.history-region{min-height:0;flex:1;overflow:auto}.history-tools{display:flex;gap:5px;align-items:center;margin:0 5px 8px}.history-tools input{width:100%;min-width:0;border:0;background:transparent;color:var(--text);font-size:12px;padding:8px 4px;border-bottom:1px solid var(--line);border-radius:0}.history-tools button{padding:7px;font-size:11px;color:var(--muted)}.history-list .card{border:0;border-radius:7px;padding:9px;margin:2px 0;position:relative;background:transparent}.history-list .card:hover{background:var(--hover)}.history-list .card p:first-child{font-size:12px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0 0 3px}.history-list .card p.muted{display:none}.history-list .card button{padding:0;font-size:10px;color:var(--muted);text-align:left}.history-list .card button::after{content:"";position:absolute;inset:0;border-radius:7px}.history-list>.muted{font-size:12px;margin:12px 9px;line-height:1.65}.history-pager{display:flex;justify-content:space-between;padding:0 7px}.history-pager button{font-size:10px;padding:8px 2px;color:var(--muted)}#history-count,#comparisons-count{margin:10px 9px;font-size:10px}.sidebar details{margin:15px 6px;font-size:12px}.sidebar summary{color:var(--muted);font-size:11px}.sidebar-footer{padding:15px 9px 2px;border-top:1px solid var(--line);margin-top:15px}.sidebar-footer p{font-size:10px;color:var(--muted);line-height:1.7;margin:10px 0}.theme-button{display:flex;align-items:center;gap:9px;font-size:12px;padding:4px 0}.theme-button svg{width:15px}.workspace{margin-left:248px;min-height:100dvh}.topbar{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 35px;position:sticky;top:0;z-index:20;background:var(--canvas)}.view-label{font-size:14px;font-weight:550}.topbar-left{display:flex;gap:12px;align-items:center}.model-controls{display:flex;align-items:center;gap:8px}.model-controls label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.model-controls select{max-width:220px;appearance:auto;border:0;background:transparent;padding:7px 3px;color:var(--muted);font-size:12px;cursor:pointer}.model-controls select#model{color:var(--text);font-weight:550}.model-divider{width:1px;height:14px;background:var(--line)}.view{padding:0 38px 36px}.research-wrap{max-width:800px;margin:auto;min-height:calc(100dvh - 110px);display:flex;flex-direction:column}.welcome{text-align:center;padding:clamp(55px,15vh,165px) 0 32px}.eyebrow{font-size:10px;color:var(--muted);letter-spacing:1.6px;text-transform:uppercase;margin:0 0 22px}.welcome h1{font-size:clamp(26px,3.1vw,35px);font-weight:520;letter-spacing:-1.2px;margin:0 0 14px;line-height:1.2}.welcome p:last-child{font-size:14px;color:var(--muted);line-height:1.7;margin:0}.composer{background:var(--surface);border:1px solid transparent;border-radius:23px;padding:17px 19px 12px;position:relative}.composer:focus-within{border-color:var(--line)}.composer textarea{display:block;width:100%;border:0;outline:none;background:transparent;color:var(--text);padding:0;resize:vertical;min-height:64px;max-height:220px;font-size:14px;line-height:1.7;box-shadow:none}.composer textarea:focus-visible{outline:none}.composer textarea::placeholder{color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}.composer-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:38px}.composer-tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.text-button{display:inline-flex;gap:7px;align-items:center;padding:8px 10px;border-radius:7px;color:var(--muted);font-size:12px}.text-button:hover{background:var(--hover);color:var(--text)}.send-button{width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--inverse)}.send-button svg{width:18px;height:18px;stroke-width:2}.options{margin:10px 0 3px;border-top:1px solid var(--line);padding-top:13px}.options>summary{font-size:12px;color:var(--muted);cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px}.options>summary::-webkit-details-marker{display:none}.options[open]>summary{margin-bottom:18px;color:var(--text)}.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field label{display:block;font-size:11px;font-weight:550;margin:0 0 7px}.field input,.field select,.custom-model input{width:100%;min-width:0;background:var(--canvas);color:var(--text);border:1px solid var(--line);border-radius:7px;padding:10px;font-size:12px}.check-label{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);line-height:1.6;margin:15px 0}.check-label input{accent-color:var(--text);width:auto}.options details{padding:13px 0 2px;border-top:1px solid var(--line);margin-top:16px}.options details>summary{font-size:12px;cursor:pointer}.options details .options-grid{margin-top:15px}.options p,.custom-model p{font-size:11px;color:var(--muted);line-height:1.6}.custom-model{padding:12px 0 3px}.custom-model label{display:block;font-size:12px;margin-bottom:8px}.suggestions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:19px 0 12px}.suggestion{font-size:11px;border:1px solid var(--line);border-radius:18px;color:var(--muted);padding:9px 13px;background:var(--canvas)}.suggestion:hover{background:var(--surface);color:var(--text)}.composer-footnote{text-align:center;font-size:10px;color:var(--muted);line-height:1.7;margin:15px 0 0}.error{font-size:12px;color:#a34a40;line-height:1.6;margin:12px 3px}.error:empty{display:none}.dark .error{color:#e6a49a}.result-panel{padding:34px 0 8px;order:-1}.question-bubble{max-width:85%;width:fit-content;margin:5px 0 35px auto;padding:13px 19px;border-radius:19px;background:var(--surface);font-size:14px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}.answer-heading{display:flex;gap:10px;align-items:center}.assistant-mark{width:26px;height:26px;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;font-size:11px;font-weight:650}.answer-heading h2{font-size:14px;font-weight:600;letter-spacing:-.2px;scroll-margin-top:95px;margin:0}.muted{color:var(--muted);font-size:11px;line-height:1.65}#status{font-size:11px;margin:10px 0 19px;color:var(--muted)}#answer{font-size:15px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;min-height:12px}#answer-note{font-size:11px;line-height:1.7;color:var(--muted);padding-left:11px;border-left:2px solid var(--line);margin:18px 0}.answer-details{border-top:1px solid var(--line);margin-top:20px;padding:15px 0 0}.answer-details>summary{font-size:12px;font-weight:550;cursor:pointer;display:flex;align-items:center;gap:9px;list-style:none}.answer-details>summary::after{content:"+";margin-left:auto;font-size:16px;font-weight:400;color:var(--muted)}.answer-details[open]>summary::after{content:"−"}.answer-details>summary::-webkit-details-marker{display:none}.count{color:var(--muted);font-weight:400;font-size:11px}.card{border:1px solid var(--line);border-radius:10px;padding:17px 18px;margin:14px 0;overflow-wrap:anywhere}.card p{font-size:13px;line-height:1.8;white-space:pre-wrap;margin:10px 0}.card h3{font-size:13px;font-weight:550;line-height:1.6;margin:10px 0}.card a{font-size:11px}.card .card{padding:13px;background:var(--surface);border:0}.tag{display:inline-block;font-size:9px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);line-height:1.7}.warning{color:var(--warning);font-size:12px;line-height:1.7}.card .warning{font-size:11px}.card summary{font-size:12px;cursor:pointer;line-height:1.6}.card p.muted{font-size:11px;color:var(--muted)}pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;white-space:pre-wrap;overflow-wrap:anywhere;max-height:360px;overflow:auto;color:var(--muted);line-height:1.65}.secondary{border:1px solid var(--line);border-radius:7px;padding:8px 11px;font-size:11px;background:var(--canvas);color:var(--text)}.secondary:hover{background:var(--surface)}#export{margin-top:20px;color:var(--muted)}.has-result .research-wrap{gap:0}.has-result .composer{margin-top:22px}.has-result .suggestions{display:none}.has-result .composer textarea{min-height:40px}.comparison-panel{padding:25px 0 5px;order:-2}.comparison-panel h2{font-size:21px;font-weight:550;letter-spacing:-.5px;scroll-margin-top:100px}.comparison-panel .saved-question{font-size:14px;font-weight:550;line-height:1.7}.comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.comparison-grid>.card{margin-top:12px;background:var(--canvas)}.comparison-answer{font-size:13px;line-height:1.85}.page-wrap{max-width:950px;margin:26px auto}.page-intro{margin:0 0 35px}.page-intro .eyebrow{margin-bottom:14px}.page-intro h1{font-size:30px;letter-spacing:-.8px;font-weight:550;margin:0 0 12px}.page-intro p{font-size:13px;color:var(--muted);line-height:1.8;max-width:650px}.section-title{font-size:14px;font-weight:550;margin:26px 0 12px}.evaluation-progress{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.evaluation-progress>.card{margin:16px 0}.evaluation-progress h3{margin:0 0 12px}.evaluation-progress p{font-size:12px}.notice{padding:14px 17px;background:var(--notice);border-radius:8px;font-size:12px;line-height:1.8;color:var(--warning);margin:20px 0}.source-library{display:grid;grid-template-columns:1fr 1fr;gap:12px}.source-library>.card{margin:0}.library-stats{display:flex;gap:40px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:30px}.library-stats strong{font-size:25px;font-weight:500;display:block;margin-bottom:6px}.library-stats span{color:var(--muted);font-size:11px}.library-section{margin-top:26px;border-top:1px solid var(--line);padding-top:17px}.library-section>summary{cursor:pointer;font-size:13px;font-weight:550}.library-section>p{font-size:12px;color:var(--muted);line-height:1.8}.sidebar-toggle,.sidebar-dismiss,.sidebar-backdrop{display:none}h1,h2{scroll-margin-top:95px}.page-empty{padding:35px 0;color:var(--muted);font-size:13px}.plain-note{font-size:11px;line-height:1.7;color:var(--muted)}@media(min-width:760px){.sidebar[aria-hidden="true"]{visibility:visible}}@media(max-width:1050px){.sidebar{width:220px}.workspace{margin-left:220px}.topbar{padding:0 25px}.view{padding:0 25px 30px}.model-controls select{max-width:170px}.comparison-grid{gap:11px}.evaluation-progress{grid-template-columns:1fr}.evaluation-progress .card{margin:3px 0}.source-library{grid-template-columns:1fr}.skip-link{left:230px}}@media(max-width:759px){.sidebar{width:265px;transform:translateX(-100%);visibility:hidden;transition:transform .18s ease,visibility .18s;z-index:60}.sidebar-open .sidebar{transform:translateX(0);visibility:visible}.sidebar-backdrop{position:fixed;inset:0;z-index:50;background:#0005}.sidebar-open .sidebar-backdrop{display:block}.sidebar-dismiss{display:grid;position:absolute;right:12px;top:22px;place-items:center;padding:7px}.sidebar-toggle{display:grid;place-items:center;padding:7px}.workspace{margin-left:0}.topbar{height:63px;padding:0 15px;gap:8px}.topbar-left{gap:6px}.view-label{font-size:13px}.model-controls{gap:5px}.model-controls select{font-size:10px;max-width:130px;padding:7px 0}.model-controls select#provider{max-width:83px}.view{padding:0 19px 25px}.welcome{padding:14vh 0 27px}.welcome h1{font-size:28px;max-width:320px;margin:0 auto 13px}.welcome p:last-child{font-size:12px}.composer{border-radius:19px;padding:15px 15px 11px}.composer textarea{font-size:13px}.composer-tools{gap:0}.text-button{font-size:10px;padding:8px 6px}.text-button svg{width:15px}.suggestions{gap:7px;justify-content:flex-start}.suggestion{font-size:10px;padding:9px 10px}.composer-footnote{font-size:9px}.question-bubble{font-size:13px;max-width:95%;padding:12px 15px}.result-panel{padding-top:20px}.comparison-grid{grid-template-columns:1fr}.comparison-panel{padding-top:20px}.options-grid{grid-template-columns:1fr}.page-wrap{margin-top:20px}.page-intro h1{font-size:26px}.library-stats{gap:30px}.skip-link{left:15px}.sidebar-footer{padding-bottom:12px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.options:not([open]){display:none}.history-region{scrollbar-width:thin;scrollbar-color:var(--line) transparent}.history-region::-webkit-scrollbar{width:4px}.history-region::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}.history-list .card{min-height:35px;padding:9px}.history-list .card button{position:absolute;inset:0;width:100%;font-size:0;border:0;background:transparent;border-radius:7px}.history-list .card button:focus-visible{outline:2px solid var(--link);outline-offset:-2px}.model-controls{min-width:0}.model-controls select{min-width:0}
+.history-list .card{padding:0}.history-list .card p:first-child{display:none}.history-list .card button{position:relative;font-size:12px;line-height:1.5;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:9px;min-height:35px}.history-list .card button::after{content:none}
+/* Evaluation charts use local, verified records and work entirely offline. */
+.impact-page{max-width:1080px;--chart-released:#397c68;--chart-held:#b28343;--chart-failed:#af655e;--chart-abstained:#d7d9d2;--chart-pending:#eaece6;--chart-tint:#f6f8f4;--chart-held-tint:#faf6ef}
+.dark .impact-page{--chart-released:#89bfa9;--chart-held:#d0ad77;--chart-failed:#cf928b;--chart-abstained:#555c51;--chart-pending:#373c34;--chart-tint:#252c26;--chart-held-tint:#302c25}
+.impact-page-head{display:flex;gap:26px;justify-content:space-between;align-items:flex-start}.impact-page .page-intro{margin-bottom:21px}.impact-page .page-intro h1{font-size:31px;line-height:1.2;letter-spacing:-1px}.impact-page .page-intro p:last-child{max-width:620px;margin-bottom:0}.impact-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;padding-top:6px}.impact-actions button{white-space:nowrap}.impact-run-strip{display:flex;gap:10px 22px;flex-wrap:wrap;font-size:11px;color:var(--muted);padding:17px 0 22px}.impact-run-strip strong{font-weight:600;color:var(--text);font-variant-numeric:tabular-nums}
+.impact-hero{border:1px solid var(--line);border-radius:15px;padding:29px 32px;background:var(--chart-tint)}.impact-hero-top{display:flex;align-items:center;gap:16px;justify-content:space-between}.impact-kicker{font-size:10px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);margin:0 0 10px}.impact-page h2{font-size:17px;font-weight:550;letter-spacing:-.3px;margin:0;line-height:1.5}.impact-badge{font-size:11px;white-space:nowrap;border:1px solid var(--line);border-radius:20px;padding:7px 10px;color:var(--muted)}.impact-headline{display:flex;align-items:center;gap:23px;margin:24px 0}.impact-headline>strong{font-size:66px;font-weight:500;line-height:1;letter-spacing:-3px;font-variant-numeric:tabular-nums}.impact-headline>strong:last-of-type{color:var(--chart-released)}.impact-headline .impact-arrow{font-size:29px;font-weight:400;color:var(--muted)}.impact-headline>div{margin-left:8px;font-size:13px;line-height:1.6}.impact-headline p{color:var(--muted);font-size:11px;margin:2px 0 0}.impact-figure{margin:0}.impact-figure figcaption{font-size:11px;line-height:1.7;color:var(--muted);margin:12px 0 0}.impact-bar-row{display:grid;grid-template-columns:100px minmax(0,1fr) 36px;gap:12px;align-items:center;margin:12px 0;font-size:12px}.impact-bar-label{color:var(--muted)}.impact-track{height:15px;border-radius:3px;background:var(--chart-pending);overflow:hidden;display:flex;min-width:0}.impact-track>span{height:100%;display:block;flex-shrink:0}.impact-track .released,.impact-swatch.answered{background:var(--chart-released)}.impact-track .rag{background:var(--text);opacity:.66}.impact-track .held{background:repeating-linear-gradient(135deg,var(--chart-held) 0,var(--chart-held) 3px,transparent 3px,transparent 7px);opacity:.6}.impact-bar-value{font-variant-numeric:tabular-nums;font-weight:550;text-align:right}.impact-key-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:21px;margin-top:22px}.impact-key-results strong{display:block;font-size:27px;font-weight:500;font-variant-numeric:tabular-nums;letter-spacing:-.6px}.impact-key-results p{font-size:11px;color:var(--muted);line-height:1.6;margin:6px 0 0}.impact-boundary{font-size:11px;line-height:1.7;color:var(--muted);margin:23px 0 0}
+.impact-chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:34px 0}.impact-panel{min-width:0}.impact-description{font-size:12px;line-height:1.7;color:var(--muted);margin:8px 0 22px}.impact-reason{display:block;width:100%;text-align:left;padding:9px 0;border-radius:6px}.impact-reason:hover,.impact-reason[aria-pressed="true"]{background:var(--surface)}.impact-reason-label{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:9px;padding:0 6px}.impact-reason-label strong{font-weight:500;font-variant-numeric:tabular-nums}.impact-reason .impact-track{height:9px;margin:0 6px}.impact-reason .impact-track>span{background:var(--chart-held)}.impact-outcome-row{margin:17px 0 20px}.impact-outcome-label{display:flex;justify-content:space-between;gap:8px;font-size:12px;margin-bottom:9px}.impact-outcome-label span{font-size:11px;color:var(--muted)}.impact-outcome-row .impact-track{height:20px}.impact-track .answered{background:var(--chart-released)}.impact-track .abstained,.impact-swatch.abstained{background:var(--chart-abstained)}.impact-track .failed,.impact-swatch.failed{background:var(--chart-failed)}.impact-track .pending,.impact-swatch.pending{background:var(--chart-pending)}.impact-axis{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;font-size:10px;color:var(--muted);margin-top:-10px}.impact-legend{display:flex;gap:10px 17px;flex-wrap:wrap;margin:19px 0 0;font-size:11px;color:var(--muted)}.impact-legend>span{display:flex;align-items:center;gap:7px}.impact-swatch{width:9px;height:9px;border-radius:2px;display:inline-block;flex-shrink:0}
+.impact-cases{padding-top:26px;border-top:1px solid var(--line)}.impact-cases-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:15px}.impact-filter-buttons{display:flex;gap:3px;flex-wrap:wrap}.impact-filter-buttons button{padding:8px 10px;font-size:11px;color:var(--muted);border-radius:6px}.impact-filter-buttons button[aria-pressed="true"]{color:var(--text);background:var(--surface)}#impact-filter-note{margin:16px 0}.impact-matrix-labels,.impact-question{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,68px);gap:8px;align-items:center}.impact-matrix-labels{font-size:10px;color:var(--muted);padding:8px 12px;text-align:center}.impact-matrix-labels>span:first-child{text-align:left}.impact-question-grid{display:grid;gap:4px;max-height:510px;overflow:auto;scrollbar-width:thin;scrollbar-color:var(--line) transparent;padding:2px}.impact-question{width:100%;border:1px solid transparent;text-align:left;padding:10px 11px;min-height:56px;border-radius:8px}.impact-question:hover{background:var(--surface)}.impact-question[aria-pressed="true"]{border-color:var(--link);background:var(--surface)}.impact-question-title{min-width:0;font-size:12px;font-weight:500;line-height:1.5;display:flex;gap:10px;align-items:center}.impact-question-title>span{font-size:10px;color:var(--muted);white-space:nowrap}.impact-question-title>p{margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}.impact-cell{display:flex;justify-content:center;align-items:center;gap:5px;font-size:10px;color:var(--muted);line-height:1.5}.impact-cell .impact-swatch{width:7px;height:7px}.impact-cell.failed{color:var(--chart-failed)}.impact-cell.held{color:var(--warning)}
+.impact-detail{margin-top:23px;border:1px solid var(--line);border-radius:12px;padding:24px;scroll-margin-top:94px}.impact-detail-head{display:flex;align-items:center;justify-content:space-between;gap:14px}.impact-detail-head h2{font-size:16px}#impact-detail-question{font-size:14px;line-height:1.8;margin:14px 0}.impact-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:21px}.impact-detail-column{min-width:0}.impact-detail-column h3{font-size:13px;font-weight:550;margin:0 0 12px}.impact-detail-column>p{font-size:12px;line-height:1.85;white-space:pre-wrap}.impact-claim{padding:15px 0;border-top:1px solid var(--line)}.impact-claim>p{font-size:12px;line-height:1.8;margin:10px 0;white-space:pre-wrap}.impact-claim .impact-claim-status{font-size:9px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}.impact-claim.additional{border-left:2px solid var(--chart-held);padding:12px;background:var(--chart-held-tint);border-top:0;border-radius:0 6px 6px 0;margin:13px 0}.impact-claim .impact-claim-status.released{color:var(--link)}.impact-claim.additional .impact-claim-status{color:var(--warning)}.impact-claim details{font-size:11px;line-height:1.7}.impact-claim summary{cursor:pointer;color:var(--muted)}.impact-claim blockquote{font-size:11px;line-height:1.8;margin:12px 0;border-left:2px solid var(--line);padding-left:12px;white-space:pre-wrap}.impact-claim a{font-size:11px}.impact-detail-baseline{border-top:1px solid var(--line);padding-top:15px;margin-top:20px}.impact-detail-baseline>summary{font-size:12px;cursor:pointer}.impact-detail-baseline p{font-size:12px;line-height:1.8;white-space:pre-wrap}
+.impact-quality{font-size:11px;color:var(--muted);line-height:1.8;padding:18px 0;border-top:1px solid var(--line);margin:28px 0 0}.impact-method{font-size:12px;margin:5px 0 25px}.impact-method>summary{cursor:pointer;color:var(--muted);padding:7px 0}.impact-method .evaluation-progress{gap:10px}.impact-method .card{padding:13px}.impact-method p{line-height:1.8}.impact-page #evaluation-panel{margin-top:22px}.impact-page #evaluation-status{margin:0;overflow-wrap:anywhere}.impact-page #evaluation-answers>.card{margin-top:14px}
+@media(max-width:1100px){.impact-page-head{display:block}.impact-actions{justify-content:flex-start;margin-bottom:20px}.impact-chart-grid{gap:23px}.impact-hero{padding:25px}.impact-key-results{gap:15px}.impact-cases-heading{align-items:flex-start;flex-direction:column}}
+@media(max-width:759px){.impact-page .page-intro h1{font-size:28px}.impact-hero{padding:22px 18px}.impact-headline{gap:17px;flex-wrap:wrap}.impact-headline>strong{font-size:56px}.impact-headline>div{width:100%;margin:0}.impact-badge{font-size:10px;padding:6px 8px;white-space:normal}.impact-hero-top{align-items:flex-start}.impact-key-results{gap:10px}.impact-key-results strong{font-size:24px}.impact-key-results p{font-size:10px}.impact-chart-grid{grid-template-columns:1fr;gap:34px}.impact-bar-row{grid-template-columns:72px minmax(0,1fr) 25px;gap:8px;font-size:11px}.impact-matrix-labels,.impact-question{grid-template-columns:minmax(0,1fr) repeat(3,52px);gap:5px}.impact-question-title{display:block}.impact-question-title>p{max-width:140px;font-size:11px}.impact-cell{font-size:10px;gap:4px}.impact-detail{padding:18px}.impact-detail-grid{grid-template-columns:1fr;gap:25px}.impact-filter-buttons button{padding:8px}.impact-run-strip{gap:10px 16px}.impact-question-grid{max-height:430px}}
+
+/* Mission scenario stress test */
+.scenario-page{max-width:1180px;--sc-exact:#397c68;--sc-partial:#b28343;--sc-mismatch:#af655e;--sc-unknown:#8d9088;--sc-unknown-bg:#e9ebe5;--sc-tint:#f7f9f6;--sc-proposed:#f4eee2;--sc-proposed-ink:#75541f}
+.app-shell.dark .scenario-page{--sc-exact:#7fc0a7;--sc-partial:#d4b073;--sc-mismatch:#d9938b;--sc-unknown:#8f938a;--sc-unknown-bg:#343831;--sc-tint:#262925;--sc-proposed:#332d22;--sc-proposed-ink:#e0c38f}
+.scenario-layout{display:grid;grid-template-columns:minmax(300px,370px) minmax(0,1fr);gap:26px;align-items:start}
+.scenario-layout>*{min-width:0}
+.sc-results{min-width:0}
+.sc-panel{border:1px solid var(--line);border-radius:12px;background:var(--canvas);padding:17px}
+.sc-builder{position:sticky;top:14px}
+.sc-panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.sc-panel-head h2{font-size:14px;margin:0;font-weight:650}
+.sc-presets{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 14px}
+.sc-preset{border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:11px;background:var(--surface);color:var(--text)}
+.sc-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.sc-field{min-width:0}
+.sc-field.wide{grid-column:1/-1}
+.sc-field label{display:block;font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.sc-field input,.sc-field select,.sc-field textarea{width:100%;border:1px solid var(--line);border-radius:7px;background:var(--canvas);color:var(--text);padding:7px 8px;font-size:12px;min-width:0}
+.sc-num{display:grid;grid-template-columns:minmax(0,1fr) 74px;gap:5px}
+.sc-actions{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}
+.sc-primary{background:var(--text);color:var(--canvas);border-radius:8px;padding:9px 14px;font-size:12px;font-weight:600}
+.sc-secondary{border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:11px;background:var(--surface);color:var(--text)}
+.sc-status{font-size:11px;line-height:1.6;color:var(--muted);min-height:17px;margin:9px 0 0}
+.sc-error{font-size:11px;line-height:1.6;margin:6px 0 0}
+.sc-diff{border:1px solid var(--line);border-left:3px solid var(--sc-partial);border-radius:8px;background:var(--sc-proposed);color:var(--text);padding:10px 12px;font-size:11px;line-height:1.7;margin:0 0 14px}
+.sc-diff strong{color:var(--sc-proposed-ink)}
+.sc-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 16px}
+.sc-stat{border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:var(--canvas)}
+.sc-stat strong{display:block;font-size:24px;font-weight:600;line-height:1.15}
+.sc-stat span{display:block;font-size:10px;color:var(--muted);line-height:1.45;margin-top:3px}
+.sc-verdict{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:4px 0 8px}
+.sc-verdict strong{font-size:18px;font-weight:600}
+.sc-section{border-top:1px solid var(--line);padding-top:15px;margin-top:18px}
+.sc-section-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.sc-section-head h2{font-size:15px;margin:0;font-weight:650}
+.sc-def{font-size:11px;line-height:1.7;color:var(--muted);margin:5px 0 11px}
+.sc-coverage{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:7px}
+.sc-cov{border:1px solid var(--line);border-radius:8px;padding:8px;font-size:11px;background:var(--canvas)}
+.sc-cov-top{display:flex;justify-content:space-between;gap:6px;line-height:1.4}
+.sc-cov-top b{font-weight:600}
+.sc-cov-top span{color:var(--muted);font-size:10px;text-align:right}
+.sc-bar{height:5px;border-radius:3px;background:var(--sc-unknown-bg);display:flex;overflow:hidden;margin-top:7px}
+.sc-bar i{display:block;height:100%;min-width:1px}
+.sc-bar i.exact_match{background:var(--sc-exact)}.sc-bar i.partial_match{background:var(--sc-partial)}.sc-bar i.mismatch{background:var(--sc-mismatch)}.sc-bar i.unknown{background:var(--sc-unknown)}
+.sc-legend{display:flex;flex-wrap:wrap;gap:10px;font-size:10px;color:var(--muted);margin-top:8px}
+.sc-legend span{display:inline-flex;align-items:center;gap:4px}
+.sc-swatch{width:9px;height:9px;border-radius:2px;display:inline-block}
+.sc-swatch.exact_match{background:var(--sc-exact)}.sc-swatch.partial_match{background:var(--sc-partial)}.sc-swatch.mismatch{background:var(--sc-mismatch)}.sc-swatch.unknown{background:var(--sc-unknown)}
+.sc-table-wrap{overflow:auto;max-width:100%;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}
+.sc-table{border-collapse:collapse;width:100%;font-size:11px;min-width:760px}
+.sc-table th,.sc-table td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.sc-table th{background:var(--surface);font-size:10px;letter-spacing:.3px;text-transform:uppercase;color:var(--muted);font-weight:600;position:sticky;top:0;z-index:1}
+.sc-table tr:last-child td{border-bottom:0}
+.sc-table td:first-child{font-weight:600;min-width:120px}
+.sc-cell{display:inline-block;border-radius:5px;padding:2px 6px;font-size:10px;font-weight:600;line-height:1.5;white-space:nowrap}
+.sc-cell.exact_match{background:color-mix(in srgb,var(--sc-exact) 18%,transparent);color:var(--sc-exact)}
+.sc-cell.partial_match{background:color-mix(in srgb,var(--sc-partial) 20%,transparent);color:var(--sc-partial)}
+.sc-cell.mismatch{background:color-mix(in srgb,var(--sc-mismatch) 18%,transparent);color:var(--sc-mismatch)}
+.sc-cell.unknown{background:var(--sc-unknown-bg);color:var(--sc-unknown)}
+.sc-appl{display:inline-block;border-radius:999px;padding:3px 8px;font-size:10px;font-weight:600;margin:2px 4px 2px 0;background:var(--sc-unknown-bg);color:var(--text)}
+.sc-appl.documented_alignment{background:color-mix(in srgb,var(--sc-exact) 18%,transparent);color:var(--sc-exact)}
+.sc-appl.outside_documented_conditions{background:color-mix(in srgb,var(--sc-mismatch) 16%,transparent);color:var(--sc-mismatch)}
+.sc-appl.partially_documented{background:color-mix(in srgb,var(--sc-partial) 20%,transparent);color:var(--sc-partial)}
+.sc-inv{border:1px solid var(--line);border-radius:10px;margin:9px 0;overflow:hidden;background:var(--canvas)}
+.sc-inv>summary{cursor:pointer;padding:10px 12px;display:flex;gap:7px;align-items:center;flex-wrap:wrap;font-size:12px;list-style:none}
+.sc-inv>summary::-webkit-details-marker{display:none}
+.sc-inv>summary b{font-weight:650}
+.sc-inv-body{padding:2px 12px 12px;border-top:1px solid var(--line)}
+.sc-param{display:grid;grid-template-columns:120px minmax(0,1fr);gap:8px;padding:7px 0;border-bottom:1px solid var(--line);font-size:11px;line-height:1.6}
+.sc-param:last-child{border-bottom:0}
+.sc-param-name{color:var(--muted)}
+.sc-quote{border-left:2px solid var(--line);padding:3px 0 3px 9px;margin:5px 0;color:var(--muted);font-size:11px;line-height:1.65}
+.sc-source{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:10px;color:var(--muted);word-break:break-all}
+.sc-gap{border:1px solid var(--line);border-left:3px solid var(--sc-partial);border-radius:8px;padding:10px 12px;margin:8px 0;font-size:11px;line-height:1.7;background:var(--canvas)}
+.sc-gap h3{font-size:12px;margin:0 0 3px;font-weight:650}
+.sc-gap dl{display:grid;grid-template-columns:132px minmax(0,1fr);gap:4px 9px;margin:8px 0 0;font-size:11px}
+.sc-gap dt{color:var(--muted)}.sc-gap dd{margin:0}
+.sc-proposal{border:1px solid var(--line);border-radius:10px;padding:13px;margin:10px 0;background:var(--sc-tint)}
+.sc-proposal-head{display:flex;justify-content:space-between;gap:8px;align-items:flex-start;flex-wrap:wrap;margin-bottom:5px}
+.sc-proposal h3{font-size:13px;margin:0;font-weight:650;line-height:1.5}
+.sc-badge{display:inline-block;border-radius:4px;padding:3px 7px;font-size:9px;letter-spacing:.5px;text-transform:uppercase;font-weight:700;background:var(--sc-proposed);color:var(--sc-proposed-ink);white-space:nowrap}
+.sc-badge.proposed{background:var(--sc-proposed);color:var(--sc-proposed-ink)}
+.sc-badge.withheld{background:color-mix(in srgb,var(--sc-mismatch) 18%,transparent);color:var(--sc-mismatch)}
+.sc-badge.qualified{background:color-mix(in srgb,var(--sc-partial) 20%,transparent);color:var(--sc-partial)}
+.sc-badge.supported{background:color-mix(in srgb,var(--sc-exact) 18%,transparent);color:var(--sc-exact)}
+.sc-proposal dl{display:grid;grid-template-columns:132px minmax(0,1fr);gap:5px 9px;margin:9px 0 0;font-size:11px;line-height:1.65}
+.sc-proposal dt{color:var(--muted)}.sc-proposal dd{margin:0}
+.sc-proposal ul{margin:4px 0;padding-left:17px;font-size:11px;line-height:1.65}
+.sc-check{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:6px 0;font-size:11px;line-height:1.6;background:var(--canvas)}
+.sc-check-top{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.sc-check code{font-size:10px}
+.sc-saved{display:grid;gap:7px}
+.sc-saved-row{border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;gap:9px;align-items:center;justify-content:space-between;font-size:11px;background:var(--canvas)}
+.sc-saved-row p{margin:0;line-height:1.5}
+.sc-saved-row span{color:var(--muted);font-size:10px}
+@media(max-width:900px){.scenario-layout{grid-template-columns:1fr}.sc-builder{position:static}.sc-summary{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.sc-grid{grid-template-columns:1fr}.sc-param,.sc-gap dl,.sc-proposal dl{grid-template-columns:1fr}.sc-saved-row{align-items:flex-start;flex-direction:column}}
+.axiom-panel{border-top:1px solid var(--line);margin-top:35px;padding-top:25px}.axiom-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}.axiom-head h2{font-size:19px;margin:4px 0 8px;font-weight:600}.axiom-meta{display:flex;gap:7px;flex-wrap:wrap;margin:8px 0 14px}.axiom-meta span{font-size:10px;padding:5px 8px;border:1px solid var(--line);border-radius:6px;color:var(--muted)}.axiom-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:12px}.axiom-card{border:1px solid var(--line);border-radius:10px;padding:15px;margin:11px 0;background:var(--canvas);min-width:0}.axiom-card h3{font-size:13px;margin:0 0 8px}.axiom-select{width:100%;margin:5px 0 10px;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--canvas);color:var(--text);font-size:11px}.axiom-record-detail{font-size:11px}.axiom-record-detail dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:5px 9px;line-height:1.6}.axiom-record-detail dt{color:var(--muted)}.axiom-record-detail dd{margin:0;overflow-wrap:anywhere}.axiom-verdict{font-weight:650}.axiom-presets,.axiom-toggle{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.axiom-presets button,.axiom-toggle button{font-size:10px;border:1px solid var(--line);border-radius:6px;padding:7px 9px;background:var(--canvas);color:var(--text)}.axiom-presets button[aria-pressed="true"],.axiom-toggle button[aria-pressed="true"]{background:var(--surface);font-weight:650}.axiom-heatmap{overflow:auto;max-width:100%}.axiom-heatmap table{border-collapse:collapse;width:100%;font-size:10px;min-width:500px}.axiom-heatmap th,.axiom-heatmap td{padding:6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.axiom-heatmap th{background:var(--surface);color:var(--muted)}.axiom-heat-cell{border-radius:4px;padding:3px 5px;display:inline-block;min-width:55px;text-align:center}.axiom-heat-cell strong{display:block}.axiom-heat-cell small{display:block}.axiom-heat-cell.good{background:#e8f2eb;color:#285d3b}.axiom-heat-cell.caution{background:#f6f0df;color:#775b1d}.axiom-heat-cell.bad{background:#f5e6e3;color:#853d34}.dark .axiom-heat-cell.good{background:#263a2c;color:#b1d5ba}.dark .axiom-heat-cell.caution{background:#393426;color:#e2cc8e}.dark .axiom-heat-cell.bad{background:#402c29;color:#e8aaa0}.axiom-extract-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:7px}.axiom-extract-grid article{border:1px solid var(--line);border-radius:7px;padding:8px;font-size:10px}.axiom-extract-grid b{display:block;font-size:11px;margin-bottom:4px}.axiom-extract-grid span{display:block;color:var(--muted);line-height:1.5}.axiom-demo-result{margin-top:10px}.axiom-demo-result h4{font-size:11px;margin:6px 0}.axiom-trace-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.axiom-event-list{border:1px solid var(--line);border-radius:7px;max-height:360px;overflow:auto;padding:5px}.axiom-event{padding:6px;margin:3px 0;border-left:3px solid var(--line);background:var(--surface);font-size:9px}.axiom-event.missing{border-color:#a34a40}.axiom-event.altered{border-color:#80622f}.axiom-event.reordered{border-color:#3b635a}.axiom-event strong{display:block;font-size:10px}.axiom-event small{color:var(--muted)}.axiom-event pre{font-size:9px;max-height:none;margin:4px 0 0}.axiom-property-table{border-collapse:collapse;width:100%;font-size:10px}.axiom-property-table th,.axiom-property-table td{padding:5px;border-bottom:1px solid var(--line);text-align:left}.axiom-property-table td{font-weight:650}.axiom-property-table .PASS{color:#285d3b}.axiom-property-table .FAIL{color:#853d34}.axiom-property-table .UNKNOWN{color:#775b1d}.dark .axiom-property-table .PASS{color:#b1d5ba}.dark .axiom-property-table .FAIL{color:#e8aaa0}.dark .axiom-property-table .UNKNOWN{color:#e2cc8e}@media(max-width:760px){.axiom-columns{grid-template-columns:1fr}.axiom-head{flex-direction:column}.axiom-record-detail dl{grid-template-columns:1fr;gap:1px}.axiom-record-detail dd{margin-bottom:5px}.axiom-trace-pair{grid-template-columns:1fr}}
+</style><script src="/config.js"></script><script>function api(path){const base=String(window.AXIOM_API_BASE||'').replace(/\/+$/,'');return base?base+path:path}</script></head><body>
+<svg aria-hidden="true" style="display:none"><symbol id="i-mark" viewBox="0 0 24 24"><path d="M12 3 5 9l7 12 7-12-7-6Zm0 0v18M5 9h14"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-8 8H5l-3 2v-10a9 9 0 0 1 18 0Z"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16M8 15v-4m5 4V7m5 8v-6"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-6-2-9-1v15c3-1 6-1 9 1 3-2 6-2 9-1V4c-3-1-6-1-9 1Zm0 0v15"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9m4 0h3M4 17h3m4 0h9M13 4v6M7 14v6"/></symbol><symbol id="i-compare" viewBox="0 0 24 24"><path d="M9 4H4v16h5m6-16h5v16h-5M12 3v18"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14a8 8 0 0 1-10-10 9 9 0 1 0 10 10Z"/></symbol></svg>
+<div id="app-shell" class="app-shell"><a class="skip-link" href="#main-content">Skip to workspace</a>
+<button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="Close sidebar" tabindex="-1"></button>
+<aside class="sidebar" id="sidebar" aria-label="Workspace sidebar"><a class="brand" href="#" id="brand-home"><span class="brand-mark"><svg aria-hidden="true"><use href="#i-mark"/></svg></span>AXIOM</a><button id="sidebar-dismiss" class="sidebar-dismiss" type="button" aria-label="Close sidebar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+<button type="button" id="new-question" class="new-question"><svg aria-hidden="true"><use href="#i-plus"/></svg>New research</button>
+<nav class="primary-nav" aria-label="Workspace"><button id="nav-research" class="nav-button" type="button" aria-current="page"><svg aria-hidden="true"><use href="#i-chat"/></svg>Research</button><button id="nav-scenario" class="nav-button" type="button">Mission scenario</button><button id="nav-evaluation" class="nav-button" type="button"><svg aria-hidden="true"><use href="#i-chart"/></svg>Evaluation</button><button id="nav-demos" class="nav-button" type="button"><svg aria-hidden="true"><use href="#i-chat"/></svg>Saved demos</button><button id="nav-library" class="nav-button" type="button"><svg aria-hidden="true"><use href="#i-book"/></svg>Source library</button></nav>
+<section class="history-region" aria-labelledby="history-heading"><h2 class="sidebar-label" id="history-heading">Saved research</h2><label class="sr-only" for="history-search">Find a previous question or answer</label><div class="history-tools"><input id="history-search" type="search" placeholder="Search saved work"><button type="button" id="history-refresh" aria-label="Find saved work">Find</button></div><p id="history-error" class="error" role="alert"></p><div id="history-list" class="history-list"></div><p id="history-count" class="muted" role="status"></p><div class="history-pager"><button type="button" id="history-newer">Newer</button><button type="button" id="history-older">Older</button></div>
+<details><summary>Saved comparisons</summary><div id="comparisons-list" class="history-list"></div><p id="comparisons-count" class="muted"></p><div class="history-pager"><button type="button" id="comparisons-newer">Newer</button><button type="button" id="comparisons-older">Older</button></div></details></section>
+<div class="sidebar-footer"><button type="button" id="theme-toggle" class="theme-button" aria-label="Switch to dark appearance"><svg aria-hidden="true"><use href="#i-moon"/></svg><span id="theme-label">Dark appearance</span></button><p>NASA evidence, made traceable.</p></div></aside>
+<div class="workspace" id="workspace"><header class="topbar"><div class="topbar-left"><button type="button" id="sidebar-toggle" class="sidebar-toggle" aria-label="Open sidebar" aria-controls="sidebar" aria-expanded="false"><svg aria-hidden="true"><use href="#i-menu"/></svg></button><span id="view-title" class="view-label">Research</span></div><div class="model-controls" id="top-model-controls"><label for="provider">Model provider</label><select id="provider"><option value="groq">Groq</option><option value="openrouter">OpenRouter · free</option><option value="ollama">Local Ollama</option><option value="extractive">Source preview</option></select><span class="model-divider"></span><label for="model">Model</label><select id="model" aria-describedby="model-help"></select></div></header>
+<main id="main-content" tabindex="-1">
+<section id="research-view" class="view" aria-label="Research workspace"><div class="research-wrap">
+<div id="welcome" class="welcome"><p class="eyebrow">Microgravity research</p><h1>What would you like to explore?</h1><p>Ask about NASA’s microgravity fire research.</p></div>
+<section id="result-panel" class="result-panel" aria-label="Research answer" hidden><p id="view-question" class="question-bubble"></p><div class="answer-heading"><span class="assistant-mark" aria-hidden="true">I</span><h2 id="result-title" tabindex="-1">AXIOM</h2></div><p id="status" role="status" aria-live="polite"></p><div id="answer"></div><p id="answer-note" hidden></p>
+<details id="checks-disclosure" class="answer-details" hidden><summary>Claim checks <span id="checks-count" class="count"></span></summary><div id="claims"></div><div id="source-cautions"></div></details>
+<details id="sources-disclosure" class="answer-details" hidden><summary>NASA sources <span id="sources-count" class="count"></span></summary><p class="plain-note">Sources supplied for this answer. A passage may be ranked by shared wording or included as requested source context; check its scope and claim support in the original.</p><div id="evidence"></div></details>
+<details id="method-disclosure" class="answer-details" hidden><summary>How this answer was checked</summary><div id="pipeline-steps"></div></details><button id="export" type="button" class="secondary" hidden>Export answer</button></section>
+<section id="comparison-panel" class="comparison-panel" aria-labelledby="comparison-heading" hidden><h2 id="comparison-heading" tabindex="-1">Compare answers</h2><p id="comparison-question" class="saved-question"></p><p id="comparison-status" class="muted" role="status"></p><p id="comparison-controls" class="muted"></p><div class="comparison-grid"><article id="comparison-baseline" class="card"></article><article id="comparison-ignis" class="card"></article></div><button id="comparison-export" type="button" class="secondary" hidden>Export comparison</button></section>
+<form id="form" class="composer"><label for="question" class="sr-only">Question</label><textarea id="question" rows="2" required placeholder="Ask a question about microgravity fire research…"></textarea><div class="composer-actions"><div class="composer-tools"><button type="button" id="options-toggle" class="text-button" aria-controls="research-options" aria-expanded="false"><svg aria-hidden="true"><use href="#i-sliders"/></svg>Options</button><button type="button" id="compare" class="text-button"><svg aria-hidden="true"><use href="#i-compare"/></svg>Compare answers</button></div><button id="submit" class="send-button" type="submit" aria-label="Ask AXIOM"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+<details id="research-options" class="options"><summary>Research settings</summary><div class="options-grid"><div class="field"><label for="intent">Question type</label><select id="intent"><option value="research">Explore reported research</option><option value="applicability">Assess a proposed environment</option></select></div><div class="field"><label for="experiment">Experiment filter</label><select id="experiment"><option value="">All experiments</option></select></div><div class="field"><label for="system">Workflow</label><select id="system"><option value="ignis">AXIOM · sources and claim checks</option><option value="rag_only">Retrieval only · no critic</option><option value="baseline">Ordinary AI · no sources</option></select></div></div><label class="check-label"><input type="checkbox" id="include-overviews">Include experiment plans and overviews</label><label class="check-label"><input type="checkbox" id="include-source-descriptions">Include PSI catalog descriptions (metadata only, not dataset measurements)</label><label class="check-label"><input type="checkbox" id="compare-fresh">Request fresh replies when comparing answers</label><p>Comparisons use the selected model for both answers. Fresh replies bypass the response cache.</p>
+<details id="target-options"><summary>Proposed environment · optional</summary><div class="options-grid"><div class="field"><label for="gravity">Gravity regime</label><input id="gravity" placeholder="e.g. microgravity"></div><div class="field"><label for="fuel">Fuel or material</label><input id="fuel" placeholder="Exact material and geometry"></div><div class="field"><label for="oxygen">Oxygen · volume %</label><input id="oxygen" type="number" min="0" max="100" step="any"></div><div class="field"><label for="pressure">Pressure · kPa</label><input id="pressure" type="number" min="0.001" step="any"></div><div class="field"><label for="flow">Flow speed · cm/s</label><input id="flow" type="number" min="0" step="any"></div></div><p>Blank means unknown. Matching fields alone cannot establish mission safety.</p></details></details><div id="custom-model-control" class="custom-model" hidden><label for="custom-model">Custom model ID</label><input id="custom-model" placeholder="Enter the provider’s model ID" maxlength="100"></div><p id="model-help" class="sr-only"></p></form>
+<p id="error" class="error" role="alert"></p><div class="suggestions" id="suggestions"><button id="answer-example" type="button" class="suggestion">What is SIBAL fabric made of?</button><button id="example" type="button" class="suggestion">Can research establish safety?</button><button id="unrelated-example" type="button" class="suggestion">Try an unrelated question</button></div><p class="composer-footnote">Research prototype · Answers may need scientific review. Follow the sources.</p></div></section>
+<section id="evaluation-view" class="view" aria-label="Evaluation" hidden>
+<div class="page-wrap impact-page">
+  <div class="impact-page-head">
+    <div class="page-intro"><p class="eyebrow">Recorded results · no new model calls</p><h1>What the safety critic changes</h1><p>RAG drafts an answer from NASA passages. AXIOM adds claim-by-claim checks. Open a flagged case to follow the evidence.</p></div>
+    <div class="impact-actions"><button id="evaluation-refresh" type="button" class="secondary">Refresh results</button><button id="impact-export" type="button" class="secondary" disabled>Download results</button></div>
+  </div>
+  <p id="evaluation-status" class="plain-note" role="status">Loading saved evaluation work…</p>
+  <p id="impact-error" class="error" role="alert"></p>
+  <div id="impact-dashboard" hidden>
+    <div id="impact-run-strip" class="impact-run-strip"></div>
+    <section class="impact-hero" aria-labelledby="impact-heading">
+      <div class="impact-hero-top"><div><p class="impact-kicker">Same draft. An additional claim check.</p><h2 id="impact-heading">Claims released, before and after</h2></div><span id="impact-pairs" class="impact-badge"></span></div>
+      <div class="impact-headline"><strong id="impact-rag-count">—</strong><span class="impact-arrow" aria-hidden="true">→</span><strong id="impact-ignis-count">—</strong><div><span>RAG output → AXIOM output</span><p>structured claims released</p></div></div>
+      <figure class="impact-figure" aria-label="Released claims before and after the safety critic"><div id="impact-claim-bars"></div><figcaption id="impact-claim-caption"></figcaption></figure>
+      <div class="impact-key-results" id="impact-key-results"></div>
+      <p class="impact-boundary">Withheld means a check could not establish release. It does not mean a scientific error was proven.</p>
+    </section>
+    <div class="impact-chart-grid">
+      <section class="impact-panel" aria-labelledby="impact-reasons-heading"><p class="impact-kicker">Inside the critic</p><h2 id="impact-reasons-heading">Why claims were held back</h2><p class="impact-description">Select a check to explore its cases.</p><figure class="impact-figure"><div id="impact-reason-bars"></div><figcaption>Recorded flags can overlap. Number checks can also flag identifiers such as DOIs; these flags still need review.</figcaption></figure></section>
+      <section class="impact-panel" aria-labelledby="impact-outcomes-heading"><p class="impact-kicker">All scheduled questions</p><h2 id="impact-outcomes-heading">How each system responded</h2><p class="impact-description">Answers, withholding and failures on one shared scale.</p><figure class="impact-figure"><div id="impact-outcome-bars"></div><div id="impact-outcome-axis" class="impact-axis"></div><div class="impact-legend"><span><i class="impact-swatch answered"></i>Answered</span><span><i class="impact-swatch abstained"></i>Withheld</span><span><i class="impact-swatch failed"></i>Failed</span><span id="impact-pending-legend"><i class="impact-swatch pending"></i>Pending</span></div><figcaption id="impact-outcome-caption"></figcaption></figure></section>
+    </div>
+    <section class="impact-cases" aria-labelledby="impact-cases-heading">
+      <div class="impact-cases-heading"><div><p class="impact-kicker">Open the evidence</p><h2 id="impact-cases-heading">Every question, every outcome</h2></div><div class="impact-filter-buttons"><button id="impact-filter-all" type="button" aria-pressed="true">All cases</button><button id="impact-filter-changed" type="button" aria-pressed="false">Changed by critic</button><button id="impact-filter-failed" type="button" aria-pressed="false">Failed</button></div></div>
+      <p id="impact-filter-note" class="plain-note" role="status"></p>
+      <div class="impact-matrix-labels" aria-hidden="true"><span>Question</span><span>Baseline</span><span>RAG</span><span>AXIOM</span></div>
+      <div id="impact-question-grid" class="impact-question-grid"></div>
+      <p class="plain-note">Each row opens the saved answers and claim checks. A failed execution is excluded from the critic comparison.</p>
+    </section>
+    <section id="impact-detail" class="impact-detail" aria-labelledby="impact-detail-heading" hidden tabindex="-1"><div class="impact-detail-head"><h2 id="impact-detail-heading"></h2><button id="impact-detail-close" type="button" class="secondary">Close case</button></div><p id="impact-detail-question"></p><p id="impact-detail-status" class="plain-note" role="status"></p><div id="impact-detail-content"></div></section>
+  </div>
+  <p id="evaluation-quality" class="impact-quality"></p>
+  <details class="impact-method"><summary>Run details and counting method</summary><p id="evaluation-sources" class="plain-note"></p><div id="evaluation-progress" class="evaluation-progress"></div><p id="evaluation-note" class="plain-note"></p><p id="impact-method-note" class="plain-note"></p><p id="impact-provider-note" class="plain-note"></p></details>
+  <section id="evaluation-panel"><button id="evaluation-open" type="button" class="secondary" hidden>Show all saved evaluation answers</button><div id="evaluation-answers"></div></section>
+  <section class="axiom-panel" aria-labelledby="axiom-title">
+    <div class="axiom-head"><div><p class="impact-kicker">AXIOM · recorded assurance results</p><h2 id="axiom-title">Assurance Inspector and Trace Lab</h2><p class="plain-note">Deterministic process checks over recorded traces. They do not decide whether a source semantically supports a claim.</p></div><button id="axiom-refresh" class="secondary" type="button">Refresh AXIOM results</button></div>
+    <p id="axiom-status" class="plain-note" role="status">Loading recorded AXIOM results…</p>
+    <div id="axiom-meta" class="axiom-meta"></div>
+    <section class="axiom-card" aria-labelledby="axiom-arms-title"><h3 id="axiom-arms-title">Three-arm evaluation summary</h3><div id="axiom-arms-summary"><p class="plain-note">Not run: evaluation results are unavailable.</p></div><div id="axiom-limitations" class="plain-note"></div></section>
+    <div class="axiom-columns">
+      <section class="axiom-card" aria-labelledby="axiom-inspector-title"><h3 id="axiom-inspector-title">Assurance Inspector</h3><p class="plain-note">Select a saved question/system record. The displayed rows come from the offline recorded-run evaluation.</p><label for="axiom-record-select" class="tag">Recorded trace</label><select id="axiom-record-select" class="axiom-select"><option value="">No recorded evaluation available</option></select><div id="axiom-record-detail" class="axiom-record-detail"><p class="plain-note">Not run: no AXIOM evaluation results file is available.</p></div></section>
+      <section class="axiom-card" aria-labelledby="axiom-trace-title"><h3 id="axiom-trace-title">Trace Lab · recorded mutation demos</h3><p class="plain-note">Each preset runs one deterministic mutation against a preserved recorded example. Integrity checks remain enabled for this demo. The aggregate matrix below reports the measured mutation experiment.</p><div id="axiom-presets" class="axiom-presets"><button type="button" data-preset="remove_validation">Remove validation event</button><button type="button" data-preset="publish_before_verify">Reorder publish before verify</button><button type="button" data-preset="corrupt_evidence_id">Corrupt evidence ID</button></div><p id="axiom-demo-status" class="plain-note" role="status">Choose a preset to inspect the original and mutated trace.</p><div id="axiom-demo-result" class="axiom-demo-result" hidden><p id="axiom-demo-explanation" class="plain-note"></p><div id="axiom-demo-verdicts"></div><div class="axiom-trace-pair"><section><h4>Original trace</h4><div id="axiom-original-events" class="axiom-event-list"></div></section><section><h4>Mutated trace</h4><div id="axiom-mutated-events" class="axiom-event-list"></div></section></div></div><div class="axiom-toggle" role="group" aria-label="Integrity layer for aggregate matrix"><button type="button" data-integrity="on" aria-pressed="true">Integrity ON</button><button type="button" data-integrity="off" aria-pressed="false">Integrity OFF</button></div><p id="axiom-trace-note" class="plain-note" role="status"></p><div id="axiom-heatmap" class="axiom-heatmap" aria-live="polite"></div></section>
+    </div>
+    <section class="axiom-card" aria-labelledby="axiom-extraction-title"><h3 id="axiom-extraction-title">Extraction validation</h3><p id="axiom-extraction-note" class="plain-note">Not run: no extraction validation results file is available.</p><div id="axiom-extraction-results"></div></section>
+  </section>
+</div></section>
+<section id="scenario-view" class="view" aria-label="Mission scenario stress test" hidden><div class="page-wrap scenario-page">
+<div class="page-intro"><p class="eyebrow">Mission scenario stress test</p><h1>How far does the evidence travel?</h1><p>Compare a hypothetical spacecraft fire scenario with conditions documented in the ingested NASA corpus. AXIOM reports where evidence aligns, where it only partly applies and where the documentation is silent. This is an evidence-applicability assessment, not a fire-risk prediction or a safety certification.</p></div>
+<div class="scenario-layout">
+<form id="scenario-form" class="sc-panel sc-builder" novalidate>
+  <div class="sc-panel-head"><h2>Scenario builder</h2><span id="scenario-corpus" class="tag"></span></div>
+  <p class="plain-note">Blank means unknown. Unknown is never treated as a match, and an unreported condition is not proof that NASA never tested it.</p>
+  <div id="scenario-presets" class="sc-presets"></div>
+  <div class="sc-grid">
+    <div class="sc-field"><label for="sc-gravity">Gravity regime</label><select id="sc-gravity"><option value="">Unknown</option><option value="microgravity">Microgravity</option><option value="terrestrial">Terrestrial / normal gravity</option><option value="lunar">Lunar partial gravity</option><option value="martian">Martian partial gravity</option><option value="partial">Partial gravity (unspecified)</option></select></div>
+    <div class="sc-field"><label for="sc-interest">Fire behaviour of interest</label><select id="sc-interest"><option value="">Not specified</option></select></div>
+    <div class="sc-field"><label for="sc-fuel">Fuel or material</label><input id="sc-fuel" list="sc-fuel-options" maxlength="300" placeholder="e.g. SIBAL fabric"><datalist id="sc-fuel-options"></datalist></div>
+    <div class="sc-field"><label for="sc-geometry">Fuel geometry</label><input id="sc-geometry" list="sc-geometry-options" maxlength="300" placeholder="e.g. fabric sheet"><datalist id="sc-geometry-options"></datalist></div>
+    <div class="sc-field"><label for="sc-oxygen">Oxygen concentration</label><div class="sc-num"><input id="sc-oxygen" type="number" min="0" max="100" step="any" placeholder="Unknown"><select id="sc-oxygen-unit" aria-label="Oxygen unit"><option value="%">%</option><option value="percent">percent</option></select></div></div>
+    <div class="sc-field"><label for="sc-pressure">Pressure</label><div class="sc-num"><input id="sc-pressure" type="number" min="0" step="any" placeholder="Unknown"><select id="sc-pressure-unit" aria-label="Pressure unit"><option value="kPa">kPa</option><option value="Pa">Pa</option><option value="atm">atm</option><option value="bar">bar</option><option value="psi">psi</option><option value="torr">torr</option><option value="mmHg">mmHg</option></select></div></div>
+    <div class="sc-field"><label for="sc-flow">Airflow speed</label><div class="sc-num"><input id="sc-flow" type="number" min="0" step="any" placeholder="Unknown"><select id="sc-flow-unit" aria-label="Airflow unit"><option value="cm/s">cm/s</option><option value="mm/s">mm/s</option><option value="m/s">m/s</option></select></div></div>
+    <div class="sc-field"><label for="sc-temperature">Temperature</label><div class="sc-num"><input id="sc-temperature" type="number" min="0" step="any" placeholder="Unknown"><select id="sc-temperature-unit" aria-label="Temperature unit"><option value="K">K</option><option value="°C">°C</option><option value="°F">°F</option></select></div></div>
+    <div class="sc-field"><label for="sc-apparatus">Apparatus</label><input id="sc-apparatus" list="sc-apparatus-options" maxlength="300" placeholder="Unknown"><datalist id="sc-apparatus-options"></datalist></div>
+    <div class="sc-field"><label for="sc-ignition">Ignition method</label><input id="sc-ignition" list="sc-ignition-options" maxlength="300" placeholder="Unknown"><datalist id="sc-ignition-options"></datalist></div>
+    <div class="sc-field"><label for="sc-suppression">Suppression method</label><input id="sc-suppression" list="sc-suppression-options" maxlength="300" placeholder="Unknown"><datalist id="sc-suppression-options"></datalist></div>
+    <div class="sc-field wide"><label for="sc-description">Short description</label><textarea id="sc-description" rows="3" maxlength="2000" placeholder="Describe the hypothetical scenario. This text is saved with the assessment and is not used for matching."></textarea></div>
+  </div>
+  <label class="check-label"><input id="sc-save" type="checkbox"> Save this assessment locally</label>
+  <div class="sc-actions"><button id="sc-assess" class="sc-primary" type="submit">Assess scenario</button><button id="sc-export" class="sc-secondary" type="button" disabled>Export JSON</button></div>
+  <p id="sc-status" class="sc-status" role="status">Loading corpus metadata…</p>
+  <p id="sc-error" class="error" role="alert"></p>
+</form>
+<div id="sc-results" class="sc-results">
+  <p id="sc-empty" class="plain-note">Choose a preset or enter a scenario, then assess it. After the first assessment, changing a parameter re-runs the deterministic comparison automatically.</p>
+  <div id="sc-diff" class="sc-diff" role="status" hidden></div>
+  <div id="sc-summary"></div>
+  <div id="sc-report"></div>
+</div>
+</div>
+<div class="sc-panel" style="margin-top:22px"><div class="sc-panel-head"><h2>Saved scenario assessments</h2><button id="sc-refresh-saved" class="sc-secondary" type="button">Refresh</button></div><p class="plain-note">Saved assessments contain the comparison, gaps, critic checks and proposals from that moment.</p><div id="sc-saved" class="sc-saved"><p class="plain-note">Loading saved assessments…</p></div></div>
+<p class="plain-note" style="margin-top:22px">No aggregate confidence score is produced. Coverage percentages count documentation cells only. Proposed experiments are AXIOM research concepts and require qualified scientific and facility-safety review before execution.</p>
+</div></section>
+<section id="library-view" class="view" aria-label="Source library" hidden><div class="page-wrap"><div class="page-intro"><p class="eyebrow">Go back to the source</p><h1>Source library</h1><p>The NASA documents behind this workspace. Source access and quotation checks establish traceability; scientific interpretation still needs review.</p></div><div class="library-stats"><div><strong id="documents">—</strong><span>NASA documents ingested</span></div><div><strong id="chunks">—</strong><span>traceable passages</span></div></div><div id="source-library" class="source-library"></div><details class="library-section" open><summary>NASA Space Apps official resource list · R1 is the primary data source</summary><p id="official-resource-status" class="plain-note">Loading live acquisition and processing status…</p><div class="form-row"><label for="resource-search">Search resources</label><input id="resource-search" type="search" maxlength="200" placeholder="Title, category, or provider"></div><div class="form-row"><label for="resource-category">Source category</label><select id="resource-category"><option value="">All categories</option></select></div><div id="official-resource-library" class="source-library"></div></details><details class="library-section"><summary>Inventory and reuse rights</summary><pre id="inventory"></pre></details><details class="library-section"><summary>Extracted condition drafts</summary><p>These records preserve reported versus proposed conditions. They are awaiting scientific review and are not approved inputs for judging applicability.</p><div id="condition-records">Loading condition evidence…</div></details><details class="library-section"><summary>What the checks mean</summary><p><b>Source excerpt:</b> the quotation matches a retrieved passage; interpretation and applicability need review.</p><p><b>Provisional summary:</b> a model found support in the cited passages. Open the sources to assess that interpretation.</p><p><b>Withheld claim:</b> the citation, evidence, scope or support checks could not establish the claim.</p></details><p class="plain-note" style="margin-top:35px">Research workspace. Scientific interpretation and operational applicability require appropriate review.</p></div></section>
+<section id="demos-view" class="view" aria-label="Saved demonstrations" hidden><div class="page-wrap"><div class="page-intro"><p class="eyebrow">Follow the evidence</p><h1>Saved demonstrations</h1><p>Three real examples from the saved evaluation. Open the answer, inspect the claim checks, and follow the source passages. Replays work without an API key or a new model request.</p></div><p id="demo-error" class="error" role="alert"></p><div id="demo-list"></div><p class="plain-note">These examples show recorded system behavior. Model-supported claims still await independent scientific review.</p></div></section>
+</main></div></div>
+
+<script id="model-controls">
+const modelPresets = {
+    groq: [
+        {id: 'qwen/qwen3.8-27b', label: 'Qwen 3.8 27B (default)'}
+    ],
+    openrouter: [
+        {id: 'nvidia/nemotron-3.5-super-vl:free', label: 'Nemotron 3.5 Super VL (free)'},
+        {id: 'nvidia/nemotron-3-ultra-550b-a55b:free', label: 'Nemotron 3 Ultra (free)'}
+    ],
+    ollama: [
+        {id: 'llama3.2:latest', label: 'Llama 3.2 (local)'}
+    ],
+    extractive: []
+};
+
+function selectedModel() {
+    const model = document.getElementById('model');
+    if (document.getElementById('provider').value === 'extractive') return null;
+    if (model.value === '__custom__') {
+        const custom = document.getElementById('custom-model').value.trim();
+        if (!custom) throw new Error('Enter a model ID or choose a model from the list.');
+        return custom;
+    }
+    return model.value;
+}
+
+function updateCustomModel() {
+    const custom = document.getElementById('model').value === '__custom__';
+    document.getElementById('custom-model-control').hidden = !custom;
+    document.getElementById('custom-model').required = custom;
+}
+
+function updateModelChoices() {
+    const provider = document.getElementById('provider').value;
+    const model = document.getElementById('model');
+    model.replaceChildren();
+    const choices = modelPresets[provider];
+    for (const preset of choices) {
+        const option = document.createElement('option');
+        option.value = preset.id;
+        option.textContent = preset.label;
+        model.append(option);
+    }
+    const option = document.createElement('option');
+    option.value = provider === 'extractive' ? '' : '__custom__';
+    option.textContent = provider === 'extractive' ? 'No model needed' : 'Enter another model ID…';
+    model.append(option);
+    model.value = choices.length ? choices[0].id : '';
+    model.disabled = provider === 'extractive';
+    document.getElementById('custom-model').value = '';
+    const help = {
+        groq: 'Choose Qwen to use the connected Groq model, or enter another Groq model ID.',
+        openrouter: 'Choose a Nemotron model, or enter another model ID ending in :free.',
+        ollama: 'Choose a model already installed on your computer.',
+        extractive: 'Shows matching NASA passages without a model call.'
+    };
+    document.getElementById('model-help').textContent = help[provider];
+    updateCustomModel();
+}
+
+document.getElementById('provider').addEventListener('change', updateModelChoices);
+document.getElementById('model').addEventListener('change', updateCustomModel);
+updateModelChoices();
+</script>
+<script>
+const $=id=>document.getElementById(id); let last; let displaySequence = 0;
+function el(tag,text,cls){const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x}
+function link(url,label){const a=el('a',label);try{const u=new URL(url);const archivePath='/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/';const trusted=u.hostname==='nasa.gov'||u.hostname.endsWith('.nasa.gov')||(u.hostname==='www.youtube.com'&&u.pathname==='/watch'&&u.searchParams.get('v')==='W1oXykoz9zg')||(u.hostname==='web.archive.org'&&u.pathname===archivePath&&!u.search);if(u.protocol==='https:'&&trusted&&!u.username&&!u.password&&!u.port){a.href=u.href;a.target='_blank';a.rel='noopener noreferrer'}}catch{}return a}
+function sourceURL(source){const base=source.document_url||source.url;const page=source.locator?.match(/PDF page (\d+)/)?.[1];return source.document_url&&page?base+'#page='+page:base}
+fetch(api('/api/conditions')).then(r=>r.json()).then(s=>{const box=$('condition-records');box.replaceChildren();if(s.error)throw Error(s.error);box.append(el('p',`${s.coverage.condition_records} draft records · ${s.validation.valid_count} provenance checks passed · ${s.coverage.human_reviewed_condition_records} human reviewed`));for(const r of s.records){const card=el('article',undefined,'card');card.append(el('span',`${r.record_id} · ${r.evidence_status} · ${r.scope}`,'tag'),el('h3',`${r.field}: ${JSON.stringify(r.value)} ${r.unit||''}`),el('p',r.quote),el('p',r.notes||'','warning'),link('https://ntrs.nasa.gov/citations/'+r.source_id.replace('ntrs-',''),r.chunk_id),el('p','Review: '+(r.decision ? r.decision.decision+' · '+r.decision.reviewer+' · '+r.decision.note : r.review_status),'muted'));box.append(card)}}).catch(e=>{$('condition-records').textContent=e.message});
+fetch(api('/api/status')).then(r=>r.json()).then(s=>{if(s.error)throw Error(s.error);$('documents').textContent=s.ingested_sources;$('chunks').textContent=s.chunks;$('inventory').textContent=JSON.stringify(s.sources,null,2);const library=$('source-library');library.replaceChildren();for(const source of s.sources.sources.filter(item=>item.status==='active'&&item.permission_status==='allowed')){const card=el('article',undefined,'card');card.append(el('span',source.experiment,'tag'),el('h3',source.title),link(source.url,'Open NASA source'),el('p',(source.source_kind||'NASA document').replaceAll('_',' '),'muted'));library.append(card)}for(const name of [...new Set(s.sources.sources.filter(x=>x.status==='active').map(x=>x.experiment))].sort()){const option=el('option',name);option.value=name;$('experiment').append(option)}}).catch(e=>$('error').textContent=e.message);
+let officialResourceRows=[];
+function renderOfficialResources(){const host=$('official-resource-library');if(!host)return;host.replaceChildren();const needle=($('resource-search')?.value||'').trim().toLowerCase(),category=$('resource-category')?.value||'';const rows=officialResourceRows.filter(r=>(!category||r.category===category)&&(!needle||[r.title,r.provider,r.category,r.description].join(' ').toLowerCase().includes(needle)));for(const r of rows){const card=el('article',undefined,'card');if(r.resource_id==='R1')card.style.border='2px solid var(--accent,#b85f31)';card.append(el('span',r.resource_id+' · '+r.category.replaceAll('_',' '),'tag'),el('h3',r.title),el('p',r.provider+' · '+r.acquisition_status.replaceAll('_',' '),'muted'),el('p',r.description),link(r.url,'Open original source'),el('p',`Processing: ${r.processing_status.replaceAll('_',' ')} · Indexed documents: ${r.indexed_documents} · Chunks: ${r.indexed_chunks} · Extracted experiment records: ${r.extracted_records} · Condition values: ${r.extracted_nonnull_condition_fields} · Validation: ${r.metadata_validation_status}`,'muted'));if(r.resource_id==='R1')card.append(el('p',`Raw experimental files acquired: ${r.raw_experimental_files}. Existing catalog entries and directory listings are not dataset files.`,'plain-note'));if(r.indexed_evidence?.length){const details=el('details');details.append(el('summary','Inspect indexed content and experimental condition fields'));for(const evidence of r.indexed_evidence){const item=el('article',undefined,'axiom-card');item.append(el('h4',`${evidence.evidence_id} · ${evidence.locator||'locator unavailable'}`),link(evidence.canonical_url||r.url,'Open cited record'));item.append(el('p',evidence.text));item.append(el('p','Condition metadata (null means not stated in this indexed source chunk):','muted'),el('pre',JSON.stringify(evidence.conditions,null,2)));details.append(item);}card.append(details);}host.append(card);}if(!rows.length)host.append(el('p','No official resources match this filter.','plain-note'));}
+fetch(api('/api/resources')).then(r=>r.json()).then(report=>{if(report.error)throw Error(report.error);officialResourceRows=report.resources||[];$('official-resource-status').textContent=`${report.resource_count} supplied resources · ${report.acquired_resource_count} with locally recorded content · ${report.processed_resource_count} with indexed chunks · ${report.raw_experimental_file_count} raw experimental files. Report generated ${report.generated_at}. ${report.limitations.join(' ')}`;const categories=[...new Set(officialResourceRows.map(r=>r.category))].sort();for(const category of categories){const option=el('option',category.replaceAll('_',' '));option.value=category;$('resource-category').append(option);}renderOfficialResources();$('resource-search').addEventListener('input',renderOfficialResources);$('resource-category').addEventListener('change',renderOfficialResources);}).catch(e=>{$('official-resource-status').textContent='Resource status unavailable: '+e.message;});
+function setExample(question, intent) {
+    $('question').value = question;
+    $('question').focus?.();
+    $('intent').value = intent;
+    $('experiment').value = '';
+    $('include-overviews').checked = false;
+    for (const id of ['gravity', 'fuel', 'oxygen', 'pressure', 'flow']) $(id).value = '';
+}
+$('answer-example').onclick=()=>setExample('What is SIBAL fabric made of?', 'research');
+$('example').onclick=()=>setExample('Can BASS-II certify that every spacecraft material is fireproof?', 'applicability');
+$('unrelated-example').onclick=()=>setExample('What is the orbital period of exoplanet Kepler-186f?', 'research');
+function issueText(issue) {
+    const messages = {
+        invalid_citation_or_quote: 'The cited quotation could not be verified.',
+        missing_citation: 'This claim has no source citation.',
+        semantic_support_rejected: 'The model checker found that the evidence does not support this claim.',
+        semantic_support_unresolved: 'Support for this interpretation remains uncertain.',
+        numeric_association_mismatch: 'A number was assigned to the wrong material or condition.',
+        numeric_association_unresolved: 'The link between the quantities and their materials needs review.',
+        numeric_literal_not_cited: 'A stated quantity does not appear in the cited passages.',
+        numeric_unit_unresolved: 'The measurement unit needs review.',
+        counterevidence_found: 'The model checker identified conflicting evidence in another retrieved passage.',
+        conflicting_or_limiting_evidence: 'Some retrieved evidence limits this claim.',
+        universal_safety_claim_unresolved: 'The claim makes a universal safety assertion that needs a narrower tested scope.',
+        review_budget_exhausted: 'This additional claim reached the per-question review limit.',
+        overview_scope_unresolved: 'The claim may treat planned research as completed findings.',
+        target_conditions_incomplete: 'The proposed environment is missing some conditions.',
+        operational_inference_requires_expert_review: 'These passages do not establish an operational safety decision.'
+    };
+    const conditionLabels={flow_cm_s:'flow speed (cm/s)',fuel:'fuel or material',gravity:'gravity setting',oxygen_percent:'oxygen concentration (%)',pressure_kpa:'pressure (kPa)'};
+    if (issue.startsWith('condition_unknown:')) return 'Missing experimental condition: ' + (conditionLabels[issue.split(':')[1]] || issue.split(':')[1].replaceAll('_',' '));
+    if (issue.startsWith('condition_mismatch:')) return 'Different experimental condition: ' + (conditionLabels[issue.split(':')[1]] || issue.split(':')[1].replaceAll('_',' '));
+    return messages[issue] || issue.replaceAll('_',' ');
+}
+function clearResult() {
+    for (const id of ['claims','source-cautions','evidence','pipeline-steps']) $(id).replaceChildren();
+    $('answer').textContent = '';
+    $('answer-note').textContent = '';
+    $('view-question').textContent = '';
+    for (const id of ['checks-disclosure','sources-disclosure','method-disclosure']) {
+        $(id).hidden = true;
+        $(id).open = false;
+    }
+    $('answer-note').hidden = true;
+}
+function renderRun(original, reveal = true) {
+    showResearchResult(reveal);
+    clearResult();
+    last = original;
+    const result = {
+        question: '', mode: 'saved_run', system: 'unknown', latency_ms: null,
+        answer: '', abstained: false, provisional: false, ...original,
+        draft_checks: original.draft_checks || original.claims || [],
+        evidence: original.evidence || []
+    };
+    $('view-question').textContent = result.question || 'Saved answer';
+    if (reveal) { $('result-title').focus?.(); $('result-title').scrollIntoView?.({block:'start'}); }
+    $('error').textContent = result.error || result.save_error || '';
+ $('result-title').textContent=result.abstained?'Evidence boundary reached':result.system!=='ignis'?'Unfiltered model answer':result.provisional?'Answer with source checks':'Source excerpts';
+ if(result.steps){for(const step of result.steps){const item=el('details',undefined,'card');item.append(el('summary',step.label),el('p',step.detail));$('pipeline-steps').append(item)}}
+ $('answer-note').textContent=result.provisional?'Provisional summary: a model checked the cited evidence. Scientific review is still pending.':'';$('status').textContent=`${result.mode === 'extractive_preview' ? 'Source preview · No model used' : result.system === 'ignis' ? 'Source and claim checks' : 'Unfiltered model answer'}${result.model_info?.model ? ' · ' + result.model_info.model : ''}${typeof result.latency_ms === 'number' ? ' · ' + (result.latency_ms/1000).toFixed(2) + ' s' : ''}`;$('answer').textContent=result.answer;$('export').hidden=false;
+ $('answer-note').hidden = !result.provisional;
+ $('checks-disclosure').hidden = !result.draft_checks.length && !result.source_cautions?.length;
+ $('checks-count').textContent = result.draft_checks.length;
+ $('checks-disclosure').open = !!result.abstained && !!result.draft_checks.length;
+ $('sources-disclosure').hidden = !result.evidence.length;
+ $('sources-count').textContent = result.evidence.length;
+ $('method-disclosure').hidden = !result.steps?.length;
+ for(const c of result.draft_checks){const card=el('article',undefined,'card');card.append(el('span',({'model_supported_needs_review':'MODEL FOUND SOURCE SUPPORT · PROVISIONAL','quoted_evidence':'EXACT SOURCE EXCERPT','blocked':'WITHHELD · CHECK FAILED','needs_review':'WITHHELD · SUPPORT UNRESOLVED','unfiltered':'UNCHECKED DRAFT'}[c.verdict]||String(c.verdict || 'unassessed').replaceAll('_',' ').toUpperCase()),'tag'),el('p',c.text));if(c.issues?.length)card.append(el('p',c.issues.map(issueText).join(' '),'warning'));if(c.evidence_status)card.append(el('p','Evidence assessment: '+c.evidence_status,'muted'));if(c.next_evidence?.length)card.append(el('p',c.next_evidence.join(' '),'muted'));if(c.limitations)card.append(el('p',c.limitations,'muted'));if(c.semantic_review)card.append(el('p','Provisional model review: '+c.semantic_review.reason,'muted'));if(c.semantic_review?.uncertainty)card.append(el('p',c.semantic_review.uncertainty,'muted'));if(c.evidence_checks?.length){const checks=el('details');checks.append(el('summary','Passages checked by the model'));for(const check of c.evidence_checks){const item=el('div',undefined,'card');item.append(el('span',check.relation.toUpperCase(),'tag'),el('p',check.quote),link(sourceURL(check),check.locator));checks.append(item)}card.append(checks)}for(const cite of (c.citations || [])){const p=el('p');p.append(link(sourceURL(cite),cite.locator||cite.chunk_id),el('span',cite.valid===undefined?'':cite.valid?' · quotation verified':' · invalid quotation'));card.append(p)}$('claims').append(card)}
+ if(result.source_cautions?.length){$('source-cautions').append(el('h3','Source values that need a scope check'),el('p','These automatic comparison hints may describe different test setups. Compare their source notes before interpreting the differences.'));for(const hint of result.source_cautions){const item=el('details',undefined,'card');item.append(el('summary',hint.field.replaceAll('_',' ')+' · '+hint.source_id),el('pre',JSON.stringify(hint,null,2)));$('source-cautions').append(item)}}
+ for(const [i,c] of result.evidence.entries()){const card=el('article',undefined,'card');card.append(el('span',`${c.selection_role==='explicit_source_scope'?'Requested source context':'#'+(i+1)} · ${c.experiment} · evidence tier ${c.evidence_tier}`,'tag'),el('h3',c.title),link(sourceURL(c),c.locator),el('p',c.text));if(c.selection_role==='explicit_source_scope')card.append(el('p','Supplied because this exact source scope was requested. Lexical relevance and scientific support are not established.','muted'));const detail=el('details');detail.append(el('summary','Provenance and conditions'),el('pre',JSON.stringify({source_id:c.source_id,chunk_id:c.chunk_id,score:c.score,conditions:c.conditions,sha256:c.sha256,ranking:c.ranking},null,2)));card.append(detail);$('evidence').append(card)}
+}
+$('form').onsubmit = async event => {
+    event.preventDefault();
+    if (requestBusy) return;
+    $('error').textContent = '';
+    let request;
+    try { request = researchRequest(); }
+    catch (error) { $('error').textContent = error.message; return; }
+    const sequence = ++displaySequence;
+    ++comparisonSequence;
+    showResearchResult();
+    clearResult();
+    $('view-question').textContent = request.question;
+    $('question').value = '';
+    $('result-title').textContent = 'AXIOM';
+    $('status').textContent = 'Finding sources and checking claims…';
+    $('export').hidden = true;
+    setBusy(true);
+    try {
+        const result = await readJSON('/api/ask', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(request)});
+        if (sequence === displaySequence) renderRun(result, activeView === 'research');
+        await refreshHistory();
+    } catch (error) {
+        if (sequence === displaySequence) {
+            $('error').textContent = error.message;
+            $('status').textContent = 'The request could not finish.';
+            if (!$('question').value.trim()) $('question').value = request.question;
+        }
+    } finally { setBusy(false); }
+};
+$('export').onclick=()=>{if(!last)return;const url=URL.createObjectURL(new Blob([JSON.stringify(last,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='axiom-research-run.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+</script><script id="history-controls">
+const historyPages = {runs: 0, comparisons: 0};
+const historyPageSize = 8;
+let historySequence = 0;
+let comparisonSequence = 0;
+let lastComparison = null;
+
+function setBusy(busy) {
+    requestBusy = busy;
+    if (!busy && $('error').textContent === 'The earlier request is finishing. You can prepare your next question.') $('error').textContent = '';
+    $('form').setAttribute('aria-busy', String(busy));
+    $('submit').setAttribute('aria-label', busy ? 'Working…' : 'Ask AXIOM');
+    $('app-shell').classList.toggle('is-busy', busy);
+    $('submit').disabled = busy;
+    $('compare').disabled = busy;
+}
+
+function researchRequest() {
+    const target = {};
+    const fields = {gravity:'gravity', fuel:'fuel', oxygen:'oxygen_percent', pressure:'pressure_kpa', flow:'flow_cm_s'};
+    for (const [id, field] of Object.entries(fields)) {
+        if ($(id).value.trim()) target[field] = ['gravity','fuel'].includes(field) ? $(id).value : Number($(id).value);
+    }
+    return {
+        question:$('question').value,
+        experiments:$('experiment').value ? [$('experiment').value] : null,
+        include_overviews:$('include-overviews').checked,
+        include_source_descriptions:$('include-source-descriptions').checked,
+        provider:$('provider').value, model:selectedModel(), system:$('system').value,
+        intent:$('intent').value, target
+    };
+}
+
+async function readJSON(url, options) {
+    const response = await fetch(api(url), options);
+    const data = await response.json();
+    if (!response.ok) throw new Error(data.error || 'The request could not finish.');
+    return data;
+}
+
+function whenSaved(value) {
+    if (!value) return 'Date unavailable';
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return 'Date unavailable';
+    return date.toLocaleString('en-GB', {timeZone:'Africa/Cairo', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}) + ' Cairo';
+}
+
+function historyCard(item, kind) {
+    const card = el('article', undefined, 'card');
+    card.append(el('p', item.question || 'Saved answer'));
+    const provider = item.mode === 'extractive_preview' ? 'Extractive preview' : item.provider || 'Provider unavailable';
+    const model = item.mode === 'extractive_preview' ? 'No model call' : item.model || 'Model unavailable';
+    card.append(el('p', `${whenSaved(item.created_at)} · ${provider} · ${model}`, 'muted'));
+    const open = el('button', kind === 'runs' ? 'Open answer' : 'Open comparison', 'secondary');
+    open.type = 'button';
+    open.textContent = item.question || (kind === 'runs' ? 'Saved answer' : 'Saved comparison');
+    open.setAttribute('aria-label', `${kind === 'runs' ? 'Open answer' : 'Open comparison'}: ${item.question || 'Saved answer'}`);
+    open.title = `${item.question || 'Saved answer'} · ${whenSaved(item.created_at)} · ${provider} · ${model}`;
+    open.onclick = () => kind === 'runs' ? openSavedRun(item.run_id) : openSavedComparison(item.comparison_id);
+    card.append(open);
+    return card;
+}
+
+function renderHistory(data, kind) {
+    const prefix = kind === 'runs' ? 'history' : 'comparisons';
+    const box = $(prefix + '-list');
+    const items = data[kind] || [];
+    box.replaceChildren();
+    if (!items.length) box.append(el('p', $('history-search').value.trim() ? 'No saved work matches your search.' : kind === 'runs' ? 'Saved answers will appear here after you ask a question.' : 'Your saved comparisons will appear here.', 'muted'));
+    for (const item of items) box.append(historyCard(item, kind));
+    const count = data.total || 0;
+    const offset = historyPages[kind];
+    $(prefix + '-count').textContent = count ? `${offset + 1}–${offset + items.length} of ${count}` : 'No saved results';
+    if (data.skipped) $(prefix + '-count').textContent += ` · ${data.skipped} unreadable files skipped`;
+    $(prefix + '-newer').disabled = offset === 0;
+    $(prefix + '-older').disabled = offset + historyPageSize >= count;
+}
+
+async function refreshHistory() {
+    const sequence = ++historySequence;
+    const query = encodeURIComponent($('history-search').value.trim());
+    try {
+        const [runs, comparisons] = await Promise.all([
+            readJSON(`/api/runs?limit=${historyPageSize}&offset=${historyPages.runs}&q=${query}`),
+            readJSON(`/api/comparisons?limit=${historyPageSize}&offset=${historyPages.comparisons}&q=${query}`)
+        ]);
+        if (sequence !== historySequence) return;
+        $('history-error').textContent = '';
+        renderHistory(runs, 'runs');
+        renderHistory(comparisons, 'comparisons');
+    } catch (error) {
+        if (sequence === historySequence) $('history-error').textContent = 'Saved work could not be loaded. ' + error.message;
+    }
+}
+
+async function openSavedRun(id) {
+    const sequence = ++displaySequence;
+    ++comparisonSequence;
+    $('error').textContent = '';
+    try {
+        const run = await readJSON('/api/runs/' + encodeURIComponent(id));
+        if (sequence === displaySequence) renderRun(run);
+    } catch (error) {
+        if (sequence === displaySequence) $('error').textContent = 'Saved answer could not be opened. ' + error.message;
+    }
+}
+
+async function openSavedComparison(id) {
+    const sequence = ++comparisonSequence;
+    ++displaySequence;
+    showComparison();
+    $('comparison-question').textContent = '';
+    $('comparison-status').textContent = 'Opening saved comparison…';
+    $('comparison-controls').textContent = '';
+    $('comparison-baseline').replaceChildren();
+    $('comparison-ignis').replaceChildren();
+    $('comparison-export').hidden = true;
+    try {
+        const comparison = await readJSON('/api/comparisons/' + encodeURIComponent(id));
+        if (sequence === comparisonSequence) renderComparison(comparison);
+    } catch (error) {
+        if (sequence === comparisonSequence) {
+            $('comparison-panel').hidden = false;
+            $('comparison-status').textContent = 'Saved comparison could not be opened. ' + error.message;
+        }
+    }
+}
+
+function comparisonCard(run, heading, error) {
+    const card = el('div');
+    card.append(el('h3', heading));
+    if (!run) {
+        card.append(el('p', error || 'This answer could not be completed.', 'warning'));
+        return card;
+    }
+    if (run.error || error) card.append(el('p', run.error || error, 'warning'));
+    if (run.provisional) card.append(el('p', 'Provisional · awaiting scientific review', 'muted'));
+    card.append(el('p', run.answer || 'No answer text was saved.', 'comparison-answer'));
+    const cached = (run.model_calls || []).filter(call => call.cache_hit).length;
+    const elapsed = typeof run.latency_ms === 'number' ? (run.latency_ms / 1000).toFixed(2) + ' s' : 'Time unavailable';
+    card.append(el('p', `${elapsed} · ${cached} cached model replies reused`, 'muted'));
+    const claims = run.claims || [];
+    const checks = run.draft_checks || [];
+    card.append(el('p', `${claims.length} claims included` + (run.system === 'ignis' ? ` · ${Math.max(0, checks.length - claims.length)} withheld` : ' · answer shown without source checks'), 'muted'));
+    const inspect = el('button', 'Inspect this answer', 'secondary');
+    inspect.type = 'button';
+    inspect.onclick = () => { ++displaySequence; ++comparisonSequence; renderRun(run); };
+    card.append(inspect);
+    return card;
+}
+
+function renderComparison(result, reveal = true) {
+    showComparison(reveal);
+    lastComparison = result;
+    $('comparison-panel').hidden = false;
+    $('comparison-question').textContent = result.question || '';
+    $('comparison-status').textContent = result.status === 'complete' ? 'Both answers are ready. Compare their wording and inspect their sources.' : 'The comparison has an issue. The available answers are shown below.';
+    const controls = result.controls || {};
+    $('comparison-controls').textContent = `${controls.provider || ''} · ${controls.model || ''} · Same question and model. AXIOM additionally receives NASA passages and source checks. ` + (controls.fresh ? 'Fresh responses requested.' : 'Saved model replies may be reused.');
+    if (result.errors && Object.keys(result.errors).length) $('comparison-status').textContent += ' ' + Object.values(result.errors).join(' ');
+    $('comparison-baseline').replaceChildren(comparisonCard(result.baseline, 'Ordinary AI', result.errors?.baseline));
+    $('comparison-ignis').replaceChildren(comparisonCard(result.ignis, 'AXIOM', result.errors?.ignis));
+    $('comparison-export').hidden = false;
+    if (reveal) { $('comparison-heading').focus?.(); $('comparison-heading').scrollIntoView?.({block:'start'}); }
+}
+
+$('compare').onclick = async () => {
+    if ($('form').reportValidity && !$('form').reportValidity()) return;
+    const sequence = ++comparisonSequence;
+    ++displaySequence;
+    $('error').textContent = '';
+    try {
+        const request = researchRequest();
+        if (!request.question.trim()) throw new Error('Enter a question to compare.');
+        if (request.provider === 'extractive') throw new Error('Choose a model provider to compare answers.');
+        request.fresh = $('compare-fresh').checked;
+        setBusy(true);
+        showComparison();
+        $('comparison-question').textContent = request.question;
+        $('comparison-status').textContent = 'Generating the ordinary AI answer, then running AXIOM. This can take a minute.';
+        $('comparison-baseline').replaceChildren();
+        $('comparison-ignis').replaceChildren();
+        $('comparison-export').hidden = true;
+        const result = await readJSON('/api/compare', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(request)});
+        if (sequence === comparisonSequence) renderComparison(result, activeView === 'research');
+        await refreshHistory();
+    } catch (error) {
+        if (sequence === comparisonSequence) {
+            $('error').textContent = error.message;
+            $('comparison-status').textContent = 'The comparison request could not finish. ' + error.message;
+        }
+    } finally {
+        setBusy(false);
+    }
+};
+
+$('history-refresh').onclick = () => { historyPages.runs = 0; historyPages.comparisons = 0; refreshHistory(); };
+$('history-search').addEventListener('keydown', event => { if (event.key === 'Enter') { event.preventDefault(); $('history-refresh').onclick(); } });
+for (const [kind, prefix] of [['runs','history'], ['comparisons','comparisons']]) {
+    $(prefix + '-newer').onclick = () => { historyPages[kind] = Math.max(0, historyPages[kind] - historyPageSize); refreshHistory(); };
+    $(prefix + '-older').onclick = () => { historyPages[kind] += historyPageSize; refreshHistory(); };
+}
+$('comparison-export').onclick = () => {
+    if (!lastComparison) return;
+    const url = URL.createObjectURL(new Blob([JSON.stringify(lastComparison, null, 2)], {type:'application/json'}));
+    const download = document.createElement('a');
+    download.href = url;
+    download.download = 'axiom-comparison.json';
+    download.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+refreshHistory();
+</script>
+<script id="evaluation-controls">
+let evaluationSequence = 0;
+let evaluationRunId = null;
+let evaluationImpact = null;
+let evaluationAnswersPromise = null;
+let impactSelectionSequence = 0;
+let impactSelectedQuestion = null;
+let impactFilter = {kind:'all'};
+const systemLabel = value => ({baseline:'Baseline LLM',rag_only:'RAG',ignis:'AXIOM'}[value] || value);
+const impactCount = value => Number.isInteger(value) && value >= 0 ? String(value) : '—';
+const impactPercent = value => Number.isFinite(value) ? `${(value * 100).toFixed(1)}%` : '—';
+const impactWidth = (value, total) => `${Number.isFinite(value) && total > 0 ? Math.max(0, Math.min(100, value / total * 100)) : 0}%`;
+
+function impactTrack(segments, total, label) {
+    const track = el('div',undefined,'impact-track');
+    track.setAttribute('role','img');
+    track.setAttribute('aria-label',label);
+    for (const [kind,count] of segments) {
+        if (!count) continue;
+        const mark = el('span',undefined,kind);
+        mark.style.width = impactWidth(count,total);
+        mark.setAttribute('aria-hidden','true');
+        track.append(mark);
+    }
+    return track;
+}
+
+function impactBar(label, segments, total, value) {
+    const row = el('div',undefined,'impact-bar-row');
+    row.append(el('span',label,'impact-bar-label'),impactTrack(segments,total,`${label}: ${value} structured claims released`),el('strong',impactCount(value),'impact-bar-value'));
+    return row;
+}
+
+function setImpactFilter(kind, id=null) {
+    if (!evaluationImpact) return;
+    impactFilter = {kind,id};
+    renderImpactQuestions();
+    renderImpactReasons();
+}
+
+function renderImpactReasons() {
+    const box = $('impact-reason-bars');
+    box.replaceChildren();
+    const critic = evaluationImpact.critic;
+    for (const reason of critic.reasons.filter(item => item.claims > 0)) {
+        const button = el('button',undefined,'impact-reason');
+        button.type = 'button';
+        button.setAttribute('aria-pressed',String(impactFilter.kind === 'reason' && impactFilter.id === reason.id));
+        button.setAttribute('aria-label',`${reason.label}: ${reason.claims} additional withheld ${reason.claims===1?'claim':'claims'}. Show ${reason.question_ids.length} ${reason.question_ids.length===1?'case':'cases'}.`);
+        const label = el('span',undefined,'impact-reason-label');
+        label.append(el('span',reason.label),el('strong',`${reason.claims}`));
+        button.append(label,impactTrack([['held-reason',reason.claims]],critic.additional_withheld_claims,`${reason.claims} of ${critic.additional_withheld_claims} additional withheld claims`));
+        button.onclick = () => setImpactFilter('reason',reason.id);
+        box.append(button);
+    }
+    if (!critic.reasons.some(item=>item.claims > 0)) box.append(el('p','No additional withheld-claim flags in these matched cases.','plain-note'));
+}
+
+function renderImpact(data) {
+    if (data.schema_version !== 'benchmark-impact-v1' || data.run_id !== evaluationRunId || data.integrity_verified !== true) throw new Error('The saved comparison could not be verified.');
+    evaluationImpact = data;
+    const critic = data.critic;
+    $('impact-dashboard').hidden = false;
+    $('impact-export').disabled = false;
+    $('impact-run-strip').replaceChildren();
+    for (const [value,label] of [[data.questions.length,'questions'],[data.systems.length,'systems'],[`${data.progress.completed}/${data.progress.scheduled}`,'executions completed'],[data.progress.failed,'failed executions']]) {
+        const item = el('span');item.append(el('strong',String(value)),el('span',' '+label));$('impact-run-strip').append(item);
+    }
+    $('impact-pairs').textContent = `${critic.matched_pairs} matched cases`;
+    $('impact-rag-count').textContent = critic.available ? impactCount(critic.rag_output_claims) : '—';
+    $('impact-ignis-count').textContent = critic.available ? impactCount(critic.ignis_output_claims) : '—';
+    $('impact-claim-bars').replaceChildren();
+    $('impact-key-results').replaceChildren();
+    if (critic.available) {
+        $('impact-claim-bars').append(
+            impactBar('RAG output',[['rag',critic.rag_output_claims]],critic.rag_output_claims,critic.rag_output_claims),
+            impactBar('After critic',[['released',critic.ignis_output_claims],['held',critic.additional_withheld_claims]],critic.rag_output_claims,critic.ignis_output_claims));
+        $('impact-claim-caption').textContent = `${critic.additional_withheld_claims} of ${critic.rag_output_claims} structured claims additionally withheld. Hatched area = withheld. ${critic.excluded_pairs} incomplete or failed pairs excluded.`;
+        const changed = critic.answer_transitions.find(item=>item.source==='answered' && item.target==='abstained');
+        const previouslyAnswered = critic.answer_transitions.filter(item=>item.source==='answered').reduce((sum,item)=>sum+item.count,0);
+        for (const [value,label] of [
+            [impactCount(critic.additional_withheld_claims),'additional claims held back'],
+            [impactPercent(critic.additional_withheld_rate.value),'fewer structured claims released'],
+            [`${changed?.count || 0} / ${previouslyAnswered}`,'RAG answers changed to withholding']]) {
+            const item=el('div');item.append(el('strong',value),el('p',label));$('impact-key-results').append(item);
+        }
+    } else $('impact-claim-caption').textContent='No completed shared-draft pairs are available for a critic comparison yet. Failed and missing cases are not zero-effect results.';
+    renderImpactReasons();
+    const maxQuestions = Math.max(0,...data.systems.map(item=>item.scheduled));
+    $('impact-outcome-bars').replaceChildren();
+    for (const row of data.systems) {
+        const item = el('div',undefined,'impact-outcome-row');
+        const label=el('div',undefined,'impact-outcome-label');
+        label.append(el('strong',systemLabel(row.system)),el('span',`${row.answered} answered · ${row.abstained} withheld${row.failed ? ' · '+row.failed+' failed' : ''}${row.pending ? ' · '+row.pending+' pending' : ''}`));
+        item.append(label,impactTrack([['answered',row.answered],['abstained',row.abstained],['failed',row.failed],['pending',row.pending]],maxQuestions,`${systemLabel(row.system)}: ${row.answered} answered, ${row.abstained} withheld, ${row.failed} failed, ${row.pending} pending of ${row.scheduled} scheduled questions`));
+        $('impact-outcome-bars').append(item);
+    }
+    $('impact-outcome-axis').replaceChildren();
+    for (const fraction of [0,.25,.5,.75,1]) $('impact-outcome-axis').append(el('span',String(Math.round(maxQuestions*fraction))));
+    $('impact-pending-legend').hidden = !data.systems.some(item=>item.pending>0);
+    $('impact-outcome-caption').textContent = 'Number of scheduled questions. Baseline receives no corpus; RAG and AXIOM use NASA passages. Withholding is an observed response, not a correctness score.';
+    $('impact-method-note').textContent = `Critic effect: ${critic.matched_pairs}/${critic.scheduled_pairs} completed pairs with the exact same saved draft and evidence. ${critic.raw_draft_claims} raw draft claims included ${critic.writer_withheld_claims} already withheld by the writer; those are excluded from the critic’s additional effect. Reason categories can overlap. Natural-language explanations may contain assertions outside the structured claim list.`;
+    $('impact-provider-note').textContent = `${data.provider.cache_hits} validated cache hits · ${data.provider.fresh_successes} fresh successful model calls. Cache reuse, retries and incremental critic timing prevent a fair speed or cost comparison. Run ${data.run_id}.`;
+    $('evaluation-quality').textContent = 'Scientific review pending. Accuracy and safety-improvement scores are unavailable. These charts measure recorded output changes, not errors prevented; a stricter policy can also withhold useful claims.';
+    renderImpactQuestions();
+}
+
+function impactQuestionMatches(row) {
+    if (impactFilter.kind === 'changed') return row.pair_status === 'matched' && row.additional_withheld_claims > 0;
+    if (impactFilter.kind === 'failed') return Object.values(row.systems).some(item=>item.status==='failed');
+    if (impactFilter.kind === 'reason') return evaluationImpact.critic.reasons.find(item=>item.id===impactFilter.id)?.question_ids.includes(row.question_id);
+    return true;
+}
+
+function renderImpactQuestions() {
+    if (!evaluationImpact) return;
+    const questions = evaluationImpact.questions.filter(impactQuestionMatches);
+    $('impact-filter-all').setAttribute('aria-pressed',String(impactFilter.kind==='all'));
+    $('impact-filter-changed').setAttribute('aria-pressed',String(impactFilter.kind==='changed'));
+    $('impact-filter-failed').setAttribute('aria-pressed',String(impactFilter.kind==='failed'));
+    const reason = impactFilter.kind==='reason' ? evaluationImpact.critic.reasons.find(item=>item.id===impactFilter.id) : null;
+    $('impact-filter-note').textContent = `${questions.length} of ${evaluationImpact.questions.length} cases${reason ? ' · '+reason.label : impactFilter.kind==='changed' ? ' · at least one additional claim withheld' : impactFilter.kind==='failed' ? ' · failed executions stay separate from withholding' : ' · select a row to inspect'}.`;
+    const box = $('impact-question-grid');box.replaceChildren();
+    for (const row of questions) {
+        const button = el('button',undefined,'impact-question');button.type='button';
+        button.setAttribute('aria-pressed',String(row.question_id===impactSelectedQuestion));
+        const title=el('span',undefined,'impact-question-title');title.append(el('span',row.question_id),el('p',row.question));button.append(title);
+        const statuses=[];
+        for (const system of ['baseline','rag_only','ignis']) {
+            const item=row.systems[system];
+            let kind='pending',text='Pending';
+            if (item?.status==='failed') {kind='failed';text='Failed';}
+            else if (item?.status==='completed') {kind=item.abstained?'abstained':'answered';text=item.abstained?'Held':`${item.claims} claim${item.claims===1?'':'s'}`;}
+            const cell=el('span',undefined,'impact-cell '+kind);cell.append(el('i',undefined,'impact-swatch '+kind),el('span',text));button.append(cell);statuses.push(`${systemLabel(system)} ${text}`);
+        }
+        button.setAttribute('aria-label',`${row.question_id}. ${row.question} ${statuses.join('; ')}. Open saved case.`);
+        button.title=row.question;
+        button.onclick=()=>inspectImpactQuestion(row.question_id);
+        box.append(button);
+    }
+    if (!questions.length) box.append(el('p','No cases match this view.','plain-note'));
+}
+
+function impactClaimKey(claim) {
+    return JSON.stringify([claim.text,(claim.citations || []).map(c=>[c.source_id,c.chunk_id,c.quote])]);
+}
+
+function impactClaimCard(claim,status,additional=false) {
+    const card=el('article',undefined,'impact-claim'+(additional?' additional':''));
+    card.append(el('span',status,'impact-claim-status'+(status.startsWith('Released')?' released':'')),el('p',claim.text));
+    if (additional && claim.issues?.length) card.append(el('p',claim.issues.map(issueText).join(' '),'warning'));
+    if (claim.citations?.length) {
+        const evidence=el('details');evidence.append(el('summary','Cited evidence'));
+        for (const cite of claim.citations) evidence.append(el('blockquote',cite.quote),link(sourceURL(cite),cite.locator || cite.chunk_id));
+        card.append(evidence);
+    }
+    return card;
+}
+
+async function evaluationAnswers(identifier) {
+    if (!evaluationAnswersPromise) {
+        const pending=readJSON('/api/benchmark/'+encodeURIComponent(identifier)+'/answers').catch(error=>{if(evaluationAnswersPromise===pending)evaluationAnswersPromise=null;throw error;});
+        evaluationAnswersPromise=pending;
+    }
+    return evaluationAnswersPromise;
+}
+
+async function inspectImpactQuestion(questionId) {
+    if (!evaluationImpact) return;
+    const identifier=evaluationRunId, sequence=++impactSelectionSequence;
+    const question=evaluationImpact.questions.find(item=>item.question_id===questionId);
+    if (!question) return;
+    impactSelectedQuestion=questionId;renderImpactQuestions();
+    $('impact-detail').hidden=false;
+    $('impact-detail-heading').textContent=questionId+' · Saved comparison';
+    $('impact-detail-question').textContent=question.question;
+    $('impact-detail-status').textContent='Opening saved answers…';
+    $('impact-detail-content').replaceChildren();
+    $('impact-detail').focus?.();
+    $('impact-detail').scrollIntoView?.({block:'start',behavior:'smooth'});
+    try {
+        const saved=await evaluationAnswers(identifier);
+        if (identifier!==evaluationRunId || sequence!==impactSelectionSequence) return;
+        const rows=saved.answers.filter(item=>item.question_id===questionId);
+        const rag=rows.find(item=>item.system==='rag_only');
+        const ignis=rows.find(item=>item.system==='ignis');
+        const matched=question.pair_status==='matched';
+        $('impact-detail-status').textContent=matched ? `${question.rag_output_claims} RAG claims → ${question.ignis_output_claims} after checks · ${question.additional_withheld_claims} additional claims withheld. Model judgments remain provisional.` : 'This case is excluded from the critic-effect counts because its pair is incomplete or failed.';
+        const grid=el('div',undefined,'impact-detail-grid');
+        for (const [system,item] of [['rag_only',rag],['ignis',ignis]]) {
+            const column=el('div',undefined,'impact-detail-column');column.append(el('h3',system==='rag_only'?'RAG · before the critic':'AXIOM · after the critic'));
+            const failed=item && (item.prediction.execution_error || item.run.error);
+            if (!item) column.append(el('p','No saved execution yet.','plain-note'));
+            else if (failed) column.append(el('p',failed,'error'),el('p','A provider failure is not a successful abstention.','plain-note'));
+            else {
+                column.append(el('p',item.run.answer));
+                if (system==='rag_only') {
+                    for (const claim of item.prediction.claims || []) column.append(impactClaimCard(claim,'Released by RAG · unchecked'));
+                    if (item.prediction.abstained) column.append(el('p','The writer already withheld this answer. No claim removal here is credited to the critic.','plain-note'));
+                } else {
+                    const published=new Map(),kept=new Map();
+                    for(const claim of rag?.prediction.claims || []) {const key=impactClaimKey(claim);published.set(key,(published.get(key)||0)+1);}
+                    for(const claim of item.prediction.claims || []) {const key=impactClaimKey(claim);kept.set(key,(kept.get(key)||0)+1);}
+                    for(const claim of item.run.draft_checks || []) {
+                        const key=impactClaimKey(claim),wasPublished=(published.get(key)||0)>0,isKept=(kept.get(key)||0)>0;
+                        if(wasPublished) published.set(key,published.get(key)-1);
+                        if(isKept) kept.set(key,kept.get(key)-1);
+                        column.append(impactClaimCard(claim,isKept?'Released · provisional':wasPublished && matched?'Additionally withheld by safety checks':'Already withheld by writer',wasPublished && matched && !isKept));
+                    }
+                }
+            }
+            if(item) {const inspect=el('button','Open full answer and source checks','secondary');inspect.type='button';inspect.onclick=()=>{++displaySequence;++comparisonSequence;renderRun(item.run);};column.append(inspect);}
+            grid.append(column);
+        }
+        $('impact-detail-content').append(grid);
+        const baseline=rows.find(item=>item.system==='baseline');
+        if(baseline) {const detail=el('details',undefined,'impact-detail-baseline');detail.append(el('summary','Baseline LLM · same question, no NASA passages'),el('p',baseline.prediction.execution_error || baseline.run.answer));$('impact-detail-content').append(detail);}
+    } catch(error) {if(identifier===evaluationRunId && sequence===impactSelectionSequence) $('impact-detail-status').textContent='Saved case could not be opened. '+error.message;}
+}
+
+async function refreshEvaluation() {
+    const sequence=++evaluationSequence;
+    ++impactSelectionSequence;
+    evaluationRunId=null;evaluationImpact=null;evaluationAnswersPromise=null;impactSelectedQuestion=null;impactFilter={kind:'all'};
+    $('impact-dashboard').hidden=true;$('impact-detail').hidden=true;$('impact-export').disabled=true;
+    $('impact-error').textContent='';$('impact-method-note').textContent='';$('impact-provider-note').textContent='';
+    $('evaluation-open').hidden=true;$('evaluation-open').disabled=false;$('evaluation-answers').replaceChildren();
+    $('evaluation-status').textContent='Loading saved evaluation work…';
+    try {
+        const saved=await readJSON('/api/benchmark');
+        if(sequence!==evaluationSequence) return;
+        const audit=saved.audit,counts=audit.counts;
+        $('evaluation-sources').textContent=`${counts.source_scope_available} of ${audit.question_count} questions have their named source material available. Missing sources stay waiting; they do not count as successful abstentions.`;
+        const latest=saved.latest;
+        $('evaluation-progress').replaceChildren();
+        $('evaluation-quality').textContent='No independent answer grades yet. Accuracy and safety-improvement scores are unavailable.';
+        if(!latest) {evaluationRunId=null;$('evaluation-status').textContent='The question set is ready for source checks. No saved answer batch is available yet.';$('evaluation-note').textContent='Opening this panel makes no model requests.';return;}
+        evaluationRunId=latest.run_id;
+        const report=latest.report,total=report.progress.overall;
+        const kind=report.evaluation_kind==='offline_extractive_engineering'?'Offline source excerpts':`${latest.provider} · ${latest.model}`;
+        $('evaluation-status').textContent=`${kind} · ${latest.split==='dev'?'development questions':latest.split==='test'?'test questions':'all questions'} · ${total.completed} answers completed, ${total.failed} failed, ${total.pending} waiting.`;
+        for(const [system,row] of Object.entries(report.progress.by_system)) {
+            const card=el('article',undefined,'card');card.append(el('h3',systemLabel(system)),el('p',`${row.completed} completed · ${row.failed} failed · ${row.pending} waiting · ${row.blocked_scope || 0} waiting for source material`));
+            const quality=report.quality?.systems?.[system];
+            if(quality?.graded_questions) card.append(el('p',`${quality.graded_questions} answer grades supplied. Scientific review and scoring coverage still matter.`,'muted'));
+            $('evaluation-progress').append(card);
+        }
+        $('evaluation-note').textContent='Completed means the workflow finished, including withholding. It does not mean the answer is scientifically correct. Saved replies affect timing; shared-draft AXIOM timing covers the additional check.';
+        $('evaluation-open').hidden=total.attempted===0;
+        try {
+            const impact=await readJSON('/api/benchmark/'+encodeURIComponent(latest.run_id)+'/impact');
+            if(sequence===evaluationSequence) renderImpact(impact);
+        } catch(error) {if(sequence===evaluationSequence) {$('impact-dashboard').hidden=true;$('impact-export').disabled=true;evaluationImpact=null;$('impact-error').textContent='Detailed charts are unavailable. '+error.message;}}
+    } catch(error) {if(sequence===evaluationSequence) {$('evaluation-status').textContent='Evaluation work could not be loaded. '+error.message;evaluationRunId=null;}}
+}
+
+$('evaluation-refresh').onclick=refreshEvaluation;
+$('impact-filter-all').onclick=()=>setImpactFilter('all');
+$('impact-filter-changed').onclick=()=>setImpactFilter('changed');
+$('impact-filter-failed').onclick=()=>setImpactFilter('failed');
+$('impact-detail-close').onclick=()=>{++impactSelectionSequence;$('impact-detail').hidden=true;impactSelectedQuestion=null;renderImpactQuestions();};
+$('impact-export').onclick=()=>{
+    if(!evaluationImpact) return;
+    const url=URL.createObjectURL(new Blob([JSON.stringify(evaluationImpact,null,2)],{type:'application/json'}));
+    const download=document.createElement('a');download.href=url;download.download='axiom-evaluation-'+evaluationRunId+'.json';download.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+$('evaluation-open').onclick=async()=>{
+    if(!evaluationRunId)return;
+    const identifier=evaluationRunId;$('evaluation-open').disabled=true;
+    try {
+        const saved=await evaluationAnswers(identifier);
+        if(identifier!==evaluationRunId)return;
+        $('evaluation-answers').replaceChildren();
+        for(const item of saved.answers) {
+            const card=el('article',undefined,'card');card.append(el('h3',`${item.question_id} · ${systemLabel(item.system)}`),el('p',item.run.question||''),el('p',item.prediction.execution_error||item.run.answer));
+            const inspect=el('button','Inspect saved evaluation answer','secondary');inspect.type='button';inspect.onclick=()=>{++displaySequence;++comparisonSequence;renderRun(item.run);};card.append(inspect);$('evaluation-answers').append(card);
+        }
+    } catch(error) {if(identifier===evaluationRunId)$('evaluation-status').textContent='Evaluation answers could not be opened. '+error.message;}
+    finally {if(identifier===evaluationRunId)$('evaluation-open').disabled=false;}
+};
+refreshEvaluation();
+
+</script>
+<script id="axiom-results">
+const axiomOperatorNames={loss:'Remove validation event',reorder:'Reorder publish before verify',duplicate_identical:'Duplicate event',corrupt_payload:'Corrupt payload',corrupt_evidence_ref:'Corrupt evidence ID',corrupt_seq:'Corrupt sequence',corrupt_timestamp:'Corrupt timestamp',delay:'Delay event'};
+let axiomPayloads={evaluation:null,trace:null,extraction:null},axiomOperator='loss',axiomIntegrity='on',axiomDemoSequence=0;
+function axiomMeta(label,payload){const d=payload?.dataset||{};return `${label} · ${d.traces??d.questions??d.sampled_chunks??'—'} records · ${payload?.commit||'commit unknown'} · ${payload?.generated_at||'timestamp unknown'}`;}
+function axiomUnavailable(label,payload){return !payload||payload.status==='not_run'||!payload.results;}
+function axiomShowMeta(){const box=$('axiom-meta');box.replaceChildren();for(const [label,key] of [['Evaluation','evaluation'],['Trace mutations','trace'],['Extraction','extraction']]){const payload=axiomPayloads[key];const item=el('span',axiomUnavailable(label,payload)?`${label} · not run`:`${label} · ${axiomMeta(label,payload.results)}`);box.append(item);}}
+function axiomRenderArms(){const host=$('axiom-arms-summary'),limitations=$('axiom-limitations');host.replaceChildren();limitations.replaceChildren();const payload=axiomPayloads.evaluation?.results;if(axiomUnavailable('evaluation',axiomPayloads.evaluation)){host.append(el('p','Not run: no saved three-arm evaluation results.','plain-note'));return;}const arms=payload.arms||{};const grid=el('div',undefined,'axiom-extract-grid');for(const name of ['baseline','rag_only','ignis']){const arm=arms[name];if(!arm)continue;const claims=arm.claims||{},metrics=arm.question_level_metrics||{},card=el('article');card.append(el('b',name==='baseline'?'A · Plain model':name==='rag_only'?'B · RAG':'C · RAG + AXIOM'),el('span',`${arm.completed??0} completed · ${arm.failed??0} failed`),el('span',`${arm.answered??0} answered · ${arm.abstained??0} abstained`),el('span',`Claims retained ${claims.retained??'n/a'} / drafted ${claims.drafted??'n/a'} · retention ${claims.retention_rate??'n/a'}`));for(const key of ['answer_coverage','abstention_rate','expected_abstention_agreement']){const ci=metrics[key];if(ci&&ci.rate!==null&&ci.rate!==undefined)card.append(el('span',`${key.replaceAll('_',' ')} ${ci.rate} · 95% interval [${ci.lower_95??'n/a'}, ${ci.upper_95??'n/a'}] · n=${ci.questions??'n/a'}`));}grid.append(card);}if(!grid.children.length)host.append(el('p','No three-arm summaries are present in the saved results.','plain-note'));else host.append(grid);const notes=payload.limitations||[];limitations.append(el('p','Claim retention and expected-action agreement are process/behavior measurements, not semantic answer scores. Expected actions are agent-drafted. No answer correctness, faithfulness, or scientific-validity score is shown. Available intervals are 95% percentile intervals from 2,000 seeded question bootstrap resamples.','plain-note'));if(notes.length){const details=el('details'),summary=el('summary','Evaluation limitations');details.append(summary);for(const note of notes)details.append(el('p',note,'plain-note'));limitations.append(details);}}
+function axiomValue(value){if(value===null||value===undefined)return 'Unknown / not recorded';if(typeof value==='string')return value;if(typeof value==='number'||typeof value==='boolean')return String(value);return JSON.stringify(value,null,2);}
+function axiomBlock(title,value){const section=el('section',undefined,'axiom-detail-block');section.append(el('h4',title));section.append(el('pre',axiomValue(value)));return section;}
+function axiomSetRecord(record){const box=$('axiom-record-detail');box.replaceChildren();if(!record){box.append(el('p','Choose an available recorded run.','plain-note'));return;}const dl=el('dl');const rows=[['Run',`${record.question_id} · ${record.system}`],['Category / split',[record.category,record.split].filter(Boolean).join(' · ')||'Not recorded'],['Recorded expected action',record.expected_action||'null'],['Observed abstention',record.abstained===null||record.abstained===undefined?'unknown':String(record.abstained)],['Execution',record.error?'failed: '+record.error:'completed'],['Trace verdict',record.trace_overall||'UNKNOWN'],['Published labels',(record.published_labels||[]).join(', ')||'None recorded']];for(const [k,v] of rows)dl.append(el('dt',k),el('dd',String(v)));box.append(dl,el('p','Process-only verdict: this monitor checks event integrity and workflow properties. It does not determine whether the cited source semantically supports a claim.','plain-note'));
+ const claims=el('section',undefined,'axiom-detail-block');claims.append(el('h4',`Claims (${(record.claims||[]).length})`));if(!(record.claims||[]).length)claims.append(el('p','No retained claims in this record.','plain-note'));for(const claim of record.claims||[]){const card=el('article',undefined,'axiom-claim-detail');card.append(el('strong',claim.claim_id||'Claim'),el('p',claim.text||'Claim text not recorded'),el('p',`Evidence status: ${claim.evidence_status||'not recorded'} · Applicability: ${claim.applicability||'not assessed'}`,'muted'));if(claim.conditions!==undefined||claim.target_conditions!==undefined)card.append(axiomBlock('Claim / target conditions',claim.conditions??claim.target_conditions));if(claim.evidence_conditions?.length)card.append(axiomBlock('Retrieved evidence conditions',claim.evidence_conditions));if(claim.evidence_ids?.length)card.append(el('p','Evidence IDs: '+claim.evidence_ids.join(', '),'muted'));for(const cite of claim.citations||[]){const citeCard=el('div',undefined,'axiom-citation');citeCard.append(el('strong',`Citation · ${cite.source_id||'source unknown'} · ${cite.chunk_id||'chunk unknown'}`));if(cite.locator)citeCard.append(el('p',cite.locator,'muted'));if(cite.quote)citeCard.append(el('blockquote',cite.quote));card.append(citeCard);}claims.append(card);}box.append(claims);
+ const props=el('section',undefined,'axiom-detail-block');props.append(el('h4','Property results'));const table=el('table',undefined,'axiom-property-table'),head=el('tr');head.append(el('th','Property'),el('th','Verdict'),el('th','Evidence'));const thead=el('thead');thead.append(head);table.append(thead);const body=el('tbody');for(const item of record.property_results||[]){const property=item.registry?.id||item.property||'Property';const detailRows=item.results||[];const detail=detailRows.map(result=>({scope:result.scope,reason:result.reason,event_ids:result.event_ids,missing_observations:result.missing_observations,counterexamples:result.counterexamples}));const tr=el('tr');tr.append(el('th',`${property} · ${item.registry?.name||''}`),el('td',item.verdict||'UNKNOWN',item.verdict||'UNKNOWN'));const td=el('td');td.append(el('pre',axiomValue(detail.length?detail:({reason:'No property detail recorded'}))));tr.append(td);body.append(tr);}table.append(body);props.append(table);if(!(record.property_results||[]).length)props.append(el('p','Per-property details were not recorded in this results file.','plain-note'));box.append(props);
+ const traceEvents=record.trace_events||[],contextEvents=traceEvents.filter(event=>['QUERY_RECEIVED','METADATA_EXTRACTED','METADATA_VALIDATED','APPLICABILITY_CHECKED'].includes(event.type));const conditions=el('section',undefined,'axiom-detail-block');conditions.append(el('h4',`Scenario / metadata conditions (${contextEvents.length} relevant events)`));if(contextEvents.length){for(const event of contextEvents){const card=el('details',undefined,'axiom-event-detail');card.append(el('summary',`${event.seq??'?'} · ${event.type} · ${event.event_id||'event id unavailable'}`),el('pre',axiomValue(event.payload??event)));conditions.append(card);}}else conditions.append(el('p','No query, extracted-metadata, validation, or applicability payloads are recorded for this run.','plain-note'));box.append(conditions);
+ const trust=el('details',undefined,'axiom-event-detail');trust.append(el('summary','Observation integrity flags and manifest'));trust.append(el('pre',axiomValue({trust:record.trust,manifest:record.trace_manifest??record.trust?.manifest??null})));box.append(trust);
+ const trace=el('details',undefined,'axiom-event-detail');trace.append(el('summary',`All trace events (${traceEvents.length})`));for(const event of traceEvents){const item=el('details',undefined,'axiom-event-detail');item.append(el('summary',`${event.seq??'?'} · ${event.type||'Unknown event'} · ${event.event_id||'event id unavailable'}`),el('pre',axiomValue(event)));trace.append(item);}box.append(trace);}
+function axiomRenderInspector(){const select=$('axiom-record-select');select.replaceChildren();const payload=axiomPayloads.evaluation?.results;if(axiomUnavailable('evaluation',axiomPayloads.evaluation)){select.append(el('option','No recorded evaluation available'));axiomSetRecord(null);return;}const rows=payload.records||[];if(!rows.length){select.append(el('option','No case rows in results'));axiomSetRecord(null);return;}for(const row of rows){const opt=el('option',`${row.question_id} · ${row.system} · ${row.trace_overall||'UNKNOWN'}`);opt.value=`${row.question_id}|${row.system}`;select.append(opt);}select.onchange=()=>{const [qid,system]=select.value.split('|');axiomSetRecord(rows.find(row=>row.question_id===qid&&row.system===system));};select.selectedIndex=0;axiomSetRecord(rows[0]);}
+function axiomRenderHeatmap(){const host=$('axiom-heatmap');host.replaceChildren();const payload=axiomPayloads.trace?.results;if(axiomUnavailable('trace lab',axiomPayloads.trace)){host.append(el('p','Not run: no trace mutation result file is available.','plain-note'));$('axiom-trace-note').textContent='No measured mutation matrix is available.';return;}const channel=payload.channel||{},matrix=channel.matrix||{},operatorKeys=Object.keys(matrix[axiomIntegrity]||{});if(!operatorKeys.length){host.append(el('p','Trace mutation results do not contain this matrix.','plain-note'));return;}const selected=axiomOperatorNames[axiomOperator]||axiomOperator;$('axiom-trace-note').textContent=`Selected preset: ${selected}. This heatmap reports recorded aggregate outcomes. Integrity layer ${axiomIntegrity.toUpperCase()}.`;
+ const properties=Object.keys(matrix[axiomIntegrity][operatorKeys[0]]||{});const table=el('table'),thead=el('thead'),head=el('tr');head.append(el('th','Property'));for(const op of operatorKeys)head.append(el('th',axiomOperatorNames[op]||op));thead.append(head);table.append(thead);const tbody=el('tbody');for(const pid of properties){const tr=el('tr');tr.append(el('th',pid));for(const op of operatorKeys){const stats=matrix[axiomIntegrity][op]?.[pid];const td=el('td');if(!stats){td.append(el('span','No cases'));}else{const score=stats.trustworthy_conclusive_rate;const cls=stats.false_conclusive_rate>0?'bad':stats.inconclusive_rate>0?'caution':'good';const cell=el('span',undefined,`axiom-heat-cell ${cls}`);cell.append(el('strong',score===null?'n/a':`${(score*100).toFixed(1)}% trusted conclusive`),el('small',`${stats.false_conclusive_rate===null?'n/a':(stats.false_conclusive_rate*100).toFixed(1)+'% false'} · ${stats.inconclusive_rate===null?'n/a':(stats.inconclusive_rate*100).toFixed(1)+'% UNKNOWN'}`),el('small',`${stats.cases??0} cases`));td.append(cell);}if(op===axiomOperator)td.setAttribute('aria-current','true');tr.append(td);}tbody.append(tr);}table.append(tbody);host.append(table);
+ const note=el('p','Each cell shows trustworthy conclusive / all conclusive, false conclusive / all cases, inconclusive / all cases, and case count. Text labels carry the meaning; color is supplementary.');note.className='plain-note';host.append(note);}
+function axiomRenderExtraction(){const payload=axiomPayloads.extraction?.results;const host=$('axiom-extraction-results');host.replaceChildren();if(axiomUnavailable('extraction validation',axiomPayloads.extraction)){$('axiom-extraction-note').textContent='Not run: no extraction validation result file is available.';return;}const overall=payload.overall||{},d=payload.dataset||{},prov=payload.provenance||{};$('axiom-extraction-note').textContent=`${d.sampled_chunks??0} sampled chunks · ${d.labeled_chunks??0} labeled chunks · ${d.labels??0} labels · label provenance ${prov.labels||'unknown'} · reviewer ${prov.reviewer||'none recorded'} · run ${payload.generated_at||'timestamp unknown'} · commit ${payload.commit||'unknown'}. Labels are drafts, not human validation.`;const grid=el('div',undefined,'axiom-extract-grid');for(const [field,row] of Object.entries(payload.per_field||{})){const card=el('article');card.append(el('b',field),el('span',`Precision ${row.precision??'n/a'} · recall ${row.recall??'n/a'}`),el('span',`F1 ${row.f1??'n/a'} · numeric agreement ${row.numeric_agreement??'n/a'}`),el('span',`${row.labeled_eligible??0} eligible labels · ${row.predicted_eligible??0} predictions · tolerance ${row.tolerance??'n/a'} ${row.unit||''}`));grid.append(card);}host.append(grid);host.append(el('p',`Overall: precision ${overall.precision??'n/a'}, recall ${overall.recall??'n/a'}, F1 ${overall.f1??'n/a'}, coverage ${overall.coverage??'n/a'}, numeric agreement ${overall.numeric_agreement??'n/a'}. Missing source information is not scored as an extraction error.`,'plain-note'));}
+function axiomPropertyMap(report){return Object.fromEntries((report?.properties||[]).map(row=>[row.registry?.id||row.property,row]));}
+function axiomEventClass(event,index,baselineMap,mutatedMap,isMutated){const key=String(event.event_id);if(isMutated){const prior=baselineMap.get(key);if(!prior)return 'altered';if(JSON.stringify(prior.event)!==JSON.stringify(event))return 'altered';if(prior.order!==mutatedMap.get(key)?.order)return 'reordered';return '';}const next=mutatedMap.get(key);if(!next)return 'missing';if(JSON.stringify(next.event)!==JSON.stringify(event))return 'altered';if(next.order!==baselineMap.get(key)?.order)return 'reordered';return '';}
+function axiomRenderEvents(host,events,baselineMap,mutatedMap,isMutated){host.replaceChildren();for(let i=0;i<events.length;i++){const event=events[i],kind=axiomEventClass(event,i,baselineMap,mutatedMap,isMutated);const card=el('article',undefined,'axiom-event'+(kind?' '+kind:''));card.append(el('strong',`${String(event.seq??'?')} · ${event.type||'Unknown event'}${kind?' · '+kind:''}`),el('small',`event ${event.event_id||'unknown'} · claim ${event.claim_id||'—'}`),el('pre',JSON.stringify(event,null,2)));host.append(card);}if(!events.length)host.append(el('p','No events in this trace.','plain-note'));}
+function axiomRenderDemo(demo){const result=$('axiom-demo-result');result.hidden=false;$('axiom-demo-explanation').textContent=`${demo.label} · ${demo.source_kind} · ${demo.question_id}. ${demo.explanation}`;const base=demo.original.events||[],changed=demo.mutated.events||[],baseMap=new Map(base.map(event=>[String(event.event_id),{event}])),mutatedMap=new Map(changed.map(event=>[String(event.event_id),{event}])),baseOrder=base.filter(event=>mutatedMap.has(String(event.event_id))).map(event=>String(event.event_id)),mutatedOrder=changed.filter(event=>baseMap.has(String(event.event_id))).map(event=>String(event.event_id));baseOrder.forEach((id,order)=>baseMap.get(id).order=order);mutatedOrder.forEach((id,order)=>mutatedMap.get(id).order=order);axiomRenderEvents($('axiom-original-events'),base,baseMap,mutatedMap,false);axiomRenderEvents($('axiom-mutated-events'),changed,baseMap,mutatedMap,true);
+ const left=axiomPropertyMap(demo.reference),right=axiomPropertyMap(demo.mutated_verdict),ids=[...new Set([...Object.keys(left),...Object.keys(right)])];const table=el('table',undefined,'axiom-property-table'),head=el('tr');head.append(el('th','Property'),el('th','Original'),el('th','Mutated'));const thead=el('thead');thead.append(head);table.append(thead);const body=el('tbody');for(const id of ids){const a=left[id]?.verdict||'UNKNOWN',b=right[id]?.verdict||'UNKNOWN',tr=el('tr');tr.append(el('th',id),el('td',a,a),el('td',b,b));body.append(tr);}table.append(body);const verdicts=$('axiom-demo-verdicts');verdicts.replaceChildren(el('p',`Overall: ${demo.reference.overall||'UNKNOWN'} → ${demo.mutated_verdict.overall||'UNKNOWN'} · integrity layer ON`,'plain-note'),table);}
+async function runAxiomTraceDemo(preset,button){const sequence=++axiomDemoSequence,status=$('axiom-demo-status');status.textContent='Building deterministic trace mutation…';$('axiom-demo-result').hidden=true;for(const other of (document.querySelectorAll?.('#axiom-presets button')||[]))other.setAttribute('aria-pressed',String(other===button));try{const demo=await readJSON('/api/axiom/trace-demo',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({preset})});if(sequence!==axiomDemoSequence)return;axiomRenderDemo(demo);status.textContent=`Demo ready · ${demo.label} · ${demo.question_id}. Original trace preserved; mutation is returned separately and not written to disk.`;}catch(error){if(sequence!==axiomDemoSequence)return;status.textContent='Trace demo could not be built. '+error.message;}}
+async function refreshAxiomResults(){const status=$('axiom-status');status.textContent='Loading saved AXIOM results…';try{const paths=[['evaluation','/api/axiom/evaluation'],['trace','/api/axiom/trace-lab'],['extraction','/api/axiom/extraction-validation']];const results=await Promise.all(paths.map(async([key,path])=>[key,await readJSON(path)]));for(const [key,value] of results)axiomPayloads[key]=value;const available=Object.entries(axiomPayloads).filter(([,p])=>!axiomUnavailable('',p)).length;status.textContent=available?`${available} of 3 recorded AXIOM result files loaded. These are saved measurements; opening this panel makes no model calls.`:'Not run: AXIOM result files are unavailable.';axiomShowMeta();axiomRenderArms();axiomRenderInspector();axiomRenderHeatmap();axiomRenderExtraction();}catch(error){status.textContent='AXIOM results could not be loaded. '+error.message;axiomShowMeta();}}
+$('axiom-refresh').onclick=refreshAxiomResults;refreshAxiomResults();
+for(const button of (document.querySelectorAll?.('#axiom-presets button')||[]))button.onclick=()=>{const mapping={remove_validation:'loss',publish_before_verify:'reorder',corrupt_evidence_id:'corrupt_evidence_ref'};axiomOperator=mapping[button.dataset.preset]||'loss';axiomRenderHeatmap();runAxiomTraceDemo(button.dataset.preset,button);};
+for(const button of (document.querySelectorAll?.('.axiom-toggle button')||[]))button.onclick=()=>{axiomIntegrity=button.dataset.integrity;for(const other of (document.querySelectorAll?.('.axiom-toggle button')||[]))other.setAttribute('aria-pressed',String(other===button));axiomRenderHeatmap();};
+</script>
+<script id="workspace-controls">
+let activeView = 'research';
+let requestBusy = false;
+const ui = id => document.getElementById(id);
+function narrowWorkspace() { return typeof window !== 'undefined' && !!window.matchMedia?.('(max-width:759px)').matches; }
+function setSidebar(open, returnFocus = false, moveFocus = true) {
+    const mobile = narrowWorkspace();
+    ui('app-shell').classList.toggle('sidebar-open', open && mobile);
+    ui('sidebar-toggle').setAttribute('aria-expanded', String(open && mobile));
+    ui('sidebar').setAttribute('aria-hidden', String(mobile && !open));
+    ui('sidebar').inert = mobile && !open;
+    ui('workspace').inert = open && mobile;
+    if (document.body?.style) document.body.style.overflow = open && mobile ? 'hidden' : '';
+    if (open && mobile && moveFocus) ui('new-question').focus?.();
+    else if (returnFocus && mobile) ui('sidebar-toggle').focus?.();
+}
+function setView(view, focusMain = false) {
+    activeView = view;
+    for (const name of ['research','scenario','evaluation','library','demos']) {
+        ui(name + '-view').hidden = name !== view;
+        if (name === view) ui('nav-' + name).setAttribute('aria-current','page');
+        else ui('nav-' + name).removeAttribute('aria-current');
+    }
+    ui('view-title').textContent = {research:'Research',scenario:'Mission scenario',evaluation:'Evaluation',library:'Source library',demos:'Saved demos'}[view];
+    ui('top-model-controls').hidden = view !== 'research';
+    setSidebar(false);
+    if (focusMain) { ui('main-content').focus?.({preventScroll:true}); window.scrollTo?.({top:0,behavior:'auto'}); }
+}
+function showResearchResult(reveal = true) {
+    if (reveal) setView('research');
+    ui('welcome').hidden = true;
+    ui('result-panel').hidden = false;
+    ui('comparison-panel').hidden = true;
+    ui('app-shell').classList.add('has-result');
+}
+function showComparison(reveal = true) {
+    if (reveal) setView('research');
+    ui('welcome').hidden = true;
+    ui('result-panel').hidden = true;
+    ui('comparison-panel').hidden = false;
+    ui('app-shell').classList.add('has-result');
+}
+function newResearch() {
+    ++displaySequence;
+    ++comparisonSequence;
+    clearResult();
+    last = null;
+    lastComparison = null;
+    setExample('', 'research');
+    ui('system').value = 'ignis';
+    ui('compare-fresh').checked = false;
+    ui('research-options').open = false;
+    ui('options-toggle').setAttribute('aria-expanded','false');
+    ui('result-panel').hidden = true;
+    ui('comparison-panel').hidden = true;
+    ui('export').hidden = true;
+    ui('comparison-export').hidden = true;
+    ui('welcome').hidden = false;
+    ui('app-shell').classList.remove('has-result');
+    ui('error').textContent = requestBusy ? 'The earlier request is finishing. You can prepare your next question.' : '';
+    ui('status').textContent = '';
+    setView('research');
+    ui('question').focus?.();
+}
+for (const name of ['research','scenario','evaluation','library','demos']) ui('nav-' + name).onclick = () => { setView(name, true); if (name === 'demos') loadDemos(); if (name === 'scenario' && typeof loadScenarioWorkspace === 'function') loadScenarioWorkspace(); };
+ui('new-question').onclick = newResearch;
+ui('brand-home').onclick = event => { event.preventDefault(); newResearch(); };
+ui('sidebar-toggle').onclick = () => setSidebar(!ui('app-shell').classList.contains('sidebar-open'));
+ui('sidebar-dismiss').onclick = () => setSidebar(false, true);
+ui('sidebar-backdrop').onclick = () => setSidebar(false, true);
+document.addEventListener('keydown', event => { if (event.key === 'Escape' && ui('app-shell').classList.contains('sidebar-open')) setSidebar(false, true); });
+if (typeof window !== 'undefined') window.addEventListener('resize', () => setSidebar(narrowWorkspace() && ui('app-shell').classList.contains('sidebar-open'), false, false));
+ui('options-toggle').onclick = () => {
+    ui('research-options').open = !ui('research-options').open;
+    ui('options-toggle').setAttribute('aria-expanded', String(ui('research-options').open));
+};
+ui('research-options').addEventListener('toggle', () => ui('options-toggle').setAttribute('aria-expanded', String(ui('research-options').open)));
+ui('question').addEventListener('keydown', event => {
+    if (event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
+        event.preventDefault();
+        if (!requestBusy) ui('form').requestSubmit?.();
+    }
+});
+function setAppearance(dark) {
+    ui('app-shell').classList.toggle('dark',dark);
+    ui('theme-label').textContent = dark ? 'Light appearance' : 'Dark appearance';
+    ui('theme-toggle').setAttribute('aria-label', dark ? 'Switch to light appearance' : 'Switch to dark appearance');
+    try { localStorage.setItem('axiom-appearance',dark?'dark':'light'); } catch {}
+}
+ui('theme-toggle').onclick = () => setAppearance(!ui('app-shell').classList.contains('dark'));
+let savedAppearance = false;
+try { savedAppearance = localStorage.getItem('axiom-appearance') === 'dark'; } catch {}
+setAppearance(savedAppearance);
+setSidebar(false);
+</script>
+<script id="saved-demos">
+async function openDemo(id, button) {
+    const sequence = ++displaySequence;
+    ++comparisonSequence;
+    button.disabled = true;
+    ui('demo-error').textContent = '';
+    try {
+        const response = await fetch(api('/api/demos/' + encodeURIComponent(id)));
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || 'Saved demonstration could not be opened.');
+        if (sequence !== displaySequence) return;
+        renderRun(payload.run);
+        ui('status').textContent = 'Saved demonstration replay · no new model request';
+        ui('answer-note').textContent = payload.demo.description + ' ' + payload.notice;
+        ui('answer-note').hidden = false;
+    } catch (error) {
+        if (sequence === displaySequence) ui('demo-error').textContent = error.message;
+    } finally { button.disabled = false; }
+}
+async function loadDemos() {
+    ui('demo-error').textContent = '';
+    try {
+        const response = await fetch(api('/api/demos'));
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || 'Saved demonstrations are unavailable.');
+        ui('demo-list').replaceChildren();
+        for (const demo of payload.demos || []) {
+            const card = el('article', undefined, 'card');
+            card.append(el('h2', demo.title), el('p', demo.description));
+            const button = el('button', 'Open saved example', 'secondary');
+            button.type = 'button';
+            button.onclick = () => openDemo(demo.id, button);
+            card.append(button);
+            ui('demo-list').append(card);
+        }
+        if (!payload.demos?.length) ui('demo-list').append(el('p', 'No saved demonstrations are installed.', 'plain-note'));
+    } catch (error) { ui('demo-error').textContent = error.message; }
+}
+</script>
+<script id="scenario-controls">
+const SC_TEXT_FIELDS = [
+    ['gravity', 'gravity regime', 'sc-gravity'],
+    ['fuel', 'fuel or material', 'sc-fuel'],
+    ['geometry', 'fuel geometry', 'sc-geometry'],
+    ['apparatus', 'apparatus', 'sc-apparatus'],
+    ['ignition', 'ignition method', 'sc-ignition'],
+    ['suppression', 'suppression method', 'sc-suppression']
+];
+const SC_NUM_FIELDS = [
+    ['oxygen_percent', 'oxygen concentration', 'sc-oxygen', 'sc-oxygen-unit'],
+    ['pressure_kpa', 'pressure', 'sc-pressure', 'sc-pressure-unit'],
+    ['flow_cm_s', 'airflow speed', 'sc-flow', 'sc-flow-unit'],
+    ['temperature_k', 'temperature', 'sc-temperature', 'sc-temperature-unit']
+];
+const SC_CLASS_LABEL = {exact_match: 'Exact match', partial_match: 'Partial match', mismatch: 'Mismatch', unknown: 'Unknown'};
+const SC_OVERALL_LABEL = {
+    WITHIN_DOCUMENTED_SCOPE: 'Within documented scope',
+    CONFLICTING_EVIDENCE: 'Conflicting evidence',
+    CONDITION_MISMATCH: 'Condition mismatch',
+    INSUFFICIENT_INFORMATION: 'Insufficient information'
+};
+const SC_FIELD_OUTCOME_LABEL = {MATCH: 'Match', MISMATCH: 'Mismatch', CONFLICTING: 'Conflicting', UNKNOWN: 'Unknown'};
+const SC_APPLICABILITY_LABEL = {
+    documented_alignment: 'Documented alignment',
+    partially_documented: 'Partly documented',
+    outside_documented_conditions: 'Outside documented conditions',
+    no_documented_conditions: 'No documented conditions',
+    not_assessed: 'Not assessed'
+};
+let scenarioMeta = null;
+let scenarioAssessment = null;
+let scenarioPrevious = null;
+let scenarioBusy = false;
+let scenarioPending = false;
+let scenarioTimer = null;
+let scenarioSavedLoaded = false;
+
+function scNumber(value) {
+    return Number(value).toLocaleString(undefined, {maximumFractionDigits: 6});
+}
+function scValue(value, unit) {
+    if (value && typeof value === 'object' && 'min' in value && 'max' in value)
+        return scNumber(value.min) + '–' + scNumber(value.max) + (unit ? ' ' + unit : '');
+    if (typeof value === 'number') return scNumber(value) + (unit ? ' ' + unit : '');
+    if (value === null || value === undefined) return 'Unknown';
+    return String(value).replaceAll('_', ' ');
+}
+function scPercent(value) { return typeof value === 'number' ? value.toFixed(1) + '%' : '—'; }
+function scFieldLabel(field) {
+    const row = SC_TEXT_FIELDS.concat(SC_NUM_FIELDS).find(item => item[0] === field);
+    return row ? row[1] : field.replaceAll('_', ' ');
+}
+function scUnit(field) {
+    return field === 'oxygen_percent' ? '%' : field === 'pressure_kpa' ? 'kPa' : field === 'flow_cm_s' ? 'cm/s' : field === 'temperature_k' ? 'K' : null;
+}
+
+async function scFetch(path, body) {
+    const options = body === undefined ? {cache: 'no-store'} : {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)};
+    const response = await fetch(api(path), options);
+    let payload;
+    try { payload = await response.json(); }
+    catch { throw new Error('The local service returned an unreadable response.'); }
+    if (!response.ok) throw new Error(payload.error || 'Request failed (' + response.status + ').');
+    return payload;
+}
+
+function scDatalist(field, id) {
+    const list = ui(id);
+    list.replaceChildren();
+    const meta = scenarioMeta?.fields?.find(row => row.field === field);
+    for (const row of meta?.documented_values || []) {
+        const option = document.createElement('option');
+        option.value = scValue(row.value, null);
+        option.label = row.investigation ? row.investigation + ' · documented' : 'documented';
+        list.append(option);
+    }
+}
+
+function loadScenarioMetadata() {
+    return scFetch('/api/scenario-metadata').then(meta => {
+        scenarioMeta = meta;
+        const interest = ui('sc-interest');
+        const current = interest.value;
+        interest.replaceChildren();
+        const blank = document.createElement('option');
+        blank.value = '';
+        blank.textContent = 'Not specified';
+        interest.append(blank);
+        for (const row of meta.interests || []) {
+            const option = document.createElement('option');
+            option.value = row.value;
+            option.textContent = row.label;
+            interest.append(option);
+        }
+        interest.value = current;
+        for (const [field, , id] of SC_TEXT_FIELDS) if (field !== 'gravity') scDatalist(field, 'sc-' + field.replaceAll('_', '-') + '-options');
+        const presets = ui('scenario-presets');
+        presets.replaceChildren();
+        for (const preset of meta.presets || []) {
+            const button = el('button', preset.label, 'sc-preset');
+            button.type = 'button';
+            button.title = preset.basis || 'Synthetic demonstration scenario';
+            button.onclick = () => {
+                scFillForm(preset.scenario, preset.interest, preset.description);
+                scenarioAssessment = null;
+                scenarioPrevious = null;
+                ui('sc-diff').hidden = true;
+                runScenarioAssessment(false);
+            };
+            presets.append(button);
+        }
+        const corpus = meta.corpus || {};
+        ui('scenario-corpus').textContent = (corpus.documents ?? '—') + ' documents · ' + (corpus.investigations?.length ?? '—') + ' investigations';
+        ui('sc-status').textContent = 'Corpus loaded. Choose a preset or enter values, then assess.';
+        ui('scenario-corpus').hidden = false;
+    });
+}
+
+function loadScenarioWorkspace() {
+    if (!scenarioMeta) {
+        ui('sc-status').textContent = 'Loading corpus metadata…';
+        loadScenarioMetadata().catch(error => { ui('sc-error').textContent = error.message; ui('sc-status').textContent = 'Corpus metadata is unavailable.'; });
+    }
+    if (!scenarioSavedLoaded) refreshSavedScenarios();
+}
+
+function scFillForm(scenario, interest, description) {
+    ui('sc-gravity').value = scenario?.gravity || '';
+    for (const [field, , id] of SC_TEXT_FIELDS) {
+        const input = ui(id);
+        const value = scenario?.[field];
+        input.value = value === null || value === undefined ? '' : String(value);
+    }
+    for (const [field, , numberId, unitId] of SC_NUM_FIELDS) {
+        const raw = scenario?.[field];
+        ui(numberId).value = raw && typeof raw === 'object' && 'value' in raw ? raw.value : '';
+        ui(unitId).value = raw && typeof raw === 'object' && 'unit' in raw ? raw.unit : scUnit(field);
+    }
+    ui('sc-interest').value = interest || '';
+    ui('sc-description').value = description || '';
+    ui('sc-error').textContent = '';
+}
+
+function scReadForm() {
+    const scenario = {};
+    for (const [field, , id] of SC_TEXT_FIELDS) {
+        const value = ui(id).value.trim();
+        if (value) scenario[field] = value;
+    }
+    for (const [field, , numberId, unitId] of SC_NUM_FIELDS) {
+        const raw = ui(numberId).value.trim();
+        if (!raw) continue;
+        const number = Number(raw);
+        if (!Number.isFinite(number)) throw new Error('Enter a finite number for ' + scFieldLabel(field) + ', or leave it unknown.');
+        scenario[field] = {value: number, unit: ui(unitId).value};
+    }
+    const interest = ui('sc-interest').value;
+    return {scenario, interest: interest || null, description: ui('sc-description').value.trim()};
+}
+
+function scSummary(assessment) {
+    return {
+        documented: assessment?.coverage?.documented_percent ?? null,
+        alignment: assessment?.coverage?.alignment_percent ?? null,
+        gaps: (assessment?.gaps || []).map(gap => (gap.field || 'combination') + ':' + gap.kind),
+        proposals: (assessment?.proposals || []).map(row => row.proposal_id),
+        investigations: assessment?.coverage?.denominator ? assessment.investigations.length : assessment?.investigations?.length ?? 0
+    };
+}
+
+function scShowDiff(previous, current) {
+    if (!previous || !current) { ui('sc-diff').hidden = true; return; }
+    const before = scSummary(previous);
+    const after = scSummary(current);
+    const parts = [];
+    if (before.alignment !== after.alignment) parts.push('alignment ' + scPercent(before.alignment) + ' → ' + scPercent(after.alignment));
+    if (before.documented !== after.documented) parts.push('documented coverage ' + scPercent(before.documented) + ' → ' + scPercent(after.documented));
+    const newGaps = after.gaps.filter(item => !before.gaps.includes(item));
+    const removedGaps = before.gaps.filter(item => !after.gaps.includes(item));
+    const newProposals = after.proposals.filter(item => !before.proposals.includes(item));
+    const removedProposals = before.proposals.filter(item => !after.proposals.includes(item));
+    if (newGaps.length) parts.push('new gap: ' + newGaps.map(item => scFieldLabel(item.split(':')[0])).join(', '));
+    if (removedGaps.length) parts.push('gap closed: ' + removedGaps.map(item => scFieldLabel(item.split(':')[0])).join(', '));
+    if (newProposals.length) parts.push('new proposal: ' + newProposals.join(', '));
+    if (removedProposals.length) parts.push('proposal dropped: ' + removedProposals.join(', '));
+    ui('sc-diff').replaceChildren();
+    const heading = el('strong', 'Re-assessed after the scenario change. ');
+    ui('sc-diff').append(heading, document.createTextNode(parts.length ? parts.join('; ') + '.' : 'The comparisons did not change for the specified values.'));
+    ui('sc-diff').hidden = false;
+}
+
+async function runScenarioAssessment(auto) {
+    if (scenarioBusy) { scenarioPending = true; return; }
+    if (!scenarioMeta) {
+        try { await loadScenarioMetadata(); }
+        catch (error) { ui('sc-error').textContent = error.message; return; }
+    }
+    let request;
+    try { request = scReadForm(); }
+    catch (error) { ui('sc-error').textContent = error.message; return; }
+    scenarioBusy = true;
+    ui('sc-error').textContent = '';
+    ui('sc-assess').disabled = true;
+    ui('sc-status').textContent = auto ? 'Re-assessing with the changed parameter…' : 'Comparing scenario conditions with the corpus…';
+    request.save = auto ? false : ui('sc-save').checked;
+    try {
+        const assessment = await scFetch('/api/scenario-assess', request);
+        scenarioPrevious = scenarioAssessment;
+        scenarioAssessment = assessment;
+        scShowDiff(scenarioPrevious, assessment);
+        renderScenarioAssessment(assessment);
+        ui('sc-empty').hidden = true;
+        ui('sc-export').disabled = false;
+        ui('sc-status').textContent = (assessment.saved_locally ? 'Saved locally.' : 'Not saved.') +
+            ' ' + assessment.investigations.length + ' investigations compared across ' +
+            (assessment.coverage?.denominator ?? 0) + ' parameter cells.';
+        if (assessment.saved_locally) refreshSavedScenarios();
+    } catch (error) {
+        ui('sc-error').textContent = error.message;
+        ui('sc-status').textContent = 'The assessment could not be completed.';
+    } finally {
+        scenarioBusy = false;
+        ui('sc-assess').disabled = false;
+        if (scenarioPending) { scenarioPending = false; runScenarioAssessment(true); }
+    }
+}
+
+function scBadge(text, cls) { return el('span', text, 'sc-badge ' + (cls || '')); }
+function scCell(classification) { return el('span', SC_CLASS_LABEL[classification] || classification, 'sc-cell ' + classification); }
+
+function renderScenarioSummary(assessment) {
+    const coverage = assessment.coverage || {};
+    const counts = coverage.status_counts || {};
+    const summary = ui('sc-summary');
+    summary.replaceChildren();
+    const stats = [
+        [scPercent(coverage.documented_percent), 'Documented coverage', coverage.numerator + ' of ' + coverage.denominator + ' cells contain any documented value'],
+        [scPercent(coverage.alignment_percent), 'Alignment coverage', (counts.exact_match || 0) + ' exact + ' + (counts.partial_match || 0) + ' partial cells'],
+        [String(assessment.investigations?.length ?? 0), 'Investigations compared', (assessment.scenario_fields || []).length + ' scenario parameter(s) specified'],
+        [String((assessment.gaps || []).length), 'Evidence gaps', (assessment.proposals || []).length + ' proposed research concept(s)']
+    ];
+    const strip = el('div', undefined, 'sc-summary');
+    strip.setAttribute('aria-label', 'Assessment summary');
+    for (const [value, label, detail] of stats) {
+        const card = el('div', undefined, 'sc-stat');
+        card.append(el('strong', value), el('span', label + ' · ' + detail));
+        strip.append(card);
+    }
+    summary.append(strip);
+    const legend = el('div', undefined, 'sc-legend');
+    for (const key of ['exact_match', 'partial_match', 'mismatch', 'unknown']) {
+        const item = el('span');
+        const swatch = el('i', undefined, 'sc-swatch ' + key);
+        item.append(swatch, document.createTextNode((SC_CLASS_LABEL[key] || key) + ' ' + (counts[key] || 0)));
+        legend.append(item);
+    }
+    summary.append(legend);
+    const definition = el('p', coverage.definition || '', 'sc-def');
+    summary.append(definition);
+    if (coverage.limitations) summary.append(el('p', coverage.limitations, 'plain-note'));
+}
+
+function renderCoverage(assessment) {
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Evidence coverage map'), el('span', 'Documentation cells, not confidence', 'tag'));
+    section.append(head, el('p', 'Each card shows how the retrieved investigations classify one specified scenario parameter. Grey cells are unreported in this corpus, not evidence of a negative result.', 'sc-def'));
+    const grid = el('div', undefined, 'sc-coverage');
+    const perField = assessment.coverage?.per_field || {};
+    for (const field of Object.keys(perField)) {
+        const row = perField[field];
+        const card = el('div', undefined, 'sc-cov');
+        const top = el('div', undefined, 'sc-cov-top');
+        top.append(el('b', row.label), el('span', scValue(row.scenario_value, scUnit(field))));
+        card.append(top);
+        const bar = el('div', undefined, 'sc-bar');
+        const total = row.exact_match + row.partial_match + row.mismatch + row.unknown;
+        for (const key of ['exact_match', 'partial_match', 'mismatch', 'unknown']) {
+            if (!row[key]) continue;
+            const segment = el('i', undefined, key);
+            segment.style.width = (100 * row[key] / Math.max(total, 1)) + '%';
+            bar.append(segment);
+        }
+        card.append(bar);
+        card.append(el('span', 'E ' + row.exact_match + ' · P ' + row.partial_match + ' · M ' + row.mismatch + ' · U ' + row.unknown, 'tag'));
+        grid.append(card);
+    }
+    section.append(grid);
+    return section;
+}
+
+function renderMatrix(assessment) {
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Parameter comparison matrix'), el('span', 'Open an investigation below for quotations', 'tag'));
+    section.append(head);
+    const fields = assessment.scenario_fields || [];
+    const wrap = el('div', undefined, 'sc-table-wrap');
+    const table = el('table', undefined, 'sc-table');
+    const thead = document.createElement('thead');
+    const headRow = document.createElement('tr');
+    for (const label of ['Investigation', 'Evidence type'].concat(fields.map(scFieldLabel))) headRow.append(el('th', label));
+    thead.append(headRow);
+    table.append(thead);
+    const body = document.createElement('tbody');
+    for (const investigation of assessment.investigations || []) {
+        const row = document.createElement('tr');
+        const name = el('td');
+        name.append(el('div', investigation.label), el('span', SC_APPLICABILITY_LABEL[investigation.applicability] || investigation.applicability, 'sc-appl ' + investigation.applicability));
+        row.append(name);
+        const relevance = el('td');
+        relevance.append(el('span', investigation.relevance?.evidence_type || 'unclassified', 'tag'));
+        row.append(relevance);
+        for (const field of fields) {
+            const parameter = (investigation.parameters || []).find(item => item.field === field);
+            const cell = el('td');
+            if (!parameter) { cell.append(document.createTextNode('Not compared')); row.append(cell); continue; }
+            const badge = scCell(parameter.classification);
+            badge.title = parameter.reason || '';
+            cell.append(badge);
+            row.append(cell);
+        }
+        body.append(row);
+    }
+    table.append(body);
+    wrap.append(table);
+    section.append(wrap);
+    return section;
+}
+
+function scRecord(record) {
+    const block = el('div');
+    block.append(el('div', '“' + record.quote + '”', 'sc-quote'));
+    const meta = [record.source_id, record.chunk_id, record.locator, record.scope?.replaceAll('_', ' '), record.evidence_status]
+        .filter(Boolean).join(' · ');
+    block.append(el('div', meta, 'sc-source'));
+    return block;
+}
+
+function renderInvestigations(assessment) {
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Investigation comparison'), el('span', 'Direct evidence is separated from contextual research', 'tag'));
+    section.append(head);
+    for (const investigation of assessment.investigations || []) {
+        const details = el('details', undefined, 'sc-inv');
+        const summary = document.createElement('summary');
+        summary.append(el('b', investigation.label));
+        summary.append(el('span', investigation.relevance?.evidence_type || 'unclassified', 'tag'));
+        summary.append(el('span', SC_APPLICABILITY_LABEL[investigation.applicability] || investigation.applicability, 'sc-appl ' + investigation.applicability));
+        summary.append(el('span', investigation.counts.exact_match + ' exact · ' + investigation.counts.partial_match + ' partial · ' + investigation.counts.mismatch + ' mismatch · ' + investigation.counts.unknown + ' unknown', 'tag'));
+        details.append(summary);
+        const body = el('div', undefined, 'sc-inv-body');
+        body.append(el('p', investigation.relevance?.reason || '', 'sc-def'));
+        for (const parameter of investigation.parameters || []) {
+            const row = el('div', undefined, 'sc-param');
+            const name = el('div', undefined, 'sc-param-name');
+            name.append(el('div', parameter.label), el('span', scValue(parameter.scenario_value, parameter.unit), 'tag'));
+            const content = el('div');
+            const top = el('div');
+            top.append(scCell(parameter.classification), document.createTextNode(' ' + parameter.reason));
+            content.append(top);
+            for (const record of parameter.records || []) content.append(scRecord(record));
+            if ((parameter.unqualified_records || []).length) {
+                const extra = el('details');
+                extra.append(el('summary', 'Mentions not used for matching (' + parameter.unqualified_records.length + ')'));
+                for (const record of parameter.unqualified_records) extra.append(scRecord(record));
+                content.append(extra);
+            }
+            row.append(name, content);
+            body.append(row);
+        }
+        details.append(body);
+        section.append(details);
+    }
+    return section;
+}
+
+function renderCritic(assessment) {
+    const critic = assessment.safety_critic || {};
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Safety Critic audit'), el('span', critic.summary?.verdict || '', 'sc-badge ' + (critic.summary?.verdict || '')));
+    section.append(head);
+    section.append(el('p', (critic.summary?.supported || 0) + ' supported · ' + (critic.summary?.qualified || 0) + ' qualified · ' + (critic.summary?.withheld || 0) + ' withheld. ' + (critic.scope || ''), 'sc-def'));
+    for (const check of critic.checks || []) {
+        const card = el('div', undefined, 'sc-check');
+        const top = el('div', undefined, 'sc-check-top');
+        top.append(scBadge(check.verdict, check.verdict), el('code', check.subject));
+        card.append(top, el('p', check.reason, ''));
+        if ((check.issues || []).length) card.append(el('p', 'Flags: ' + check.issues.join(', '), 'tag'));
+        if ((check.sources || []).length) card.append(el('div', 'Sources: ' + check.sources.join(', '), 'sc-source'));
+        section.append(card);
+    }
+    if (critic.prohibited_conclusion) section.append(el('p', critic.prohibited_conclusion, 'plain-note'));
+    return section;
+}
+
+function renderGaps(assessment) {
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Evidence gaps'), el('span', 'Absence of documentation is not proof that NASA never tested it', 'tag'));
+    section.append(head);
+    if (!(assessment.gaps || []).length) {
+        section.append(el('p', 'No specified scenario parameter was left without a direct exact match. This does not establish that the full combination or the mission is safe.', 'sc-def'));
+        return section;
+    }
+    for (const gap of assessment.gaps) {
+        const card = el('div', undefined, 'sc-gap');
+        const title = el('h3', gap.label);
+        const badge = el('span', gap.kind.replaceAll('_', ' '), 'tag');
+        card.append(title, badge);
+        const list = document.createElement('dl');
+        const add = (term, value) => {
+            list.append(el('dt', term), el('dd', value || '—'));
+        };
+        add('What is missing', gap.what_is_missing);
+        add('Why it matters', gap.why_relevant);
+        add('Cannot be established', gap.what_cannot_be_established);
+        add('Documentation status', String(gap.documentation_status || '').replaceAll('_', ' '));
+        const investigations = gap.investigations || {};
+        if (investigations.coverage) {
+            add('Per-investigation coverage', investigations.coverage.map(row => row.investigation_id + ': ' + (row.exact_fields.length ? 'exact for ' + row.exact_fields.map(scFieldLabel).join(', ') : 'no exact field')).join('; '));
+        } else {
+            add('Matching documentation', (investigations.matched || []).join(', ') || 'None');
+        }
+        add('Corpus boundary', gap.corpus_scope_note);
+        add('Possible explanations', (gap.possible_explanations || []).join(' · '));
+        card.append(list);
+        if ((gap.documented_records || []).length) {
+            const evidence = el('details');
+            evidence.append(el('summary', 'Quoted documentation (' + gap.documented_records.length + ')'));
+            for (const record of gap.documented_records.slice(0, 4)) evidence.append(scRecord(record));
+            card.append(evidence);
+        }
+        section.append(card);
+    }
+    return section;
+}
+
+function scList(items) { return (items || []).length ? items.join(', ') : '—'; }
+
+function renderProposals(assessment) {
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Next experiment proposals'), el('span', 'Proposed — not executed or validated', 'sc-badge proposed'));
+    section.append(head);
+    if (!(assessment.proposals || []).length) {
+        section.append(el('p', 'No research concept is proposed because no evidence gap was identified for the specified parameters.', 'sc-def'));
+        return section;
+    }
+    section.append(el('p', 'Each proposal is tied to a documented gap. Priority is a lexicographic documentation ordering, not a scientific quality score. Every proposal requires expert and facility-safety review before execution.', 'sc-def'));
+    for (const proposal of assessment.proposals) {
+        const card = el('div', undefined, 'sc-proposal');
+        const top = el('div', undefined, 'sc-proposal-head');
+        const title = el('h3', proposal.research_question);
+        top.append(title, el('span', 'Proposal #' + proposal.priority.rank, 'sc-badge proposed'));
+        card.append(top);
+        card.append(el('p', proposal.label, 'tag'));
+        const list = document.createElement('dl');
+        const add = (term, value) => list.append(el('dt', term), el('dd', value || '—'));
+        add('Gap addressed', proposal.gap_id + ' · ' + proposal.gap_kind.replaceAll('_', ' '));
+        add('Scientific motivation', proposal.scientific_motivation?.summary);
+        add('Hypothesis', proposal.hypothesis);
+        add('Independent variables', scList(proposal.independent_variables));
+        add('Controlled variables', scList(proposal.controlled_variables));
+        add('Dependent variables', scList(proposal.dependent_variables));
+        add('Experimental design', proposal.experimental_design);
+        add('Expected contribution', proposal.expected_contribution);
+        add('Priority method', proposal.priority.method);
+        add('Source references', scList(proposal.evidence_source_ids));
+        card.append(list);
+        const criteria = el('ul');
+        for (const row of proposal.priority.criteria || []) criteria.append(el('li', row.criterion + ': ' + row.value + '. ' + row.explanation));
+        card.append(el('p', 'Priority reasons', 'tag'), criteria);
+        const evidence = el('details');
+        evidence.append(el('summary', 'Quoted evidence for this proposal (' + (proposal.scientific_motivation?.evidence || []).length + ')'));
+        for (const record of proposal.scientific_motivation?.evidence || []) evidence.append(scRecord(record));
+        card.append(evidence);
+        const limitations = el('ul');
+        for (const limitation of proposal.unresolved_limitations || []) limitations.append(el('li', limitation));
+        card.append(el('p', 'Remaining limitations', 'tag'), limitations);
+        section.append(card);
+    }
+    return section;
+}
+
+function renderApplicabilityEngine(assessment) {
+    const block = assessment.applicability_engine;
+    if (!block) return el('p', 'The applicability engine did not run for this assessment.', 'plain-note');
+    const section = el('section', undefined, 'sc-section');
+    const head = el('div', undefined, 'sc-section-head');
+    head.append(el('h2', 'Documented-scope verdict'),
+        el('span', 'AXIOM applicability engine v1', 'tag'));
+    section.append(head);
+    const verdict = el('div', undefined, 'sc-verdict');
+    verdict.append(el('strong', SC_OVERALL_LABEL[block.overall] || block.overall),
+        el('span', block.overall, 'sc-appl'));
+    section.append(verdict);
+    section.append(el('p', block.overall_reason || '', 'sc-def'));
+    const wrap = el('div', undefined, 'sc-table-wrap');
+    const table = el('table', undefined, 'sc-table');
+    const thead = document.createElement('thead');
+    const headRow = document.createElement('tr');
+    for (const label of ['Logical field', 'Scenario value', 'Field outcome', 'Documentation', 'Evidence'])
+        headRow.append(el('th', label));
+    thead.append(headRow);
+    table.append(thead);
+    const body = document.createElement('tbody');
+    for (const row of block.field_outcomes || []) {
+        const tr = document.createElement('tr');
+        tr.append(el('td', row.label));
+        tr.append(el('td', scValue(row.scenario_value, row.unit)));
+        const outcome = el('td');
+        outcome.append(el('span', SC_FIELD_OUTCOME_LABEL[row.outcome] || row.outcome, 'sc-appl'));
+        outcome.title = row.reason || '';
+        tr.append(outcome);
+        tr.append(el('td', (row.missing_status || '').replaceAll('_', ' ')));
+        tr.append(el('td', (row.evidence || []).length + ' quoted record(s)'));
+        body.append(tr);
+    }
+    table.append(body);
+    wrap.append(table);
+    section.append(wrap);
+    section.append(el('p', block.precedence_note || '', 'plain-note'));
+    const limits = el('ul', undefined, 'plain-note');
+    for (const line of block.limitations || []) limits.append(el('li', line));
+    section.append(limits);
+    return section;
+}
+
+function renderScenarioAssessment(assessment) {
+    renderScenarioSummary(assessment);
+    const report = ui('sc-report');
+    report.replaceChildren(
+        renderApplicabilityEngine(assessment),
+        renderCoverage(assessment),
+        renderMatrix(assessment),
+        renderInvestigations(assessment),
+        renderCritic(assessment),
+        renderGaps(assessment),
+        renderProposals(assessment)
+    );
+}
+
+async function refreshSavedScenarios() {
+    const list = ui('sc-saved');
+    try {
+        const payload = await scFetch('/api/scenarios?limit=20');
+        scenarioSavedLoaded = true;
+        list.replaceChildren();
+        if (!(payload.scenarios || []).length) {
+            list.append(el('p', 'No scenario assessments are saved yet.', 'plain-note'));
+            return;
+        }
+        for (const row of payload.scenarios) {
+            const line = el('div', undefined, 'sc-saved-row');
+            const text = el('div');
+            text.append(el('p', row.description || (row.fields || []).map(scFieldLabel).join(', ') || 'Scenario assessment'));
+            text.append(el('span', (row.created_at || '').replace('T', ' ').slice(0, 19) + ' · documented coverage ' + scPercent(row.coverage_percent) + ' · alignment ' + scPercent(row.alignment_percent) + ' · ' + (row.fields || []).length + ' parameter(s)'));
+            const button = el('button', 'Open', 'sc-secondary');
+            button.type = 'button';
+            button.onclick = () => openSavedScenario(row.scenario_id, button);
+            line.append(text, button);
+            list.append(line);
+        }
+    } catch (error) {
+        list.replaceChildren(el('p', 'Saved assessments could not be loaded: ' + error.message, 'plain-note'));
+    }
+}
+
+async function openSavedScenario(id, button) {
+    button.disabled = true;
+    try {
+        const assessment = await scFetch('/api/scenarios/' + encodeURIComponent(id));
+        scenarioAssessment = assessment;
+        scenarioPrevious = null;
+        ui('sc-diff').hidden = true;
+        scFillForm(assessment.scenario_input || assessment.target, assessment.interest, assessment.description);
+        scShowDiff(null, assessment);
+        renderScenarioAssessment(assessment);
+        ui('sc-empty').hidden = true;
+        ui('sc-export').disabled = false;
+        ui('sc-status').textContent = 'Opened saved assessment from ' + (assessment.created_at || '').replace('T', ' ').slice(0, 19) + '.';
+    } catch (error) {
+        ui('sc-error').textContent = error.message;
+    } finally { button.disabled = false; }
+}
+
+ui('scenario-form').addEventListener('submit', event => { event.preventDefault(); runScenarioAssessment(false); });
+ui('sc-export').onclick = () => {
+    if (!scenarioAssessment) return;
+    const blob = new Blob([JSON.stringify(scenarioAssessment, null, 2)], {type: 'application/json'});
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'axiom-scenario-' + (scenarioAssessment.scenario_id || 'assessment') + '.json';
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+};
+ui('sc-refresh-saved').onclick = refreshSavedScenarios;
+const scAutoFields = ['sc-gravity', 'sc-interest', 'sc-fuel', 'sc-geometry', 'sc-apparatus', 'sc-ignition', 'sc-suppression',
+    'sc-oxygen', 'sc-oxygen-unit', 'sc-pressure', 'sc-pressure-unit', 'sc-flow', 'sc-flow-unit',
+    'sc-temperature', 'sc-temperature-unit'];
+for (const id of scAutoFields) {
+    const node = ui(id);
+    const trigger = () => {
+        if (!scenarioAssessment || scenarioBusy) return;
+        clearTimeout(scenarioTimer);
+        scenarioTimer = setTimeout(() => runScenarioAssessment(true), 450);
+    };
+    node.addEventListener('change', trigger);
+    if (node.tagName === 'INPUT') node.addEventListener('input', trigger);
+}
+</script>
+</body></html>

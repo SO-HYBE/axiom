@@ -1,0 +1,29 @@
+[
+  {
+    "chunk_id": "named-saffire-factsheet-named-001-34b3f71ed10cd91d",
+    "conditions": {
+      "flow_cm_s": null,
+      "fuel": null,
+      "gravity": null,
+      "oxygen_percent": null,
+      "pressure_kpa": null
+    },
+    "document_url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf",
+    "evidence_role": "scoped_document_text",
+    "evidence_tier": 3,
+    "experiment": "Saffire",
+    "locator": "Spacecraft Fire Safety; PDF physical page 1; heading Spacecraft Fire Safety; before Saffire-I",
+    "named_scope_verified": true,
+    "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+    "permission_status": "allowed",
+    "section": "Spacecraft Fire Safety",
+    "sha256": "34b3f71ed10cd91ddb7e1be68ce511f6e96512ea4ef914a337324a7d95345a14",
+    "source_asset_key": "pdf",
+    "source_id": "named-saffire-factsheet",
+    "source_kind": "factsheet",
+    "status": "active",
+    "text": "Understanding how ﬁre behaves in microgravity, and how different materials propagate ﬂames in space is immensely important for the development of future crew spacecraft. It also will help inform operational protocols for dealing with ﬁre emergencies, particularly when astronauts do not have the ability to exit a spacecraft or quickly return to Earth. Saffire is managed by NASA’s Advanced Exploration Systems Division, which pioneers innovative approaches and public-private partnerships to rapidly develop prototype systems, advance key capabilities, and validate operational concepts for future human missions beyond Earth orbit.",
+    "title": "Spacecraft Fire Safety Demonstration (Saffire)",
+    "url": "https://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf"
+  }
+]

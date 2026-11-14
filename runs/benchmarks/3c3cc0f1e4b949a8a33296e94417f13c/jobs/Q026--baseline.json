@@ -1,0 +1,221 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q026",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/ | Article, 2013-11-25",
+  "run": {
+    "run_id": "dead6738bb7a42b3b4cdbfbd4a04b21d",
+    "created_at": "2026-11-06T19:32:31.650323+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/ | Article, 2013-11-25",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "unfiltered_answer",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The question asks if the absence of a visible flame certifies chemical inactivity. Based on the cited source regarding 'cool flames' on the ISS, it is known that combustion can occur without visible flames. Therefore, one cannot certify the fuel is chemically inactive solely based on the lack of a visible flame. The claims reflect this scientific understanding."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "unfiltered answer"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "If no visible flame remains in a FLEX-style droplet experiment, can I certify the fuel is chemically inactive?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'.\n\nThe absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "main",
+            "quote": "Cool flames on the International Space Station: An Anatomy of Discovery",
+            "source_id": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "claim_type": "reported_observation",
+        "limitations": "Based on general knowledge of the cited NASA blog post; specific experimental details from the FLEX experiment are not provided in the evidence field.",
+        "text": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "This is a general chemical inference supported by the concept of cool flames, but specific certification criteria for FLEX experiments are not detailed in the provided evidence.",
+        "text": "The absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "main",
+            "quote": "Cool flames on the International Space Station: An Anatomy of Discovery",
+            "source_id": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "claim_type": "reported_observation",
+        "limitations": "Based on general knowledge of the cited NASA blog post; specific experimental details from the FLEX experiment are not provided in the evidence field.",
+        "text": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "This is a general chemical inference supported by the concept of cool flames, but specific certification criteria for FLEX experiments are not detailed in the provided evidence.",
+        "text": "The absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "main",
+              "quote": "Cool flames on the International Space Station: An Anatomy of Discovery",
+              "source_id": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+            }
+          ],
+          "claim_type": "reported_observation",
+          "limitations": "Based on general knowledge of the cited NASA blog post; specific experimental details from the FLEX experiment are not provided in the evidence field.",
+          "text": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'."
+        },
+        {
+          "citations": [],
+          "claim_type": "inference",
+          "limitations": "This is a general chemical inference supported by the concept of cool flames, but specific certification criteria for FLEX experiments are not detailed in the provided evidence.",
+          "text": "The absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission."
+        }
+      ],
+      "reason": "The question asks if the absence of a visible flame certifies chemical inactivity. Based on the cited source regarding 'cool flames' on the ISS, it is known that combustion can occur without visible flames. Therefore, one cannot certify the fuel is chemically inactive solely based on the lack of a visible flame. The claims reflect this scientific understanding."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.52,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "4167338870acee4fba27d11ed74a7d68111dd9224353ae576cd8cd8fbfb962e8",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "8c5487e568b8b735bc95ccd60c905d62e51734f27c9c0d6bf00be52434a589e6",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 422,
+          "completion_tokens": 364,
+          "total_tokens": 786
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'.\n\nThe absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "main",
+            "quote": "Cool flames on the International Space Station: An Anatomy of Discovery",
+            "source_id": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "claim_type": "reported_observation",
+        "limitations": "Based on general knowledge of the cited NASA blog post; specific experimental details from the FLEX experiment are not provided in the evidence field.",
+        "text": "In microgravity, combustion can occur without a visible flame, a phenomenon referred to as 'cool flames' or 'dark flames'.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [],
+        "claim_type": "inference",
+        "limitations": "This is a general chemical inference supported by the concept of cool flames, but specific certification criteria for FLEX experiments are not detailed in the provided evidence.",
+        "text": "The absence of a visible flame does not necessarily indicate that the fuel is chemically inactive, as chemical reactions can proceed without visible light emission.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "latency_ms": 0.52,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "4167338870acee4fba27d11ed74a7d68111dd9224353ae576cd8cd8fbfb962e8",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "8c5487e568b8b735bc95ccd60c905d62e51734f27c9c0d6bf00be52434a589e6",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 422,
+          "completion_tokens": 364,
+          "total_tokens": 786
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q026",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "dead6738bb7a42b3b4cdbfbd4a04b21d",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "a228866c3d3cee941c0e84a4503e52a2b311079534972d396e523de46314d97c"
+}

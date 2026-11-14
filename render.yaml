@@ -1,0 +1,68 @@
+# Render Blueprint for AXIOM.
+#
+# One free static site serves the dashboard; one free Python web service serves
+# the JSON API. Both are on Render's free tier: no paid disks or databases are
+# requested. Saved scenarios are therefore ephemeral on the API service (see
+# docs/RENDER_DEPLOYMENT.md). The public DNS records are documented in that file
+# and are not created by this blueprint.
+#
+# The free Hobby workspace includes two custom domains across all services.
+# Adding the apex domain automatically adds its www redirect, so the API stays
+# on its free onrender.com hostname. A branded api.<domain> would be a third
+# custom domain ($0.25/month); docs/RENDER_DEPLOYMENT.md describes that optional
+# change and the two-domain alternative.
+services:
+  - type: web
+    name: axiom-web
+    runtime: static
+    buildCommand: node scripts/render_static_config.mjs
+    staticPublishPath: dist
+    domains:
+      - axiomcombustion.us
+    envVars:
+      - key: API_BASE_URL
+        value: https://axiom-api.onrender.com
+    headers:
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://axiom-api.onrender.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Permissions-Policy
+        value: "geolocation=(), microphone=(), camera=()"
+
+  - type: web
+    name: axiom-api
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt && pip install .
+    startCommand: python -m axiom serve --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.10"
+      - key: AXIOM_HOST
+        value: "0.0.0.0"
+      # Render forwards the public Host header. The API is served from its
+      # onrender.com hostname so the two available custom domains can both be
+      # used by the frontend.
+      - key: AXIOM_ALLOWED_HOSTS
+        value: "axiom-api.onrender.com"
+      # Exact browser origins allowed to call the API. Keep this list in sync
+      # with the static site's frontend hostnames.
+      - key: AXIOM_ALLOWED_ORIGINS
+        value: "https://axiomcombustion.us,https://www.axiomcombustion.us,https://axiom-web.onrender.com"
+      - key: AXIOM_LOG_REQUESTS
+        value: "0"
+      # Optional live-model providers are deliberately not set here. Add them in
+      # the Render Dashboard only if you want live answers; every core feature
+      # works without them.

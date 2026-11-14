@@ -1,0 +1,950 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q026",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/ | Article, 2013-11-25",
+  "run": {
+    "run_id": "9963f2fe08564fda9875a660907365a7",
+    "created_at": "2026-11-06T19:33:21.137404+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/ | Article, 2013-11-25",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 6,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "6 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "3 claims drafted. The evidence indicates that the absence of a visible flame does not necessarily mean the fuel is chemically inactive, as FLEX experiments showed continued evaporation and consumption of the fuel droplet without a visible flame. However, this is specific to the FLEX experiments and does not provide a general certification method for fuel inactivity."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 3 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "eef9d5c581a41afa3dcd4eaba09380ec82238d7fe47812be3511abdfc43ec49e",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "If no visible flame remains in a FLEX-style droplet experiment, can I certify the fuel is chemically inactive?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "evidence_status": "unassessable",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions.",
+          "Find a source passage that directly supports this interpretation and preserves its scope."
+        ],
+        "text": "In FLEX experiments, the fuel droplet continued to evaporate at almost the same rate as when the flame was visible even after the flame disappeared.",
+        "citations": [
+          {
+            "chunk_id": "named-flex-blog-named-011-01f2729bbd8f6544",
+            "quote": "We discovered with FLEX that under certain conditions when the flame disappeared, the droplet of fuel continued to evaporate at almost the same rate as when the flame was visible.",
+            "source_id": "named-flex-blog",
+            "valid": true,
+            "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 11; archived as of 2025-07-12T20:27:04+00:00",
+            "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_uncertain",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "semantic_support_unresolved",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "verdict": "uncertain",
+          "reason": "The provider rate limit prevented this review. Retry after the limit resets.",
+          "uncertainty": "Support remains unresolved until a valid review completes.",
+          "review_failure": "rate_limited"
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [],
+        "claim_type": "reported_observation",
+        "limitations": "This observation is specific to FLEX experiments under certain conditions and does not apply to all combustion scenarios."
+      },
+      {
+        "evidence_status": "unassessable",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions.",
+          "Find a source passage that directly supports this interpretation and preserves its scope."
+        ],
+        "text": "During 'dark burning periods' with no visible flame, the evaporation rates were essentially constant, similar to what is seen with a visible flame.",
+        "citations": [
+          {
+            "chunk_id": "named-flex-blog-named-014-9b1c38b43134c654",
+            "quote": "During the “dark burning periods” when no flame was visible, the evaporation rates were essentially constant, similar to what is seen with a visible flame.",
+            "source_id": "named-flex-blog",
+            "valid": true,
+            "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 14; archived as of 2025-07-12T20:27:04+00:00",
+            "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_uncertain",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "semantic_support_unresolved",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "verdict": "uncertain",
+          "reason": "The provider rate limit prevented this review. Retry after the limit resets.",
+          "uncertainty": "Support remains unresolved until a valid review completes.",
+          "review_failure": "rate_limited"
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [],
+        "claim_type": "reported_observation",
+        "limitations": "This finding is based on specific FLEX test conditions and may not generalize to other experimental setups."
+      },
+      {
+        "evidence_status": "unassessable",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions.",
+          "Find a source passage that directly supports this interpretation and preserves its scope."
+        ],
+        "text": "The prior universal observation in droplet experiments was that when the flame went out, the rapid evaporation of the droplet stopped, but FLEX tests showed a fuel droplet that continued to be consumed at a rapid rate without an apparent flame.",
+        "citations": [
+          {
+            "chunk_id": "named-flex-blog-named-015-b74d46ee3ddbf272",
+            "quote": "The prior universal observation was that when the flame went out, the rapid evaporation of the droplet stopped. However, with these tests we now had a fuel droplet that continued to be consumed at a rapid rate without an apparent flame.",
+            "source_id": "named-flex-blog",
+            "valid": true,
+            "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 15; archived as of 2025-07-12T20:27:04+00:00",
+            "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_uncertain",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "semantic_support_unresolved",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "verdict": "uncertain",
+          "reason": "The provider rate limit prevented this review. Retry after the limit resets.",
+          "uncertainty": "Support remains unresolved until a valid review completes.",
+          "review_failure": "rate_limited"
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [],
+        "claim_type": "reported_observation",
+        "limitations": "This contrasts with previous observations but is limited to the specific FLEX experiments described."
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-flex-blog-named-011-01f2729bbd8f6544",
+              "quote": "We discovered with FLEX that under certain conditions when the flame disappeared, the droplet of fuel continued to evaporate at almost the same rate as when the flame was visible.",
+              "source_id": "named-flex-blog"
+            }
+          ],
+          "claim_type": "reported_observation",
+          "limitations": "This observation is specific to FLEX experiments under certain conditions and does not apply to all combustion scenarios.",
+          "text": "In FLEX experiments, the fuel droplet continued to evaporate at almost the same rate as when the flame was visible even after the flame disappeared."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-flex-blog-named-014-9b1c38b43134c654",
+              "quote": "During the “dark burning periods” when no flame was visible, the evaporation rates were essentially constant, similar to what is seen with a visible flame.",
+              "source_id": "named-flex-blog"
+            }
+          ],
+          "claim_type": "reported_observation",
+          "limitations": "This finding is based on specific FLEX test conditions and may not generalize to other experimental setups.",
+          "text": "During 'dark burning periods' with no visible flame, the evaporation rates were essentially constant, similar to what is seen with a visible flame."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-flex-blog-named-015-b74d46ee3ddbf272",
+              "quote": "The prior universal observation was that when the flame went out, the rapid evaporation of the droplet stopped. However, with these tests we now had a fuel droplet that continued to be consumed at a rapid rate without an apparent flame.",
+              "source_id": "named-flex-blog"
+            }
+          ],
+          "claim_type": "reported_observation",
+          "limitations": "This contrasts with previous observations but is limited to the specific FLEX experiments described.",
+          "text": "The prior universal observation in droplet experiments was that when the flame went out, the rapid evaporation of the droplet stopped, but FLEX tests showed a fuel droplet that continued to be consumed at a rapid rate without an apparent flame."
+        }
+      ],
+      "reason": "The evidence indicates that the absence of a visible flame does not necessarily mean the fuel is chemically inactive, as FLEX experiments showed continued evaporation and consumption of the fuel droplet without a visible flame. However, this is specific to the FLEX experiments and does not provide a general certification method for fuel inactivity."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-flex-blog-named-005-7d5409d038b8ddad",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "Within fractions of a second following ignition, the reaction front—visualized as a flame—quickly wraps around the fuel droplet and assumes a spherical shape. This remains mostly motionless until the droplet of fuel is consumed or until the conditions are such that the flame can no longer exist. You can watch theStrange Flames on the International Space Stationvideo to see these microgravity flames in action.",
+        "sha256": "7d5409d038b8ddad099aa8a2895dbcb4eb2d7355e87deb995e94b1dd3e6a698b",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 5; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 7.374718,
+        "ranking": {
+          "lexical_score": 7.374718,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel",
+            "no",
+            "remains"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.46153846153846156,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "fuel",
+            "no",
+            "remains"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-flex-blog-named-011-01f2729bbd8f6544",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "Typically when a flame extinguishes, the evaporation of the fuel droplet will nearly stop, and the droplet stops shrinking, which makes entirely good sense—no flame, well then, no fuel consumption. We discovered with FLEX that under certain conditions when the flame disappeared, the droplet of fuel continued to evaporate at almost the same rate as when the flame was visible. In many cases this “apparent” fuel consumption without a flame lasted longer than with the flame.",
+        "sha256": "01f2729bbd8f6544fd539e7f0147ea19b31be6614a18ce154409b6f8ccd0d45a",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 11; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 7.154791,
+        "ranking": {
+          "lexical_score": 7.154791,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel",
+            "no",
+            "visible"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.46153846153846156,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel",
+            "no",
+            "visible"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-flex-blog-named-013-caef0b023d80bbc9",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "At first glance, it seemed irrational that the fuel droplet continued to evaporate with no visible flame. Some of the science team argued, myself included, that this could be explained by characteristics of the test chamber environment. It was suggested that once the visible flame extinguished, that there was still a sufficient amount of energy remaining in the surrounding gases to continue the rate of the droplet’s evaporation.",
+        "sha256": "caef0b023d80bbc9e18e6281cb6f99310afd97f70f4c41cc779def55d41a3a6b",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 13; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 6.728575,
+        "ranking": {
+          "lexical_score": 6.728575,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel",
+            "no",
+            "visible"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.46153846153846156,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "fuel",
+            "no",
+            "visible"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-flex-blog-named-014-9b1c38b43134c654",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "Since buoyant forces are absent in microgravity flames, the hot gases simply remain stationary around the droplet—so we theorized that as these gases cooled, heat transferred back into the droplet. We quickly realized, however, that this would have resulted in a gradual slowing of the droplet’s evaporation rate, which was not the case. During the “dark burning periods” when no flame was visible, the evaporation rates were essentially constant, similar to what is seen with a visible flame. Interestingly, these evaporation rates suddenly stopped when the afterglow of the scattered light began to appear.",
+        "sha256": "9b1c38b43134c65432d6cc57ab5446e3221ef637477f56d4111a78f5f5e75bf1",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 14; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 5.5804,
+        "ranking": {
+          "lexical_score": 5.5804,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "no",
+            "visible"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.38461538461538464,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "no",
+            "visible"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-flex-blog-named-015-b74d46ee3ddbf272",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "In 65 years of previous droplet experiments, and employing a staggering breadth of microgravity test configurations—from converted mine shafts in Japan to experiments performed on the recently retiredspace shuttles—this phenomena had never been observed. The prior universal observation was that when the flame went out, the rapid evaporation of the droplet stopped. However, with these tests we now had a fuel droplet that continued to be consumed at a rapid rate without an apparent flame.",
+        "sha256": "b74d46ee3ddbf27213c538932d01bd540bca8e1ff71e6b02fa5b754dbef016c8",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 15; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 2.559544,
+        "ranking": {
+          "lexical_score": 2.559544,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.3076923076923077,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "fuel"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-flex-blog-named-008-1f22111849ae4bcd",
+        "source_id": "named-flex-blog",
+        "title": "Cool Flames on the International Space Station: An Anatomy of Discovery",
+        "experiment": "FLEX",
+        "url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "document_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "text": "FLEX recently led us to a “cool” discovery, igniting the imaginations of many combustion researchers. During one of their many late night test sessions, the FLEX operations team noticed a very peculiar orange afterglow about 20 seconds after the flame had extinguished. It was so intense that the team first thought something else other than the fuel droplet was burning.",
+        "sha256": "1f22111849ae4bcde9b4ded32efa1dc7ac7c3aba642127ddf9d3151cc12455e3",
+        "source_kind": "scientist_explanation",
+        "evidence_tier": 3,
+        "section": "Article, 2013-11-25",
+        "locator": "Article, 2013-11-25; Original NASA article; article#post-678 > div.entry-content; paragraph 8; archived as of 2025-07-12T20:27:04+00:00",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Original NASA article in a dated archived copy, not a current NASA canonical page; scientific interpretation is unreviewed.",
+        "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+        "archive_as_of": "2025-07-12T20:27:04+00:00",
+        "publication_date": "2013-11-25",
+        "source_sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+        "provenance": [
+          {
+            "archive_as_of": "2025-07-12T20:27:04+00:00",
+            "archive_headers": {
+              "link": "<https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"original\", <https://web.archive.org/web/timemap/link/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timemap\"; type=\"application/link-format\", <https://web.archive.org/web/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"timegate\", <https://web.archive.org/web/20150818061925/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"first memento\"; datetime=\"Tue, 18 Aug 2015 06:19:25 GMT\", <https://web.archive.org/web/20250407101355/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"prev memento\"; datetime=\"Mon, 07 Apr 2025 10:13:55 GMT\", <https://web.archive.org/web/20250712202704/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"memento\"; datetime=\"Sat, 12 Jul 2025 20:27:04 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"next memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\", <https://web.archive.org/web/20250815094356/http://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/>; rel=\"last memento\"; datetime=\"Fri, 15 Aug 2025 09:43:56 GMT\"",
+              "memento_datetime": "Sat, 12 Jul 2025 20:27:04 GMT"
+            },
+            "archive_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "bytes": 79538,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "key": "article",
+            "method": "GET",
+            "original_url": "https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/",
+            "path": "data/raw/named/named-flex-blog-article.bin",
+            "publication_date": "2013-11-25",
+            "published_at": "2013-11-25T16:33:20+00:00",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-06T18:25:40.657693+00:00",
+            "sha256": "24a79ab26fd5bc8d850b6ec407078b3484c6e6ab88cff3081157af8b9aaaa4ef",
+            "url": "https://web.archive.org/web/20250712202704id_/https://blogs.nasa.gov/ISS_Science_Blog/2013/11/25/cool-flames-on-the-international-space-station-an-anatomy-of-discovery/"
+          }
+        ],
+        "score": 1.96748,
+        "ranking": {
+          "lexical_score": 1.96748,
+          "matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.3076923076923077,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flame",
+            "flex",
+            "fuel"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 49334.54,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 928,
+          "reset_requests_s": 6220.799,
+          "remaining_tokens": 5762,
+          "reset_tokens_s": 49.5
+        },
+        "http_status": 429,
+        "retry_after_s": 31.0,
+        "retry_delay_s": 31.057681682342984,
+        "retry_scheduled": true,
+        "latency_ms": 375
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "retryable_transport_error",
+        "queue_wait_ms": 31062,
+        "rate_limits": {},
+        "transport_error": "socket_timeout",
+        "retry_delay_s": 2.1576098098410204,
+        "retry_scheduled": true,
+        "latency_ms": 46375
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 2171,
+        "rate_limits": {
+          "remaining_requests": 927,
+          "reset_requests_s": 6307.2,
+          "remaining_tokens": 7206,
+          "reset_tokens_s": 40.92
+        },
+        "http_status": 429,
+        "retry_after_s": 22.0,
+        "retry_delay_s": 22.155480392360317,
+        "retry_scheduled": false,
+        "latency_ms": 2578
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 49334.54,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 0,
+        "rate_limits": {
+          "remaining_requests": 928,
+          "reset_requests_s": 6220.799,
+          "remaining_tokens": 5762,
+          "reset_tokens_s": 49.5
+        },
+        "http_status": 429,
+        "retry_after_s": 31.0,
+        "retry_delay_s": 31.057681682342984,
+        "retry_scheduled": true,
+        "latency_ms": 375
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "retryable_transport_error",
+        "queue_wait_ms": 31062,
+        "rate_limits": {},
+        "transport_error": "socket_timeout",
+        "retry_delay_s": 2.1576098098410204,
+        "retry_scheduled": true,
+        "latency_ms": 46375
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "7d8c27e720d872bab9d6c2471e9cff78ce3cfaec6c4544bf5a7da19a19e20ec7",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "f8afd48128f460eaa76e49f76d94115e6f541c59894cb79909b5c050adfb1021",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 2171,
+        "rate_limits": {
+          "remaining_requests": 927,
+          "reset_requests_s": 6307.2,
+          "remaining_tokens": 7206,
+          "reset_tokens_s": 40.92
+        },
+        "http_status": 429,
+        "retry_after_s": 22.0,
+        "retry_delay_s": 22.155480392360317,
+        "retry_scheduled": false,
+        "latency_ms": 2578
+      }
+    ],
+    "question_id": "Q026",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "9963f2fe08564fda9875a660907365a7",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": true,
+    "execution_error": "A model call did not complete: rate_limited",
+    "shared_draft_from_run_id": "936a327a775b4699a70c3afa825d2403",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "936a327a775b4699a70c3afa825d2403",
+  "record_sha256": "f5b182129255635e34cd9a1886ab7c010008bc2b89e34c749fcfd3ce05b0ac1a"
+}

@@ -1,0 +1,47 @@
+{
+  "run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "files": [
+    {
+      "file": "Q001--ignis.json",
+      "sha256": "96dcc1b74fa364b980f4753c543227098df7234f03504df193a81c3138813fbc",
+      "error": "A model call did not complete: http_error",
+      "call_failures": [
+        {
+          "status": "http_error",
+          "http_status": 400,
+          "validation_error": null,
+          "transport_attempted": true,
+          "latency_ms": 593
+        }
+      ]
+    },
+    {
+      "file": "Q026--ignis.json",
+      "sha256": "983723d66501a2725d36eb740869b152ad82395403ff8c7b02a3a210cfac564f",
+      "error": "A model call did not complete: rate_limited",
+      "call_failures": [
+        {
+          "status": "rate_limited",
+          "http_status": 429,
+          "validation_error": null,
+          "transport_attempted": true,
+          "latency_ms": 375
+        },
+        {
+          "status": "retryable_transport_error",
+          "http_status": null,
+          "validation_error": null,
+          "transport_attempted": true,
+          "latency_ms": 46375
+        },
+        {
+          "status": "rate_limited",
+          "http_status": 429,
+          "validation_error": null,
+          "transport_attempted": true,
+          "latency_ms": 2578
+        }
+      ]
+    }
+  ]
+}

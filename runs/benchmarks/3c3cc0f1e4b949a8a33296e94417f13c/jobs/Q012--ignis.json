@@ -1,0 +1,438 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q012",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "d7986c9c73ff454884cb73246c8839d8",
+    "created_at": "2026-11-06T19:29:32.067499+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence is a source description of the FLEX experiment's objectives and approach. It does not contain information regarding software logic, data validation rules, or whether a system should silently assume standard pressure when data is omitted. Therefore, the question cannot be answered using only the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "0 claims included; 2 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "150ce43fcc06da5ae5a2dbaf7ca3894ce1e78b81098cd3cc559e21591b801e74",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "If the available record omits pressure, should IGNIS silently assume standard pressure when judging applicability?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions.",
+          "Check the original numeric values, units and their assignment to materials or test conditions."
+        ],
+        "text": "The FLEX experiment procedure explicitly requires selecting a test pressure within the range of 0.5 to 1.5 atm for Limiting Oxygen Index (LOI) tests.",
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests.",
+            "source_id": "psi-69",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Approach; PSI version 5; JSON field approach",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "numeric_unit_unresolved",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "Select the test pressure (0.5 − 1.5 atm) for the LOI tests.",
+              "relation": "supports",
+              "source_id": "psi-69"
+            }
+          ],
+          "reason": "The source explicitly lists selecting a test pressure of 0.5 to 1.5 atm as step 1 of the procedure for LOI tests.",
+          "uncertainty": "The source is a catalog description of the approach; it does not provide experimental data confirming the procedure was executed exactly as described in every instance.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "Select the test pressure (0.5 − 1.5 atm) for the LOI tests.",
+            "relation": "supports",
+            "source_id": "psi-69",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Approach; PSI version 5; JSON field approach",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This describes the planned experimental protocol for the FLEX investigation and does not provide data on how the system behaves if pressure is omitted or undefined."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Find test-level records for the missing or mismatched environmental conditions."
+        ],
+        "text": "The primary objective of the FLEX experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure.",
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure",
+            "source_id": "psi-69",
+            "valid": true,
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Approach; PSI version 5; JSON field approach",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_established",
+        "issues": [
+          "condition_unknown:flow_cm_s",
+          "condition_unknown:fuel",
+          "condition_unknown:gravity",
+          "condition_unknown:oxygen_percent",
+          "condition_unknown:pressure_kpa",
+          "operational_inference_requires_expert_review",
+          "target_conditions_incomplete"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure",
+              "relation": "supports",
+              "source_id": "psi-69"
+            }
+          ],
+          "reason": "The source text directly states that a primary objective is to determine the LOI as a function of ambient pressure.",
+          "uncertainty": "The source is a catalog description of objectives; it does not provide measured results or confirm the objective was fully achieved.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure",
+            "relation": "supports",
+            "source_id": "psi-69",
+            "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+            "locator": "Approach; PSI version 5; JSON field approach",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a stated objective of the investigation, not a reported observation or a rule for handling missing data in software applicability judgments."
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests.",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This describes the planned experimental protocol for the FLEX investigation and does not provide data on how the system behaves if pressure is omitted or undefined.",
+          "text": "The FLEX experiment procedure explicitly requires selecting a test pressure within the range of 0.5 to 1.5 atm for Limiting Oxygen Index (LOI) tests."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a stated objective of the investigation, not a reported observation or a rule for handling missing data in software applicability judgments.",
+          "text": "The primary objective of the FLEX experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure."
+        }
+      ],
+      "reason": "The provided evidence is a source description of the FLEX experiment's objectives and approach. It does not contain information regarding software logic, data validation rules, or whether a system should silently assume standard pressure when data is omitted. Therefore, the question cannot be answered using only the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets. A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI . The basic outline of the procedure to construct this diagram is as follows: 1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests. 2. Select a smaller droplet size (≈ 3 mm) 3. Select an ambient oxygen mole fraction that, based on ground-based testing, will support droplets burning to completion (as opposed to extinguishing at a finite droplet size). 4. Perform a droplet combustion test. 5. Increase the droplet size or repeat the test (if finite extinction diameter at flame extinction observed). 6. Continue steps 4 and 5 until flame exists for only a short time after ignition (radiative extinction). 7. Continue steps 4 thru 6 at a decreased ambient oxygen mole fraction. 8. Continue step 7 to an ambient oxygen mole fraction where the droplet does not ignite. There were ambient conditions where the extinction droplet sizes at all ambient oxygen mole fractions were too small to either be observed or measured with the available diagnostics. In this case, the determination of the LOI is similar, but more iterative. Instead of observing flame extinction, however, the procedure involved an iterative sequence of tests (burn to completion followed by a no ignition test) with progressively smaller increments in ambient oxygen mole fraction to determine the LOI . For the slow flow tests (in the flight experiment), the configuration of the flight hardware did not allow for adequate diagnostics over the entire test for a droplet in a uniform, steady convective flow.",
+        "sha256": "13962d92ffe0d118651d871ba8e008195573ebb154fb79ef1f39fcfbc0d01a50",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Approach",
+        "locator": "Approach; PSI version 5; JSON field approach",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": 2.828098,
+        "ranking": {
+          "lexical_score": 2.828098,
+          "matched_terms": [
+            "available",
+            "if",
+            "pressure"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.2727272727272727,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "available",
+            "if",
+            "pressure"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 15519.56,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f42cf8aadbe74948a18e34bcc7c105429fc860a5eb65cb1c783669a9029b000a",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "d2bc54f7dad75b129a66396567f5aa7f2f98f13593d6e29ebd118eae4fe5da8a",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 718,
+        "rate_limits": {
+          "remaining_requests": 937,
+          "reset_requests_s": 5443.2,
+          "remaining_tokens": 6471,
+          "reset_tokens_s": 38.28
+        },
+        "http_status": 429,
+        "retry_after_s": 13.0,
+        "retry_delay_s": 13.151493146454294,
+        "retry_scheduled": true,
+        "latency_ms": 1093
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f42cf8aadbe74948a18e34bcc7c105429fc860a5eb65cb1c783669a9029b000a",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "d2bc54f7dad75b129a66396567f5aa7f2f98f13593d6e29ebd118eae4fe5da8a",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 997,
+          "completion_tokens": 320,
+          "total_tokens": 1317
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 13157,
+        "rate_limits": {
+          "remaining_requests": 936,
+          "reset_requests_s": 5529.6,
+          "remaining_tokens": 6015,
+          "reset_tokens_s": 59.28
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "50bcc6a8d09c71aa1c52e888344cb4d9f708290f7d121d133fbec7a219550ede",
+        "cache_write": "written",
+        "latency_ms": 14422
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The retrieved evidence does not establish safety for the proposed environment. Check the missing conditions and source limitations below.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 15519.56,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f42cf8aadbe74948a18e34bcc7c105429fc860a5eb65cb1c783669a9029b000a",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "d2bc54f7dad75b129a66396567f5aa7f2f98f13593d6e29ebd118eae4fe5da8a",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 718,
+        "rate_limits": {
+          "remaining_requests": 937,
+          "reset_requests_s": 5443.2,
+          "remaining_tokens": 6471,
+          "reset_tokens_s": 38.28
+        },
+        "http_status": 429,
+        "retry_after_s": 13.0,
+        "retry_delay_s": 13.151493146454294,
+        "retry_scheduled": true,
+        "latency_ms": 1093
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f42cf8aadbe74948a18e34bcc7c105429fc860a5eb65cb1c783669a9029b000a",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "d2bc54f7dad75b129a66396567f5aa7f2f98f13593d6e29ebd118eae4fe5da8a",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 997,
+          "completion_tokens": 320,
+          "total_tokens": 1317
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 13157,
+        "rate_limits": {
+          "remaining_requests": 936,
+          "reset_requests_s": 5529.6,
+          "remaining_tokens": 6015,
+          "reset_tokens_s": 59.28
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "50bcc6a8d09c71aa1c52e888344cb4d9f708290f7d121d133fbec7a219550ede",
+        "cache_write": "written",
+        "latency_ms": 14422
+      }
+    ],
+    "question_id": "Q012",
+    "system": "ignis",
+    "split": "dev",
+    "run_id": "d7986c9c73ff454884cb73246c8839d8",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": true,
+    "shared_draft_from_run_id": "e2f78606443f4e29a104d8bc5ea3119b",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "e2f78606443f4e29a104d8bc5ea3119b",
+  "record_sha256": "78c015be526fe9188452b209427fee112008e77d10335069dbe53c560449cb39"
+}

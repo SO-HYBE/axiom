@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q017",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "e6a39233a991420aa3aed18d9861b40a",
+    "created_at": "2026-11-06T19:31:01.270942+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. Insufficient evidence provided to verify the specific atmosphere variables changed in the Saffire-VI experiment according to the cited NASA 2024 article."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Which two atmosphere variables were changed in Saffire-VI according to the NASA 2024 article?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "Insufficient evidence provided to verify the specific atmosphere variables changed in the Saffire-VI experiment according to the cited NASA 2024 article.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "Insufficient evidence provided to verify the specific atmosphere variables changed in the Saffire-VI experiment according to the cited NASA 2024 article."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.59,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "8d20d9347cdcd85d9860265f9e7beda827d66aa034b8d450c6ecf9e4ed03a6fd",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "33daeb2ff5978599373449c9d51611af3f7ee8eb85bac9dcbed2c79e89973227",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 56,
+          "total_tokens": 468
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "Insufficient evidence provided to verify the specific atmosphere variables changed in the Saffire-VI experiment according to the cited NASA 2024 article.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.59,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "8d20d9347cdcd85d9860265f9e7beda827d66aa034b8d450c6ecf9e4ed03a6fd",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "33daeb2ff5978599373449c9d51611af3f7ee8eb85bac9dcbed2c79e89973227",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 412,
+          "completion_tokens": 56,
+          "total_tokens": 468
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q017",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "e6a39233a991420aa3aed18d9861b40a",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "c7744c22614d2423081e9c9de9128413fc123084e3194f1522a2a96f1f6658a7"
+}

@@ -1,0 +1,204 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q004",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "302a540777f342e0b894014281eded4f",
+    "created_at": "2026-11-06T19:27:31.016688+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided BASS-II abstract describes the experimental setup, parameters examined (including oxygen concentration), and general observations regarding flame sensitivity to flow speed. However, it does not list specific numerical values for the extinction oxygen percentage for any acrylic samples. Therefore, the requested data is not present in the supplied evidence."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Using only the BASS-II abstract, give the exact extinction oxygen percentage for every acrylic sample.",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The provided BASS-II abstract describes the experimental setup, parameters examined (including oxygen concentration), and general observations regarding flame sensitivity to flow speed. However, it does not list specific numerical values for the extinction oxygen percentage for any acrylic samples. Therefore, the requested data is not present in the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided BASS-II abstract describes the experimental setup, parameters examined (including oxygen concentration), and general observations regarding flame sensitivity to flow speed. However, it does not list specific numerical values for the extinction oxygen percentage for any acrylic samples. Therefore, the requested data is not present in the supplied evidence."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 1.94462,
+        "ranking": {
+          "lexical_score": 1.94462,
+          "matched_terms": [
+            "acrylic",
+            "bass",
+            "extinction",
+            "ii",
+            "oxygen"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.38461538461538464,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "acrylic",
+            "bass",
+            "extinction",
+            "ii",
+            "oxygen"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.98,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "0394da0c3b7becac66650644aa78bd5e1d71a878c54a71011452323c0df1136c",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "a896b00284e15660e072e4d645edb10dbdb0799777f88044cbc306a226aeb6bb",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 868,
+          "completion_tokens": 85,
+          "total_tokens": 953
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided BASS-II abstract describes the experimental setup, parameters examined (including oxygen concentration), and general observations regarding flame sensitivity to flow speed. However, it does not list specific numerical values for the extinction oxygen percentage for any acrylic samples. Therefore, the requested data is not present in the supplied evidence.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.98,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "0394da0c3b7becac66650644aa78bd5e1d71a878c54a71011452323c0df1136c",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "a896b00284e15660e072e4d645edb10dbdb0799777f88044cbc306a226aeb6bb",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 868,
+          "completion_tokens": 85,
+          "total_tokens": 953
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q004",
+    "system": "rag_only",
+    "split": "dev",
+    "run_id": "302a540777f342e0b894014281eded4f",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "18f4492021629290734906460e1d5c4027824fa1b405364525e0be09c0ae3bd2"
+}

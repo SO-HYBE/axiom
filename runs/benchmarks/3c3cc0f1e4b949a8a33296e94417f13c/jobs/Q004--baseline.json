@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q004",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "ede1dae3dc614ffd8db599f275060a64",
+    "created_at": "2026-11-06T19:27:30.984433+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence field is empty, and no source corpus is supplied. I cannot verify the specific extinction oxygen percentages for acrylic samples in the BASS-II abstract without access to the document content."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Using only the BASS-II abstract, give the exact extinction oxygen percentage for every acrylic sample.",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The provided evidence field is empty, and no source corpus is supplied. I cannot verify the specific extinction oxygen percentages for acrylic samples in the BASS-II abstract without access to the document content.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence field is empty, and no source corpus is supplied. I cannot verify the specific extinction oxygen percentages for acrylic samples in the BASS-II abstract without access to the document content."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.57,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "5b892e3b5d721733e20584d6c68390245b282e77b737328694569ccbf5938756",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "8f87357988709d834bc104a4242d87328526434fef31a17f53ef5eed122222e0",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 385,
+          "completion_tokens": 63,
+          "total_tokens": 448
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence field is empty, and no source corpus is supplied. I cannot verify the specific extinction oxygen percentages for acrylic samples in the BASS-II abstract without access to the document content.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.57,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "5b892e3b5d721733e20584d6c68390245b282e77b737328694569ccbf5938756",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "8f87357988709d834bc104a4242d87328526434fef31a17f53ef5eed122222e0",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 385,
+          "completion_tokens": 63,
+          "total_tokens": 448
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q004",
+    "system": "baseline",
+    "split": "dev",
+    "run_id": "ede1dae3dc614ffd8db599f275060a64",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "bd85d364a08184cc64c00c6c763d51923a75a55e43c02e94b738b9f5627b3318"
+}

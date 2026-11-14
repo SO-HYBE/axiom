@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q020",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "fc08eb425a97455a9bec9a690869314c",
+    "created_at": "2026-11-06T19:32:03.517841+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. The provided evidence field is empty, and no source corpus is supplied. While the question references a specific NASA NTRS citation (20160000593), I cannot verify the exact BASS-II-only count from the abstract without access to the text of that specific document. I must abstain rather than invent a number or rely on unverified external knowledge that might conflict with the specific 'abstract' scope requested."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "The abstract says well over one hundred BASS-I and BASS-II tests combined. Give the exact BASS-II-only count.",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The provided evidence field is empty, and no source corpus is supplied. While the question references a specific NASA NTRS citation (20160000593), I cannot verify the exact BASS-II-only count from the abstract without access to the text of that specific document. I must abstain rather than invent a number or rely on unverified external knowledge that might conflict with the specific 'abstract' scope requested.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "The provided evidence field is empty, and no source corpus is supplied. While the question references a specific NASA NTRS citation (20160000593), I cannot verify the exact BASS-II-only count from the abstract without access to the text of that specific document. I must abstain rather than invent a number or rely on unverified external knowledge that might conflict with the specific 'abstract' scope requested."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 0.69,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "cb314462b42183a14ba0bb4e239c81f81455a7a53586719f5810e9764a0ec6f4",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "3d06fc33350a4061b98379da7d978a51bae41dfd2f6fecd9a44b813941dc3228",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 392,
+          "completion_tokens": 113,
+          "total_tokens": 505
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence field is empty, and no source corpus is supplied. While the question references a specific NASA NTRS citation (20160000593), I cannot verify the exact BASS-II-only count from the abstract without access to the text of that specific document. I must abstain rather than invent a number or rely on unverified external knowledge that might conflict with the specific 'abstract' scope requested.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.69,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "cb314462b42183a14ba0bb4e239c81f81455a7a53586719f5810e9764a0ec6f4",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "3d06fc33350a4061b98379da7d978a51bae41dfd2f6fecd9a44b813941dc3228",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 392,
+          "completion_tokens": 113,
+          "total_tokens": 505
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q020",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "fc08eb425a97455a9bec9a690869314c",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "c4bb2f4ec8f63dc16a83dde5c38a9240057a0c883cac1106df5ec3af2f28809d"
+}

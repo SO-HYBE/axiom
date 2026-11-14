@@ -1,0 +1,257 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q013",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "d325cde2c1204a559c9a0e1a892188cf",
+    "created_at": "2026-11-06T19:29:32.200872+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "unfiltered_answer",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "1 claims drafted. The provided abstract explicitly identifies the 0 to 5 cm/s range as the interval where flames are 'quite sensitive' to air flow speed. No other specific intervals are singled out with similar emphasis in the text."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "unfiltered answer"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "What airflow interval does the BASS-II abstract single out as particularly sensitive?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The flames are quite sensitive to air flow speed in the range 0 to 5 cms.",
+            "source_id": "ntrs-20160000593"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a qualitative description of sensitivity provided in the abstract, not a quantitative threshold for ignition or extinction.",
+        "text": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The flames are quite sensitive to air flow speed in the range 0 to 5 cms.",
+            "source_id": "ntrs-20160000593"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a qualitative description of sensitivity provided in the abstract, not a quantitative threshold for ignition or extinction.",
+        "text": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The flames are quite sensitive to air flow speed in the range 0 to 5 cms.",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This is a qualitative description of sensitivity provided in the abstract, not a quantitative threshold for ignition or extinction.",
+          "text": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s."
+        }
+      ],
+      "reason": "The provided abstract explicitly identifies the 0 to 5 cm/s range as the interval where flames are 'quite sensitive' to air flow speed. No other specific intervals are singled out with similar emphasis in the text."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 1.549057,
+        "ranking": {
+          "lexical_score": 1.549057,
+          "matched_terms": [
+            "bass",
+            "ii",
+            "particularly",
+            "sensitive"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.4444444444444444,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "bass",
+            "ii",
+            "particularly",
+            "sensitive"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 1.11,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "cf6ec40cce61be7bd4db524e03f1929903519d10e235c5d04547c6f288edd007",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "08549db29521a94aa62a82dc366f1736e7d070595d675e48ddeeb6d50f68ca68",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 864,
+          "completion_tokens": 249,
+          "total_tokens": 1113
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The flames are quite sensitive to air flow speed in the range 0 to 5 cms.",
+            "source_id": "ntrs-20160000593"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This is a qualitative description of sensitivity provided in the abstract, not a quantitative threshold for ignition or extinction.",
+        "text": "The BASS-II abstract states that flames are quite sensitive to air flow speed in the range of 0 to 5 cm/s.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "latency_ms": 1.11,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "cf6ec40cce61be7bd4db524e03f1929903519d10e235c5d04547c6f288edd007",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "08549db29521a94aa62a82dc366f1736e7d070595d675e48ddeeb6d50f68ca68",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 864,
+          "completion_tokens": 249,
+          "total_tokens": 1113
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q013",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "d325cde2c1204a559c9a0e1a892188cf",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "899fff4daac911e58f8e1bf98a1ac5a6ce338784ec600a2f0261e65abb4b3816"
+}

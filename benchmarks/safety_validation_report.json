@@ -1,0 +1,508 @@
+{
+  "schema_version": "safety-improvements-v1",
+  "generated_at": "2026-11-06T19:43:05.940880+00:00",
+  "scope": "Engineering integrity and observed model execution, not independent scientific validation",
+  "primary_run": "3c3cc0f1e4b949a8a33296e94417f13c",
+  "question_count": 36,
+  "systems": [
+    "baseline",
+    "rag_only",
+    "ignis"
+  ],
+  "source_scopes_available": 36,
+  "benchmark_passages": 338,
+  "core_passages": 294,
+  "named_passages": 42,
+  "abstracts": 2,
+  "lexical_hits": 25,
+  "explicit_context_cases": 11,
+  "retrieval_threshold": 0.25,
+  "context_policy": {
+    "max_passages": 6,
+    "max_serialized_characters": 12000,
+    "relevance_established": false
+  },
+  "original_failed_files_unchanged": true,
+  "original_failure_hashes": {
+    "Q018--baseline.json": "cf0865a365152eab27b365bb073a16de3f5f69f0ecbabf4375f325663559970c",
+    "Q024--baseline.json": "ae7af43214a1ec948aa23611b8b73d3d7cb24eda1f42f8aaa4ab40cb2f87d6f5",
+    "Q029--baseline.json": "114f9baa9655ab7c804c1258794ca71f777d5e6f2b3c36045e6fb6de55bfddc3",
+    "Q030--ignis.json": "52d253ec4ffac2ca3fcee3ab1b7b2e6b4e75d62bc0253267043d37927506323f",
+    "Q035--ignis.json": "920bc74a4c73a13d53eac83dc44b228ef27e0952a6bdc9cb8df86b6a763673b7"
+  },
+  "provider": "groq",
+  "requested_model": "qwen/qwen3.8-27b",
+  "model_snapshot": null,
+  "review_format_policy": {
+    "mode": "strict_json_schema",
+    "schemas": [
+      "semantic_review",
+      "batch_review"
+    ],
+    "version": 3,
+    "batch_cardinality": "exact_requested_count",
+    "batch_claim_ids": "requested_id_enum_and_local_uniqueness",
+    "quote_min_characters": 15
+  },
+  "runs": [
+    {
+      "run_id": "8b005bbca07849db97b403545b13de8b",
+      "status": "pending_after_execution_error",
+      "git": {
+        "commit": "26df9720d5ca67e14d2aeb9b3aa861304cc047c9",
+        "working_tree_dirty": false
+      },
+      "input_fingerprint": "53f299fc54ee42efcadc76f437bee0e608e598852ae4f704c25d9ef9a9656ced",
+      "progress": {
+        "scheduled": 108,
+        "completed": 100,
+        "failed": 5,
+        "pending": 3,
+        "graded": 0
+      },
+      "audit_passed": true,
+      "provider_statuses": {
+        "success": 63,
+        "cache_hit": 12,
+        "rate_limited": 48,
+        "cooldown_exceeded": 1,
+        "transport_failed": 2,
+        "invalid_response": 2
+      },
+      "failures": [
+        {
+          "file": "Q018--baseline.json",
+          "sha256": "cf0865a365152eab27b365bb073a16de3f5f69f0ecbabf4375f325663559970c",
+          "error": "groq is waiting for quota or another local request beyond the 60s budget. Retry later.",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 687
+            },
+            {
+              "status": "cooldown_exceeded",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": false,
+              "latency_ms": 985750
+            }
+          ]
+        },
+        {
+          "file": "Q024--baseline.json",
+          "sha256": "ae7af43214a1ec948aa23611b8b73d3d7cb24eda1f42f8aaa4ab40cb2f87d6f5",
+          "error": "groq request failed (transport_failed).",
+          "call_failures": [
+            {
+              "status": "transport_failed",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 16421
+            }
+          ]
+        },
+        {
+          "file": "Q029--baseline.json",
+          "sha256": "114f9baa9655ab7c804c1258794ca71f777d5e6f2b3c36045e6fb6de55bfddc3",
+          "error": "groq request failed (transport_failed).",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 797
+            },
+            {
+              "status": "transport_failed",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 37422
+            }
+          ]
+        },
+        {
+          "file": "Q030--ignis.json",
+          "sha256": "52d253ec4ffac2ca3fcee3ab1b7b2e6b4e75d62bc0253267043d37927506323f",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 859
+            },
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 11609
+            }
+          ]
+        },
+        {
+          "file": "Q035--ignis.json",
+          "sha256": "920bc74a4c73a13d53eac83dc44b228ef27e0952a6bdc9cb8df86b6a763673b7",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 359
+            },
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 31406
+            },
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 8828
+            }
+          ]
+        }
+      ],
+      "evidence_selection": {
+        "historical_not_recorded": 105
+      },
+      "complete_pairs": 33
+    },
+    {
+      "run_id": "233c7b8afd134eac937062d6b4144893",
+      "status": "pending_after_execution_error",
+      "git": {
+        "commit": "48ca5ce9eba8cfcaef30bf5081840ef13fa79d1c",
+        "working_tree_dirty": false
+      },
+      "input_fingerprint": "a4b152e8bb6714a38106501ea6b48c58fa5e4c90d4582cbaf659ba1aa82f8579",
+      "progress": {
+        "scheduled": 108,
+        "completed": 103,
+        "failed": 2,
+        "pending": 3,
+        "graded": 0
+      },
+      "audit_passed": true,
+      "provider_statuses": {
+        "cache_hit": 75,
+        "retryable_transport_error": 1,
+        "success": 3,
+        "invalid_response": 2
+      },
+      "failures": [
+        {
+          "file": "Q030--ignis.json",
+          "sha256": "b4f96c3f65a46f4cf420b936e65abf1605c68ea2e35512aa2f207013d1844d06",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 2000
+            }
+          ]
+        },
+        {
+          "file": "Q035--ignis.json",
+          "sha256": "b8eb59f5d89624eecd3c5a91c74c660707cf65afc244670716562d3e32031a6b",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 1610
+            }
+          ]
+        }
+      ],
+      "evidence_selection": {
+        "historical_not_recorded": 105
+      },
+      "complete_pairs": 33
+    },
+    {
+      "run_id": "9033c44ff35b4f58aca3f972fb95d65d",
+      "status": "stopped_after_execution_error",
+      "git": {
+        "commit": "1e64168024ec0d90aa6e53e14f8e3e84d347e163",
+        "working_tree_dirty": false
+      },
+      "input_fingerprint": "fa66bd762aea01e5d959c1ae7e0d4e38727aa3a1b39afe11974fafc3d6aef302",
+      "progress": {
+        "scheduled": 108,
+        "completed": 105,
+        "failed": 2,
+        "pending": 1,
+        "graded": 0
+      },
+      "audit_passed": true,
+      "provider_statuses": {
+        "cache_hit": 60,
+        "success": 38,
+        "rate_limited": 38,
+        "invalid_response": 1,
+        "retryable_transport_error": 1,
+        "cooldown_exceeded": 1
+      },
+      "failures": [
+        {
+          "file": "Q010--ignis.json",
+          "sha256": "6d5c46580ba6ce502c72085d139cd768313d62794fc3d8ecf578777b1c6f5034",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 1047
+            },
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": "model_response_schema_extra_fields",
+              "transport_attempted": true,
+              "latency_ms": 38578
+            }
+          ]
+        },
+        {
+          "file": "Q036--rag_only.json",
+          "sha256": "45ed4b1c87f1db77344edebf2879026f46a2d701347c2cef2e26678af26eccf4",
+          "error": "groq is waiting for quota or another local request beyond the 60s budget. Retry later.",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 484
+            },
+            {
+              "status": "cooldown_exceeded",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": false,
+              "latency_ms": 313219
+            }
+          ]
+        }
+      ],
+      "evidence_selection": {
+        "baseline_none": 36,
+        "lexical_search": 50,
+        "explicit_source_scope": 21
+      },
+      "complete_pairs": 34
+    },
+    {
+      "run_id": "85992b8952a746db953cfc9603004919",
+      "status": "completed_with_errors",
+      "git": {
+        "commit": "726eb2101997725128dba210be010e7e6ed18aa2",
+        "working_tree_dirty": false
+      },
+      "input_fingerprint": "13a397615aa559d54c2ab6456a66cc855a7cb942c7e500654b43d4710e3b2e15",
+      "progress": {
+        "scheduled": 108,
+        "completed": 106,
+        "failed": 2,
+        "pending": 0,
+        "graded": 0
+      },
+      "audit_passed": true,
+      "provider_statuses": {
+        "cache_hit": 73,
+        "success": 26,
+        "rate_limited": 23,
+        "invalid_response": 1,
+        "retryable_transport_error": 1,
+        "cooldown_exceeded": 1
+      },
+      "failures": [
+        {
+          "file": "Q016--ignis.json",
+          "sha256": "2f5094b44dc36f9aebe29f057816221bb49b0edda6d8b291c8b113c553271a9b",
+          "error": "A model call did not complete: invalid_response",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 500
+            },
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 15438
+            },
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 2515
+            },
+            {
+              "status": "invalid_response",
+              "http_status": 200,
+              "validation_error": "review_claim_count_mismatch",
+              "transport_attempted": true,
+              "latency_ms": 11125
+            }
+          ]
+        },
+        {
+          "file": "Q032--ignis.json",
+          "sha256": "3d2e3f47acd1b54cbd6a9b63f9525c705a418e222b0ace02d32915fa58855680",
+          "error": "A model call did not complete: cooldown_exceeded",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 781
+            },
+            {
+              "status": "cooldown_exceeded",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": false,
+              "latency_ms": 102859
+            }
+          ]
+        }
+      ],
+      "evidence_selection": {
+        "baseline_none": 36,
+        "lexical_search": 50,
+        "explicit_source_scope": 22
+      },
+      "complete_pairs": 34
+    },
+    {
+      "run_id": "3c3cc0f1e4b949a8a33296e94417f13c",
+      "status": "completed_with_errors",
+      "git": {
+        "commit": "50beb363eb7ce36e29ef9498dc5cbc7c56b8a8be",
+        "working_tree_dirty": true
+      },
+      "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+      "progress": {
+        "scheduled": 108,
+        "completed": 106,
+        "failed": 2,
+        "pending": 0,
+        "graded": 0
+      },
+      "audit_passed": true,
+      "provider_statuses": {
+        "cache_hit": 73,
+        "http_error": 1,
+        "success": 26,
+        "rate_limited": 30,
+        "retryable_transport_error": 1
+      },
+      "failures": [
+        {
+          "file": "Q001--ignis.json",
+          "sha256": "96dcc1b74fa364b980f4753c543227098df7234f03504df193a81c3138813fbc",
+          "error": "A model call did not complete: http_error",
+          "call_failures": [
+            {
+              "status": "http_error",
+              "http_status": 400,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 593
+            }
+          ]
+        },
+        {
+          "file": "Q026--ignis.json",
+          "sha256": "983723d66501a2725d36eb740869b152ad82395403ff8c7b02a3a210cfac564f",
+          "error": "A model call did not complete: rate_limited",
+          "call_failures": [
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 375
+            },
+            {
+              "status": "retryable_transport_error",
+              "http_status": null,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 46375
+            },
+            {
+              "status": "rate_limited",
+              "http_status": 429,
+              "validation_error": null,
+              "transport_attempted": true,
+              "latency_ms": 2578
+            }
+          ]
+        }
+      ],
+      "evidence_selection": {
+        "baseline_none": 36,
+        "lexical_search": 50,
+        "explicit_source_scope": 22
+      },
+      "complete_pairs": 34
+    }
+  ],
+  "tests": {
+    "run": 433,
+    "passed": 428,
+    "skipped": 5,
+    "dashboard": 25,
+    "skip_reason": "Windows symlink creation unavailable"
+  },
+  "review": {
+    "status": "prepared_for_later",
+    "items": 106,
+    "independent_grades": 0,
+    "public_bundle": "runs/benchmarks/3c3cc0f1e4b949a8a33296e94417f13c/review_bundle.zip",
+    "bundle_sha256": "04b6d17ae65b0f6d35eba4a3b3f314ef4fc0ef03fd3399601a6c151cc1b24c0d",
+    "private_mapping_included": false
+  },
+  "review_bundle_deterministic": true,
+  "unreviewed_template_import_rejected": true,
+  "post_generation_export_hardening": "Idempotent packet identity, explicit template-edit preservation, no resolved labels remain ungraded; generation request code unchanged",
+  "limitations": [
+    "Scientific grades absent; model verdicts and executions are not accuracy/safety scores.",
+    "Eleven lexical misses are context-covered; relevance and scientific sufficiency are not established.",
+    "Historical failures are preserved and the current provider failures remain failures.",
+    "Cached drafts confound latency and cost comparison; no speedup/cost claim.",
+    "The model alias is not an immutable provider snapshot.",
+    "Nominal provider budgets have observed elapsed overruns; cause remains unproven.",
+    "Public benchmark test questions were visible during development; no unseen-generalization claim.",
+    "Complete current challenge-resource mapping and qualified condition review remain pending."
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q034",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives; files; doi",
+  "run": {
+    "run_id": "0dbf6b520b214109a6bc2654a61b89cc",
+    "created_at": "2026-11-06T19:35:22.211656+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-98 | objectives; files; doi",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "If two actual measurements disagree under apparently matched conditions, how should IGNIS summarize them?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.55,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "d793c2c1347e254c694bd0ef4449f0561a7b5d11a033cc210f5447869f03c6a2",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "5f0b2e5bad8a2fc3c1ef27b25c9b2a25f64f6390c4eaaffe7bda44780bbce2ca",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 76,
+          "total_tokens": 463
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "Insufficient evidence provided to determine how IGNIS should summarize disagreeing measurements. The requested source scope (PSI-98) was not supplied in the evidence field, and no specific operational guidelines or data handling protocols for IGNIS were available to verify.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.55,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "d793c2c1347e254c694bd0ef4449f0561a7b5d11a033cc210f5447869f03c6a2",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "5f0b2e5bad8a2fc3c1ef27b25c9b2a25f64f6390c4eaaffe7bda44780bbce2ca",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 387,
+          "completion_tokens": 76,
+          "total_tokens": 463
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q034",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "0dbf6b520b214109a6bc2654a61b89cc",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "8b3269353e9f7e883f1a71ed2c52102ba5cd54c2314e2c8e818f2b19f38dc69e"
+}

@@ -1,0 +1,41 @@
+name: axiom
+
+services:
+  axiom:
+    build:
+      context: .
+    image: axiom:1.0.0
+    ports:
+      - "${AXIOM_PUBLISH_PORT:-8767}:8767"
+    environment:
+      AXIOM_HOST: "0.0.0.0"
+      AXIOM_PORT: "8767"
+      # Comma-separated public Host headers. Add your domain before exposing
+      # the service beyond localhost, for example "axiom.example.org".
+      AXIOM_ALLOWED_HOSTS: "${AXIOM_ALLOWED_HOSTS:-localhost:8767,127.0.0.1:8767}"
+      # Browser origins allowed to call the API from a separately hosted
+      # frontend. Empty keeps the container same-origin-only.
+      AXIOM_ALLOWED_ORIGINS: "${AXIOM_ALLOWED_ORIGINS:-}"
+      AXIOM_LOG_REQUESTS: "${AXIOM_LOG_REQUESTS:-0}"
+      GROQ_KEY: "${GROQ_KEY:-}"
+      OPENROUTER_KEY: "${OPENROUTER_KEY:-}"
+      GROQ_MODEL: "${GROQ_MODEL:-}"
+      OPENROUTER_MODEL: "${OPENROUTER_MODEL:-}"
+    volumes:
+      # Saved scenarios live here. A named volume survives container
+      # replacement; the container filesystem alone does not.
+      - scenarios:/app/runs/scenarios
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - "CMD"
+        - "python"
+        - "-c"
+        - "import sys,urllib.request;sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8767/healthz',timeout=4).status==200 else 1)"
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+
+volumes:
+  scenarios:

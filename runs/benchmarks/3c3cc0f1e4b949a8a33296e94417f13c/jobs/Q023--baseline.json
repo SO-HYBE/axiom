@@ -1,0 +1,139 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q023",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf | spacecraft fire safety",
+  "run": {
+    "run_id": "3ae4ca0df3a74ab1af20fb393d4446b3",
+    "created_at": "2026-11-06T19:32:04.658701+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/wp-content/uploads/2025/07/spacecraft-fire-safety-demonstration-saffire.pdf | spacecraft fire safety",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "0 claims drafted. Insufficient evidence provided. The evidence field is empty, and the specific source content is not available to verify if a single orbital microgravity fire result can establish exact flame spread rates in a lunar habitat. Additionally, lunar gravity (1/6th Earth) differs from microgravity, making direct extrapolation complex without specific comparative data."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Can an orbital microgravity fire result alone establish the exact flame spread rate in a lunar habitat?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "Insufficient evidence provided. The evidence field is empty, and the specific source content is not available to verify if a single orbital microgravity fire result can establish exact flame spread rates in a lunar habitat. Additionally, lunar gravity (1/6th Earth) differs from microgravity, making direct extrapolation complex without specific comparative data.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [],
+      "reason": "Insufficient evidence provided. The evidence field is empty, and the specific source content is not available to verify if a single orbital microgravity fire result can establish exact flame spread rates in a lunar habitat. Additionally, lunar gravity (1/6th Earth) differs from microgravity, making direct extrapolation complex without specific comparative data."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.72,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "233cc959c274684a56642da011eef470f28cce6632a94f4c029ca5520df3e98d",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "faad84240e434f45d9ea1a2dd472c760f031c922823c97b11abab44e6c602229",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 396,
+          "completion_tokens": 91,
+          "total_tokens": 487
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "Insufficient evidence provided. The evidence field is empty, and the specific source content is not available to verify if a single orbital microgravity fire result can establish exact flame spread rates in a lunar habitat. Additionally, lunar gravity (1/6th Earth) differs from microgravity, making direct extrapolation complex without specific comparative data.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.72,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "233cc959c274684a56642da011eef470f28cce6632a94f4c029ca5520df3e98d",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "faad84240e434f45d9ea1a2dd472c760f031c922823c97b11abab44e6c602229",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 396,
+          "completion_tokens": 91,
+          "total_tokens": 487
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q023",
+    "system": "baseline",
+    "split": "test",
+    "run_id": "3ae4ca0df3a74ab1af20fb393d4446b3",
+    "scope_status": "no_matching_candidate",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "b4efce2c69402d59dbb9100bbf83c8477a37a96f4d25df34d3ef260a20931541"
+}

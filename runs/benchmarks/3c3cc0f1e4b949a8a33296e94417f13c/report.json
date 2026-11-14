@@ -1,0 +1,3906 @@
+{
+  "schema_version": "1.0",
+  "evaluation_kind": "exploratory_model_generation",
+  "annotation_status": "unreviewed_no_scientific_scores",
+  "manifest_status": "completed_with_errors",
+  "is_scientific_validation": false,
+  "source_readiness": {
+    "annotation_status": {
+      "ai_draft_unreviewed": 36
+    },
+    "category": {
+      "answerable": 8,
+      "citation_trap": 6,
+      "extrapolation": 8,
+      "insufficient": 8,
+      "uncertainty": 6
+    },
+    "split": {
+      "dev": 12,
+      "test": 24
+    },
+    "readiness": {
+      "candidates_need_review": 25,
+      "no_matching_candidate": 11
+    },
+    "ai_draft_unreviewed": 36,
+    "human_reviewer_recorded": 0,
+    "qualified_review_documented": 0,
+    "abstention_or_trap": 28,
+    "source_scope_available": 36,
+    "questions_with_candidates": 25,
+    "auto_scoring_ready": 0
+  },
+  "ablation": "RAG and IGNIS share the saved RAG draft when both systems are selected.",
+  "measurement_scopes": {
+    "baseline": [
+      "whole_workflow"
+    ],
+    "ignis": [
+      "incremental_critic_with_shared_rag_draft"
+    ],
+    "rag_only": [
+      "whole_workflow"
+    ]
+  },
+  "progress": {
+    "overall": {
+      "scheduled": 108,
+      "completed": 106,
+      "failed": 2,
+      "pending": 0,
+      "attempted": 108,
+      "blocked_scope": 0,
+      "pending_blocked": [],
+      "graded": 0,
+      "ungraded": 106,
+      "question_ids": [
+        "Q001",
+        "Q002",
+        "Q003",
+        "Q004",
+        "Q005",
+        "Q006",
+        "Q007",
+        "Q008",
+        "Q009",
+        "Q010",
+        "Q011",
+        "Q012",
+        "Q013",
+        "Q014",
+        "Q015",
+        "Q016",
+        "Q017",
+        "Q018",
+        "Q019",
+        "Q020",
+        "Q021",
+        "Q022",
+        "Q023",
+        "Q024",
+        "Q025",
+        "Q026",
+        "Q027",
+        "Q028",
+        "Q029",
+        "Q030",
+        "Q031",
+        "Q032",
+        "Q033",
+        "Q034",
+        "Q035",
+        "Q036"
+      ],
+      "answer_coverage": {
+        "value": 0.32075471698113206,
+        "numerator": 34,
+        "denominator": 106
+      },
+      "scheduled_answer_coverage": {
+        "value": 0.3148148148148148,
+        "numerator": 34,
+        "denominator": 108
+      },
+      "completed_jobs": [
+        {
+          "question_id": "Q001",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q001",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q002",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q002",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q002",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q003",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q003",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q003",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q004",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q004",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q004",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q005",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q005",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q005",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q006",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q006",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q006",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q007",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q007",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q007",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q008",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q008",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q008",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q009",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q009",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q009",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q010",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q010",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q010",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q011",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q011",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q011",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q012",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q012",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q012",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q013",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q013",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q013",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q014",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q014",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q014",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q015",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q015",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q015",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q016",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q016",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q016",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q017",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q017",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q017",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q018",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q018",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q018",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q019",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q019",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q019",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q020",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q020",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q020",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q021",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q021",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q021",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q022",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q022",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q022",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q023",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q023",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q023",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q024",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q024",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q024",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q025",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q025",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q025",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q026",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q026",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q027",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q027",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q027",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q028",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q028",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q028",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q029",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q029",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q029",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q030",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q030",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q030",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q031",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q031",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q031",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q032",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q032",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q032",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q033",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q033",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q033",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q034",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q034",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q034",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q035",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q035",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q035",
+          "system": "rag_only"
+        },
+        {
+          "question_id": "Q036",
+          "system": "baseline"
+        },
+        {
+          "question_id": "Q036",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q036",
+          "system": "rag_only"
+        }
+      ],
+      "failed_jobs": [
+        {
+          "question_id": "Q001",
+          "system": "ignis"
+        },
+        {
+          "question_id": "Q026",
+          "system": "ignis"
+        }
+      ],
+      "pending_jobs": []
+    },
+    "by_system": {
+      "baseline": {
+        "scheduled": 36,
+        "completed": 36,
+        "failed": 0,
+        "pending": 0,
+        "attempted": 36,
+        "blocked_scope": 0,
+        "pending_blocked": [],
+        "graded": 0,
+        "ungraded": 36,
+        "question_ids": [
+          "Q001",
+          "Q002",
+          "Q003",
+          "Q004",
+          "Q005",
+          "Q006",
+          "Q007",
+          "Q008",
+          "Q009",
+          "Q010",
+          "Q011",
+          "Q012",
+          "Q013",
+          "Q014",
+          "Q015",
+          "Q016",
+          "Q017",
+          "Q018",
+          "Q019",
+          "Q020",
+          "Q021",
+          "Q022",
+          "Q023",
+          "Q024",
+          "Q025",
+          "Q026",
+          "Q027",
+          "Q028",
+          "Q029",
+          "Q030",
+          "Q031",
+          "Q032",
+          "Q033",
+          "Q034",
+          "Q035",
+          "Q036"
+        ],
+        "answer_coverage": {
+          "value": 0.1111111111111111,
+          "numerator": 4,
+          "denominator": 36
+        },
+        "scheduled_answer_coverage": {
+          "value": 0.1111111111111111,
+          "numerator": 4,
+          "denominator": 36
+        },
+        "completed_jobs": [
+          {
+            "question_id": "Q001",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q002",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q003",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q004",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q005",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q006",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q007",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q008",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q009",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q010",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q011",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q012",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q013",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q014",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q015",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q016",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q017",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q018",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q019",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q020",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q021",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q022",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q023",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q024",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q025",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q026",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q027",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q028",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q029",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q030",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q031",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q032",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q033",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q034",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q035",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q036",
+            "system": "baseline"
+          }
+        ],
+        "failed_jobs": [],
+        "pending_jobs": []
+      },
+      "ignis": {
+        "scheduled": 36,
+        "completed": 34,
+        "failed": 2,
+        "pending": 0,
+        "attempted": 36,
+        "blocked_scope": 0,
+        "pending_blocked": [],
+        "graded": 0,
+        "ungraded": 34,
+        "question_ids": [
+          "Q001",
+          "Q002",
+          "Q003",
+          "Q004",
+          "Q005",
+          "Q006",
+          "Q007",
+          "Q008",
+          "Q009",
+          "Q010",
+          "Q011",
+          "Q012",
+          "Q013",
+          "Q014",
+          "Q015",
+          "Q016",
+          "Q017",
+          "Q018",
+          "Q019",
+          "Q020",
+          "Q021",
+          "Q022",
+          "Q023",
+          "Q024",
+          "Q025",
+          "Q026",
+          "Q027",
+          "Q028",
+          "Q029",
+          "Q030",
+          "Q031",
+          "Q032",
+          "Q033",
+          "Q034",
+          "Q035",
+          "Q036"
+        ],
+        "answer_coverage": {
+          "value": 0.35294117647058826,
+          "numerator": 12,
+          "denominator": 34
+        },
+        "scheduled_answer_coverage": {
+          "value": 0.3333333333333333,
+          "numerator": 12,
+          "denominator": 36
+        },
+        "completed_jobs": [
+          {
+            "question_id": "Q002",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q003",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q004",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q005",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q006",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q007",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q008",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q009",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q010",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q011",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q012",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q013",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q014",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q015",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q016",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q017",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q018",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q019",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q020",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q021",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q022",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q023",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q024",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q025",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q027",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q028",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q029",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q030",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q031",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q032",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q033",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q034",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q035",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q036",
+            "system": "ignis"
+          }
+        ],
+        "failed_jobs": [
+          {
+            "question_id": "Q001",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q026",
+            "system": "ignis"
+          }
+        ],
+        "pending_jobs": []
+      },
+      "rag_only": {
+        "scheduled": 36,
+        "completed": 36,
+        "failed": 0,
+        "pending": 0,
+        "attempted": 36,
+        "blocked_scope": 0,
+        "pending_blocked": [],
+        "graded": 0,
+        "ungraded": 36,
+        "question_ids": [
+          "Q001",
+          "Q002",
+          "Q003",
+          "Q004",
+          "Q005",
+          "Q006",
+          "Q007",
+          "Q008",
+          "Q009",
+          "Q010",
+          "Q011",
+          "Q012",
+          "Q013",
+          "Q014",
+          "Q015",
+          "Q016",
+          "Q017",
+          "Q018",
+          "Q019",
+          "Q020",
+          "Q021",
+          "Q022",
+          "Q023",
+          "Q024",
+          "Q025",
+          "Q026",
+          "Q027",
+          "Q028",
+          "Q029",
+          "Q030",
+          "Q031",
+          "Q032",
+          "Q033",
+          "Q034",
+          "Q035",
+          "Q036"
+        ],
+        "answer_coverage": {
+          "value": 0.5,
+          "numerator": 18,
+          "denominator": 36
+        },
+        "scheduled_answer_coverage": {
+          "value": 0.5,
+          "numerator": 18,
+          "denominator": 36
+        },
+        "completed_jobs": [
+          {
+            "question_id": "Q001",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q002",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q003",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q004",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q005",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q006",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q007",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q008",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q009",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q010",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q011",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q012",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q013",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q014",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q015",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q016",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q017",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q018",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q019",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q020",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q021",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q022",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q023",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q024",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q025",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q026",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q027",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q028",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q029",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q030",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q031",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q032",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q033",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q034",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q035",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q036",
+            "system": "rag_only"
+          }
+        ],
+        "failed_jobs": [],
+        "pending_jobs": []
+      }
+    },
+    "by_split": {
+      "dev": {
+        "scheduled": 36,
+        "completed": 35,
+        "failed": 1,
+        "pending": 0,
+        "attempted": 36,
+        "blocked_scope": 0,
+        "pending_blocked": [],
+        "graded": 0,
+        "ungraded": 35,
+        "question_ids": [
+          "Q001",
+          "Q002",
+          "Q003",
+          "Q004",
+          "Q005",
+          "Q006",
+          "Q007",
+          "Q008",
+          "Q009",
+          "Q010",
+          "Q011",
+          "Q012"
+        ],
+        "answer_coverage": {
+          "value": 0.42857142857142855,
+          "numerator": 15,
+          "denominator": 35
+        },
+        "scheduled_answer_coverage": {
+          "value": 0.4166666666666667,
+          "numerator": 15,
+          "denominator": 36
+        },
+        "completed_jobs": [
+          {
+            "question_id": "Q001",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q001",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q002",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q002",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q002",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q003",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q003",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q003",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q004",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q004",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q004",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q005",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q005",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q005",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q006",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q006",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q006",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q007",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q007",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q007",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q008",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q008",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q008",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q009",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q009",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q009",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q010",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q010",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q010",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q011",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q011",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q011",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q012",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q012",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q012",
+            "system": "rag_only"
+          }
+        ],
+        "failed_jobs": [
+          {
+            "question_id": "Q001",
+            "system": "ignis"
+          }
+        ],
+        "pending_jobs": []
+      },
+      "test": {
+        "scheduled": 72,
+        "completed": 71,
+        "failed": 1,
+        "pending": 0,
+        "attempted": 72,
+        "blocked_scope": 0,
+        "pending_blocked": [],
+        "graded": 0,
+        "ungraded": 71,
+        "question_ids": [
+          "Q013",
+          "Q014",
+          "Q015",
+          "Q016",
+          "Q017",
+          "Q018",
+          "Q019",
+          "Q020",
+          "Q021",
+          "Q022",
+          "Q023",
+          "Q024",
+          "Q025",
+          "Q026",
+          "Q027",
+          "Q028",
+          "Q029",
+          "Q030",
+          "Q031",
+          "Q032",
+          "Q033",
+          "Q034",
+          "Q035",
+          "Q036"
+        ],
+        "answer_coverage": {
+          "value": 0.2676056338028169,
+          "numerator": 19,
+          "denominator": 71
+        },
+        "scheduled_answer_coverage": {
+          "value": 0.2638888888888889,
+          "numerator": 19,
+          "denominator": 72
+        },
+        "completed_jobs": [
+          {
+            "question_id": "Q013",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q013",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q013",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q014",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q014",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q014",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q015",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q015",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q015",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q016",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q016",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q016",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q017",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q017",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q017",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q018",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q018",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q018",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q019",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q019",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q019",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q020",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q020",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q020",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q021",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q021",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q021",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q022",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q022",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q022",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q023",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q023",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q023",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q024",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q024",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q024",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q025",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q025",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q025",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q026",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q026",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q027",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q027",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q027",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q028",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q028",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q028",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q029",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q029",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q029",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q030",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q030",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q030",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q031",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q031",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q031",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q032",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q032",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q032",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q033",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q033",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q033",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q034",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q034",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q034",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q035",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q035",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q035",
+            "system": "rag_only"
+          },
+          {
+            "question_id": "Q036",
+            "system": "baseline"
+          },
+          {
+            "question_id": "Q036",
+            "system": "ignis"
+          },
+          {
+            "question_id": "Q036",
+            "system": "rag_only"
+          }
+        ],
+        "failed_jobs": [
+          {
+            "question_id": "Q026",
+            "system": "ignis"
+          }
+        ],
+        "pending_jobs": []
+      }
+    },
+    "by_system_split": {
+      "baseline": {
+        "dev": {
+          "scheduled": 12,
+          "completed": 12,
+          "failed": 0,
+          "pending": 0,
+          "attempted": 12,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 12,
+          "question_ids": [
+            "Q001",
+            "Q002",
+            "Q003",
+            "Q004",
+            "Q005",
+            "Q006",
+            "Q007",
+            "Q008",
+            "Q009",
+            "Q010",
+            "Q011",
+            "Q012"
+          ],
+          "answer_coverage": {
+            "value": 0.16666666666666666,
+            "numerator": 2,
+            "denominator": 12
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.16666666666666666,
+            "numerator": 2,
+            "denominator": 12
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q001",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q002",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q003",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q004",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q005",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q006",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q007",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q008",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q009",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q010",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q011",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q012",
+              "system": "baseline"
+            }
+          ],
+          "failed_jobs": [],
+          "pending_jobs": []
+        },
+        "test": {
+          "scheduled": 24,
+          "completed": 24,
+          "failed": 0,
+          "pending": 0,
+          "attempted": 24,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 24,
+          "question_ids": [
+            "Q013",
+            "Q014",
+            "Q015",
+            "Q016",
+            "Q017",
+            "Q018",
+            "Q019",
+            "Q020",
+            "Q021",
+            "Q022",
+            "Q023",
+            "Q024",
+            "Q025",
+            "Q026",
+            "Q027",
+            "Q028",
+            "Q029",
+            "Q030",
+            "Q031",
+            "Q032",
+            "Q033",
+            "Q034",
+            "Q035",
+            "Q036"
+          ],
+          "answer_coverage": {
+            "value": 0.08333333333333333,
+            "numerator": 2,
+            "denominator": 24
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.08333333333333333,
+            "numerator": 2,
+            "denominator": 24
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q013",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q014",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q015",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q016",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q017",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q018",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q019",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q020",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q021",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q022",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q023",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q024",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q025",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q026",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q027",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q028",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q029",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q030",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q031",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q032",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q033",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q034",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q035",
+              "system": "baseline"
+            },
+            {
+              "question_id": "Q036",
+              "system": "baseline"
+            }
+          ],
+          "failed_jobs": [],
+          "pending_jobs": []
+        }
+      },
+      "ignis": {
+        "dev": {
+          "scheduled": 12,
+          "completed": 11,
+          "failed": 1,
+          "pending": 0,
+          "attempted": 12,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 11,
+          "question_ids": [
+            "Q001",
+            "Q002",
+            "Q003",
+            "Q004",
+            "Q005",
+            "Q006",
+            "Q007",
+            "Q008",
+            "Q009",
+            "Q010",
+            "Q011",
+            "Q012"
+          ],
+          "answer_coverage": {
+            "value": 0.45454545454545453,
+            "numerator": 5,
+            "denominator": 11
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.4166666666666667,
+            "numerator": 5,
+            "denominator": 12
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q002",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q003",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q004",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q005",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q006",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q007",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q008",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q009",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q010",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q011",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q012",
+              "system": "ignis"
+            }
+          ],
+          "failed_jobs": [
+            {
+              "question_id": "Q001",
+              "system": "ignis"
+            }
+          ],
+          "pending_jobs": []
+        },
+        "test": {
+          "scheduled": 24,
+          "completed": 23,
+          "failed": 1,
+          "pending": 0,
+          "attempted": 24,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 23,
+          "question_ids": [
+            "Q013",
+            "Q014",
+            "Q015",
+            "Q016",
+            "Q017",
+            "Q018",
+            "Q019",
+            "Q020",
+            "Q021",
+            "Q022",
+            "Q023",
+            "Q024",
+            "Q025",
+            "Q026",
+            "Q027",
+            "Q028",
+            "Q029",
+            "Q030",
+            "Q031",
+            "Q032",
+            "Q033",
+            "Q034",
+            "Q035",
+            "Q036"
+          ],
+          "answer_coverage": {
+            "value": 0.30434782608695654,
+            "numerator": 7,
+            "denominator": 23
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.2916666666666667,
+            "numerator": 7,
+            "denominator": 24
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q013",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q014",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q015",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q016",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q017",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q018",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q019",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q020",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q021",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q022",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q023",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q024",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q025",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q027",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q028",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q029",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q030",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q031",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q032",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q033",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q034",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q035",
+              "system": "ignis"
+            },
+            {
+              "question_id": "Q036",
+              "system": "ignis"
+            }
+          ],
+          "failed_jobs": [
+            {
+              "question_id": "Q026",
+              "system": "ignis"
+            }
+          ],
+          "pending_jobs": []
+        }
+      },
+      "rag_only": {
+        "dev": {
+          "scheduled": 12,
+          "completed": 12,
+          "failed": 0,
+          "pending": 0,
+          "attempted": 12,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 12,
+          "question_ids": [
+            "Q001",
+            "Q002",
+            "Q003",
+            "Q004",
+            "Q005",
+            "Q006",
+            "Q007",
+            "Q008",
+            "Q009",
+            "Q010",
+            "Q011",
+            "Q012"
+          ],
+          "answer_coverage": {
+            "value": 0.6666666666666666,
+            "numerator": 8,
+            "denominator": 12
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.6666666666666666,
+            "numerator": 8,
+            "denominator": 12
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q001",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q002",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q003",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q004",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q005",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q006",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q007",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q008",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q009",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q010",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q011",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q012",
+              "system": "rag_only"
+            }
+          ],
+          "failed_jobs": [],
+          "pending_jobs": []
+        },
+        "test": {
+          "scheduled": 24,
+          "completed": 24,
+          "failed": 0,
+          "pending": 0,
+          "attempted": 24,
+          "blocked_scope": 0,
+          "pending_blocked": [],
+          "graded": 0,
+          "ungraded": 24,
+          "question_ids": [
+            "Q013",
+            "Q014",
+            "Q015",
+            "Q016",
+            "Q017",
+            "Q018",
+            "Q019",
+            "Q020",
+            "Q021",
+            "Q022",
+            "Q023",
+            "Q024",
+            "Q025",
+            "Q026",
+            "Q027",
+            "Q028",
+            "Q029",
+            "Q030",
+            "Q031",
+            "Q032",
+            "Q033",
+            "Q034",
+            "Q035",
+            "Q036"
+          ],
+          "answer_coverage": {
+            "value": 0.4166666666666667,
+            "numerator": 10,
+            "denominator": 24
+          },
+          "scheduled_answer_coverage": {
+            "value": 0.4166666666666667,
+            "numerator": 10,
+            "denominator": 24
+          },
+          "completed_jobs": [
+            {
+              "question_id": "Q013",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q014",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q015",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q016",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q017",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q018",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q019",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q020",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q021",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q022",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q023",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q024",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q025",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q026",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q027",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q028",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q029",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q030",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q031",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q032",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q033",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q034",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q035",
+              "system": "rag_only"
+            },
+            {
+              "question_id": "Q036",
+              "system": "rag_only"
+            }
+          ],
+          "failed_jobs": [],
+          "pending_jobs": []
+        }
+      }
+    }
+  },
+  "quality": {
+    "schema_version": "1.0",
+    "evaluation_kind": "independent_annotation_scoring",
+    "is_scientific_validation": false,
+    "systems": {
+      "baseline": {
+        "predictions": 36,
+        "graded_questions": 0,
+        "ungraded_questions": 36,
+        "graded_zero_claim_questions": 0,
+        "claim_support": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "citation_precision": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "cited_claims"
+        },
+        "citation_coverage": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "unsafe_extrapolation": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "abstention_accuracy": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "questions_with_abstention_grade"
+        },
+        "answer_coverage": {
+          "value": 0.1111111111111111,
+          "numerator": 4,
+          "denominator": 36,
+          "unit": "predictions"
+        },
+        "mean_latency_ms": 0.6805555555555556,
+        "latency_observations": 36
+      },
+      "ignis": {
+        "predictions": 34,
+        "graded_questions": 0,
+        "ungraded_questions": 34,
+        "graded_zero_claim_questions": 0,
+        "claim_support": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "citation_precision": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "cited_claims"
+        },
+        "citation_coverage": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "unsafe_extrapolation": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "abstention_accuracy": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "questions_with_abstention_grade"
+        },
+        "answer_coverage": {
+          "value": 0.35294117647058826,
+          "numerator": 12,
+          "denominator": 34,
+          "unit": "predictions"
+        },
+        "mean_latency_ms": 13225.608529411766,
+        "latency_observations": 34
+      },
+      "rag_only": {
+        "predictions": 36,
+        "graded_questions": 0,
+        "ungraded_questions": 36,
+        "graded_zero_claim_questions": 0,
+        "claim_support": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "citation_precision": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "cited_claims"
+        },
+        "citation_coverage": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "unsafe_extrapolation": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "claims"
+        },
+        "abstention_accuracy": {
+          "value": null,
+          "numerator": 0,
+          "denominator": 0,
+          "unit": "questions_with_abstention_grade"
+        },
+        "answer_coverage": {
+          "value": 0.5,
+          "numerator": 18,
+          "denominator": 36,
+          "unit": "predictions"
+        },
+        "mean_latency_ms": 1.2522222222222221,
+        "latency_observations": 36
+      }
+    },
+    "paired": {
+      "baseline__ignis": {
+        "question_ids": [],
+        "paired_questions": 0,
+        "systems": {
+          "baseline": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          },
+          "ignis": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          }
+        },
+        "delta_right_minus_left": {
+          "claim_support": null,
+          "citation_precision": null,
+          "unsafe_extrapolation": null,
+          "abstention_accuracy": null,
+          "answer_coverage": null
+        }
+      },
+      "baseline__rag_only": {
+        "question_ids": [],
+        "paired_questions": 0,
+        "systems": {
+          "baseline": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          },
+          "rag_only": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          }
+        },
+        "delta_right_minus_left": {
+          "claim_support": null,
+          "citation_precision": null,
+          "unsafe_extrapolation": null,
+          "abstention_accuracy": null,
+          "answer_coverage": null
+        }
+      },
+      "ignis__rag_only": {
+        "question_ids": [],
+        "paired_questions": 0,
+        "systems": {
+          "ignis": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          },
+          "rag_only": {
+            "predictions": 0,
+            "graded_questions": 0,
+            "ungraded_questions": 0,
+            "graded_zero_claim_questions": 0,
+            "claim_support": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "citation_precision": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "cited_claims"
+            },
+            "citation_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "unsafe_extrapolation": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "claims"
+            },
+            "abstention_accuracy": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "questions_with_abstention_grade"
+            },
+            "answer_coverage": {
+              "value": null,
+              "numerator": 0,
+              "denominator": 0,
+              "unit": "predictions"
+            },
+            "mean_latency_ms": null,
+            "latency_observations": 0
+          }
+        },
+        "delta_right_minus_left": {
+          "claim_support": null,
+          "citation_precision": null,
+          "unsafe_extrapolation": null,
+          "abstention_accuracy": null,
+          "answer_coverage": null
+        }
+      }
+    },
+    "limitations": [
+      "Labels are supplied, not independently verified by this evaluator.",
+      "Citation precision is per cited claim, not per citation.",
+      "Paired deltas pool claims; report counts and inspect question-level failures.",
+      "No significance or safety certification follows from these scores."
+    ]
+  },
+  "quality_by_split": {
+    "dev": {
+      "schema_version": "1.0",
+      "evaluation_kind": "independent_annotation_scoring",
+      "is_scientific_validation": false,
+      "systems": {
+        "baseline": {
+          "predictions": 12,
+          "graded_questions": 0,
+          "ungraded_questions": 12,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.16666666666666666,
+            "numerator": 2,
+            "denominator": 12,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 0.7641666666666667,
+          "latency_observations": 12
+        },
+        "ignis": {
+          "predictions": 11,
+          "graded_questions": 0,
+          "ungraded_questions": 11,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.45454545454545453,
+            "numerator": 5,
+            "denominator": 11,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 11071.285454545454,
+          "latency_observations": 11
+        },
+        "rag_only": {
+          "predictions": 12,
+          "graded_questions": 0,
+          "ungraded_questions": 12,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.6666666666666666,
+            "numerator": 8,
+            "denominator": 12,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 0.9983333333333334,
+          "latency_observations": 12
+        }
+      },
+      "paired": {
+        "baseline__ignis": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "baseline": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "ignis": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        },
+        "baseline__rag_only": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "baseline": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "rag_only": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        },
+        "ignis__rag_only": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "ignis": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "rag_only": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        }
+      },
+      "limitations": [
+        "Labels are supplied, not independently verified by this evaluator.",
+        "Citation precision is per cited claim, not per citation.",
+        "Paired deltas pool claims; report counts and inspect question-level failures.",
+        "No significance or safety certification follows from these scores."
+      ]
+    },
+    "test": {
+      "schema_version": "1.0",
+      "evaluation_kind": "independent_annotation_scoring",
+      "is_scientific_validation": false,
+      "systems": {
+        "baseline": {
+          "predictions": 24,
+          "graded_questions": 0,
+          "ungraded_questions": 24,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.08333333333333333,
+            "numerator": 2,
+            "denominator": 24,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 0.63875,
+          "latency_observations": 24
+        },
+        "ignis": {
+          "predictions": 23,
+          "graded_questions": 0,
+          "ungraded_questions": 23,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.30434782608695654,
+            "numerator": 7,
+            "denominator": 23,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 14255.936956521738,
+          "latency_observations": 23
+        },
+        "rag_only": {
+          "predictions": 24,
+          "graded_questions": 0,
+          "ungraded_questions": 24,
+          "graded_zero_claim_questions": 0,
+          "claim_support": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "citation_precision": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "cited_claims"
+          },
+          "citation_coverage": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "unsafe_extrapolation": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "claims"
+          },
+          "abstention_accuracy": {
+            "value": null,
+            "numerator": 0,
+            "denominator": 0,
+            "unit": "questions_with_abstention_grade"
+          },
+          "answer_coverage": {
+            "value": 0.4166666666666667,
+            "numerator": 10,
+            "denominator": 24,
+            "unit": "predictions"
+          },
+          "mean_latency_ms": 1.3791666666666667,
+          "latency_observations": 24
+        }
+      },
+      "paired": {
+        "baseline__ignis": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "baseline": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "ignis": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        },
+        "baseline__rag_only": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "baseline": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "rag_only": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        },
+        "ignis__rag_only": {
+          "question_ids": [],
+          "paired_questions": 0,
+          "systems": {
+            "ignis": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            },
+            "rag_only": {
+              "predictions": 0,
+              "graded_questions": 0,
+              "ungraded_questions": 0,
+              "graded_zero_claim_questions": 0,
+              "claim_support": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "citation_precision": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "cited_claims"
+              },
+              "citation_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "unsafe_extrapolation": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "claims"
+              },
+              "abstention_accuracy": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "questions_with_abstention_grade"
+              },
+              "answer_coverage": {
+                "value": null,
+                "numerator": 0,
+                "denominator": 0,
+                "unit": "predictions"
+              },
+              "mean_latency_ms": null,
+              "latency_observations": 0
+            }
+          },
+          "delta_right_minus_left": {
+            "claim_support": null,
+            "citation_precision": null,
+            "unsafe_extrapolation": null,
+            "abstention_accuracy": null,
+            "answer_coverage": null
+          }
+        }
+      },
+      "limitations": [
+        "Labels are supplied, not independently verified by this evaluator.",
+        "Citation precision is per cited claim, not per citation.",
+        "Paired deltas pool claims; report counts and inspect question-level failures.",
+        "No significance or safety certification follows from these scores."
+      ]
+    }
+  },
+  "excluded_execution_failures": [
+    {
+      "question_id": "Q001",
+      "system": "ignis",
+      "error": "A model call did not complete: http_error"
+    },
+    {
+      "question_id": "Q026",
+      "system": "ignis",
+      "error": "A model call did not complete: rate_limited"
+    }
+  ],
+  "excluded_failure_annotations": 0,
+  "performance": {
+    "overall": {
+      "predictions_observed": 108,
+      "mean_latency_ms": 4626.5675,
+      "latency_observations": 108,
+      "cache_hit_calls": 73,
+      "model_calls_observed": 131,
+      "cache_status_known_calls": 131,
+      "cache_status_unknown_calls": 0,
+      "cache_status_unknown_predictions": 0,
+      "latency_policy": "Observed wall time includes failed attempts and cache hits; cache can confound comparisons.",
+      "input_tokens": {
+        "total": null,
+        "known_subtotal": 4578,
+        "observations": 79,
+        "unknown_predictions": 29
+      },
+      "output_tokens": {
+        "total": null,
+        "known_subtotal": 1788,
+        "observations": 79,
+        "unknown_predictions": 29
+      },
+      "cost_usd": {
+        "total": null,
+        "known_subtotal": null,
+        "observations": 0,
+        "unknown_predictions": 108
+      }
+    },
+    "by_system": {
+      "baseline": {
+        "predictions_observed": 36,
+        "mean_latency_ms": 0.6805555555555556,
+        "latency_observations": 36,
+        "cache_hit_calls": 36,
+        "model_calls_observed": 36,
+        "cache_status_known_calls": 36,
+        "cache_status_unknown_calls": 0,
+        "cache_status_unknown_predictions": 0,
+        "latency_policy": "Observed wall time includes failed attempts and cache hits; cache can confound comparisons.",
+        "input_tokens": {
+          "total": 0,
+          "known_subtotal": 0,
+          "observations": 36,
+          "unknown_predictions": 0
+        },
+        "output_tokens": {
+          "total": 0,
+          "known_subtotal": 0,
+          "observations": 36,
+          "unknown_predictions": 0
+        },
+        "cost_usd": {
+          "total": null,
+          "known_subtotal": null,
+          "observations": 0,
+          "unknown_predictions": 36
+        }
+      },
+      "ignis": {
+        "predictions_observed": 36,
+        "mean_latency_ms": 13877.769722222223,
+        "latency_observations": 36,
+        "cache_hit_calls": 1,
+        "model_calls_observed": 59,
+        "cache_status_known_calls": 59,
+        "cache_status_unknown_calls": 0,
+        "cache_status_unknown_predictions": 0,
+        "latency_policy": "Observed wall time includes failed attempts and cache hits; cache can confound comparisons.",
+        "input_tokens": {
+          "total": null,
+          "known_subtotal": 4578,
+          "observations": 7,
+          "unknown_predictions": 29
+        },
+        "output_tokens": {
+          "total": null,
+          "known_subtotal": 1788,
+          "observations": 7,
+          "unknown_predictions": 29
+        },
+        "cost_usd": {
+          "total": null,
+          "known_subtotal": null,
+          "observations": 0,
+          "unknown_predictions": 36
+        }
+      },
+      "rag_only": {
+        "predictions_observed": 36,
+        "mean_latency_ms": 1.2522222222222221,
+        "latency_observations": 36,
+        "cache_hit_calls": 36,
+        "model_calls_observed": 36,
+        "cache_status_known_calls": 36,
+        "cache_status_unknown_calls": 0,
+        "cache_status_unknown_predictions": 0,
+        "latency_policy": "Observed wall time includes failed attempts and cache hits; cache can confound comparisons.",
+        "input_tokens": {
+          "total": 0,
+          "known_subtotal": 0,
+          "observations": 36,
+          "unknown_predictions": 0
+        },
+        "output_tokens": {
+          "total": 0,
+          "known_subtotal": 0,
+          "observations": 36,
+          "unknown_predictions": 0
+        },
+        "cost_usd": {
+          "total": null,
+          "known_subtotal": null,
+          "observations": 0,
+          "unknown_predictions": 36
+        }
+      }
+    }
+  },
+  "coverage_policy": {
+    "answer_coverage": "Non-abstaining completed answers / completed successful predictions; failures excluded.",
+    "scheduled_answer_coverage": "Non-abstaining completed answers / all scheduled jobs; failed and pending jobs remain in denominator.",
+    "completed": "Successful executions, including evidence abstentions; does not imply scientific correctness."
+  },
+  "limitations": [
+    "Quality uses only supplied independent annotations, whose independence is not verified here.",
+    "Critic verdicts and AI draft expected answers never become grading labels.",
+    "Quality is null without eligible grades; failed executions are excluded from quality and shown separately.",
+    "Overall quality pools splits; consult quality_by_split before interpreting development or test results.",
+    "Latency includes cache effects; unknown usage and cost are null, not zero.",
+    "IGNIS shared-draft ablation measurements cover the incremental critic; add the referenced RAG job for whole-workflow compute.",
+    "No model winner, statistical significance, or safety certification is asserted."
+  ],
+  "benchmark_run_id": "3c3cc0f1e4b949a8a33296e94417f13c"
+}

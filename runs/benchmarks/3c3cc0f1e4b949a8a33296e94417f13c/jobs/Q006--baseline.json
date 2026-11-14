@@ -1,0 +1,154 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q006",
+  "system": "baseline",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://science.nasa.gov/biological-physical/investigations/rtdfs/ | science objectives",
+  "run": {
+    "run_id": "b1083992efb44026b0a6424141eaaec8",
+    "created_at": "2026-11-06T19:27:33.633999+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://science.nasa.gov/biological-physical/investigations/rtdfs/ | science objectives",
+    "evidence_selection": {
+      "mode": "baseline_none",
+      "lexical_hit_count": 0,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "insufficient_evidence",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "Baseline uses the model without retrieved documents."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "1 claims drafted. The provided evidence is empty, and the question asks for a specific numerical thickness for solid fuels based on the RTDFS overview. Without the actual text from the source, it is impossible to determine the specific numerical value for critical thickness."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "insufficient evidence"
+      }
+    ],
+    "corpus_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "The RTDFS overview mentions critical thickness. What numerical thickness should I use for any solid fuel?",
+    "system": "baseline",
+    "mode": "model",
+    "answer": "The provided evidence is empty, and the question asks for a specific numerical thickness for solid fuels based on the RTDFS overview. Without the actual text from the source, it is impossible to determine the specific numerical value for critical thickness.",
+    "abstained": true,
+    "claims": [],
+    "draft_checks": [
+      {
+        "citations": [],
+        "claim_type": "source_description",
+        "limitations": "No specific numerical thickness is provided in the evidence.",
+        "text": "The RTDFS (Rover Thermal Desorption and Filtration System) investigation focuses on the thermal desorption and filtration of volatile organic compounds from solid samples, but the provided evidence does not specify a numerical critical thickness for solid fuels.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": true,
+      "claims": [
+        {
+          "citations": [],
+          "claim_type": "source_description",
+          "limitations": "No specific numerical thickness is provided in the evidence.",
+          "text": "The RTDFS (Rover Thermal Desorption and Filtration System) investigation focuses on the thermal desorption and filtration of volatile organic compounds from solid samples, but the provided evidence does not specify a numerical critical thickness for solid fuels."
+        }
+      ],
+      "reason": "The provided evidence is empty, and the question asks for a specific numerical thickness for solid fuels based on the RTDFS overview. Without the actual text from the source, it is impossible to determine the specific numerical value for critical thickness."
+    },
+    "evidence": [],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 0.49,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "059d35591f75338162c0a797f55d513583d37aca4fa4f5be264c0f4c487fd756",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "0cdf2fb59ff3f9f16fb871750300453b90d9a764c03ba8253e11ea49fc2d735d",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 382,
+          "completion_tokens": 171,
+          "total_tokens": 553
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The provided evidence is empty, and the question asks for a specific numerical thickness for solid fuels based on the RTDFS overview. Without the actual text from the source, it is impossible to determine the specific numerical value for critical thickness.",
+    "abstained": true,
+    "claims": [],
+    "latency_ms": 0.49,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "059d35591f75338162c0a797f55d513583d37aca4fa4f5be264c0f4c487fd756",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "0cdf2fb59ff3f9f16fb871750300453b90d9a764c03ba8253e11ea49fc2d735d",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 382,
+          "completion_tokens": 171,
+          "total_tokens": 553
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q006",
+    "system": "baseline",
+    "split": "dev",
+    "run_id": "b1083992efb44026b0a6424141eaaec8",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": true,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "5088b75d051313c879e62250c3ab85f55e8b9a06281f140ad5069bf2cbd9363a"
+}

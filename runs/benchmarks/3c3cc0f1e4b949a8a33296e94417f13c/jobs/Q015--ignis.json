@@ -1,0 +1,746 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q015",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+  "run": {
+    "run_id": "e4cf4a12d5954c56a51daed8cdb8f976",
+    "created_at": "2026-11-06T19:30:17.588123+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://ntrs.nasa.gov/citations/20160000593 | abstract",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "model_checked_summary",
+    "provisional": true,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "3 claims drafted. The provided abstract explicitly lists the geometries (flat samples, slabs, spheres, cylinders) and notes that fuel thickness was a variable examined. It also describes the mounting apparatus (wind tunnel). These are the geometry-related details available in the source."
+      },
+      {
+        "label": "Check claims",
+        "detail": "2 claims included; 1 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "model checked summary"
+      }
+    ],
+    "corpus_fingerprint": "b45677b52164dd03a98b2fd2045b525ae6d664005e39797ee5a7f8cf5b7b6ef9",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "What geometry-related evidence must be preserved when describing the BASS-II test samples?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries.\n\nThe experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence explicitly lists the specific test geometries used in the BASS-II experiment, matching the claim's description of thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+          "uncertainty": "The evidence confirms the geometries used in the tests but does not specify if these were the only geometries used in the entire BASS-II campaign, though the abstract implies these were the primary test configurations.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract lists the specific geometries used but does not provide detailed dimensions or material specifications for each geometry."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence confirms that the experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction, although it also lists other variables such as air flow speed, fuel preheating, and oxygen concentration.",
+          "uncertainty": "The claim is a subset of the full scope described in the evidence; it does not claim that fuel thickness was the only variable examined, so the omission of other variables does not make the claim false.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract confirms fuel thickness was a variable but does not specify the range of thicknesses tested for each geometry."
+      }
+    ],
+    "draft_checks": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence explicitly lists the specific test geometries used in the BASS-II experiment, matching the claim's description of thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+          "uncertainty": "The evidence confirms the geometries used in the tests but does not specify if these were the only geometries used in the entire BASS-II campaign, though the abstract implies these were the primary test configurations.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract lists the specific geometries used but does not provide detailed dimensions or material specifications for each geometry."
+      },
+      {
+        "evidence_status": "partial",
+        "next_evidence": [
+          "Check the original numeric values, units and their assignment to materials or test conditions."
+        ],
+        "text": "The test samples were mounted inside a small wind tunnel capable of imposing air flow speeds up to 53 cm/s.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms.",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [
+          "numeric_literal_not_cited"
+        ],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms.",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence directly states that samples were mounted in a small wind tunnel capable of imposing air flow speeds up to 53 cms, which aligns with the claim's specification of 53 cm/s.",
+          "uncertainty": "The evidence uses the unit 'cms' which is interpreted as cm/s; there is no ambiguity in the numerical value or the capability described.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms.",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "This describes the experimental apparatus and maximum flow capability, not the specific flow speeds used for every individual sample geometry."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence confirms that the experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction, although it also lists other variables such as air flow speed, fuel preheating, and oxygen concentration.",
+          "uncertainty": "The claim is a subset of the full scope described in the evidence; it does not claim that fuel thickness was the only variable examined, so the omission of other variables does not make the claim false.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract confirms fuel thickness was a variable but does not specify the range of thicknesses tested for each geometry."
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The abstract lists the specific geometries used but does not provide detailed dimensions or material specifications for each geometry.",
+          "text": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms.",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "This describes the experimental apparatus and maximum flow capability, not the specific flow speeds used for every individual sample geometry.",
+          "text": "The test samples were mounted inside a small wind tunnel capable of imposing air flow speeds up to 53 cm/s."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The abstract confirms fuel thickness was a variable but does not specify the range of thicknesses tested for each geometry.",
+          "text": "The experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction."
+        }
+      ],
+      "reason": "The provided abstract explicitly lists the geometries (flat samples, slabs, spheres, cylinders) and notes that fuel thickness was a variable examined. It also describes the mounting apparatus (wind tunnel). These are the geometry-related details available in the source."
+    },
+    "evidence": [
+      {
+        "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+        "source_id": "ntrs-20160000593",
+        "title": "Combustion of Solids in Microgravity: Results from the BASS-II Experiment",
+        "url": "https://ntrs.nasa.gov/citations/20160000593",
+        "metadata_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+        "document_url": null,
+        "locator": "NTRS metadata abstract",
+        "text": "The Burning and Suppression of Solids-II (BASS-II) experiment was performed on the International Space Station. Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders. The samples were mounted inside a small wind tunnel which could impose air flow speeds up to 53 cms. The wind tunnel was installed in the Microgravity Science Glovebox which supplied power, imaging, and a level of containment. The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined in both the opposed and concurrent flow configuration. The flames are quite sensitive to air flow speed in the range 0 to 5 cms. They can be sustained at very low flow speeds of less than 1 cms, when they become dim blue and stable. In this state they are not particularly dangerous from a fire safety perspective, but they can flare up quickly with a sudden increase in air flow speed. Including earlier BASS-I results, well over one hundred tests have been conducted of the various samples in the different geometries, flow speeds, and oxygen concentrations. There are several important implications related to fundamental combustion research as well as spacecraft fire safety. This work was supported by the NASA Space Life and Physical Sciences Research and Applications Division (SLPSRA).",
+        "sha256": "74ebfe36d160f25f9b49c75e3299ed80eb2f51e5e6c2c7db078bc4e35b97f956",
+        "source_sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+        "source_kind": "presentation_abstract",
+        "experiment": "BASS-II",
+        "evidence_tier": 2,
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "permission_status": "allowed",
+        "status": "active",
+        "source_inventory_status": "active",
+        "provenance": {
+          "url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "final_url": "https://ntrs.nasa.gov/api/citations/20160000593",
+          "retrieved_at": "2026-10-31T13:44:43.801326+00:00",
+          "sha256": "34fd4b3d8300e43248c16a1ec2010a6befb8ed494e669c781702780dc5ac1480",
+          "bytes": 6114,
+          "content_type": "application/json; charset=utf-8"
+        },
+        "scope": "abstract_only",
+        "notice": "Metadata abstract only; no full report or scientific validation is implied.",
+        "score": 1.713447,
+        "ranking": {
+          "lexical_score": 1.713447,
+          "matched_terms": [
+            "bass",
+            "ii",
+            "related",
+            "samples"
+          ],
+          "evidence_tier": 2,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.4,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "bass",
+            "ii",
+            "related",
+            "samples"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 16892.27,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 750,
+        "rate_limits": {
+          "remaining_requests": 934,
+          "reset_requests_s": 5702.4,
+          "remaining_tokens": 6229,
+          "reset_tokens_s": 38.88
+        },
+        "http_status": 429,
+        "retry_after_s": 11.0,
+        "retry_delay_s": 11.084905258543056,
+        "retry_scheduled": true,
+        "latency_ms": 1203
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 11094,
+        "rate_limits": {
+          "remaining_requests": 934,
+          "reset_requests_s": 5702.4,
+          "remaining_tokens": 7544,
+          "reset_tokens_s": 27.36
+        },
+        "http_status": 429,
+        "retry_after_s": 2.0,
+        "retry_delay_s": 2.1847214833476287,
+        "retry_scheduled": true,
+        "latency_ms": 11500
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 875,
+          "completion_tokens": 607,
+          "total_tokens": 1482
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 2188,
+        "rate_limits": {
+          "remaining_requests": 933,
+          "reset_requests_s": 5788.8,
+          "remaining_tokens": 6137,
+          "reset_tokens_s": 59.28
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "3886eeacdc8acc6f9323e3eeacd3e0cae9a8100c578ec27aea10321f51ffedf7",
+        "cache_write": "written",
+        "latency_ms": 4188
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries.\n\nThe experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The BASS-II experiment utilized thin and thick flat samples, acrylic slabs, spheres, and cylinders as test geometries.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence explicitly lists the specific test geometries used in the BASS-II experiment, matching the claim's description of thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+          "uncertainty": "The evidence confirms the geometries used in the tests but does not specify if these were the only geometries used in the entire BASS-II campaign, though the abstract implies these were the primary test configurations.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "Microgravity combustion tests burned thin and thick flat samples, acrylic slabs, spheres, and cylinders.",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract lists the specific geometries used but does not provide detailed dimensions or material specifications for each geometry."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "The experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction.",
+        "citations": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "source_id": "ntrs-20160000593",
+            "valid": true,
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+              "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+              "relation": "supports",
+              "source_id": "ntrs-20160000593"
+            }
+          ],
+          "reason": "The evidence confirms that the experiment examined the effects of fuel thickness on flame appearance, growth, spread rate, and extinction, although it also lists other variables such as air flow speed, fuel preheating, and oxygen concentration.",
+          "uncertainty": "The claim is a subset of the full scope described in the evidence; it does not claim that fuel thickness was the only variable examined, so the omission of other variables does not make the claim false.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "ntrs-20160000593-abstract-74ebfe36d160f25f",
+            "quote": "The effects of air flow speed, fuel thickness, fuel preheating, and oxygen concentration on flame appearance, growth, spread rate, and extinction were examined",
+            "relation": "supports",
+            "source_id": "ntrs-20160000593",
+            "url": "https://ntrs.nasa.gov/citations/20160000593",
+            "locator": "NTRS metadata abstract",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The abstract confirms fuel thickness was a variable but does not specify the range of thicknesses tested for each geometry."
+      }
+    ],
+    "latency_ms": 16892.27,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 750,
+        "rate_limits": {
+          "remaining_requests": 934,
+          "reset_requests_s": 5702.4,
+          "remaining_tokens": 6229,
+          "reset_tokens_s": 38.88
+        },
+        "http_status": 429,
+        "retry_after_s": 11.0,
+        "retry_delay_s": 11.084905258543056,
+        "retry_scheduled": true,
+        "latency_ms": 1203
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 11094,
+        "rate_limits": {
+          "remaining_requests": 934,
+          "reset_requests_s": 5702.4,
+          "remaining_tokens": 7544,
+          "reset_tokens_s": 27.36
+        },
+        "http_status": 429,
+        "retry_after_s": 2.0,
+        "retry_delay_s": 2.1847214833476287,
+        "retry_scheduled": true,
+        "latency_ms": 11500
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "f7cefaee7a43a17cea3278b5722fb7c78f1c01e4afe928f206fcc6c6cc303e35",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "7fa4ea52d49b747a625974b3dc842f0308e4927b659e933358a348d10f932025",
+        "attempt": 3,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 875,
+          "completion_tokens": 607,
+          "total_tokens": 1482
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 2188,
+        "rate_limits": {
+          "remaining_requests": 933,
+          "reset_requests_s": 5788.8,
+          "remaining_tokens": 6137,
+          "reset_tokens_s": 59.28
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "3886eeacdc8acc6f9323e3eeacd3e0cae9a8100c578ec27aea10321f51ffedf7",
+        "cache_write": "written",
+        "latency_ms": 4188
+      }
+    ],
+    "question_id": "Q015",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "e4cf4a12d5954c56a51daed8cdb8f976",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "shared_draft_from_run_id": "4b77c43313a346fc9ecced7e14f3cdd4",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "4b77c43313a346fc9ecced7e14f3cdd4",
+  "record_sha256": "03372f126bb382adf501406625eaeb3204471da9c6deb1f8d68e493f9b0298b0"
+}

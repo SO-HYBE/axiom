@@ -1,0 +1,1045 @@
+{
+  "schema_version": "axiom-extraction-validation-v1",
+  "generated_at": "2026-11-13T20:27:26.806946+00:00",
+  "commit": "910a6a4cd8f5b1f3f3ec3fea7e6982fd105387f0",
+  "dataset": {
+    "sampled_chunks": 33,
+    "labeled_chunks": 28,
+    "labels": 57,
+    "sources": 11,
+    "experiments": [
+      "BASS-II",
+      "BASS-II / ground comparison",
+      "BASS/BASS-II",
+      "FLEX",
+      "SAFFIRE",
+      "SAFFIRE-V"
+    ]
+  },
+  "tolerances": {
+    "oxygen_percent": 0.05,
+    "pressure_kpa": 0.5,
+    "flow_cm_s": 0.05,
+    "temperature_k": 0.2
+  },
+  "provenance": {
+    "labels": "agent-drafted with human-reviewed decisions applied from a separate immutable review log",
+    "review_status": "partially_human_reviewed",
+    "reviewer": "project owner",
+    "reviewed_label_count": 18,
+    "review_decisions_path": "runs\\axiom\\extraction_validation\\review_decisions.jsonl",
+    "method": "Every label was written from the passage text of a sample selected by unit tokens only; the extractor's conditions were not read while drafting."
+  },
+  "overall": {
+    "labeled_eligible": 40,
+    "predicted_eligible": 33,
+    "true_positives": 28,
+    "false_positives": 5,
+    "false_negatives": 12,
+    "exclusion_violations": 3,
+    "errors": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "precision": 0.8485,
+    "recall": 0.7,
+    "f1": 0.7671,
+    "coverage": 0.7,
+    "numeric_agreement": 1.0,
+    "max_absolute_error": 0.0,
+    "labeled_not_eligible": 17,
+    "field": "all numeric fields"
+  },
+  "per_field": {
+    "oxygen_percent": {
+      "field": "oxygen_percent",
+      "unit": "%",
+      "tolerance": 0.05,
+      "labeled_eligible": 15,
+      "labeled_not_eligible": 3,
+      "predicted_eligible": 10,
+      "true_positives": 9,
+      "false_positives": 1,
+      "false_negatives": 6,
+      "exclusion_violations": 0,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "misses": [
+        {
+          "chunk_id": "ntrs-20130010979-p010-c01-fd0467f8fa",
+          "label": {
+            "label_id": "L05",
+            "chunk_id": "ntrs-20130010979-p010-c01-fd0467f8fa",
+            "source_id": "ntrs-20130010979",
+            "experiment": "FLEX",
+            "locator": "PDF page 10, text part 1",
+            "field": "oxygen_percent",
+            "value": 20.0,
+            "unit": "%",
+            "eligible": true,
+            "reported": "O2 20%",
+            "quote": "Pressure = 1 atm , O2 20% / N2 75% / CO2 5%",
+            "note": "Test FLEX-145 atmosphere. The CO2 percentage is a different species and is not an oxygen label.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+          "label": {
+            "label_id": "L07",
+            "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+            "source_id": "ntrs-20130010979",
+            "experiment": "FLEX",
+            "locator": "PDF page 12, text part 1",
+            "field": "oxygen_percent",
+            "value": 21.0,
+            "unit": "%",
+            "eligible": true,
+            "reported": "O2 21%",
+            "quote": "O2 = 21% w/ Ar ranging from 0% to 79%",
+            "note": "Table of ZGF test points, all rows at 21% oxygen.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+          "label": {
+            "label_id": "L12",
+            "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+            "source_id": "ntrs-20150008961",
+            "experiment": "BASS-II",
+            "locator": "PDF page 5, text part 1",
+            "field": "oxygen_percent",
+            "value": 16.1,
+            "unit": "%",
+            "eligible": true,
+            "reported": "16.1% O2",
+            "quote": "16.1% O 2 and lower",
+            "note": "Stated as the tested low-oxygen level; the tests imposed this atmosphere.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+          "label": {
+            "label_id": "L33",
+            "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+            "source_id": "ntrs-20160012691",
+            "experiment": "BASS-II / ground comparison",
+            "locator": "PDF page 3, text part 1",
+            "field": "oxygen_percent",
+            "value": 18.0,
+            "unit": "%",
+            "eligible": true,
+            "reported": "18% oxygen",
+            "quote": "at 18% oxygen, blowoff limits are found at only three radii",
+            "note": "Tested atmosphere for the blow-off experiments.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+          "label": {
+            "label_id": "L36",
+            "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+            "source_id": "ntrs-20160012691",
+            "experiment": "BASS-II / ground comparison",
+            "locator": "PDF page 5, text part 1",
+            "field": "oxygen_percent",
+            "value": 14.0,
+            "unit": "%",
+            "eligible": true,
+            "reported": "14% oxygen",
+            "quote": "at 14% oxygen and 2 cm/s forced flow",
+            "note": "Tested atmosphere.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20210022617-p004-c01-c1c1ac1638",
+          "label": {
+            "label_id": "L44",
+            "chunk_id": "ntrs-20210022617-p004-c01-c1c1ac1638",
+            "source_id": "ntrs-20210022617",
+            "experiment": "FLEX",
+            "locator": "PDF page 4, text part 1",
+            "field": "oxygen_percent",
+            "value": {
+              "min": 13.0,
+              "max": 30.0
+            },
+            "unit": "%",
+            "eligible": true,
+            "reported": "13% < O2 < 30%",
+            "quote": "13% < O2 < 30%",
+            "note": "Investigated oxygen range, stated as a strict inequality.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        }
+      ],
+      "extra": [
+        {
+          "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+          "record": {
+            "record_id": "meta-e3db65a31f6f",
+            "source_id": "ntrs-20130010979",
+            "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+            "quote": "O2% N2% Ar% Pressure H-7-62 21 29 50 1 atm H-7-63 21 9 70 1 atm H-7-65 21 9 70 1 atm H-7-66 21 29 50 1 atm H-7-67 21 54 25 1 atm H-7-96 21 9 70 1 atm H-8-02 21 0 79 .5 atm H-8-03 21 28 51 .5 atm H-8-04 21 44 35 1 atm H-8-05 21 56 23 1.5 atm H-8-07 21 16 63 1 atm H-8-08 21 79 0 2 atm H-8-09 21 34 45 1 atm H-8-11 21 16 63 1 atm H-8-12 21 54 25 1 atm H-8-13 21 6 73 1 atm O2 = 21% w/ Ar ranging from",
+            "field": "oxygen_percent",
+            "value": {
+              "min": 0.0,
+              "max": 79.0
+            },
+            "unit": "%",
+            "scope": "experiment_range",
+            "evidence_status": "reported",
+            "rule": "oxygen.percent_range",
+            "notes": "Reported as 0% to 79%",
+            "extraction": "deterministic_pattern_v1",
+            "review_status": "machine_extracted_not_human_reviewed",
+            "matching_eligible": true,
+            "locator": "PDF page 12, text part 1"
+          }
+        }
+      ],
+      "precision": 0.9,
+      "recall": 0.6,
+      "f1": 0.72,
+      "coverage": 0.6,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0
+    },
+    "pressure_kpa": {
+      "field": "pressure_kpa",
+      "unit": "kPa",
+      "tolerance": 0.5,
+      "labeled_eligible": 10,
+      "labeled_not_eligible": 1,
+      "predicted_eligible": 8,
+      "true_positives": 8,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "exclusion_violations": 0,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "misses": [
+        {
+          "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+          "label": {
+            "label_id": "L47",
+            "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+            "source_id": "ntrs-20210022617",
+            "experiment": "FLEX",
+            "locator": "PDF page 13, text part 1",
+            "field": "pressure_kpa",
+            "value": 101.325,
+            "unit": "kPa",
+            "eligible": true,
+            "reported": "1 atm",
+            "quote": "Air -1 atm",
+            "note": "Test FLEX-1250 ambient pressure.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+          "label": {
+            "label_id": "L48",
+            "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+            "source_id": "ntrs-20210022617",
+            "experiment": "FLEX",
+            "locator": "PDF page 13, text part 1",
+            "field": "pressure_kpa",
+            "value": 303.975,
+            "unit": "kPa",
+            "eligible": true,
+            "reported": "3 atm",
+            "quote": "Air -3 atm",
+            "note": "Test FLEX-1256 ambient pressure.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        }
+      ],
+      "extra": [],
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "coverage": 0.8,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0
+    },
+    "flow_cm_s": {
+      "field": "flow_cm_s",
+      "unit": "cm/s",
+      "tolerance": 0.05,
+      "labeled_eligible": 12,
+      "labeled_not_eligible": 5,
+      "predicted_eligible": 14,
+      "true_positives": 10,
+      "false_positives": 4,
+      "false_negatives": 2,
+      "exclusion_violations": 3,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "misses": [
+        {
+          "chunk_id": "ntrs-20170008805-p017-c01-0dc38613a7",
+          "label": {
+            "label_id": "L40",
+            "chunk_id": "ntrs-20170008805-p017-c01-0dc38613a7",
+            "source_id": "ntrs-20170008805",
+            "experiment": "SAFFIRE",
+            "locator": "PDF page 17, text part 1",
+            "field": "flow_cm_s",
+            "value": 20.0,
+            "unit": "cm/s",
+            "eligible": true,
+            "reported": "20 cm/s",
+            "quote": "burning in air at 20 cm/s concurrent flow",
+            "note": "Test flow.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+          "label": {
+            "label_id": "L43",
+            "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+            "source_id": "ntrs-20180005168",
+            "experiment": "SAFFIRE",
+            "locator": "PDF page 23, text part 1",
+            "field": "flow_cm_s",
+            "value": 25.0,
+            "unit": "cm/s",
+            "eligible": true,
+            "reported": "25 cm/s",
+            "quote": "concurrent-flow in air at 20 and 25 cm/s",
+            "note": "Test flow for the 5-cm-wide sample.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        }
+      ],
+      "extra": [
+        {
+          "chunk_id": "ntrs-20150008962-p007-c01-8ed8d03bb2",
+          "record": {
+            "record_id": "meta-8f3b56a63b36",
+            "source_id": "ntrs-20150008962",
+            "chunk_id": "ntrs-20150008962-p007-c01-8ed8d03bb2",
+            "quote": "Quenching flow velocities were found to be between 1 and 5 cm/s with higher velocity at lower oxygen percentage.",
+            "field": "flow_cm_s",
+            "value": {
+              "min": 1.0,
+              "max": 5.0
+            },
+            "unit": "cm/s",
+            "scope": "experiment_range",
+            "evidence_status": "reported",
+            "rule": "flow.unit_convert",
+            "notes": "Reported as 1 and 5 cm/s",
+            "extraction": "deterministic_pattern_v1",
+            "review_status": "machine_extracted_not_human_reviewed",
+            "matching_eligible": true,
+            "locator": "PDF page 7, text part 1"
+          }
+        },
+        {
+          "chunk_id": "ntrs-20160000593-p013-c01-3cd1a48792",
+          "record": {
+            "record_id": "meta-3e394aed6712",
+            "source_id": "ntrs-20160000593",
+            "chunk_id": "ntrs-20160000593-p013-c01-3cd1a48792",
+            "quote": "Residence Time Driven Flame Spread Sequence of top views showing radiative quenching when flow velocity goes below 2 cm/s.",
+            "field": "flow_cm_s",
+            "value": 2.0,
+            "unit": "cm/s",
+            "scope": "individual_test",
+            "evidence_status": "reported",
+            "rule": "flow.unit_convert",
+            "notes": "Reported as 2 cm/s",
+            "extraction": "deterministic_pattern_v1",
+            "review_status": "machine_extracted_not_human_reviewed",
+            "matching_eligible": true,
+            "locator": "PDF page 13, text part 1"
+          }
+        },
+        {
+          "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+          "record": {
+            "record_id": "meta-257569a53be2",
+            "source_id": "ntrs-20160012691",
+            "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+            "quote": "Each boundary is approximately linear with flow, with the exception of the 14% oxygen data, where all the data collapses at forced flow velocities less than 5 cm/s.",
+            "field": "flow_cm_s",
+            "value": 5.0,
+            "unit": "cm/s",
+            "scope": "individual_test",
+            "evidence_status": "reported",
+            "rule": "flow.unit_convert",
+            "notes": "Reported as 5 cm/s",
+            "extraction": "deterministic_pattern_v1",
+            "review_status": "machine_extracted_not_human_reviewed",
+            "matching_eligible": true,
+            "locator": "PDF page 3, text part 1"
+          }
+        },
+        {
+          "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+          "record": {
+            "record_id": "meta-ff0ec6215c6b",
+            "source_id": "ntrs-20180005168",
+            "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+            "quote": "Ignition power: Saffire 1: 165 W (for 8 s) 4.1 W/cm (per unit fuel width) Saffire 2: 80 W (for 9.2 s) 16 W/cm (per unit fuel width) SIBAL fabric 40.6 cm wide SIBAL fabric 5 cm wide Saffire 1 Saffire 2 Average flame power: Saffire 1: 1200 +/- 300 W Saffire 2: 200 +/- 50 W Four tests: 40.6-cm-wide SIBAL fabric (cotton-fiberglass); concurrent and opposed-flow in 20 cm/s air flow 5-cm-wide SIBAL",
+            "field": "flow_cm_s",
+            "value": {
+              "min": 20.0,
+              "max": 25.0
+            },
+            "unit": "cm/s",
+            "scope": "experiment_range",
+            "evidence_status": "reported",
+            "rule": "flow.unit_convert",
+            "notes": "Reported as 20 and 25 cm/s",
+            "extraction": "deterministic_pattern_v1",
+            "review_status": "machine_extracted_not_human_reviewed",
+            "matching_eligible": true,
+            "locator": "PDF page 23, text part 1"
+          }
+        }
+      ],
+      "precision": 0.7143,
+      "recall": 0.8333,
+      "f1": 0.7692,
+      "coverage": 0.8333,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0
+    },
+    "temperature_k": {
+      "field": "temperature_k",
+      "unit": "K",
+      "tolerance": 0.2,
+      "labeled_eligible": 3,
+      "labeled_not_eligible": 8,
+      "predicted_eligible": 1,
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 2,
+      "exclusion_violations": 0,
+      "errors": [
+        0.0
+      ],
+      "misses": [
+        {
+          "chunk_id": "ntrs-20240008602-p004-c02-0a0d514825",
+          "label": {
+            "label_id": "L52",
+            "chunk_id": "ntrs-20240008602-p004-c02-0a0d514825",
+            "source_id": "ntrs-20240008602",
+            "experiment": "SAFFIRE-V",
+            "locator": "PDF page 4, text part 2",
+            "field": "temperature_k",
+            "value": 297.15,
+            "unit": "K",
+            "eligible": true,
+            "reported": "24°C",
+            "quote": "properties of air at initial conditions (24°C)",
+            "note": "Initial cabin condition used for the model.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        },
+        {
+          "chunk_id": "ntrs-20240008602-p008-c01-5b3612cdfb",
+          "label": {
+            "label_id": "L54",
+            "chunk_id": "ntrs-20240008602-p008-c01-5b3612cdfb",
+            "source_id": "ntrs-20240008602",
+            "experiment": "SAFFIRE-V",
+            "locator": "PDF page 8, text part 1",
+            "field": "temperature_k",
+            "value": 297.25,
+            "unit": "K",
+            "eligible": true,
+            "reported": "24.1 °C",
+            "quote": "initial condition (24.1 °C)",
+            "note": "Initial remote-sensor condition used as the model initial value.",
+            "provenance": "agent-drafted",
+            "review_status": "agent_drafted_not_human_reviewed",
+            "reviewer": null
+          }
+        }
+      ],
+      "extra": [],
+      "precision": 1.0,
+      "recall": 0.3333,
+      "f1": 0.5,
+      "coverage": 0.3333,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0
+    }
+  },
+  "disagreements": [
+    {
+      "chunk_id": "ntrs-20130010979-p010-c01-fd0467f8fa",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L05",
+        "chunk_id": "ntrs-20130010979-p010-c01-fd0467f8fa",
+        "source_id": "ntrs-20130010979",
+        "experiment": "FLEX",
+        "locator": "PDF page 10, text part 1",
+        "field": "oxygen_percent",
+        "value": 20.0,
+        "unit": "%",
+        "eligible": true,
+        "reported": "O2 20%",
+        "quote": "Pressure = 1 atm , O2 20% / N2 75% / CO2 5%",
+        "note": "Test FLEX-145 atmosphere. The CO2 percentage is a different species and is not an oxygen label.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L07",
+        "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+        "source_id": "ntrs-20130010979",
+        "experiment": "FLEX",
+        "locator": "PDF page 12, text part 1",
+        "field": "oxygen_percent",
+        "value": 21.0,
+        "unit": "%",
+        "eligible": true,
+        "reported": "O2 21%",
+        "quote": "O2 = 21% w/ Ar ranging from 0% to 79%",
+        "note": "Table of ZGF test points, all rows at 21% oxygen.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+      "field": "oxygen_percent",
+      "kind": "extra_eligible",
+      "predicted": {
+        "record_id": "meta-e3db65a31f6f",
+        "source_id": "ntrs-20130010979",
+        "chunk_id": "ntrs-20130010979-p012-c01-8bdec51425",
+        "quote": "O2% N2% Ar% Pressure H-7-62 21 29 50 1 atm H-7-63 21 9 70 1 atm H-7-65 21 9 70 1 atm H-7-66 21 29 50 1 atm H-7-67 21 54 25 1 atm H-7-96 21 9 70 1 atm H-8-02 21 0 79 .5 atm H-8-03 21 28 51 .5 atm H-8-04 21 44 35 1 atm H-8-05 21 56 23 1.5 atm H-8-07 21 16 63 1 atm H-8-08 21 79 0 2 atm H-8-09 21 34 45 1 atm H-8-11 21 16 63 1 atm H-8-12 21 54 25 1 atm H-8-13 21 6 73 1 atm O2 = 21% w/ Ar ranging from",
+        "field": "oxygen_percent",
+        "value": {
+          "min": 0.0,
+          "max": 79.0
+        },
+        "unit": "%",
+        "scope": "experiment_range",
+        "evidence_status": "reported",
+        "rule": "oxygen.percent_range",
+        "notes": "Reported as 0% to 79%",
+        "extraction": "deterministic_pattern_v1",
+        "review_status": "machine_extracted_not_human_reviewed",
+        "matching_eligible": true,
+        "locator": "PDF page 12, text part 1"
+      }
+    },
+    {
+      "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L12",
+        "chunk_id": "ntrs-20150008961-p005-c01-b4f0f6a3aa",
+        "source_id": "ntrs-20150008961",
+        "experiment": "BASS-II",
+        "locator": "PDF page 5, text part 1",
+        "field": "oxygen_percent",
+        "value": 16.1,
+        "unit": "%",
+        "eligible": true,
+        "reported": "16.1% O2",
+        "quote": "16.1% O 2 and lower",
+        "note": "Stated as the tested low-oxygen level; the tests imposed this atmosphere.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20150008962-p007-c01-8ed8d03bb2",
+      "field": "flow_cm_s",
+      "kind": "extra_eligible",
+      "predicted": {
+        "record_id": "meta-8f3b56a63b36",
+        "source_id": "ntrs-20150008962",
+        "chunk_id": "ntrs-20150008962-p007-c01-8ed8d03bb2",
+        "quote": "Quenching flow velocities were found to be between 1 and 5 cm/s with higher velocity at lower oxygen percentage.",
+        "field": "flow_cm_s",
+        "value": {
+          "min": 1.0,
+          "max": 5.0
+        },
+        "unit": "cm/s",
+        "scope": "experiment_range",
+        "evidence_status": "reported",
+        "rule": "flow.unit_convert",
+        "notes": "Reported as 1 and 5 cm/s",
+        "extraction": "deterministic_pattern_v1",
+        "review_status": "machine_extracted_not_human_reviewed",
+        "matching_eligible": true,
+        "locator": "PDF page 7, text part 1"
+      }
+    },
+    {
+      "chunk_id": "ntrs-20160000593-p013-c01-3cd1a48792",
+      "field": "flow_cm_s",
+      "kind": "extra_eligible",
+      "predicted": {
+        "record_id": "meta-3e394aed6712",
+        "source_id": "ntrs-20160000593",
+        "chunk_id": "ntrs-20160000593-p013-c01-3cd1a48792",
+        "quote": "Residence Time Driven Flame Spread Sequence of top views showing radiative quenching when flow velocity goes below 2 cm/s.",
+        "field": "flow_cm_s",
+        "value": 2.0,
+        "unit": "cm/s",
+        "scope": "individual_test",
+        "evidence_status": "reported",
+        "rule": "flow.unit_convert",
+        "notes": "Reported as 2 cm/s",
+        "extraction": "deterministic_pattern_v1",
+        "review_status": "machine_extracted_not_human_reviewed",
+        "matching_eligible": true,
+        "locator": "PDF page 13, text part 1"
+      }
+    },
+    {
+      "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L33",
+        "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+        "source_id": "ntrs-20160012691",
+        "experiment": "BASS-II / ground comparison",
+        "locator": "PDF page 3, text part 1",
+        "field": "oxygen_percent",
+        "value": 18.0,
+        "unit": "%",
+        "eligible": true,
+        "reported": "18% oxygen",
+        "quote": "at 18% oxygen, blowoff limits are found at only three radii",
+        "note": "Tested atmosphere for the blow-off experiments.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+      "field": "flow_cm_s",
+      "kind": "extra_eligible",
+      "predicted": {
+        "record_id": "meta-257569a53be2",
+        "source_id": "ntrs-20160012691",
+        "chunk_id": "ntrs-20160012691-p003-c01-e215cb21dd",
+        "quote": "Each boundary is approximately linear with flow, with the exception of the 14% oxygen data, where all the data collapses at forced flow velocities less than 5 cm/s.",
+        "field": "flow_cm_s",
+        "value": 5.0,
+        "unit": "cm/s",
+        "scope": "individual_test",
+        "evidence_status": "reported",
+        "rule": "flow.unit_convert",
+        "notes": "Reported as 5 cm/s",
+        "extraction": "deterministic_pattern_v1",
+        "review_status": "machine_extracted_not_human_reviewed",
+        "matching_eligible": true,
+        "locator": "PDF page 3, text part 1"
+      }
+    },
+    {
+      "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L36",
+        "chunk_id": "ntrs-20160012691-p005-c01-a31cda8aaf",
+        "source_id": "ntrs-20160012691",
+        "experiment": "BASS-II / ground comparison",
+        "locator": "PDF page 5, text part 1",
+        "field": "oxygen_percent",
+        "value": 14.0,
+        "unit": "%",
+        "eligible": true,
+        "reported": "14% oxygen",
+        "quote": "at 14% oxygen and 2 cm/s forced flow",
+        "note": "Tested atmosphere.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20170008805-p017-c01-0dc38613a7",
+      "field": "flow_cm_s",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L40",
+        "chunk_id": "ntrs-20170008805-p017-c01-0dc38613a7",
+        "source_id": "ntrs-20170008805",
+        "experiment": "SAFFIRE",
+        "locator": "PDF page 17, text part 1",
+        "field": "flow_cm_s",
+        "value": 20.0,
+        "unit": "cm/s",
+        "eligible": true,
+        "reported": "20 cm/s",
+        "quote": "burning in air at 20 cm/s concurrent flow",
+        "note": "Test flow.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+      "field": "flow_cm_s",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L43",
+        "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+        "source_id": "ntrs-20180005168",
+        "experiment": "SAFFIRE",
+        "locator": "PDF page 23, text part 1",
+        "field": "flow_cm_s",
+        "value": 25.0,
+        "unit": "cm/s",
+        "eligible": true,
+        "reported": "25 cm/s",
+        "quote": "concurrent-flow in air at 20 and 25 cm/s",
+        "note": "Test flow for the 5-cm-wide sample.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+      "field": "flow_cm_s",
+      "kind": "extra_eligible",
+      "predicted": {
+        "record_id": "meta-ff0ec6215c6b",
+        "source_id": "ntrs-20180005168",
+        "chunk_id": "ntrs-20180005168-p023-c01-40ae747daa",
+        "quote": "Ignition power: Saffire 1: 165 W (for 8 s) 4.1 W/cm (per unit fuel width) Saffire 2: 80 W (for 9.2 s) 16 W/cm (per unit fuel width) SIBAL fabric 40.6 cm wide SIBAL fabric 5 cm wide Saffire 1 Saffire 2 Average flame power: Saffire 1: 1200 +/- 300 W Saffire 2: 200 +/- 50 W Four tests: 40.6-cm-wide SIBAL fabric (cotton-fiberglass); concurrent and opposed-flow in 20 cm/s air flow 5-cm-wide SIBAL",
+        "field": "flow_cm_s",
+        "value": {
+          "min": 20.0,
+          "max": 25.0
+        },
+        "unit": "cm/s",
+        "scope": "experiment_range",
+        "evidence_status": "reported",
+        "rule": "flow.unit_convert",
+        "notes": "Reported as 20 and 25 cm/s",
+        "extraction": "deterministic_pattern_v1",
+        "review_status": "machine_extracted_not_human_reviewed",
+        "matching_eligible": true,
+        "locator": "PDF page 23, text part 1"
+      }
+    },
+    {
+      "chunk_id": "ntrs-20210022617-p004-c01-c1c1ac1638",
+      "field": "oxygen_percent",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L44",
+        "chunk_id": "ntrs-20210022617-p004-c01-c1c1ac1638",
+        "source_id": "ntrs-20210022617",
+        "experiment": "FLEX",
+        "locator": "PDF page 4, text part 1",
+        "field": "oxygen_percent",
+        "value": {
+          "min": 13.0,
+          "max": 30.0
+        },
+        "unit": "%",
+        "eligible": true,
+        "reported": "13% < O2 < 30%",
+        "quote": "13% < O2 < 30%",
+        "note": "Investigated oxygen range, stated as a strict inequality.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+      "field": "pressure_kpa",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L47",
+        "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+        "source_id": "ntrs-20210022617",
+        "experiment": "FLEX",
+        "locator": "PDF page 13, text part 1",
+        "field": "pressure_kpa",
+        "value": 101.325,
+        "unit": "kPa",
+        "eligible": true,
+        "reported": "1 atm",
+        "quote": "Air -1 atm",
+        "note": "Test FLEX-1250 ambient pressure.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+      "field": "pressure_kpa",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L48",
+        "chunk_id": "ntrs-20210022617-p013-c01-fa6a6b0e05",
+        "source_id": "ntrs-20210022617",
+        "experiment": "FLEX",
+        "locator": "PDF page 13, text part 1",
+        "field": "pressure_kpa",
+        "value": 303.975,
+        "unit": "kPa",
+        "eligible": true,
+        "reported": "3 atm",
+        "quote": "Air -3 atm",
+        "note": "Test FLEX-1256 ambient pressure.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20240008602-p004-c02-0a0d514825",
+      "field": "temperature_k",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L52",
+        "chunk_id": "ntrs-20240008602-p004-c02-0a0d514825",
+        "source_id": "ntrs-20240008602",
+        "experiment": "SAFFIRE-V",
+        "locator": "PDF page 4, text part 2",
+        "field": "temperature_k",
+        "value": 297.15,
+        "unit": "K",
+        "eligible": true,
+        "reported": "24°C",
+        "quote": "properties of air at initial conditions (24°C)",
+        "note": "Initial cabin condition used for the model.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    },
+    {
+      "chunk_id": "ntrs-20240008602-p008-c01-5b3612cdfb",
+      "field": "temperature_k",
+      "kind": "missed_eligible",
+      "expected": {
+        "label_id": "L54",
+        "chunk_id": "ntrs-20240008602-p008-c01-5b3612cdfb",
+        "source_id": "ntrs-20240008602",
+        "experiment": "SAFFIRE-V",
+        "locator": "PDF page 8, text part 1",
+        "field": "temperature_k",
+        "value": 297.25,
+        "unit": "K",
+        "eligible": true,
+        "reported": "24.1 °C",
+        "quote": "initial condition (24.1 °C)",
+        "note": "Initial remote-sensor condition used as the model initial value.",
+        "provenance": "agent-drafted",
+        "review_status": "agent_drafted_not_human_reviewed",
+        "reviewer": null
+      }
+    }
+  ],
+  "scoring_changes": {
+    "disclosure": "The first pass used one-to-one matching over every table row and reported precision 0.52 / recall 0.6842. Repeated identical values in a test-matrix table were then deduplicated on both sides, and one label the first pass missed (an explicitly stated 21% O2 test case) was added. No extractor code was changed in response to the labels.",
+    "one_to_one_overall": {
+      "labeled_eligible": 40,
+      "predicted_eligible": 50,
+      "true_positives": 28,
+      "false_positives": 22,
+      "false_negatives": 12,
+      "exclusion_violations": 3,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "precision": 0.56,
+      "recall": 0.7,
+      "f1": 0.6222,
+      "coverage": 0.7,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0,
+      "labeled_not_eligible": 17,
+      "field": "all numeric fields"
+    },
+    "deduplicated_overall": {
+      "labeled_eligible": 40,
+      "predicted_eligible": 33,
+      "true_positives": 28,
+      "false_positives": 5,
+      "false_negatives": 12,
+      "exclusion_violations": 3,
+      "errors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "precision": 0.8485,
+      "recall": 0.7,
+      "f1": 0.7671,
+      "coverage": 0.7,
+      "numeric_agreement": 1.0,
+      "max_absolute_error": 0.0,
+      "labeled_not_eligible": 17,
+      "field": "all numeric fields"
+    }
+  },
+  "limitations": [
+    "Only labels listed in the separate review log were human-reviewed by the project owner; all remaining labels are agent-drafted and unreviewed.",
+    "The sample is 30-40 chunks from one corpus of 12 documents, chosen by surface tokens; it is not a random sample of fire-science literature.",
+    "The scoring compares against the extractor's eligibility decision, so a scope disagreement counts as an extra or missed eligible record.",
+    "A not-eligible mention that the extractor never records is not penalised; only a wrongly eligible record is.",
+    "The extractor was not changed after these labels were scored, so these numbers are an out-of-sample estimate for the shipped version, not a tuned benchmark."
+  ]
+}

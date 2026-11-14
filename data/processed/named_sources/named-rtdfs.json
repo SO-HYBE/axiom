@@ -1,0 +1,29 @@
+[
+  {
+    "chunk_id": "named-rtdfs-named-001-24f2270aef577500",
+    "conditions": {
+      "flow_cm_s": null,
+      "fuel": null,
+      "gravity": null,
+      "oxygen_percent": null,
+      "pressure_kpa": null
+    },
+    "document_url": null,
+    "evidence_role": "scoped_document_text",
+    "evidence_tier": 3,
+    "experiment": "RTDFS",
+    "locator": "Science Objectives; Article body; heading: Residence Time Driven Flame Spread (RTDFS) / Science Objectives; block 1",
+    "named_scope_verified": true,
+    "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+    "permission_status": "allowed",
+    "section": "Science Objectives",
+    "sha256": "24f2270aef577500ea45991ae0a4471120286fcdc8ee5c89533b4be2d90d9ad3",
+    "source_asset_key": "article",
+    "source_id": "named-rtdfs",
+    "source_kind": "experiment_overview",
+    "status": "active",
+    "text": "The Residence Time Driven Flame Spread (RTDFS) experiment will investigate steady and unsteady flame propagation over solid fuels in a microgravity environment. Theoretical modeling predicts that steady flame spread over solid fuels cannot be sustained, even in a high oxygen environment if the fuel exceeds a critical thickness. Flame spread rate over thin fuels in a quiescent microgravity environment decreases with fuel thickness not only because of increased thermal mass but also because the relative importance of radiative losses, as quantified by a non-dimensional radiation number, increases in direct proportion of fuel thickness.",
+    "title": "Residence Time Driven Flame Spread (RTDFS)",
+    "url": "https://science.nasa.gov/biological-physical/investigations/rtdfs/"
+  }
+]

@@ -1,0 +1,321 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q007",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "4908bfa21b8f46d6a2e9a4ebb39821d7",
+    "created_at": "2026-11-06T19:27:41.591103+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "unfiltered_answer",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence is a source description of the FLEX investigation's objectives, specifically focusing on liquid fuels and predictive models. It does not contain experimental results, certification standards, or data regarding solid cable jackets. Therefore, the evidence is insufficient to determine if a FLEX liquid-droplet result can certify a solid cable jacket, but the source description confirms the scope is limited to liquid fuels and model development."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "unfiltered answer"
+      }
+    ],
+    "corpus_fingerprint": "150ce43fcc06da5ae5a2dbaf7ca3894ce1e78b81098cd3cc559e21591b801e74",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "Can a FLEX liquid-droplet result alone certify a solid cable jacket for spacecraft use?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.\n\nThe FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the stated objective of the FLEX investigation; does not provide experimental results or certification data for solid materials.",
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the modeling objective; does not indicate whether these models apply to solid cable jackets or provide certification criteria.",
+        "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the stated objective of the FLEX investigation; does not provide experimental results or certification data for solid materials.",
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the modeling objective; does not indicate whether these models apply to solid cable jackets or provide certification criteria.",
+        "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "Describes the stated objective of the FLEX investigation; does not provide experimental results or certification data for solid materials.",
+          "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+              "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "Describes the modeling objective; does not indicate whether these models apply to solid cable jackets or provide certification criteria.",
+          "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions."
+        }
+      ],
+      "reason": "The provided evidence is a source description of the FLEX investigation's objectives, specifically focusing on liquid fuels and predictive models. It does not contain experimental results, certification standards, or data regarding solid cable jackets. Therefore, the evidence is insufficient to determine if a FLEX liquid-droplet result can certify a solid cable jacket, but the source description confirms the scope is limited to liquid fuels and model development."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions. The mission seeks to validate and improve simplified models by incorporating detailed chemical reactions, heat transfer, and material movement, using both space-based data and extensive ground-based tests. Key flight experiment goals include obtaining high-resolution measurements of droplet burning rates, flame extinction behavior, heat radiation, soot levels, and temperature profiles, while systematically analyzing the effects of different ambient conditions and suppressant concentrations. These investigations are essential for advancing the fundamental understanding of combustion processes in microgravity and enhancing fire safety protocols for future space missions.",
+        "sha256": "0693c364c63bf14b5c08c18da3eef92c05c95f1cbdd0f180fdf224318310391c",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Objectives",
+        "locator": "Objectives; PSI version 5; JSON field objective",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": 1.38649,
+        "ranking": {
+          "lexical_score": 1.38649,
+          "matched_terms": [
+            "droplet",
+            "flex",
+            "liquid"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "unknown",
+            "unknown_fields": [
+              "gravity",
+              "fuel",
+              "oxygen_percent",
+              "pressure_kpa",
+              "flow_cm_s"
+            ],
+            "mismatched_fields": [],
+            "unassessed_fields": [],
+            "notice": "Comparison of recorded fields only. Scientific transfer requires additional evidence."
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.2727272727272727,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "droplet",
+            "flex",
+            "liquid"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": true,
+    "latency_ms": 1.04,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "9d54eacb30b4b469bb9ecdea8b21fd7d191e7189841114341b78ba0e2848df11",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "4b9cd65b52b933d16b087b41fa8ec5274fadc3e165c63ead5249e43aba216f34",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 813,
+          "completion_tokens": 425,
+          "total_tokens": 1238
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.\n\nThe FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the stated objective of the FLEX investigation; does not provide experimental results or certification data for solid materials.",
+        "text": "The FLEX investigation aims to map the flammability limits of liquid fuels in microgravity environments.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-001-0693c364c63bf14b",
+            "quote": "develop reliable predictive models for combustion limits under reduced gravity conditions",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the modeling objective; does not indicate whether these models apply to solid cable jackets or provide certification criteria.",
+        "text": "The FLEX investigation seeks to develop reliable predictive models for combustion limits under reduced gravity conditions.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "latency_ms": 1.04,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "9d54eacb30b4b469bb9ecdea8b21fd7d191e7189841114341b78ba0e2848df11",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "4b9cd65b52b933d16b087b41fa8ec5274fadc3e165c63ead5249e43aba216f34",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 813,
+          "completion_tokens": 425,
+          "total_tokens": 1238
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q007",
+    "system": "rag_only",
+    "split": "dev",
+    "run_id": "4908bfa21b8f46d6a2e9a4ebb39821d7",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "b45b36757dbf7f4ca5d0addcc21078bd999dfdcaa6232f06d4b04fafd2022539"
+}

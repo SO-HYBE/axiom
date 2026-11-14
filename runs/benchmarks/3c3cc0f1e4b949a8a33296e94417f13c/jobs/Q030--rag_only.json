@@ -1,0 +1,315 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q030",
+  "system": "rag_only",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+  "run": {
+    "run_id": "5630036e21304c7595f20ee7767b2cb9",
+    "created_at": "2026-11-06T19:34:18.737587+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://psi.nasa.gov/physci/repo/data/investigations/PSI-69 | objectives; approach",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 1,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "unfiltered_answer",
+    "provisional": false,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "1 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence is a source description of the FLEX experiment's objectives and approach, which explicitly focuses on 'relatively large droplets' (liquid phase). The evidence contains no information regarding solid fabrics. Therefore, the citation is not valid support for a claim about solid fabric burning behavior, as the source describes a different physical system (liquid droplets) and does not contain the necessary experimental evidence for solids."
+      },
+      {
+        "label": "Check claims",
+        "detail": "This comparison mode shows the unfiltered draft."
+      },
+      {
+        "label": "Show the result",
+        "detail": "unfiltered answer"
+      }
+    ],
+    "corpus_fingerprint": "150ce43fcc06da5ae5a2dbaf7ca3894ce1e78b81098cd3cc559e21591b801e74",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 0
+    },
+    "question": "A quoted passage is real but describes liquid droplets; the claim says solid fabric cannot burn. Is the citation valid support?",
+    "system": "rag_only",
+    "mode": "model",
+    "answer": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.\n\nA primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the experimental subject (liquid droplets) and does not provide data on solid fabrics.",
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI .",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "States the scientific goal regarding LOI and suppressants for droplets; does not address solid material flammability.",
+        "text": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "draft_checks": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the experimental subject (liquid droplets) and does not provide data on solid fabrics.",
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI .",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "States the scientific goal regarding LOI and suppressants for droplets; does not address solid material flammability.",
+        "text": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "Describes the experimental subject (liquid droplets) and does not provide data on solid fabrics.",
+          "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+              "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI .",
+              "source_id": "psi-69"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "States the scientific goal regarding LOI and suppressants for droplets; does not address solid material flammability.",
+          "text": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI."
+        }
+      ],
+      "reason": "The provided evidence is a source description of the FLEX experiment's objectives and approach, which explicitly focuses on 'relatively large droplets' (liquid phase). The evidence contains no information regarding solid fabrics. Therefore, the citation is not valid support for a claim about solid fabric burning behavior, as the source describes a different physical system (liquid droplets) and does not contain the necessary experimental evidence for solids."
+    },
+    "evidence": [
+      {
+        "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+        "source_id": "psi-69",
+        "title": "Flame Extinguishment Experiment (FLEX)",
+        "experiment": "FLEX",
+        "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-69",
+        "document_url": null,
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets. A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI . The basic outline of the procedure to construct this diagram is as follows: 1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests. 2. Select a smaller droplet size (≈ 3 mm) 3. Select an ambient oxygen mole fraction that, based on ground-based testing, will support droplets burning to completion (as opposed to extinguishing at a finite droplet size). 4. Perform a droplet combustion test. 5. Increase the droplet size or repeat the test (if finite extinction diameter at flame extinction observed). 6. Continue steps 4 and 5 until flame exists for only a short time after ignition (radiative extinction). 7. Continue steps 4 thru 6 at a decreased ambient oxygen mole fraction. 8. Continue step 7 to an ambient oxygen mole fraction where the droplet does not ignite. There were ambient conditions where the extinction droplet sizes at all ambient oxygen mole fractions were too small to either be observed or measured with the available diagnostics. In this case, the determination of the LOI is similar, but more iterative. Instead of observing flame extinction, however, the procedure involved an iterative sequence of tests (burn to completion followed by a no ignition test) with progressively smaller increments in ambient oxygen mole fraction to determine the LOI . For the slow flow tests (in the flight experiment), the configuration of the flight hardware did not allow for adequate diagnostics over the entire test for a droplet in a uniform, steady convective flow.",
+        "sha256": "13962d92ffe0d118651d871ba8e008195573ebb154fb79ef1f39fcfbc0d01a50",
+        "source_kind": "dataset_catalog",
+        "evidence_tier": 3,
+        "section": "Approach",
+        "locator": "Approach; PSI version 5; JSON field approach",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "source_description",
+        "named_scope_verified": true,
+        "source_asset_key": "record",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+        "provenance": [
+          {
+            "bytes": 31770,
+            "content_type": "application/json",
+            "final_url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5",
+            "key": "record",
+            "method": "GET",
+            "path": "data/raw/named/psi-69-record.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:34.993314+00:00",
+            "sha256": "a2d8ec5d0e9ad1060f6ecc7a850598634cc5519c373ae70462bf76c31fc8731c",
+            "url": "https://psi.nasa.gov/geode-py/ws/repo/investigations/PSI-69/5"
+          }
+        ],
+        "score": 3.029126,
+        "ranking": {
+          "lexical_score": 3.029126,
+          "matched_terms": [
+            "burn",
+            "but",
+            "droplets",
+            "support"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.25,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "burn",
+            "but",
+            "droplets",
+            "support"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 1.04,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21ee7f857262c2bacfb3d9896bc84ad4346cc71c51556016cc7580c36e9ec9b5",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "a15077d34c8c58fb775defcdddc234a7a9192318d74e89d9ed54662469f6d4df",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1023,
+          "completion_tokens": 454,
+          "total_tokens": 1477
+        },
+        "latency_ms": 0
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.\n\nA primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI.",
+    "abstained": false,
+    "claims": [
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "Describes the experimental subject (liquid droplets) and does not provide data on solid fabrics.",
+        "text": "The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets.",
+        "verdict": "unfiltered"
+      },
+      {
+        "citations": [
+          {
+            "chunk_id": "psi-69-named-002-13962d92ffe0d118",
+            "quote": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI .",
+            "source_id": "psi-69"
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "States the scientific goal regarding LOI and suppressants for droplets; does not address solid material flammability.",
+        "text": "A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI.",
+        "verdict": "unfiltered"
+      }
+    ],
+    "latency_ms": 1.04,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "21ee7f857262c2bacfb3d9896bc84ad4346cc71c51556016cc7580c36e9ec9b5",
+        "schema_hash": "d7df0cbe657f6bcfc118274395ba57dcd25c641ddbc2046812f70513a6edac0b",
+        "request_hash": "a15077d34c8c58fb775defcdddc234a7a9192318d74e89d9ed54662469f6d4df",
+        "attempt": 0,
+        "status": "cache_hit",
+        "cache_hit": true,
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0
+        },
+        "cached_usage": {
+          "prompt_tokens": 1023,
+          "completion_tokens": 454,
+          "total_tokens": 1477
+        },
+        "latency_ms": 0
+      }
+    ],
+    "question_id": "Q030",
+    "system": "rag_only",
+    "split": "test",
+    "run_id": "5630036e21304c7595f20ee7767b2cb9",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "measurement_scope": "whole_workflow"
+  },
+  "shared_draft_from_run_id": null,
+  "record_sha256": "3367d8067ac88bc0bdf659612f7ede77acba50dfc3133fbe2d4609b9ba6b8fb9"
+}

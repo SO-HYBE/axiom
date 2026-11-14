@@ -1,0 +1,699 @@
+{
+  "input_fingerprint": "c5376a26b251373a58a9f6a003d4a39f05521e1bc67c11b2da0d56850793f599",
+  "question_id": "Q017",
+  "system": "ignis",
+  "generation_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+  "run": {
+    "run_id": "4e3c6539a4634252875092fdb16fa27c",
+    "created_at": "2026-11-06T19:31:24.020647+00:00",
+    "prompt_version": "research-v5-scoped-context",
+    "source_scope": "Use only the named source/scope. Hypothetical test scenarios are not NASA findings.\nhttps://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/ | Article, 2024-02-14",
+    "evidence_selection": {
+      "mode": "lexical_search",
+      "lexical_hit_count": 2,
+      "explicit_scope_complete": false
+    },
+    "answer_status": "model_checked_summary",
+    "provisional": true,
+    "steps": [
+      {
+        "label": "Find NASA evidence",
+        "detail": "2 passages selected; 0 omitted for the context limit."
+      },
+      {
+        "label": "Draft an answer",
+        "detail": "2 claims drafted. The provided evidence explicitly states that Saffire-VI was unique due to 'higher oxygen concentration and lower pressure' compared to previous iterations. No other atmosphere variables are identified as changed in the supplied text."
+      },
+      {
+        "label": "Check claims",
+        "detail": "2 claims included; 0 withheld."
+      },
+      {
+        "label": "Show the result",
+        "detail": "model checked summary"
+      }
+    ],
+    "corpus_fingerprint": "364984a736ad0af777a3af924f98f06797b8235a4941ff8920413b6626ebdcf0",
+    "model_info": {
+      "model": "qwen/qwen3.8-27b",
+      "provider": "groq"
+    },
+    "budgets": {
+      "max_evidence_chars": 12000,
+      "max_review_calls": 3,
+      "max_reviewed_claims": 3,
+      "review_calls_used": 1
+    },
+    "question": "Which two atmosphere variables were changed in Saffire-VI according to the NASA 2024 article?",
+    "system": "ignis",
+    "mode": "model",
+    "answer": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions.\n\nSaffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a higher oxygen concentration to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact oxygen percentage or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the oxygen concentration."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a lower pressure to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact pressure value or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the pressure."
+      }
+    ],
+    "draft_checks": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a higher oxygen concentration to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact oxygen percentage or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the oxygen concentration."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a lower pressure to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact pressure value or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the pressure."
+      }
+    ],
+    "raw_draft": {
+      "abstained": false,
+      "claims": [
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The article describes the experimental setup but does not provide specific numerical values for the oxygen concentration.",
+          "text": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions."
+        },
+        {
+          "citations": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "claim_type": "source_description",
+          "limitations": "The article describes the experimental setup but does not provide specific numerical values for the pressure.",
+          "text": "Saffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions."
+        }
+      ],
+      "reason": "The provided evidence explicitly states that Saffire-VI was unique due to 'higher oxygen concentration and lower pressure' compared to previous iterations. No other atmosphere variables are identified as changed in the supplied text."
+    },
+    "evidence": [
+      {
+        "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "NASA recently concluded the final mission of its Spacecraft Fire Safety Experiment, or Saffire, putting a blazing end to an eight-year series of investigations that provided insights into fire’s behavior in space. The final experiment, Saffire-VI, launched to the International Space Station in August 2023 and concluded its mission on Jan. 9, when the Northrop Grumman Cygnus spacecraft it was flying on safely burned up during planned re-entry into Earth’s atmosphere. Dr. David Urban, principal investigator, and Dr. Gary Ruff, project manager at NASA’s Glenn Research Center in Cleveland, have led the Saffire project from Northeast Ohio since its initial spark in 2016. Throughout the experiment series, researchers gathered data NASA will use to enhance mission safety and inform future spacecraft and spacesuit designs. “How big a fire does it take for things to get bad for a crew?” Urban said. “This kind of work is done for every other inhabited structure here on Earth – buildings, planes, trains, automobiles, mines, submarines, ships – but we hadn’t done this research for spacecraft until Saffire.” Like previous Saffire experiments, Saffire-VI took place inside a unit on an uninhabited Cygnus spacecraft that had already departed from the space station, ensuring the safety of the orbiting laboratory and a more representative flight environment. However, this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft. NASA ignited the final set of space fire experiments for Saffire-VI inside Northrop Grumman’s Cygnus cargo spacecraft at the end of the NG-19 resupply mission to the International Space Station.",
+        "sha256": "6abf3fcf41eb2e659a5910982b1432d360606127dec04d24b138d52f491021a3",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": 1.678757,
+        "ranking": {
+          "lexical_score": 1.678757,
+          "matched_terms": [
+            "atmosphere",
+            "nasa",
+            "saffire",
+            "vi"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.4,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "atmosphere",
+            "nasa",
+            "saffire",
+            "vi"
+          ]
+        }
+      },
+      {
+        "chunk_id": "named-saffire-vi-news-named-002-5b2442945f8c049f",
+        "source_id": "named-saffire-vi-news",
+        "title": "Flame Burns Out on NASA's Long-Running Spacecraft Fire Experiment",
+        "experiment": "Saffire-VI",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+        "document_url": null,
+        "text": "Saffire, or Spacecraft Fire Safety Experiment, was a series of six investigations that provided insights into how fires grow and spread in space. This research is especially important as it will inform future spacecraft designs bound for the Moon and Mars. Video credit: NASA During the 19 Saffire-VI experiment runs, the NASA team and counterparts at Northrop Grumman made various adjustments to air conditions. They then ignited a flame on materials such as plexiglass, cotton, Nomex, and Solid Inflammability Boundary at Low-Speed fabrics. A bead-lined wire inside the unit ignited the materials. “The Saffire flow unit is a wind tunnel. We’re pushing air through it,” Ruff said. “Once test conditions are set, we run electrical current through a thin wire, and the materials ignite.” Cameras inside allowed the team to observe the flame while remote sensors outside the Saffire flow unit collected data about what was happening in the Cygnus vehicle. The images and information were gathered in real-time before being sent to Earth for scientists to analyze. “You’ve got a heat release rate and a rate of release of combustion products,” Ruff said. “You can take those as model input and predict what will happen in a vehicle.” The next decade of exploration and science missions will see astronauts flying deeper into space and to locations that have yet to be explored. Though the Saffire experiments have been extinguished, NASA has learned valuable lessons and gathered mountains of data on fire behavior that will help the agency design safer spacecraft and accomplish its ambitious future missions.",
+        "sha256": "5b2442945f8c049fd3cfb5b3663f055ee5ce99f3fbbfd57646e9a1e6ba3d465f",
+        "source_kind": "news_overview",
+        "evidence_tier": 3,
+        "section": "Article, 2024-02-14",
+        "locator": "Article, 2024-02-14; Article body; block 1",
+        "conditions": {
+          "gravity": null,
+          "fuel": null,
+          "oxygen_percent": null,
+          "pressure_kpa": null,
+          "flow_cm_s": null
+        },
+        "evidence_role": "scoped_document_text",
+        "named_scope_verified": true,
+        "source_asset_key": "article",
+        "permission_status": "allowed",
+        "status": "active",
+        "notice": "Exact located source text; no measurement-table extraction or scientific review is implied.",
+        "source_sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+        "provenance": [
+          {
+            "bytes": 295521,
+            "content_type": "text/html; charset=UTF-8",
+            "final_url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "key": "article",
+            "method": "GET",
+            "path": "data/raw/named/named-saffire-vi-news-article.bin",
+            "request_body_sha256": null,
+            "retrieved_at": "2026-11-05T20:51:41.093573+00:00",
+            "sha256": "34aa3222b1985c657f2caed9158b00147bbd03308b7d3b8f11e4dfbe84f367b5",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/"
+          }
+        ],
+        "score": 0.943254,
+        "ranking": {
+          "lexical_score": 0.943254,
+          "matched_terms": [
+            "nasa",
+            "saffire",
+            "vi"
+          ],
+          "evidence_tier": 3,
+          "applicability": {
+            "status": "not_requested",
+            "unknown_fields": [],
+            "mismatched_fields": []
+          },
+          "duplicate_source_ids": [],
+          "duplicate_citations": [],
+          "query_term_coverage": 0.3,
+          "minimum_query_coverage": 0.25,
+          "independence": "not_assessed",
+          "body_matched_terms": [
+            "nasa",
+            "saffire",
+            "vi"
+          ]
+        }
+      }
+    ],
+    "source_cautions": [],
+    "retrieval_config": {
+      "version": "lexical-v2",
+      "top_k": 6,
+      "min_query_coverage": 0.25,
+      "experiments": null,
+      "source_ids": null,
+      "include_overviews": true,
+      "include_source_descriptions": true
+    },
+    "target": {},
+    "applicability_requested": false,
+    "latency_ms": 22606.92,
+    "error": null,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "80ff77ebe7116c19db0c6260497b02b9b0f90b6d1cd64f8968423f21c7bbce40",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "bc230519c182a8019358af974a143a023434d6898ffb66c9b001c6142e2d53cc",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 469,
+        "rate_limits": {
+          "remaining_requests": 932,
+          "reset_requests_s": 5875.2,
+          "remaining_tokens": 6205,
+          "reset_tokens_s": 37.8
+        },
+        "http_status": 429,
+        "retry_after_s": 20.0,
+        "retry_delay_s": 20.03563194835707,
+        "retry_scheduled": true,
+        "latency_ms": 1109
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "80ff77ebe7116c19db0c6260497b02b9b0f90b6d1cd64f8968423f21c7bbce40",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "bc230519c182a8019358af974a143a023434d6898ffb66c9b001c6142e2d53cc",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 1405,
+          "completion_tokens": 323,
+          "total_tokens": 1728
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 20047,
+        "rate_limits": {
+          "remaining_requests": 931,
+          "reset_requests_s": 5961.6,
+          "remaining_tokens": 5702,
+          "reset_tokens_s": 53.58
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "593c1a21643a8e415239b29959648ea01fcf8cb15a668420a22766a79ec228c8",
+        "cache_write": "written",
+        "latency_ms": 21500
+      }
+    ],
+    "notice": "Research workspace. Rule checks and model reviews are not scientific or operational certification."
+  },
+  "prediction": {
+    "answer": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions.\n\nSaffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions.",
+    "abstained": false,
+    "claims": [
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a higher oxygen concentration than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a higher oxygen concentration to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact oxygen percentage or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the oxygen concentration."
+      },
+      {
+        "evidence_status": "supported",
+        "next_evidence": [],
+        "text": "Saffire-VI used a lower pressure than previous experiments to simulate crewed spacecraft conditions.",
+        "citations": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "this final iteration of the experiment was unique because of the higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "source_id": "named-saffire-vi-news",
+            "valid": true,
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "verdict": "model_supported_needs_review",
+        "grounding": "model_supported",
+        "applicability": "not_assessed",
+        "issues": [],
+        "semantic_review": {
+          "evidence_checks": [
+            {
+              "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+              "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+              "relation": "supports",
+              "source_id": "named-saffire-vi-news"
+            }
+          ],
+          "reason": "The evidence explicitly states that Saffire-VI used a lower pressure to simulate crewed spacecraft conditions, directly supporting the claim.",
+          "uncertainty": "The evidence does not specify the exact pressure value or compare it numerically to previous experiments, but the qualitative comparison is supported.",
+          "verdict": "supported",
+          "asserted_verdict": "supported",
+          "validation": {
+            "structure": "passed",
+            "quote_provenance": "verified",
+            "verified_span_count": 1,
+            "semantic_grounding": "model_assessed",
+            "issues": []
+          }
+        },
+        "uncertainty": "Source excerpts can omit qualifications. No operational safety conclusion is established.",
+        "evidence_checks": [
+          {
+            "chunk_id": "named-saffire-vi-news-named-001-6abf3fcf41eb2e65",
+            "quote": "higher oxygen concentration and lower pressure generated in the test unit to simulate the conditions within crewed spacecraft",
+            "relation": "supports",
+            "source_id": "named-saffire-vi-news",
+            "url": "https://www.nasa.gov/centers-and-facilities/glenn/flame-burns-out-on-nasas-long-running-spacecraft-fire-experiment/",
+            "locator": "Article, 2024-02-14; Article body; block 1",
+            "document_url": null
+          }
+        ],
+        "claim_type": "source_description",
+        "limitations": "The article describes the experimental setup but does not provide specific numerical values for the pressure."
+      }
+    ],
+    "latency_ms": 22606.92,
+    "model_calls": [
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "80ff77ebe7116c19db0c6260497b02b9b0f90b6d1cd64f8968423f21c7bbce40",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "bc230519c182a8019358af974a143a023434d6898ffb66c9b001c6142e2d53cc",
+        "attempt": 1,
+        "cache_hit": false,
+        "usage": {},
+        "transport_attempted": true,
+        "status": "rate_limited",
+        "queue_wait_ms": 469,
+        "rate_limits": {
+          "remaining_requests": 932,
+          "reset_requests_s": 5875.2,
+          "remaining_tokens": 6205,
+          "reset_tokens_s": 37.8
+        },
+        "http_status": 429,
+        "retry_after_s": 20.0,
+        "retry_delay_s": 20.03563194835707,
+        "retry_scheduled": true,
+        "latency_ms": 1109
+      },
+      {
+        "provider": "groq",
+        "requested_model": "qwen/qwen3.8-27b",
+        "model": "qwen/qwen3.8-27b",
+        "prompt_hash": "80ff77ebe7116c19db0c6260497b02b9b0f90b6d1cd64f8968423f21c7bbce40",
+        "schema_hash": "e8b54ae0932829bdf630f03481831b61a0bca6c1d96ad225541cb7c9ae81ed11",
+        "request_hash": "bc230519c182a8019358af974a143a023434d6898ffb66c9b001c6142e2d53cc",
+        "attempt": 2,
+        "cache_hit": false,
+        "usage": {
+          "prompt_tokens": 1405,
+          "completion_tokens": 323,
+          "total_tokens": 1728
+        },
+        "transport_attempted": true,
+        "status": "success",
+        "queue_wait_ms": 20047,
+        "rate_limits": {
+          "remaining_requests": 931,
+          "reset_requests_s": 5961.6,
+          "remaining_tokens": 5702,
+          "reset_tokens_s": 53.58
+        },
+        "http_status": 200,
+        "finish_reason": "stop",
+        "output_hash": "593c1a21643a8e415239b29959648ea01fcf8cb15a668420a22766a79ec228c8",
+        "cache_write": "written",
+        "latency_ms": 21500
+      }
+    ],
+    "question_id": "Q017",
+    "system": "ignis",
+    "split": "test",
+    "run_id": "4e3c6539a4634252875092fdb16fa27c",
+    "scope_status": "candidates_need_review",
+    "policy_withholding": false,
+    "shared_draft_from_run_id": "d06f90c15ab74d5987f0a547d58e284f",
+    "measurement_scope": "incremental_critic_with_shared_rag_draft"
+  },
+  "shared_draft_from_run_id": "d06f90c15ab74d5987f0a547d58e284f",
+  "record_sha256": "e9c09a14d23348b6673314b7b0e155c7a74271665217aef89e2f30685cf9530f"
+}

@@ -1,0 +1,10 @@
+{
+  "bytes": 39166,
+  "content_type": "application/json",
+  "final_url": "https://psi.nasa.gov/geode-py/ws/files/v2",
+  "method": "POST",
+  "request_body_sha256": "ae8b1479d832e999d136313d485539e00bc2c3ca8af3a8c9edd20d89bc03df03",
+  "retrieved_at": "2026-11-05T20:51:40.083452+00:00",
+  "sha256": "437d406a93a2b6075373e684b01a47dd427869830395b26d4f292afba6e9ee5f",
+  "url": "https://psi.nasa.gov/geode-py/ws/files/v2"
+}
