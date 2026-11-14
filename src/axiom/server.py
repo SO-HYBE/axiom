@@ -190,7 +190,10 @@ def make_handler(root, allowed_hosts=None, allowed_origins=None, record_root=Non
                     if path.endswith('/impact'):
                         from .benchmark_impact import summarize_impact
                         identifier = path.removeprefix('/api/benchmark/').removesuffix('/impact')
-                        return self.send(200, json.dumps(summarize_impact(root, identifier), ensure_ascii=False))
+                        query = parse_qs(urlparse(self.path).query, keep_blank_values=True)
+                        observed_only = query == {'observed_only': ['1']}
+                        result = summarize_impact(root, identifier, allow_integrity_warnings=observed_only)
+                        return self.send(200, json.dumps(result, ensure_ascii=False))
                     if path.endswith('/answers'):
                         identifier = path.removeprefix('/api/benchmark/').removesuffix('/answers')
                         return self.send(200, json.dumps({'answers':benchmark_answers(root,identifier)}, ensure_ascii=False))

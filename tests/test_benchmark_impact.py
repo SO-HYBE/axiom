@@ -105,6 +105,18 @@ class BenchmarkImpactTests(unittest.TestCase):
         self.save()
         with self.assertRaises(ValueError):self.summary()
 
+    def test_observed_only_charts_show_warning_when_frozen_inputs_disagree(self):
+        path = self.fixture.directory/'manifest.json'
+        manifest = _read(path)
+        manifest['inputs']['prompt_version'] = 'changed synthetic value'
+        _write(path, manifest)
+        with self.assertRaises(ValueError):
+            self.summary()
+        value = summarize_impact(self.root, self.run_id, allow_integrity_warnings=True)
+        self.assertFalse(value['integrity_verified'])
+        self.assertIn('input_fingerprint_mismatch', {issue['code'] for issue in value['integrity_warnings']})
+        self.assertEqual(value['critic']['matched_pairs'], 1)
+
     def test_summary_reads_do_not_mutate_saved_records_or_create_scores(self):
         paths = [p for p in self.fixture.directory.rglob('*') if p.is_file() and p.name!='.write.lock']
         before = {str(p):p.read_bytes() for p in paths}

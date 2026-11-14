@@ -568,7 +568,7 @@ function impactOverview(runId='pilot') {
 test('impact charts use released RAG claims and keep scientific quality ungraded',async()=>{
     const {get,allRequests}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview();
-        if(path==='/api/benchmark/pilot/impact') return impactFixture();
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return impactFixture();
     });
     await flush();
     assert.equal(get('impact-error').textContent,'');
@@ -585,7 +585,7 @@ test('impact charts use released RAG claims and keep scientific quality ungraded
 test('impact chart filters drill into changed, failed and reason-specific cases',async()=>{
     const {get}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview();
-        if(path==='/api/benchmark/pilot/impact') return impactFixture();
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return impactFixture();
     });
     await flush();
     assert.equal(get('impact-question-grid').children.length,3);
@@ -612,7 +612,7 @@ test('impact cases open saved claims, flags and sources with one cached GET and 
         {question_id:'Q001',system:'ignis',prediction:{claims:[a],abstained:false},run:{question:'Synthetic changed question?',answer:'Synthetic checked answer.',claims:[a],draft_checks:[a,b]}}];
     const {get,allRequests}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview();
-        if(path==='/api/benchmark/pilot/impact') return impactFixture();
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return impactFixture();
         if(path==='/api/benchmark/pilot/answers') return {answers:rows};
     });
     await flush();
@@ -631,8 +631,8 @@ test('an older impact response cannot overwrite a refreshed run',async()=>{
     let finishOld, overviewCalls=0;
     const {get}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview(++overviewCalls===1?'pilot':'new-run');
-        if(path==='/api/benchmark/pilot/impact') return new Promise(resolve=>{finishOld=resolve;});
-        if(path==='/api/benchmark/new-run/impact') return impactFixture('new-run');
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return new Promise(resolve=>{finishOld=resolve;});
+        if(path==='/api/benchmark/new-run/impact?observed_only=1') return impactFixture('new-run');
     });
     await flush();
     await get('evaluation-refresh').onclick();
@@ -643,15 +643,15 @@ test('an older impact response cannot overwrite a refreshed run',async()=>{
     assert.equal(get('impact-rag-count').textContent,'2');
 });
 
-test('unverified metrics fail closed instead of displaying successful-looking zeros',async()=>{
+test('unverified saved observations display with an integrity warning',async()=>{
     const {get}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview();
-        if(path==='/api/benchmark/pilot/impact') return {...impactFixture(),integrity_verified:false};
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return {...impactFixture(),integrity_verified:false,integrity_warnings:[{code:'input_fingerprint_mismatch'}]};
     });
     await flush();
-    assert.equal(get('impact-dashboard').hidden,true);
-    assert.equal(get('impact-export').disabled,true);
-    assert.match(get('impact-error').textContent,/could not be verified/);
+    assert.equal(get('impact-dashboard').hidden,false);
+    assert.equal(get('impact-export').disabled,false);
+    assert.match(get('impact-error').textContent,/Integrity warning.*input_fingerprint_mismatch.*unverified/);
     assert.match(get('evaluation-status').textContent,/8 answers completed, 1 failed/);
 });
 
@@ -670,7 +670,7 @@ test('no matched pairs leave impact unavailable rather than a zero-percent impro
     const fixture=impactFixture();fixture.critic.available=false;fixture.critic.matched_pairs=0;fixture.critic.reasons=[];
     const {get}=dashboard(null,path=>{
         if(path==='/api/benchmark') return impactOverview();
-        if(path==='/api/benchmark/pilot/impact') return fixture;
+        if(path==='/api/benchmark/pilot/impact?observed_only=1') return fixture;
     });
     await flush();
     assert.equal(get('impact-rag-count').textContent,'—');

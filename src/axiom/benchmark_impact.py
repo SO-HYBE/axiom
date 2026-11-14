@@ -129,26 +129,32 @@ def _job_summary(record, job):
                        or record['run'].get('error')) if failed else None, block_reason=job.get('block_reason'))
 
 
-def summarize_impact(root, run_id):
+def summarize_impact(root, run_id, *, allow_integrity_warnings=False):
     """Inspect authoritative snapshots and summarize observed behavior, offline.
 
     No annotation imports, independent grades, model calls, network requests or
     persisted summaries are created. A changed/inconsistent snapshot fails closed.
     """
     audit = inspect_benchmark(root, run_id)
-    if not audit['audit_passed']:
+    if not audit['audit_passed'] and not allow_integrity_warnings:
         raise ValueError('Evaluation visualization requires a verified benchmark')
     directory = _directory(root, run_id)
     with review_read_lock(directory):
         manifest = _read(directory / 'manifest.json')
         if (manifest.get('input_fingerprint') != audit['input_fingerprint']
-                or _hash(manifest.get('inputs')) != manifest.get('input_fingerprint')):
+                or _hash(manifest.get('inputs')) != audit.get('observed_input_hash')):
             raise ValueError('Benchmark changed during impact inspection; retry')
         records = _records(directory, manifest)
         report = summarize_benchmark(manifest, [record['prediction'] for record in records])
         if report['progress'] != audit['progress']:
             raise ValueError('Benchmark progress changed during impact inspection; retry')
-        return _summarize(manifest, records, audit)
+        result = _summarize(manifest, records, audit)
+        if not audit['audit_passed']:
+            # Charts may help inspect saved observations, but must never present
+            # them as verified when the frozen inputs or code snapshot disagree.
+            result['integrity_verified'] = False
+            result['integrity_warnings'] = audit['issues']
+        return result
 
 
 def _summarize(manifest, records, audit):

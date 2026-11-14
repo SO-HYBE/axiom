@@ -254,7 +254,7 @@ def inspect_benchmark(root, run_id):
         return dict(
             schema_version='benchmark-inspection-v1', benchmark_run_id=run_id,
             audit_passed=not issues, issues=issues, manifest_status=manifest.get('status'),
-            input_fingerprint=manifest.get('input_fingerprint'),
+            input_fingerprint=manifest.get('input_fingerprint'), observed_input_hash=_hash(inputs),
             frozen_hashes={key: inputs.get(key) for key in ('corpus_sha256', 'condition_sha256',
                 'benchmark_sha256', 'source_definitions_sha256', 'named_source_manifest_sha256', 'code_sha256')},
             progress=recomputed['progress'], by_system=dict(sorted(by_system.items())),

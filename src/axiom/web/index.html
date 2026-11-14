@@ -669,10 +669,15 @@ function renderImpactReasons() {
 }
 
 function renderImpact(data) {
-    if (data.schema_version !== 'benchmark-impact-v1' || data.run_id !== evaluationRunId || data.integrity_verified !== true) throw new Error('The saved comparison could not be verified.');
+    if (data.schema_version !== 'benchmark-impact-v1' || data.run_id !== evaluationRunId ||
+        (data.integrity_verified !== true && !(data.integrity_verified === false && data.integrity_warnings?.length))) throw new Error('The saved comparison could not be loaded.');
     evaluationImpact = data;
     const critic = data.critic;
     $('impact-dashboard').hidden = false;
+    if (data.integrity_verified === false) {
+        const counts = data.integrity_warnings.reduce((all, issue) => { all[issue.code]=(all[issue.code]||0)+1; return all; }, {});
+        $('impact-error').textContent = 'Integrity warning: charts show saved observations, but this benchmark did not pass its frozen input/code audit (' + Object.entries(counts).map(([code,count])=>code+(count>1?' ×'+count:'')).join(', ') + '). Treat these charts as unverified.';
+    } else $('impact-error').textContent = '';
     $('impact-export').disabled = false;
     $('impact-run-strip').replaceChildren();
     for (const [value,label] of [[data.questions.length,'questions'],[data.systems.length,'systems'],[`${data.progress.completed}/${data.progress.scheduled}`,'executions completed'],[data.progress.failed,'failed executions']]) {
@@ -860,7 +865,7 @@ async function refreshEvaluation() {
         $('evaluation-note').textContent='Completed means the workflow finished, including withholding. It does not mean the answer is scientifically correct. Saved replies affect timing; shared-draft AXIOM timing covers the additional check.';
         $('evaluation-open').hidden=total.attempted===0;
         try {
-            const impact=await readJSON('/api/benchmark/'+encodeURIComponent(latest.run_id)+'/impact');
+            const impact=await readJSON('/api/benchmark/'+encodeURIComponent(latest.run_id)+'/impact?observed_only=1');
             if(sequence===evaluationSequence) renderImpact(impact);
         } catch(error) {if(sequence===evaluationSequence) {$('impact-dashboard').hidden=true;$('impact-export').disabled=true;evaluationImpact=null;$('impact-error').textContent='Detailed charts are unavailable. '+error.message;}}
     } catch(error) {if(sequence===evaluationSequence) {$('evaluation-status').textContent='Evaluation work could not be loaded. '+error.message;evaluationRunId=null;}}
